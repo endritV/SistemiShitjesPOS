@@ -9,11 +9,46 @@ namespace SistemiShitjesPOS.EntityLayer
     class FaturatHyrseDalse
     {
         public bool IsKlient { get; set; }
+        public bool IsHyrse { get; set; }
 
         private int _idFatura;
         private int _idKlienti;
         private DateTime _dataFatures;
         private int _nrFiskal;
+        private int _nrTVSH;
+        private int _nrKuponit;
+        private int _idPuntori;
+
+
+        public int IdPuntorit
+        {
+            get { return _idPuntori; }
+            set {
+                if (value <= 0)
+                    throw new Exception("Id Puntori eshte e zbrazet! Shkruani ID");
+                else _idPuntori = value; }
+        }
+
+
+        public int NrKuponit
+        {
+            get { return _nrKuponit; }
+            set {
+                if (value <= 0)
+                    throw new Exception("Numri Kuponit eshte e zbrazet! Shkruani Numrin e Kuponit");
+                else _nrKuponit = value; }
+        }
+
+
+        public int TVSH
+        {
+            get { return _nrTVSH; }
+            set {
+                if (value <= 0)
+                    throw new Exception("Numri TVSH-se eshte e zbrazet! Shkruani Numrin e TVSH-se");
+                else _nrTVSH = value; }
+        }
+
 
 
         public int NrFiskal
