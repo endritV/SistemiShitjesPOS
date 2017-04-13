@@ -8,5 +8,6 @@ namespace SistemiShitjesPOS.BOL
 {
     class Puntori
     {
+        
     }
 }
