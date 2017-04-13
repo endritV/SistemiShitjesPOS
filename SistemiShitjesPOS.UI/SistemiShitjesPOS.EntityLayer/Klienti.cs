@@ -11,14 +11,14 @@ namespace SistemiShitjesPOS.EntityLayer
     {
         #region Bool
 
-        
+
         public bool IsKlient { get; set; }
 
-#endregion
+        #endregion
 
         #region Private
 
-        
+
         private string _idKlienti;
         private string _emri;
         private string _emriPronarit;
@@ -32,7 +32,7 @@ namespace SistemiShitjesPOS.EntityLayer
 
         #region NotValidate
 
-        
+
         public string Web { get; set; }
         public string Email { get; set; }
         public int Pikat { get; set; }
@@ -40,54 +40,64 @@ namespace SistemiShitjesPOS.EntityLayer
 
         #region Properties
 
-        
+
         public string NrBiznesiit
         {
             get { return _nrBiznesit; }
-            set {
+            set
+            {
                 if (String.IsNullOrEmpty(value))
                     throw new Exception("Numri i Biznesit eshte i zbrazet! Shkruani nje Numri te Biznesit.");
-                else _nrBiznesit = value; }
+                else _nrBiznesit = value;
+            }
         }
 
 
         public string NrTelefonit
         {
             get { return _nrTelefonit; }
-            set {
+            set
+            {
                 if (String.IsNullOrEmpty(value))
                     throw new Exception("Numri i Telefoni eshte i zbrazet! Shkruani nje Numer.");
-                else _nrTelefonit = value; }
+                else _nrTelefonit = value;
+            }
         }
 
 
         public string Adresa
         {
             get { return _adresa; }
-            set {
+            set
+            {
                 if (String.IsNullOrEmpty(value))
                     throw new Exception("Adresa eshte i zbrazet! Shkruani nje Adrese.");
-                else _adresa = value; }
+                else _adresa = value;
+            }
         }
 
 
         public string NumriFix
         {
             get { return _numriFix; }
-            set {
+            set
+            {
                 if (String.IsNullOrEmpty(value))
                     throw new Exception("Numri Fix eshte i zbrazet! Shkruani nje Numer.");
-                else _numriFix = value; }
+                else _numriFix = value;
+            }
         }
 
 
         public string MbiemriPronarit
         {
             get { return _mbiemriPronarit; }
-            set {
+            set
+            {
                 if (String.IsNullOrEmpty(value))
                     throw new Exception("Mbiemri i Pronarit eshte i zbrazet! Shkruani nje Mbiemr.");
-                else _mbiemriPronarit = value; }
+                else _mbiemriPronarit = value;
+            }
         }
 
 
