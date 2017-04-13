@@ -79,6 +79,12 @@
   <ItemGroup>
     <Folder Include="NewFolder1\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemiShitjesPOS.BOL\SistemiShitjesPOS.BusinessLayer.csproj">
+      <Project>{c26ceba6-72d1-4a7e-bee4-2ae3f4726175}</Project>
+      <Name>SistemiShitjesPOS.BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

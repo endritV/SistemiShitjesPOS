@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemiShitjesPOS.BOL
+
+
+namespace SistemiShitjesPOS.BusinessLayer
 {
-    class Puntori
+    public class Puntori
     {
+
     }
 }

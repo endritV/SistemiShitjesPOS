@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemiShitjesPOS.DataAcces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemiShitjesPOS.BusinessLayer", "SistemiShitjesPOS.BOL\SistemiShitjesPOS.BusinessLayer.csproj", "{C26CEBA6-72D1-4A7E-BEE4-2AE3F4726175}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemiShitjesPOS.EntityLayer", "SistemiShitjesPOS.EntityLayer\SistemiShitjesPOS.EntityLayer.csproj", "{C9B2E1A4-4422-496E-8211-0DAEF5662B5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C26CEBA6-72D1-4A7E-BEE4-2AE3F4726175}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C26CEBA6-72D1-4A7E-BEE4-2AE3F4726175}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C26CEBA6-72D1-4A7E-BEE4-2AE3F4726175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B2E1A4-4422-496E-8211-0DAEF5662B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B2E1A4-4422-496E-8211-0DAEF5662B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B2E1A4-4422-496E-8211-0DAEF5662B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B2E1A4-4422-496E-8211-0DAEF5662B5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
