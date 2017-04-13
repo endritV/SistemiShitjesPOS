@@ -22,6 +22,7 @@ namespace SistemiShitjesPOS.EntityLayer
                 {
                     throw new Exception("Emri i sektorit eshte i zbrazet");
                 }
+                else
                 _emriSektorit = value; }
         }
 

@@ -37,6 +37,7 @@ namespace SistemiShitjesPOS.EntityLayer
                 {
                     throw new Exception("Njesia eshte e zbrazet");
                 }
+                else
                 _njesia = value; }
         }
 

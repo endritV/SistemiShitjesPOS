@@ -22,6 +22,7 @@ namespace SistemiShitjesPOS.EntityLayer
                 {
                     throw new Exception("Cmimi eshte i zbrazet");
                 }
+                else
                 _cmimi = value; }
         }
 
