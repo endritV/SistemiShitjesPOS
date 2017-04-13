@@ -41,13 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Klasat\Puntori.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SistemiShitjesPOS.DAL\SistemiShitjesPOS.DataAccessLayer.csproj">
       <Project>{fd26586b-d7a7-4000-8db4-5925057e671e}</Project>
       <Name>SistemiShitjesPOS.DataAccessLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Klasat\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
