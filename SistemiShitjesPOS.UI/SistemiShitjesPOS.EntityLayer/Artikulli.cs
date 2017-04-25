@@ -62,7 +62,7 @@ namespace SistemiShitjesPOS.EntityLayer
             {
                 if (value <= 0)
                 {
-                    throw new Exception("Artikulli eshte i zbazet");
+                    throw new Exception("Artikulli eshte i zbazet, Mbushe nje");
                 }
                 _idArtukulli = value;
             }
@@ -78,7 +78,9 @@ namespace SistemiShitjesPOS.EntityLayer
                     throw new Exception("Emri i Artikullit eshte i zbazet");
                 }
                 _emriArtikullit = value;      
+                
             }
+           
                 
         }
     
