@@ -29,9 +29,11 @@ namespace SistemiShitjesPOS.UI
 
             if (txbUsername.Text == "admin" && txbPassword.Text == "POS")
             {
-                DashBoard d1 = new DashBoard();
-                this.Visible = false;
-                d1.Show();
+                DashBoard d1 = new DashBoard();               
+                d1.ShowDialog();
+                d1.Close();
+                
+                
             }
             else
             {
