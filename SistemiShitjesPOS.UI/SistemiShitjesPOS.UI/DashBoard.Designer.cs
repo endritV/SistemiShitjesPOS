@@ -1,6 +1,6 @@
 ﻿namespace SistemiShitjesPOS.UI
 {
-    partial class DashboardForm
+    partial class DashBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panMenu = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // DashboardForm
+            // panMenu
             // 
-            this.ClientSize = new System.Drawing.Size(944, 527);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "DashboardForm";
+            this.panMenu.Location = new System.Drawing.Point(0, 0);
+            this.panMenu.Name = "panMenu";
+            this.panMenu.Size = new System.Drawing.Size(186, 428);
+            this.panMenu.TabIndex = 1;
+            // 
+            // DashBoard
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(917, 429);
+            this.Controls.Add(this.panMenu);
+            this.Name = "DashBoard";
+            this.Text = "DashBoard";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        //private System.Windows.Forms.Panel panMenu2;
-        //private System.Windows.Forms.Panel panMenu;
-        //private UC_Menu uC_Menu1;
-        //private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Panel panMenu;
     }
 }

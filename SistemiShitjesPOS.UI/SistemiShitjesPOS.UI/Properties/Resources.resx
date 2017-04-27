@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <!--<data name="foundation-icon-fonts_2015-02-16_shopping-bag_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="foundation-icon-fonts_2015-02-16_shopping-bag_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\foundation-icon-fonts_2015-02-16_shopping-bag_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icomoon-free_2014-12-23_truck_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -163,22 +163,16 @@
   <data name="cover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cover1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  --><!--<data name="material-icons_3-0-1_dashboard_100_0_506c82_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\material-icons_3-0-1_dashboard_100_0_506c82_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>--><!--
+  
   <data name="foundation-icon-fonts_2015-02-16_burst-sale_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\foundation-icon-fonts_2015-02-16_burst-sale_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ligature-symbols_2-11-0_logout_30_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ligature-symbols_2-11-0_logout_30_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1024x768-data-uploads-19-347979-scary-forest-dark-pictures" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1024x768-data-uploads-19-347979-scary-forest-dark-pictures.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  
+  
   <data name="foundation-icon-fonts_2015-02-16_clipboard-notes_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\foundation-icon-fonts_2015-02-16_clipboard-notes_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icomoon-free_2014-12-23_menu_25_25_a7bccd_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icomoon-free_2014-12-23_menu_25_25_a7bccd_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>-->
+  </data>
 </root>
