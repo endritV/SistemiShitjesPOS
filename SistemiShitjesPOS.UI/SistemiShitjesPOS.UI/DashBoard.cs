@@ -42,8 +42,13 @@ namespace SistemiShitjesPOS.UI
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            LoginForm l1 = new LoginForm();
-            this.Dispose();
+            if (MessageBox.Show("Do you want to exit?", "My Application",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
+            
             
 
         }
