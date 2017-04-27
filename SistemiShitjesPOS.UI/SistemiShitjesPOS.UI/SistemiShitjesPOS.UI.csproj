@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_Dashboards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Dashboards.Designer.cs">
+      <DependentUpon>UC_Dashboards.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -70,6 +76,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Dashboards.resx">
+      <DependentUpon>UC_Dashboards.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -151,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\cover1.jpg" />
+    <None Include="Resources\ionicons_2-0-1_android-settings_50_15_a7bccd_none.png" />
     <None Include="Resources\material-icons_3-0-1_fullscreen_50_15_1c2731_none.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

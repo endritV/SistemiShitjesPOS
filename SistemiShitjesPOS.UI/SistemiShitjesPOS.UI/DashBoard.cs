@@ -39,7 +39,6 @@ namespace SistemiShitjesPOS.UI
             }
 
         }
-
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to exit?", "My Application",
@@ -69,5 +68,12 @@ namespace SistemiShitjesPOS.UI
                 TopMost = false;
             }
         }
+
+        private void btnDashboards_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
     }
 }
