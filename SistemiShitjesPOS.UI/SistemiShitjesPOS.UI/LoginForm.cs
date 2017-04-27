@@ -32,7 +32,8 @@ namespace SistemiShitjesPOS.UI
                 DashBoard d1 = new DashBoard();               
                 d1.ShowDialog();
                 d1.Close();
-                
+                txbUsername.Clear();
+                txbPassword.Clear();
                 
             }
             else
