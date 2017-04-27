@@ -45,7 +45,9 @@ namespace SistemiShitjesPOS.UI
             MessageBoxButtons.YesNo, MessageBoxIcon.Question)
             == DialogResult.Yes)
             {
-                this.Dispose();
+                LoginForm l1 = new LoginForm();
+                l1.Visible = true;
+                this.Close();
             }
             
             
