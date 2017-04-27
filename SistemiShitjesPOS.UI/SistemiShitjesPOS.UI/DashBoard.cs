@@ -33,7 +33,7 @@ namespace SistemiShitjesPOS.UI
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             LoginForm l1 = new LoginForm();
-            this.Visible = false;
+            this.Close();
             l1.Show();
 
         }
