@@ -40,9 +40,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panMenu2;
-        private System.Windows.Forms.Panel panMenu;
-        private UC_Menu uC_Menu1;
-        private System.Windows.Forms.Button btnMenu;
+        //private System.Windows.Forms.Panel panMenu2;
+        //private System.Windows.Forms.Panel panMenu;
+        //private UC_Menu uC_Menu1;
+        //private System.Windows.Forms.Button btnMenu;
     }
 }
