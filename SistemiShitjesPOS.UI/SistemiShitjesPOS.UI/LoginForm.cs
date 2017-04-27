@@ -16,5 +16,27 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
         }
+
+        private void txbPassword_TextChanged(object sender, EventArgs e)
+        {
+        
+
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+           
+
+            if (txbUsername.Text == "admin" && txbPassword.Text == "POS")
+            {
+                DashBoard d1 = new DashBoard();
+                this.Visible = false;
+                d1.Show();
+            }
+            else
+            {
+                label3.Text = "Username or Password Incorrect";
+            }
+        }
     }
 }
