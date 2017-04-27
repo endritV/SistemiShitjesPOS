@@ -28,6 +28,16 @@ namespace SistemiShitjesPOS.UI
             {
                 panMenu.Width = 200;
             }
+
+            if (panMenu2.Width == 200)
+            {
+                panMenu2.Width = 40;
+            }
+            else
+            {
+                panMenu2.Width = 200;
+            }
+
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
