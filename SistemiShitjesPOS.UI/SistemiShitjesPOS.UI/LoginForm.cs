@@ -22,7 +22,7 @@ namespace SistemiShitjesPOS.UI
             if (txtUserName.Text == "admin" && txtPassword.Text == "POS")
             {
                 DashboardForm df = new DashboardForm();
-                df.ShowDialog();
+                df.ShowDialog();               
 
             }
             else
