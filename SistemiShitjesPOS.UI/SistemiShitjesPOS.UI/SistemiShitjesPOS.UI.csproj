@@ -160,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\cover1.jpg" />
+    <None Include="Resources\font-awesome_4-7-0_search_50_0_dfe6ec_none.png" />
     <None Include="Resources\ionicons_2-0-1_android-settings_50_15_a7bccd_none.png" />
     <None Include="Resources\material-icons_3-0-1_fullscreen_50_15_1c2731_none.png" />
   </ItemGroup>

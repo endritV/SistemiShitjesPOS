@@ -113,6 +113,16 @@ namespace SistemiShitjesPOS.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap font_awesome_4_7_0_search_50_0_dfe6ec_none {
+            get {
+                object obj = ResourceManager.GetObject("font-awesome_4-7-0_search_50_0_dfe6ec_none", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap foundation_icon_fonts_2015_02_16_burst_sale_25_0_647d91_none {
             get {
                 object obj = ResourceManager.GetObject("foundation-icon-fonts_2015-02-16_burst-sale_25_0_647d91_none", resourceCulture);

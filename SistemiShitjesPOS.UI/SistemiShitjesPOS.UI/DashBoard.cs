@@ -73,7 +73,9 @@ namespace SistemiShitjesPOS.UI
 
         private void btnDashboards_Click(object sender, EventArgs e)
         {
-            
+            UC_Dashboards dashboardUC = new UC_Dashboards();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(dashboardUC);
         }
 
         

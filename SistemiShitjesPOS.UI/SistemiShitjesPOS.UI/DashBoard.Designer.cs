@@ -32,8 +32,8 @@
             this.tblPanMenu = new System.Windows.Forms.TableLayoutPanel();
             this.panMenu = new System.Windows.Forms.Panel();
             this.panUC = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
             this.btnFullScreen = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnDashboards = new System.Windows.Forms.Button();
@@ -46,6 +46,7 @@
             this.btnReports = new System.Windows.Forms.Button();
             this.btnPriceRules = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panMenu2.SuspendLayout();
             this.tblPanMenu.SuspendLayout();
             this.panMenu.SuspendLayout();
@@ -115,18 +116,6 @@
             this.panUC.Size = new System.Drawing.Size(754, 525);
             this.panUC.TabIndex = 4;
             // 
-            // btnSettings
-            // 
-            this.btnSettings.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.ionicons_2_0_1_android_settings_50_15_a7bccd_none;
-            this.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Location = new System.Drawing.Point(159, 0);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(41, 38);
-            this.btnSettings.TabIndex = 4;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            // 
             // btnFullScreen
             // 
             this.btnFullScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -141,6 +130,18 @@
             this.btnFullScreen.TabIndex = 2;
             this.btnFullScreen.UseVisualStyleBackColor = true;
             this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.ionicons_2_0_1_android_settings_50_15_a7bccd_none;
+            this.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Location = new System.Drawing.Point(159, 0);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(41, 38);
+            this.btnSettings.TabIndex = 4;
+            this.btnSettings.UseVisualStyleBackColor = true;
             // 
             // btnMenu
             // 
@@ -399,6 +400,16 @@
             this.btnSuppliers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSuppliers.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(754, 525);
+            this.panel1.TabIndex = 4;
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,9 +419,11 @@
             this.Controls.Add(this.btnFullScreen);
             this.Controls.Add(this.panMenu2);
             this.Controls.Add(this.panMenu);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "DashBoard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DashBoard_KeyDown);
             this.panMenu2.ResumeLayout(false);
@@ -439,5 +452,6 @@
         private System.Windows.Forms.Panel panMenu;
         private System.Windows.Forms.Panel panUC;
         private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Panel panel1;
     }
 }
