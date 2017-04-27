@@ -22,7 +22,7 @@ namespace SistemiShitjesPOS.UI
         {
             if (panMenu.Width == 200)
             {
-                panMenu.Width = 50;
+                panMenu.Width = 40;
             }
             else
             {
@@ -36,6 +36,23 @@ namespace SistemiShitjesPOS.UI
             this.Dispose();
             
 
+        }
+
+        private void btnFullScreen_Click(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
+
+        private void DashBoard_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                FormBorderStyle = FormBorderStyle.Sizable;
+                WindowState = FormWindowState.Normal;
+                TopMost = false;
+            }
         }
     }
 }

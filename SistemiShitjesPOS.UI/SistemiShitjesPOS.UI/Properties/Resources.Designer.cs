@@ -239,5 +239,15 @@ namespace SistemiShitjesPOS.UI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap material_icons_3_0_1_fullscreen_50_15_1c2731_none {
+            get {
+                object obj = ResourceManager.GetObject("material-icons_3-0-1_fullscreen_50_15_1c2731_none", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
