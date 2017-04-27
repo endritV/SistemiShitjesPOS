@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Reflection.Emit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,26 @@ namespace SistemiShitjesPOS.UI
         public DashBoard()
         {
             InitializeComponent();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (panMenu.Width == 200)
+            {
+                panMenu.Width = 50;
+            }
+            else
+            {
+                panMenu.Width = 200;
+            }
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            LoginForm l1 = new LoginForm();
+            this.Visible = false;
+            l1.Show();
+
         }
     }
 }
