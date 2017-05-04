@@ -392,6 +392,7 @@
             // btnFullScreen
             // 
             this.btnFullScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFullScreen.BackColor = System.Drawing.Color.Transparent;
             this.btnFullScreen.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.material_icons_3_0_1_fullscreen_50_15_1c2731_none;
             this.btnFullScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFullScreen.FlatAppearance.BorderSize = 0;
@@ -401,7 +402,7 @@
             this.btnFullScreen.Name = "btnFullScreen";
             this.btnFullScreen.Size = new System.Drawing.Size(35, 38);
             this.btnFullScreen.TabIndex = 2;
-            this.btnFullScreen.UseVisualStyleBackColor = true;
+            this.btnFullScreen.UseVisualStyleBackColor = false;
             this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
             // 
             // panel1
@@ -409,9 +410,9 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Location = new System.Drawing.Point(38, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 539);
+            this.panel1.Size = new System.Drawing.Size(916, 539);
             this.panel1.TabIndex = 4;
             // 
             // DashBoard

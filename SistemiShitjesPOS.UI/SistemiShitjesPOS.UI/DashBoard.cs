@@ -23,6 +23,7 @@ namespace SistemiShitjesPOS.UI
             if (panMenu.Width == 200)
             {
                 panMenu.Width = 40;
+                
             }
             else
             {
@@ -31,6 +32,7 @@ namespace SistemiShitjesPOS.UI
             if (panMenu2.Width == 200)
             {
                 panMenu2.Width = 40;
+               
             }
             else
             {
@@ -56,8 +58,7 @@ namespace SistemiShitjesPOS.UI
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
             TopMost = true;
-            
-            
+
         }
 
         private void DashBoard_KeyDown(object sender, KeyEventArgs e)
@@ -67,6 +68,12 @@ namespace SistemiShitjesPOS.UI
                 FormBorderStyle = FormBorderStyle.Sizable;
                 WindowState = FormWindowState.Normal;
                 TopMost = false;
+            }
+            if (e.KeyCode == Keys.F)
+            {
+                FormBorderStyle = FormBorderStyle.None;
+                WindowState = FormWindowState.Maximized;
+                TopMost = true;
             }
         }
 

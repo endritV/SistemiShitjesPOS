@@ -8,9 +8,9 @@ using System.Configuration;
 
 namespace SistemiShitjesPOS.DAL
 {
-    class DataBaseCon
+    public class DataBaseCon
     {
-      
-        
+        public string con = ConfigurationManager.AppSettings["conStr"].ToString();
+             
     }
 }
