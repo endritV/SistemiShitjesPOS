@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             this.panMenu2 = new System.Windows.Forms.Panel();
-            this.tblPanMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.panMenu = new System.Windows.Forms.Panel();
-            this.panUC = new System.Windows.Forms.Panel();
-            this.btnFullScreen = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
+            this.panUC = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.tblPanMenu = new System.Windows.Forms.TableLayoutPanel();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnDashboards = new System.Windows.Forms.Button();
             this.btnGiftCard = new System.Windows.Forms.Button();
@@ -46,6 +44,8 @@
             this.btnReports = new System.Windows.Forms.Button();
             this.btnPriceRules = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
+            this.panMenu = new System.Windows.Forms.Panel();
+            this.btnFullScreen = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panMenu2.SuspendLayout();
             this.tblPanMenu.SuspendLayout();
@@ -62,6 +62,38 @@
             this.panMenu2.Name = "panMenu2";
             this.panMenu2.Size = new System.Drawing.Size(200, 145);
             this.panMenu2.TabIndex = 3;
+            this.panMenu2.MouseHover += new System.EventHandler(this.panMenu2_MouseHover);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.ionicons_2_0_1_android_settings_50_15_a7bccd_none;
+            this.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Location = new System.Drawing.Point(159, 0);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(41, 38);
+            this.btnSettings.TabIndex = 4;
+            this.btnSettings.UseVisualStyleBackColor = true;
+            // 
+            // panUC
+            // 
+            this.panUC.Location = new System.Drawing.Point(200, 0);
+            this.panUC.Name = "panUC";
+            this.panUC.Size = new System.Drawing.Size(754, 525);
+            this.panUC.TabIndex = 4;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Image = global::SistemiShitjesPOS.UI.Properties.Resources.icomoon_free_2014_12_23_menu_25_25_a7bccd_none;
+            this.btnMenu.Location = new System.Drawing.Point(0, 0);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(41, 38);
+            this.btnMenu.TabIndex = 2;
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // tblPanMenu
             // 
@@ -95,65 +127,10 @@
             this.tblPanMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tblPanMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tblPanMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tblPanMenu.Size = new System.Drawing.Size(200, 381);
+            this.tblPanMenu.Size = new System.Drawing.Size(200, 395);
             this.tblPanMenu.TabIndex = 4;
-            // 
-            // panMenu
-            // 
-            this.panMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            this.panMenu.Controls.Add(this.tblPanMenu);
-            this.panMenu.Location = new System.Drawing.Point(0, 144);
-            this.panMenu.Name = "panMenu";
-            this.panMenu.Size = new System.Drawing.Size(200, 381);
-            this.panMenu.TabIndex = 1;
-            // 
-            // panUC
-            // 
-            this.panUC.Location = new System.Drawing.Point(200, 0);
-            this.panUC.Name = "panUC";
-            this.panUC.Size = new System.Drawing.Size(754, 525);
-            this.panUC.TabIndex = 4;
-            // 
-            // btnFullScreen
-            // 
-            this.btnFullScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFullScreen.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.material_icons_3_0_1_fullscreen_50_15_1c2731_none;
-            this.btnFullScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnFullScreen.FlatAppearance.BorderSize = 0;
-            this.btnFullScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFullScreen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFullScreen.Location = new System.Drawing.Point(919, 0);
-            this.btnFullScreen.Name = "btnFullScreen";
-            this.btnFullScreen.Size = new System.Drawing.Size(35, 38);
-            this.btnFullScreen.TabIndex = 2;
-            this.btnFullScreen.UseVisualStyleBackColor = true;
-            this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.ionicons_2_0_1_android_settings_50_15_a7bccd_none;
-            this.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Location = new System.Drawing.Point(159, 0);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(41, 38);
-            this.btnSettings.TabIndex = 4;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Image = global::SistemiShitjesPOS.UI.Properties.Resources.icomoon_free_2014_12_23_menu_25_25_a7bccd_none;
-            this.btnMenu.Location = new System.Drawing.Point(0, 0);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(41, 38);
-            this.btnMenu.TabIndex = 2;
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            this.tblPanMenu.MouseLeave += new System.EventHandler(this.tblPanMenu_MouseLeave);
+            this.tblPanMenu.MouseHover += new System.EventHandler(this.tblPanMenu_MouseHover);
             // 
             // btnLogOut
             // 
@@ -169,9 +146,9 @@
             this.btnLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnLogOut.Image = global::SistemiShitjesPOS.UI.Properties.Resources.ligature_symbols_2_11_0_logout_30_0_ff0000_none;
             this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(3, 343);
+            this.btnLogOut.Location = new System.Drawing.Point(3, 353);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(194, 35);
+            this.btnLogOut.Size = new System.Drawing.Size(194, 39);
             this.btnLogOut.TabIndex = 0;
             this.btnLogOut.Text = "    Log Out";
             this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,7 +171,7 @@
             this.btnDashboards.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboards.Location = new System.Drawing.Point(3, 3);
             this.btnDashboards.Name = "btnDashboards";
-            this.btnDashboards.Size = new System.Drawing.Size(194, 28);
+            this.btnDashboards.Size = new System.Drawing.Size(194, 29);
             this.btnDashboards.TabIndex = 0;
             this.btnDashboards.Text = "    Dashboards";
             this.btnDashboards.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,9 +192,9 @@
             this.btnGiftCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnGiftCard.Image = global::SistemiShitjesPOS.UI.Properties.Resources.font_awesome_4_7_0_address_card_25_0_647d91_none;
             this.btnGiftCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGiftCard.Location = new System.Drawing.Point(3, 309);
+            this.btnGiftCard.Location = new System.Drawing.Point(3, 318);
             this.btnGiftCard.Name = "btnGiftCard";
-            this.btnGiftCard.Size = new System.Drawing.Size(194, 28);
+            this.btnGiftCard.Size = new System.Drawing.Size(194, 29);
             this.btnGiftCard.TabIndex = 0;
             this.btnGiftCard.Text = "    Gift Card";
             this.btnGiftCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -237,9 +214,9 @@
             this.btnEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnEmployees.Image = global::SistemiShitjesPOS.UI.Properties.Resources.ligature_symbols_2_11_0_human_25_0_647d91_none;
             this.btnEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployees.Location = new System.Drawing.Point(3, 275);
+            this.btnEmployees.Location = new System.Drawing.Point(3, 283);
             this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.Size = new System.Drawing.Size(194, 28);
+            this.btnEmployees.Size = new System.Drawing.Size(194, 29);
             this.btnEmployees.TabIndex = 0;
             this.btnEmployees.Text = "    Employees";
             this.btnEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -259,9 +236,9 @@
             this.btnExpenses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnExpenses.Image = global::SistemiShitjesPOS.UI.Properties.Resources.font_awesome_4_7_0_euro_25_0_647d91_none;
             this.btnExpenses.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpenses.Location = new System.Drawing.Point(3, 241);
+            this.btnExpenses.Location = new System.Drawing.Point(3, 248);
             this.btnExpenses.Name = "btnExpenses";
-            this.btnExpenses.Size = new System.Drawing.Size(194, 28);
+            this.btnExpenses.Size = new System.Drawing.Size(194, 29);
             this.btnExpenses.TabIndex = 0;
             this.btnExpenses.Text = "    Expenses";
             this.btnExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -281,9 +258,9 @@
             this.btnSales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnSales.Image = global::SistemiShitjesPOS.UI.Properties.Resources.foundation_icon_fonts_2015_02_16_burst_sale_25_0_647d91_none;
             this.btnSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSales.Location = new System.Drawing.Point(3, 207);
+            this.btnSales.Location = new System.Drawing.Point(3, 213);
             this.btnSales.Name = "btnSales";
-            this.btnSales.Size = new System.Drawing.Size(194, 28);
+            this.btnSales.Size = new System.Drawing.Size(194, 29);
             this.btnSales.TabIndex = 0;
             this.btnSales.Text = "    Sales";
             this.btnSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -303,9 +280,9 @@
             this.btnCustomers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnCustomers.Image = global::SistemiShitjesPOS.UI.Properties.Resources.ionicons_2_0_1_ios_people_25_0_647d91_none;
             this.btnCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomers.Location = new System.Drawing.Point(3, 37);
+            this.btnCustomers.Location = new System.Drawing.Point(3, 38);
             this.btnCustomers.Name = "btnCustomers";
-            this.btnCustomers.Size = new System.Drawing.Size(194, 28);
+            this.btnCustomers.Size = new System.Drawing.Size(194, 29);
             this.btnCustomers.TabIndex = 0;
             this.btnCustomers.Text = "    Customers";
             this.btnCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -325,14 +302,15 @@
             this.btnItems.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnItems.Image = global::SistemiShitjesPOS.UI.Properties.Resources.foundation_icon_fonts_2015_02_16_shopping_bag_25_0_647d91_none;
             this.btnItems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnItems.Location = new System.Drawing.Point(3, 71);
+            this.btnItems.Location = new System.Drawing.Point(3, 73);
             this.btnItems.Name = "btnItems";
-            this.btnItems.Size = new System.Drawing.Size(194, 28);
+            this.btnItems.Size = new System.Drawing.Size(194, 29);
             this.btnItems.TabIndex = 0;
             this.btnItems.Text = "    Items";
             this.btnItems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnItems.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnItems.UseVisualStyleBackColor = true;
+            this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
             // 
             // btnReports
             // 
@@ -347,9 +325,9 @@
             this.btnReports.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnReports.Image = global::SistemiShitjesPOS.UI.Properties.Resources.foundation_icon_fonts_2015_02_16_clipboard_notes_25_0_647d91_none;
             this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(3, 173);
+            this.btnReports.Location = new System.Drawing.Point(3, 178);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(194, 28);
+            this.btnReports.Size = new System.Drawing.Size(194, 29);
             this.btnReports.TabIndex = 0;
             this.btnReports.Text = "    Reports";
             this.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -369,9 +347,9 @@
             this.btnPriceRules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnPriceRules.Image = global::SistemiShitjesPOS.UI.Properties.Resources.icomoon_free_2014_12_23_price_tags_25_0_647d91_none;
             this.btnPriceRules.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPriceRules.Location = new System.Drawing.Point(3, 105);
+            this.btnPriceRules.Location = new System.Drawing.Point(3, 108);
             this.btnPriceRules.Name = "btnPriceRules";
-            this.btnPriceRules.Size = new System.Drawing.Size(194, 28);
+            this.btnPriceRules.Size = new System.Drawing.Size(194, 29);
             this.btnPriceRules.TabIndex = 0;
             this.btnPriceRules.Text = "    Price Rules";
             this.btnPriceRules.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -391,14 +369,40 @@
             this.btnSuppliers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnSuppliers.Image = global::SistemiShitjesPOS.UI.Properties.Resources.icomoon_free_2014_12_23_truck_25_0_647d91_none;
             this.btnSuppliers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuppliers.Location = new System.Drawing.Point(3, 139);
+            this.btnSuppliers.Location = new System.Drawing.Point(3, 143);
             this.btnSuppliers.Name = "btnSuppliers";
-            this.btnSuppliers.Size = new System.Drawing.Size(194, 28);
+            this.btnSuppliers.Size = new System.Drawing.Size(194, 29);
             this.btnSuppliers.TabIndex = 0;
             this.btnSuppliers.Text = "    Suppliers";
             this.btnSuppliers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSuppliers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSuppliers.UseVisualStyleBackColor = true;
+            // 
+            // panMenu
+            // 
+            this.panMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
+            this.panMenu.Controls.Add(this.tblPanMenu);
+            this.panMenu.Location = new System.Drawing.Point(0, 144);
+            this.panMenu.Name = "panMenu";
+            this.panMenu.Size = new System.Drawing.Size(200, 395);
+            this.panMenu.TabIndex = 1;
+            // 
+            // btnFullScreen
+            // 
+            this.btnFullScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFullScreen.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.material_icons_3_0_1_fullscreen_50_15_1c2731_none;
+            this.btnFullScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFullScreen.FlatAppearance.BorderSize = 0;
+            this.btnFullScreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFullScreen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFullScreen.Location = new System.Drawing.Point(919, 0);
+            this.btnFullScreen.Name = "btnFullScreen";
+            this.btnFullScreen.Size = new System.Drawing.Size(35, 38);
+            this.btnFullScreen.TabIndex = 2;
+            this.btnFullScreen.UseVisualStyleBackColor = true;
+            this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
             // 
             // panel1
             // 
@@ -407,14 +411,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Location = new System.Drawing.Point(200, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 525);
+            this.panel1.Size = new System.Drawing.Size(754, 539);
             this.panel1.TabIndex = 4;
             // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 525);
+            this.ClientSize = new System.Drawing.Size(954, 539);
             this.ControlBox = false;
             this.Controls.Add(this.btnFullScreen);
             this.Controls.Add(this.panMenu2);

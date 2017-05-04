@@ -66,6 +66,18 @@
     <Compile Include="UC_Dashboards.Designer.cs">
       <DependentUpon>UC_Dashboards.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_Items.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Items.Designer.cs">
+      <DependentUpon>UC_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_NewItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NewItems.Designer.cs">
+      <DependentUpon>UC_NewItems.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +91,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Dashboards.resx">
       <DependentUpon>UC_Dashboards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Items.resx">
+      <DependentUpon>UC_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NewItems.resx">
+      <DependentUpon>UC_NewItems.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

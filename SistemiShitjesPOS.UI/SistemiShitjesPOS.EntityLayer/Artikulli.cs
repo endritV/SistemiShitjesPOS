@@ -24,7 +24,8 @@ namespace SistemiShitjesPOS.EntityLayer
                 {
                     throw new Exception("Pershkrimi eshte i zbrazet");
                 }
-                _pershkrimi = value; }
+                _pershkrimi = value;
+            }
         }
 
 
@@ -38,7 +39,8 @@ namespace SistemiShitjesPOS.EntityLayer
                     throw new Exception("Njesia eshte e zbrazet");
                 }
                 else
-                _njesia = value; }
+                    _njesia = value;
+            }
         }
 
 
@@ -51,7 +53,8 @@ namespace SistemiShitjesPOS.EntityLayer
                 {
                     throw new Exception("Barkodi eshte i zbrazet");
                 }
-                _barkodi = value; }
+                _barkodi = value;
+            }
         }
 
 
@@ -67,7 +70,7 @@ namespace SistemiShitjesPOS.EntityLayer
                 _idArtukulli = value;
             }
         }
-        
+
         public string EmriArtikullit
         {
             get { return _emriArtikullit; }
@@ -77,13 +80,13 @@ namespace SistemiShitjesPOS.EntityLayer
                 {
                     throw new Exception("Emri i Artikullit eshte i zbazet");
                 }
-                _emriArtikullit = value;      
-                
+                _emriArtikullit = value;
+
             }
-           
-                
+
+
         }
-    
+
 
 
     }

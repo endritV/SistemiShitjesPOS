@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtSearchDashboards = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtSearchDashboards = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,8 +44,18 @@
             this.panel1.Controls.Add(this.txtSearchDashboards);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 50);
+            this.panel1.Size = new System.Drawing.Size(758, 50);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SistemiShitjesPOS.UI.Properties.Resources.font_awesome_4_7_0_search_50_0_dfe6ec_none;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // txtSearchDashboards
             // 
@@ -53,21 +63,11 @@
             this.txtSearchDashboards.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearchDashboards.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchDashboards.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.txtSearchDashboards.Location = new System.Drawing.Point(43, 13);
+            this.txtSearchDashboards.Location = new System.Drawing.Point(44, 7);
             this.txtSearchDashboards.Name = "txtSearchDashboards";
             this.txtSearchDashboards.Size = new System.Drawing.Size(390, 34);
             this.txtSearchDashboards.TabIndex = 0;
             this.txtSearchDashboards.Text = "Search for something";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SistemiShitjesPOS.UI.Properties.Resources.font_awesome_4_7_0_search_50_0_dfe6ec_none;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 34);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // UC_Dashboards
             // 

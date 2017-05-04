@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SistemiShitjesPOS.UI
 {
-    public partial class UC_Dashboards : UserControl
+    public partial class UC_NewItems : UserControl
     {
-        public UC_Dashboards()
+        public UC_NewItems()
         {
             InitializeComponent();
+        }
+
+        private void btnBackToUC_Items_Click(object sender, EventArgs e)
+        {
+            
             
         }
     }

@@ -28,7 +28,6 @@ namespace SistemiShitjesPOS.UI
             {
                 panMenu.Width = 200;
             }
-
             if (panMenu2.Width == 200)
             {
                 panMenu2.Width = 40;
@@ -49,8 +48,6 @@ namespace SistemiShitjesPOS.UI
                 l1.Visible = true;
                 this.Close();
             }
-            
-            
 
         }
 
@@ -59,6 +56,8 @@ namespace SistemiShitjesPOS.UI
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
             TopMost = true;
+            
+            
         }
 
         private void DashBoard_KeyDown(object sender, KeyEventArgs e)
@@ -76,8 +75,30 @@ namespace SistemiShitjesPOS.UI
             UC_Dashboards dashboardUC = new UC_Dashboards();
             panel1.Controls.Clear();
             panel1.Controls.Add(dashboardUC);
+            
         }
 
-        
+        private void btnItems_Click(object sender, EventArgs e)
+        {
+            UC_Items items = new UC_Items();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(items);
+        }
+
+        private void panMenu2_MouseHover(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void tblPanMenu_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tblPanMenu_MouseLeave(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
