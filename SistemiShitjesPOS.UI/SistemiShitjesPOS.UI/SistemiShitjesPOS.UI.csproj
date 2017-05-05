@@ -124,6 +124,10 @@
       <Project>{c26ceba6-72d1-4a7e-bee4-2ae3f4726175}</Project>
       <Name>SistemiShitjesPOS.BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SistemiShitjesPOS.DAL\SistemiShitjesPOS.DataAccessLayer.csproj">
+      <Project>{fd26586b-d7a7-4000-8db4-5925057e671e}</Project>
+      <Name>SistemiShitjesPOS.DataAccessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Close.png" />

@@ -10,7 +10,10 @@ namespace SistemiShitjesPOS.DAL
 {
     public class DataBaseCon
     {
-        public string con = ConfigurationManager.AppSettings["conStr"].ToString();
-             
+        public static string GetConnectionString()
+        {
+           return ConfigurationManager.AppSettings["conStr1"].ToString();
+        }
+
     }
 }

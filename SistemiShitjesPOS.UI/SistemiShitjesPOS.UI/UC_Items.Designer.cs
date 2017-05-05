@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblListOfItems = new System.Windows.Forms.Label();
             this.panNew = new System.Windows.Forms.Panel();
+            this.btnViewAll = new System.Windows.Forms.Button();
             this.panSearchItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panNew.SuspendLayout();
@@ -47,6 +48,7 @@
             this.panSearchItems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panSearchItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
+            this.panSearchItems.Controls.Add(this.btnViewAll);
             this.panSearchItems.Controls.Add(this.btnNewItems);
             this.panSearchItems.Controls.Add(this.btnSearchItems);
             this.panSearchItems.Controls.Add(this.cmbCategory);
@@ -89,6 +91,7 @@
             this.btnSearchItems.TabIndex = 3;
             this.btnSearchItems.Text = "Search";
             this.btnSearchItems.UseVisualStyleBackColor = false;
+            this.btnSearchItems.Click += new System.EventHandler(this.btnSearchItems_Click);
             // 
             // cmbCategory
             // 
@@ -114,6 +117,7 @@
             this.txtSearchItems.Size = new System.Drawing.Size(182, 32);
             this.txtSearchItems.TabIndex = 1;
             this.txtSearchItems.Text = "Search Items";
+            this.txtSearchItems.TextChanged += new System.EventHandler(this.txtSearchItems_TextChanged);
             // 
             // dataGridView1
             // 
@@ -131,11 +135,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Glacial Indifference", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
             this.label1.Location = new System.Drawing.Point(17, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 23);
+            this.label1.Size = new System.Drawing.Size(106, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "List of Items";
             // 
@@ -144,11 +148,11 @@
             this.lblListOfItems.AutoSize = true;
             this.lblListOfItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
             this.lblListOfItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblListOfItems.Font = new System.Drawing.Font("Glacial Indifference", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListOfItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListOfItems.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lblListOfItems.Location = new System.Drawing.Point(127, 86);
             this.lblListOfItems.Name = "lblListOfItems";
-            this.lblListOfItems.Size = new System.Drawing.Size(0, 23);
+            this.lblListOfItems.Size = new System.Drawing.Size(0, 24);
             this.lblListOfItems.TabIndex = 2;
             // 
             // panNew
@@ -164,6 +168,23 @@
             this.panNew.Name = "panNew";
             this.panNew.Size = new System.Drawing.Size(754, 541);
             this.panNew.TabIndex = 3;
+            // 
+            // btnViewAll
+            // 
+            this.btnViewAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
+            this.btnViewAll.FlatAppearance.BorderSize = 0;
+            this.btnViewAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnViewAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewAll.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnViewAll.Location = new System.Drawing.Point(525, 28);
+            this.btnViewAll.Name = "btnViewAll";
+            this.btnViewAll.Size = new System.Drawing.Size(98, 30);
+            this.btnViewAll.TabIndex = 4;
+            this.btnViewAll.Text = "View All";
+            this.btnViewAll.UseVisualStyleBackColor = false;
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
             // UC_Items
             // 
@@ -193,5 +214,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblListOfItems;
         private System.Windows.Forms.Panel panNew;
+        private System.Windows.Forms.Button btnViewAll;
     }
 }
