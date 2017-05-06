@@ -15,8 +15,7 @@ namespace SistemiShitjesPOS.UI
         public UC_Items()
         {
             InitializeComponent();
-            this.Dock = DockStyle.Fill;
-            
+            this.Dock = DockStyle.Fill;   
         }
 
         private void btnNewItems_Click(object sender, EventArgs e)

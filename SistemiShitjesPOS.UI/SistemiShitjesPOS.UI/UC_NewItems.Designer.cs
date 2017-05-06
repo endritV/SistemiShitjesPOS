@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.txtIdItems = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmri = new System.Windows.Forms.TextBox();
+            this.txtBarkodi = new System.Windows.Forms.TextBox();
+            this.txtPershkrimi = new System.Windows.Forms.TextBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -40,7 +40,7 @@
             // 
             // txtIdItems
             // 
-            this.txtIdItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
+            this.txtIdItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtIdItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdItems.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdItems.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -51,46 +51,46 @@
             this.txtIdItems.TabIndex = 2;
             this.txtIdItems.Text = "Product ID";
             // 
-            // textBox1
+            // txtEmri
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(32, 158);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 32);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Name";
+            this.txtEmri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.txtEmri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmri.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtEmri.Location = new System.Drawing.Point(32, 158);
+            this.txtEmri.Name = "txtEmri";
+            this.txtEmri.Size = new System.Drawing.Size(182, 32);
+            this.txtEmri.TabIndex = 2;
+            this.txtEmri.Text = "Name";
             // 
-            // textBox2
+            // txtBarkodi
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.Location = new System.Drawing.Point(32, 232);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 32);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Barcodes";
+            this.txtBarkodi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.txtBarkodi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBarkodi.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarkodi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtBarkodi.Location = new System.Drawing.Point(32, 232);
+            this.txtBarkodi.Name = "txtBarkodi";
+            this.txtBarkodi.Size = new System.Drawing.Size(182, 32);
+            this.txtBarkodi.TabIndex = 2;
+            this.txtBarkodi.Text = "Barcodes";
             // 
-            // textBox4
+            // txtPershkrimi
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox4.Location = new System.Drawing.Point(318, 90);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(400, 174);
-            this.textBox4.TabIndex = 2;
-            this.textBox4.Text = "Info";
+            this.txtPershkrimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.txtPershkrimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPershkrimi.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPershkrimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtPershkrimi.Location = new System.Drawing.Point(318, 90);
+            this.txtPershkrimi.Multiline = true;
+            this.txtPershkrimi.Name = "txtPershkrimi";
+            this.txtPershkrimi.Size = new System.Drawing.Size(400, 248);
+            this.txtPershkrimi.TabIndex = 2;
+            this.txtPershkrimi.Text = "Info";
             // 
             // cmbCategory
             // 
-            this.cmbCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
+            this.cmbCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.cmbCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbCategory.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -104,28 +104,42 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(80, 453);
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.radioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
+            this.radioButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
+            this.radioButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.radioButton1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.radioButton1.Location = new System.Drawing.Point(32, 396);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.Size = new System.Drawing.Size(56, 24);
             this.radioButton1.TabIndex = 4;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Text = "Aktiv";
+            this.radioButton1.UseVisualStyleBackColor = false;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(177, 453);
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton2.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.radioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
+            this.radioButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
+            this.radioButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.radioButton2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.radioButton2.Location = new System.Drawing.Point(129, 396);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.Size = new System.Drawing.Size(75, 24);
             this.radioButton2.TabIndex = 4;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton1";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Text = "Jo Aktiv";
+            this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // btnBackToUC_Items
             // 
-            this.btnBackToUC_Items.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
+            this.btnBackToUC_Items.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.btnBackToUC_Items.FlatAppearance.BorderSize = 0;
             this.btnBackToUC_Items.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
             this.btnBackToUC_Items.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
@@ -144,15 +158,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
             this.Controls.Add(this.btnBackToUC_Items);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.cmbCategory);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPershkrimi);
+            this.Controls.Add(this.txtBarkodi);
+            this.Controls.Add(this.txtEmri);
             this.Controls.Add(this.txtIdItems);
+            this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Name = "UC_NewItems";
             this.Size = new System.Drawing.Size(754, 541);
             this.ResumeLayout(false);
@@ -163,9 +178,9 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtIdItems;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmri;
+        private System.Windows.Forms.TextBox txtBarkodi;
+        private System.Windows.Forms.TextBox txtPershkrimi;
         private System.Windows.Forms.ComboBox cmbCategory;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;

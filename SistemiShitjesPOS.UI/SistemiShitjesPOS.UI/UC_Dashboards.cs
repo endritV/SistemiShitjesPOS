@@ -15,7 +15,7 @@ namespace SistemiShitjesPOS.UI
         public UC_Dashboards()
         {
             InitializeComponent();
-            
+            this.Dock = DockStyle.Fill;
         }
     }
 }

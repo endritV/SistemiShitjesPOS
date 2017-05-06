@@ -33,12 +33,12 @@
             this.btnSearchItems = new System.Windows.Forms.Button();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.txtSearchItems = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgListOfItems = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.lblListOfItems = new System.Windows.Forms.Label();
             this.panNew = new System.Windows.Forms.Panel();
             this.panSearchItems.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgListOfItems)).BeginInit();
             this.panNew.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,16 +115,13 @@
             this.txtSearchItems.TabIndex = 1;
             this.txtSearchItems.Text = "Search Items";
             // 
-            // dataGridView1
+            // dgListOfItems
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 112);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(718, 410);
-            this.dataGridView1.TabIndex = 1;
+            this.dgListOfItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgListOfItems.Location = new System.Drawing.Point(21, 112);
+            this.dgListOfItems.Name = "dgListOfItems";
+            this.dgListOfItems.Size = new System.Drawing.Size(718, 413);
+            this.dgListOfItems.TabIndex = 1;
             // 
             // label1
             // 
@@ -158,11 +155,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panNew.Controls.Add(this.panSearchItems);
             this.panNew.Controls.Add(this.lblListOfItems);
-            this.panNew.Controls.Add(this.dataGridView1);
+            this.panNew.Controls.Add(this.dgListOfItems);
             this.panNew.Controls.Add(this.label1);
-            this.panNew.Location = new System.Drawing.Point(0, -2);
+            this.panNew.Location = new System.Drawing.Point(0, -5);
             this.panNew.Name = "panNew";
-            this.panNew.Size = new System.Drawing.Size(754, 541);
+            this.panNew.Size = new System.Drawing.Size(754, 544);
             this.panNew.TabIndex = 3;
             // 
             // UC_Items
@@ -175,7 +172,7 @@
             this.Size = new System.Drawing.Size(754, 539);
             this.panSearchItems.ResumeLayout(false);
             this.panSearchItems.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgListOfItems)).EndInit();
             this.panNew.ResumeLayout(false);
             this.panNew.PerformLayout();
             this.ResumeLayout(false);
@@ -189,7 +186,7 @@
         private System.Windows.Forms.Button btnNewItems;
         private System.Windows.Forms.Button btnSearchItems;
         private System.Windows.Forms.ComboBox cmbCategory;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgListOfItems;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblListOfItems;
         private System.Windows.Forms.Panel panNew;

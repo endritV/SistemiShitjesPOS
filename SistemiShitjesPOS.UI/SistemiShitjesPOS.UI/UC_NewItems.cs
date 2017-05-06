@@ -15,12 +15,13 @@ namespace SistemiShitjesPOS.UI
         public UC_NewItems()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
         }
 
         private void btnBackToUC_Items_Click(object sender, EventArgs e)
         {
             
-            
+  
         }
     }
 }

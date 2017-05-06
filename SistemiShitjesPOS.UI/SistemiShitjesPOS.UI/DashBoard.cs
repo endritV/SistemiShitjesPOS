@@ -16,29 +16,31 @@ namespace SistemiShitjesPOS.UI
         public DashBoard()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if (panMenu.Width == 200)
+            if (panel1.Location.X == 200)
+            {        
+                panel1.Location = new Point(40, 0);
+   
+            }
+            else
+            {
+                panel1.Location = new Point(200, 0);
+            }
+
+            if (panMenu.Width == 200 && panMenu2.Width == 200)
             {
                 panMenu.Width = 40;
-                
+                panMenu2.Width = 40;     
             }
             else
             {
                 panMenu.Width = 200;
-            }
-            if (panMenu2.Width == 200)
-            {
-                panMenu2.Width = 40;
-               
-            }
-            else
-            {
                 panMenu2.Width = 200;
-            }
-
+            } 
         }
         private void btnLogOut_Click(object sender, EventArgs e)
         {
@@ -82,30 +84,36 @@ namespace SistemiShitjesPOS.UI
             UC_Dashboards dashboardUC = new UC_Dashboards();
             panel1.Controls.Clear();
             panel1.Controls.Add(dashboardUC);
-            
+
+
+            btnDashboards.BackColor = Color.FromArgb(35, 53, 69);
+            btnItems.BackColor = Color.FromArgb(47, 64, 80);
+            btnCustomers.BackColor = Color.FromArgb(47, 64, 80);
+            btnEmployees.BackColor = Color.FromArgb(47, 64, 80);
+            btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
+            btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
+            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnReports.BackColor = Color.FromArgb(47, 64, 80);
+            btnSales.BackColor = Color.FromArgb(47, 64, 80);
+            btnSuppliers.BackColor = Color.FromArgb(47, 64, 80);
         }
 
         private void btnItems_Click(object sender, EventArgs e)
         {
-            UC_Items items = new UC_Items();
+            UC_Items itemsUC = new UC_Items();
             panel1.Controls.Clear();
-            panel1.Controls.Add(items);
-        }
+            panel1.Controls.Add(itemsUC);
 
-        private void panMenu2_MouseHover(object sender, EventArgs e)
-        {
-            
-           
-        }
-
-        private void tblPanMenu_MouseHover(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tblPanMenu_MouseLeave(object sender, EventArgs e)
-        {
-           
+            btnItems.BackColor = Color.FromArgb(35, 53, 69);
+            btnDashboards.BackColor = Color.FromArgb(47, 64, 80);
+            btnCustomers.BackColor = Color.FromArgb(47, 64, 80);
+            btnEmployees.BackColor = Color.FromArgb(47, 64, 80);
+            btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
+            btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
+            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnReports.BackColor = Color.FromArgb(47, 64, 80);
+            btnSales.BackColor = Color.FromArgb(47, 64, 80);
+            btnSuppliers.BackColor = Color.FromArgb(47, 64, 80);
         }
     }
 }
