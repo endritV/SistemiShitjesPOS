@@ -9,8 +9,13 @@ using System.Configuration;
 
 namespace SistemiShitjesPOS.DataAccessLayer
 {
-    public static class DataBaseConection
+    public class DataBaseCon
     {
-        public static readonly string Connection = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+        public static string GetConnectionString()
+        {
+            return ConfigurationManager.AppSettings["conStr1"].ToString();
+
+        }
+
     }
 }

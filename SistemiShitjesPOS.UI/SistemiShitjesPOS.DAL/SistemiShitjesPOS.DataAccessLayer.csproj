@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dalKlineti.cs" />
-    <Compile Include="DataBaseConection.cs" />
+    <Compile Include="DataBaseCon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
