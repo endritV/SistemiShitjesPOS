@@ -10,31 +10,39 @@ namespace SistemiShitjesPOS.EntityLayer
     public class Klienti
     {
         #region Constructor
-        //public Klienti(bool isKlient,string idKlienti,string emri,string emriPronarit,string mbiemriPronarit,string numriFix,string adresa,string nrTelefonit,string nrBiznesit,string web,string email)
-        //{
-        //    IsKlient = isKlient;
-        //    IdKlienti = idKlienti;
-        //    Emri = emri;
-        //    EmriPronarit = emriPronarit;
-        //    MbiemriPronarit = mbiemriPronarit;
-        //    NumriFix = numriFix;
-        //    Adresa = adresa;
-        //    NrTelefonit = nrTelefonit;
-        //    NrBiznesit = nrBiznesit;
-        //    Web = web;
-        //    Email = email;
-           
-        //}
-        //public Klienti(bool isKlient, string idKlienti,string emriPronarit, string mbiemriPronarit,  string adresa, string nrTelefonit, int pikat)
-        //{
-        //    IsKlient = isKlient;
-        //    IdKlienti = idKlienti;
-        //    EmriPronarit = emriPronarit;
-        //    MbiemriPronarit = mbiemriPronarit;
-        //    Adresa = adresa;
-        //    NrTelefonit = nrTelefonit;
-        //    Pikat = pikat;
-        //}
+        public Klienti(string klientiId,string name,string adresa, string nrTellefonit, bool isKlient )
+        {
+            IdKlienti = klientiId;
+            Emri = name;
+            Adresa = adresa;
+            NrTelefonit = nrTellefonit;
+            IsKlient = isKlient;
+        }
+        public Klienti(bool isKlient, string idKlienti, string emri, string emriPronarit, string mbiemriPronarit, string numriFix, string adresa, string nrTelefonit, string nrBiznesit, string web, string email)
+        {
+            IsKlient = isKlient;
+            IdKlienti = idKlienti;
+            Emri = emri;
+            EmriPronarit = emriPronarit;
+            MbiemriPronarit = mbiemriPronarit;
+            NumriFix = numriFix;
+            Adresa = adresa;
+            NrTelefonit = nrTelefonit;
+            NrBiznesit = nrBiznesit;
+            Web = web;
+            Email = email;
+
+        }
+        public Klienti(bool isKlient, string idKlienti, string emriPronarit, string mbiemriPronarit, string adresa, string nrTelefonit, int pikat)
+        {
+            IsKlient = isKlient;
+            IdKlienti = idKlienti;
+            EmriPronarit = emriPronarit;
+            MbiemriPronarit = mbiemriPronarit;
+            Adresa = adresa;
+            NrTelefonit = nrTelefonit;
+            Pikat = pikat;
+        }
         #endregion
 
         #region Bool
