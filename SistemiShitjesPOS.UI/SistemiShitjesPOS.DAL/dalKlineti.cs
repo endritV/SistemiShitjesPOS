@@ -9,72 +9,28 @@ using System.Data.SqlClient;
 
 namespace SistemiShitjesPOS.DataAccessLayer
 {
-    
+
     public class dalKlineti
     {
-        static readonly string cs = DataBaseCon.GetConnectionString();
+        static string cs = DataBaseCon.GetConnectionString();
 
-        public static List<Klienti> GetKlietnById(string klinetId)
+        public static void Insert(Klienti k)
         {
-            List<Klienti> list = new List<Klienti>();
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("spShfaqTeGjithKlientet", conn);
-                cmd.Parameters.AddWithValue("@_IdKlienti", klinetId);
+                SqlCommand cmd = new SqlCommand("spShtoKlient", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-
-                using (IDataReader reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        Klienti klienti = new Klienti();
-                        klienti.IdKlienti = klinetId;
-                        klienti.Emri = reader["Name"].ToString();
-                        klienti.IsKlient = bool.Parse(reader["IsKlient"].ToString());
-                        klienti.NrTelefonit = reader["Phone Number"].ToString();
-                        klienti.Pikat = Int32.Parse(reader["Pikat"].ToString());
-                        list.Add(klienti);
-
-                    }
-                  
-                }
-
+                cmd.Parameters.AddWithValue("@_IdKlienti", k.IdKlienti);
+                cmd.Parameters.AddWithValue("@_Emri", k.Emri);
+                cmd.Parameters.AddWithValue("@_Adresa", k.Adresa);
+                cmd.Parameters.AddWithValue("@_NrTelefeoni", k.NrTelefonit);
+                cmd.Parameters.AddWithValue("@_IsKlient", k.IsKlient);
+                cmd.ExecuteNonQuery();
             }
-            return list;
-        }
-
-        public static List<Klienti> GetALL()
-        {
-
-            List<Klienti> list = new List<Klienti>();
-            using (SqlConnection conn = new SqlConnection(cs))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("spShfaqTeGjithKlientet", conn);
-                
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                using (IDataReader reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        Klienti klienti = new Klienti();
-                        klienti.Emri = reader["Name"].ToString();
-                        klienti.IsKlient = bool.Parse(reader["IsKlient"].ToString());
-                        klienti.NrTelefonit = reader["Phone Number"].ToString();
-                        klienti.Pikat = Int32.Parse(reader["Pikat"].ToString());
-                        list.Add(klienti);
-
-                    }
-                  
-                }
-            }
-            return list;
-
         }
     }
-}      
+}
 
 
 //public static void Update(Klienti klienti)

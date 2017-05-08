@@ -1,6 +1,4 @@
-﻿using SistemiShitjesPOS.BusinessLayer;
-using SistemiShitjesPOS.EntityLayer;
-using SistemiShitjesPOS.UI;
+﻿using SistemiShitjesPOS.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,18 +10,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using SistemiShitjesPOS.DataAccessLayer;
+using SistemiShitjesPOS.BusinessLayer;
 
 
 namespace SistemiShitjesPOS.UI
 {
     public partial class UC_Customers : UserControl
     {
-        
         public UC_Customers()
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-            
         }
 
         private void btnNewCustomers_Click(object sender, EventArgs e)
@@ -35,29 +32,18 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-
-            dgListOfCustomers.DataSource = dalKlineti.GetALL();
-            //SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            //x.Open();
-            //SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithKlientet", x);
-            //DataTable dt = new DataTable();
-            //da.Fill(dt);
-            //dgListOfCustomers.DataSource = dt;
-            //x.Close();
+            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+            x.Open();
+            SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithKlientet", x);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dgListOfCustomers.DataSource = dt;
+            x.Close();
         }
 
-        private void btnSearchCustomers_Click(object sender, EventArgs e)
+        protected void btnSearchCustomers_Click(object sender, EventArgs e)
         {
             
-            
-
-            //SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            //x.Open();
-            //SqlDataAdapter da = new SqlDataAdapter("spKerkoKlientin " + txtSearchCustomers.Text.ToString(), x);
-            //DataTable dt = new DataTable();
-            //da.Fill(dt);
-            //dgListOfCustomers.DataSource = dt;
-            //x.Close();
 
         }
 

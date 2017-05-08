@@ -30,11 +30,11 @@
         {
             this.txtNrTelefonit = new System.Windows.Forms.TextBox();
             this.txtEmri = new System.Windows.Forms.TextBox();
-            this.txtIdEmployees = new System.Windows.Forms.TextBox();
+            this.txtIdKlient = new System.Windows.Forms.TextBox();
             this.txtAdresa = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.rdbJoAktiv = new System.Windows.Forms.RadioButton();
-            this.rdbAktiv = new System.Windows.Forms.RadioButton();
+            this.rdbJoKlient = new System.Windows.Forms.RadioButton();
+            this.rdbKlient = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // txtNrTelefonit
@@ -61,17 +61,17 @@
             this.txtEmri.TabIndex = 19;
             this.txtEmri.Text = "Name";
             // 
-            // txtIdEmployees
+            // txtIdKlient
             // 
-            this.txtIdEmployees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.txtIdEmployees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIdEmployees.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtIdEmployees.Location = new System.Drawing.Point(62, 135);
-            this.txtIdEmployees.Name = "txtIdEmployees";
-            this.txtIdEmployees.Size = new System.Drawing.Size(182, 32);
-            this.txtIdEmployees.TabIndex = 18;
-            this.txtIdEmployees.Text = "Employees Id";
+            this.txtIdKlient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.txtIdKlient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdKlient.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdKlient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtIdKlient.Location = new System.Drawing.Point(62, 135);
+            this.txtIdKlient.Name = "txtIdKlient";
+            this.txtIdKlient.Size = new System.Drawing.Size(182, 32);
+            this.txtIdKlient.TabIndex = 18;
+            this.txtIdKlient.Text = "Klient Id";
             // 
             // txtAdresa
             // 
@@ -102,54 +102,54 @@
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // rdbJoAktiv
+            // rdbJoKlient
             // 
-            this.rdbJoAktiv.AutoSize = true;
-            this.rdbJoAktiv.BackColor = System.Drawing.Color.Transparent;
-            this.rdbJoAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.rdbJoAktiv.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
-            this.rdbJoAktiv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
-            this.rdbJoAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.rdbJoAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbJoAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbJoAktiv.Location = new System.Drawing.Point(412, 306);
-            this.rdbJoAktiv.Name = "rdbJoAktiv";
-            this.rdbJoAktiv.Size = new System.Drawing.Size(75, 24);
-            this.rdbJoAktiv.TabIndex = 23;
-            this.rdbJoAktiv.TabStop = true;
-            this.rdbJoAktiv.Text = "Jo Aktiv";
-            this.rdbJoAktiv.UseVisualStyleBackColor = false;
+            this.rdbJoKlient.AutoSize = true;
+            this.rdbJoKlient.BackColor = System.Drawing.Color.Transparent;
+            this.rdbJoKlient.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.rdbJoKlient.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
+            this.rdbJoKlient.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
+            this.rdbJoKlient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.rdbJoKlient.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbJoKlient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rdbJoKlient.Location = new System.Drawing.Point(412, 306);
+            this.rdbJoKlient.Name = "rdbJoKlient";
+            this.rdbJoKlient.Size = new System.Drawing.Size(79, 24);
+            this.rdbJoKlient.TabIndex = 23;
+            this.rdbJoKlient.TabStop = true;
+            this.rdbJoKlient.Text = "Jo Klient";
+            this.rdbJoKlient.UseVisualStyleBackColor = false;
             // 
-            // rdbAktiv
+            // rdbKlient
             // 
-            this.rdbAktiv.AutoSize = true;
-            this.rdbAktiv.BackColor = System.Drawing.Color.Transparent;
-            this.rdbAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.rdbAktiv.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
-            this.rdbAktiv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
-            this.rdbAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.rdbAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbAktiv.Location = new System.Drawing.Point(315, 306);
-            this.rdbAktiv.Name = "rdbAktiv";
-            this.rdbAktiv.Size = new System.Drawing.Size(56, 24);
-            this.rdbAktiv.TabIndex = 24;
-            this.rdbAktiv.TabStop = true;
-            this.rdbAktiv.Text = "Aktiv";
-            this.rdbAktiv.UseVisualStyleBackColor = false;
+            this.rdbKlient.AutoSize = true;
+            this.rdbKlient.BackColor = System.Drawing.Color.Transparent;
+            this.rdbKlient.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.rdbKlient.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
+            this.rdbKlient.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
+            this.rdbKlient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.rdbKlient.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbKlient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rdbKlient.Location = new System.Drawing.Point(315, 306);
+            this.rdbKlient.Name = "rdbKlient";
+            this.rdbKlient.Size = new System.Drawing.Size(60, 24);
+            this.rdbKlient.TabIndex = 24;
+            this.rdbKlient.TabStop = true;
+            this.rdbKlient.Text = "Klient";
+            this.rdbKlient.UseVisualStyleBackColor = false;
             // 
             // UC_NewCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
-            this.Controls.Add(this.rdbJoAktiv);
-            this.Controls.Add(this.rdbAktiv);
+            this.Controls.Add(this.rdbJoKlient);
+            this.Controls.Add(this.rdbKlient);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtNrTelefonit);
             this.Controls.Add(this.txtEmri);
             this.Controls.Add(this.txtAdresa);
-            this.Controls.Add(this.txtIdEmployees);
+            this.Controls.Add(this.txtIdKlient);
             this.Name = "UC_NewCustomers";
             this.Size = new System.Drawing.Size(754, 567);
             this.ResumeLayout(false);
@@ -161,10 +161,10 @@
 
         private System.Windows.Forms.TextBox txtNrTelefonit;
         private System.Windows.Forms.TextBox txtEmri;
-        private System.Windows.Forms.TextBox txtIdEmployees;
+        private System.Windows.Forms.TextBox txtIdKlient;
         private System.Windows.Forms.TextBox txtAdresa;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.RadioButton rdbJoAktiv;
-        private System.Windows.Forms.RadioButton rdbAktiv;
+        private System.Windows.Forms.RadioButton rdbJoKlient;
+        private System.Windows.Forms.RadioButton rdbKlient;
     }
 }
