@@ -64,12 +64,6 @@
     <Compile Include="User Control\UC_Raports.Designer.cs">
       <DependentUpon>UC_Raports.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control\UC_UpdateItems.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UC_UpdateItems.Designer.cs">
-      <DependentUpon>UC_UpdateItems.cs</DependentUpon>
-    </Compile>
     <Compile Include="User Control\UC_NewSuppliers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,9 +160,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_NewItems.resx">
       <DependentUpon>UC_NewItems.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_UpdateItems.resx">
-      <DependentUpon>UC_UpdateItems.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

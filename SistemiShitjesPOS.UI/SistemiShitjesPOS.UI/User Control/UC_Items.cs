@@ -58,18 +58,18 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-           
-           
-                SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-                x.Open();
-                SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithaArtikujtv2", x);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dgListOfItems.DataSource = dt;
-                x.Close();
-            
-        
-         
+
+
+            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+            x.Open();
+            SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithaArtikujtv2", x);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dgListOfItems.DataSource = dt;
+            x.Close();
+
+
+
 
         }
 
@@ -89,9 +89,9 @@ namespace SistemiShitjesPOS.UI
             {
                 if (e.RowIndex >= 0)
                 {
-                    //gets a collection that contains all the rows
+                    
                     DataGridViewRow row = this.dgListOfItems.Rows[e.RowIndex];
-                    //populate the textbox from specific value of the coordinates of column and row.
+                    
                     u.txtIdItems.Text = row.Cells[0].Value.ToString();
                     u.txtEmri.Text = row.Cells[1].Value.ToString();
                     u.txtBarkodi.Text = row.Cells[2].Value.ToString();

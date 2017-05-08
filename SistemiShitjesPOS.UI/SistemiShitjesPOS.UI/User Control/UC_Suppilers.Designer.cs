@@ -85,6 +85,7 @@
             this.btnViewAll.TabIndex = 4;
             this.btnViewAll.Text = "View All";
             this.btnViewAll.UseVisualStyleBackColor = false;
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
             // btnNewSuppliers
             // 
@@ -119,6 +120,7 @@
             this.btnSearchSuppliers.TabIndex = 3;
             this.btnSearchSuppliers.Text = "Search";
             this.btnSearchSuppliers.UseVisualStyleBackColor = false;
+            this.btnSearchSuppliers.Click += new System.EventHandler(this.btnSearchSuppliers_Click);
             // 
             // txtSearchSuppliers
             // 
@@ -153,6 +155,7 @@
             this.dgListOfSuppliers.Name = "dgListOfSuppliers";
             this.dgListOfSuppliers.Size = new System.Drawing.Size(718, 436);
             this.dgListOfSuppliers.TabIndex = 1;
+            this.dgListOfSuppliers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfSuppliers_CellContentClick);
             // 
             // label1
             // 

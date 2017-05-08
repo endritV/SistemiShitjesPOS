@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbRoliId = new System.Windows.Forms.ComboBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -42,21 +41,12 @@
             this.txtNrBiznesit = new System.Windows.Forms.TextBox();
             this.txtWeb = new System.Windows.Forms.TextBox();
             this.picBoxEmployees = new System.Windows.Forms.PictureBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.rdbJoAktiv = new System.Windows.Forms.RadioButton();
+            this.rdbAktiv = new System.Windows.Forms.RadioButton();
+            this.txtpershkrimi = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxEmployees)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cmbRoliId
-            // 
-            this.cmbRoliId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.cmbRoliId.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbRoliId.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbRoliId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cmbRoliId.FormattingEnabled = true;
-            this.cmbRoliId.Location = new System.Drawing.Point(274, 357);
-            this.cmbRoliId.Name = "cmbRoliId";
-            this.cmbRoliId.Size = new System.Drawing.Size(182, 31);
-            this.cmbRoliId.TabIndex = 16;
-            this.cmbRoliId.Text = "Roli Id";
             // 
             // txtPassword
             // 
@@ -66,7 +56,6 @@
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPassword.Location = new System.Drawing.Point(274, 167);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.ReadOnly = true;
             this.txtPassword.Size = new System.Drawing.Size(182, 32);
             this.txtPassword.TabIndex = 20;
             this.txtPassword.Text = "Password";
@@ -79,7 +68,6 @@
             this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtUserName.Location = new System.Drawing.Point(274, 116);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.ReadOnly = true;
             this.txtUserName.Size = new System.Drawing.Size(182, 32);
             this.txtUserName.TabIndex = 19;
             this.txtUserName.Text = "User Name";
@@ -92,7 +80,6 @@
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmail.Location = new System.Drawing.Point(32, 495);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(182, 32);
             this.txtEmail.TabIndex = 14;
             this.txtEmail.Text = "Email";
@@ -105,7 +92,6 @@
             this.txtNrTelefonit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNrTelefonit.Location = new System.Drawing.Point(32, 404);
             this.txtNrTelefonit.Name = "txtNrTelefonit";
-            this.txtNrTelefonit.ReadOnly = true;
             this.txtNrTelefonit.Size = new System.Drawing.Size(182, 32);
             this.txtNrTelefonit.TabIndex = 17;
             this.txtNrTelefonit.Text = "Phone Number";
@@ -118,7 +104,6 @@
             this.txtMbiemri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtMbiemri.Location = new System.Drawing.Point(32, 357);
             this.txtMbiemri.Name = "txtMbiemri";
-            this.txtMbiemri.ReadOnly = true;
             this.txtMbiemri.Size = new System.Drawing.Size(182, 32);
             this.txtMbiemri.TabIndex = 13;
             this.txtMbiemri.Text = "Surname";
@@ -131,7 +116,6 @@
             this.txtEmri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmri.Location = new System.Drawing.Point(32, 262);
             this.txtEmri.Name = "txtEmri";
-            this.txtEmri.ReadOnly = true;
             this.txtEmri.Size = new System.Drawing.Size(182, 32);
             this.txtEmri.TabIndex = 12;
             this.txtEmri.Text = "Name Suppliers";
@@ -144,7 +128,6 @@
             this.txtIdSuppliers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtIdSuppliers.Location = new System.Drawing.Point(32, 211);
             this.txtIdSuppliers.Name = "txtIdSuppliers";
-            this.txtIdSuppliers.ReadOnly = true;
             this.txtIdSuppliers.Size = new System.Drawing.Size(182, 32);
             this.txtIdSuppliers.TabIndex = 11;
             this.txtIdSuppliers.Text = "Suppliers Id";
@@ -157,7 +140,6 @@
             this.txtEmriFurnitorit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmriFurnitorit.Location = new System.Drawing.Point(32, 309);
             this.txtEmriFurnitorit.Name = "txtEmriFurnitorit";
-            this.txtEmriFurnitorit.ReadOnly = true;
             this.txtEmriFurnitorit.Size = new System.Drawing.Size(182, 32);
             this.txtEmriFurnitorit.TabIndex = 12;
             this.txtEmriFurnitorit.Text = "Name";
@@ -170,7 +152,6 @@
             this.txtNrFix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNrFix.Location = new System.Drawing.Point(32, 448);
             this.txtNrFix.Name = "txtNrFix";
-            this.txtNrFix.ReadOnly = true;
             this.txtNrFix.Size = new System.Drawing.Size(182, 32);
             this.txtNrFix.TabIndex = 17;
             this.txtNrFix.Text = "Fix Number";
@@ -183,7 +164,6 @@
             this.txtAdresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtAdresa.Location = new System.Drawing.Point(274, 214);
             this.txtAdresa.Name = "txtAdresa";
-            this.txtAdresa.ReadOnly = true;
             this.txtAdresa.Size = new System.Drawing.Size(182, 32);
             this.txtAdresa.TabIndex = 14;
             this.txtAdresa.Text = "Address";
@@ -196,7 +176,6 @@
             this.txtNrBiznesit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNrBiznesit.Location = new System.Drawing.Point(274, 52);
             this.txtNrBiznesit.Name = "txtNrBiznesit";
-            this.txtNrBiznesit.ReadOnly = true;
             this.txtNrBiznesit.Size = new System.Drawing.Size(182, 32);
             this.txtNrBiznesit.TabIndex = 11;
             this.txtNrBiznesit.Text = "Bussines Id";
@@ -209,7 +188,6 @@
             this.txtWeb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtWeb.Location = new System.Drawing.Point(274, 262);
             this.txtWeb.Name = "txtWeb";
-            this.txtWeb.ReadOnly = true;
             this.txtWeb.Size = new System.Drawing.Size(182, 32);
             this.txtWeb.TabIndex = 14;
             this.txtWeb.Text = "Web";
@@ -222,14 +200,76 @@
             this.picBoxEmployees.TabIndex = 21;
             this.picBoxEmployees.TabStop = false;
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(274, 485);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(182, 42);
+            this.btnSave.TabIndex = 22;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // rdbJoAktiv
+            // 
+            this.rdbJoAktiv.AutoSize = true;
+            this.rdbJoAktiv.BackColor = System.Drawing.Color.Transparent;
+            this.rdbJoAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.rdbJoAktiv.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
+            this.rdbJoAktiv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
+            this.rdbJoAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.rdbJoAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbJoAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rdbJoAktiv.Location = new System.Drawing.Point(371, 328);
+            this.rdbJoAktiv.Name = "rdbJoAktiv";
+            this.rdbJoAktiv.Size = new System.Drawing.Size(75, 24);
+            this.rdbJoAktiv.TabIndex = 23;
+            this.rdbJoAktiv.TabStop = true;
+            this.rdbJoAktiv.Text = "Jo Aktiv";
+            this.rdbJoAktiv.UseVisualStyleBackColor = false;
+            // 
+            // rdbAktiv
+            // 
+            this.rdbAktiv.AutoSize = true;
+            this.rdbAktiv.BackColor = System.Drawing.Color.Transparent;
+            this.rdbAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.rdbAktiv.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
+            this.rdbAktiv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
+            this.rdbAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.rdbAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rdbAktiv.Location = new System.Drawing.Point(274, 328);
+            this.rdbAktiv.Name = "rdbAktiv";
+            this.rdbAktiv.Size = new System.Drawing.Size(56, 24);
+            this.rdbAktiv.TabIndex = 24;
+            this.rdbAktiv.TabStop = true;
+            this.rdbAktiv.Text = "Aktiv";
+            this.rdbAktiv.UseVisualStyleBackColor = false;
+            // 
+            // txtpershkrimi
+            // 
+            this.txtpershkrimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.txtpershkrimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpershkrimi.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpershkrimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtpershkrimi.Location = new System.Drawing.Point(499, 52);
+            this.txtpershkrimi.Multiline = true;
+            this.txtpershkrimi.Name = "txtpershkrimi";
+            this.txtpershkrimi.Size = new System.Drawing.Size(192, 242);
+            this.txtpershkrimi.TabIndex = 19;
+            this.txtpershkrimi.Text = "Pershkrimi";
+            // 
             // UC_NewSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
+            this.Controls.Add(this.rdbJoAktiv);
+            this.Controls.Add(this.rdbAktiv);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.picBoxEmployees);
-            this.Controls.Add(this.cmbRoliId);
             this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtpershkrimi);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.txtWeb);
             this.Controls.Add(this.txtAdresa);
@@ -243,6 +283,7 @@
             this.Controls.Add(this.txtIdSuppliers);
             this.Name = "UC_NewSuppliers";
             this.Size = new System.Drawing.Size(754, 567);
+            this.Load += new System.EventHandler(this.UC_NewSuppliers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxEmployees)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -252,7 +293,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picBoxEmployees;
-        private System.Windows.Forms.ComboBox cmbRoliId;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtEmail;
@@ -265,5 +305,9 @@
         private System.Windows.Forms.TextBox txtAdresa;
         private System.Windows.Forms.TextBox txtNrBiznesit;
         private System.Windows.Forms.TextBox txtWeb;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.RadioButton rdbJoAktiv;
+        private System.Windows.Forms.RadioButton rdbAktiv;
+        private System.Windows.Forms.TextBox txtpershkrimi;
     }
 }
