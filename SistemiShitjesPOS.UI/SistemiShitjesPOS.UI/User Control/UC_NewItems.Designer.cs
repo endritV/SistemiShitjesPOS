@@ -47,7 +47,6 @@
             this.txtIdItems.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtIdItems.Location = new System.Drawing.Point(32, 90);
             this.txtIdItems.Name = "txtIdItems";
-            this.txtIdItems.ReadOnly = true;
             this.txtIdItems.Size = new System.Drawing.Size(182, 32);
             this.txtIdItems.TabIndex = 2;
             this.txtIdItems.Text = "Product ID";
@@ -193,6 +192,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Name = "UC_NewItems";
             this.Size = new System.Drawing.Size(754, 567);
+            this.Load += new System.EventHandler(this.UC_NewItems_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

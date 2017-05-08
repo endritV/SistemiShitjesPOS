@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SistemiShitjesPOS.EntityLayer
 {
-    class Sektori
+    public class Sektori
     {
         private int _idSektori;
         private int _idPuntori;

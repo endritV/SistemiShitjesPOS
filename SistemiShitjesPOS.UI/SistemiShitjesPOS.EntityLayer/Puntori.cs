@@ -7,7 +7,7 @@ using SistemiShitjesPOS.EntityLayer;
 
 namespace SistemiShitjesPOS.EntityLayer
 {
-    class Puntori
+    public class Puntori
     {
         #region Private
 

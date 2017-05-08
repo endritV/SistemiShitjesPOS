@@ -64,5 +64,10 @@ namespace SistemiShitjesPOS.UI
                 MessageBox.Show("Shkruani info rreth puntorit");
             }
         }
+
+        private void dgEmployees_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

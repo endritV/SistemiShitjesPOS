@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemiShitjesPOS.EntityLayer
 {
-    class FaturatHyrseDalse
+    public class FaturatHyrseDalse
     {
         public bool IsKlient { get; set; }
         public bool IsHyrse { get; set; }
