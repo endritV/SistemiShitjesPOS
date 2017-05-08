@@ -29,7 +29,7 @@ namespace SistemiShitjesPOS.UI
         {
             DashBoard dx = new DashBoard();
 
-            SqlConnection x = new SqlConnection(DataBaseConection.GetConnection());
+            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
             string query = "spLoginKredenciale";
             SqlCommand da = new SqlCommand(query, x);
             da.CommandType = CommandType.StoredProcedure;
