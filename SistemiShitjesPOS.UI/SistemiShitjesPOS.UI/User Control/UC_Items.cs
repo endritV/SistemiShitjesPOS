@@ -81,9 +81,35 @@ namespace SistemiShitjesPOS.UI
         private void dgListOfItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string dataValue = dgListOfItems.Rows[e.RowIndex].Cells[1].Value.ToString();
+            UC_UpdateItems u = new UC_UpdateItems();
             
-            //panNew.Controls.Clear();
-            //panNew.Controls.Add(n);
+            panNew.Controls.Clear();
+            panNew.Controls.Add(u);
+            try
+            {
+                if (e.RowIndex >= 0)
+                {
+                    //gets a collection that contains all the rows
+                    DataGridViewRow row = this.dgListOfItems.Rows[e.RowIndex];
+                    //populate the textbox from specific value of the coordinates of column and row.
+                    u.txtIdItems.Text = row.Cells[0].Value.ToString();
+                    u.txtEmri.Text = row.Cells[1].Value.ToString();
+                    u.txtBarkodi.Text = row.Cells[2].Value.ToString();
+                    u.cmbCategory.SelectedText = row.Cells[3].Value.ToString();
+                    u.txtPershkrimi.Text = row.Cells[4].Value.ToString();
+
+
+                }
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Selekto nje rresht");
+            }
+
+          
+
         }
     }
 }
