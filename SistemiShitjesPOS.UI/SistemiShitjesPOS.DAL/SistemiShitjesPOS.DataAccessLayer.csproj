@@ -41,12 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dalKlienti.cs" />
-    <Compile Include="DataBaseCon.cs" />
+    <Compile Include="dalKlineti.cs" />
+    <Compile Include="DataBaseConection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemiShitjesPOS.EntityLayer\SistemiShitjesPOS.EntityLayer.csproj">
+      <Project>{c9b2e1a4-4422-496e-8211-0daef5662b5d}</Project>
+      <Name>SistemiShitjesPOS.EntityLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
