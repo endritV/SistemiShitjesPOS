@@ -290,22 +290,22 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton rdbJoAktiv;
-        private System.Windows.Forms.RadioButton rdbAktiv;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.PictureBox picBoxEmployees;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtpershkrimi;
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtWeb;
-        private System.Windows.Forms.TextBox txtAdresa;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtNrFix;
-        private System.Windows.Forms.TextBox txtNrTelefonit;
-        private System.Windows.Forms.TextBox txtMbiemri;
-        private System.Windows.Forms.TextBox txtEmriFurnitorit;
-        private System.Windows.Forms.TextBox txtEmri;
-        private System.Windows.Forms.TextBox txtNrBiznesit;
-        private System.Windows.Forms.TextBox txtIdSuppliers;
+        public System.Windows.Forms.RadioButton rdbJoAktiv;
+        public System.Windows.Forms.RadioButton rdbAktiv;
+        public System.Windows.Forms.Button btnSave;
+        public System.Windows.Forms.PictureBox picBoxEmployees;
+        public System.Windows.Forms.TextBox txtPassword;
+        public System.Windows.Forms.TextBox txtpershkrimi;
+        public System.Windows.Forms.TextBox txtUserName;
+        public System.Windows.Forms.TextBox txtWeb;
+        public System.Windows.Forms.TextBox txtAdresa;
+        public System.Windows.Forms.TextBox txtEmail;
+        public System.Windows.Forms.TextBox txtNrFix;
+        public System.Windows.Forms.TextBox txtNrTelefonit;
+        public System.Windows.Forms.TextBox txtMbiemri;
+        public System.Windows.Forms.TextBox txtEmriFurnitorit;
+        public System.Windows.Forms.TextBox txtEmri;
+        public System.Windows.Forms.TextBox txtNrBiznesit;
+        public System.Windows.Forms.TextBox txtIdSuppliers;
     }
 }

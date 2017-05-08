@@ -12,15 +12,15 @@ namespace SistemiShitjesPOS.UI
 {
     public partial class UC_UpdateItems : UserControl
     {
-        private ComboBox cmbCategory;
-        private Button btnSubmit;
-        private Button btnBackToUC_Items;
-        private RadioButton rdbJoAktiv;
-        private RadioButton rdbAktiv;
-        private TextBox txtPershkrimi;
-        private TextBox txtBarkodi;
-        private TextBox txtEmri;
-        private TextBox txtIdItems;
+        public ComboBox cmbCategory;
+        public Button btnSubmit;
+        public Button btnBackToUC_Items;
+        public RadioButton rdbJoAktiv;
+        public RadioButton rdbAktiv;
+        public TextBox txtPershkrimi;
+        public TextBox txtBarkodi;
+        public TextBox txtEmri;
+        public TextBox txtIdItems;
 
         public UC_UpdateItems()
         {
