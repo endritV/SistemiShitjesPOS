@@ -22,37 +22,37 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSubmitEmployees_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
 
-                SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-                x.Open();
-                string query = "spShtoPuntorin";
-                SqlCommand da = new SqlCommand(query, x);
-                da.CommandType = CommandType.StoredProcedure;
-                da.Parameters.AddWithValue("@_IdPuntori", txtIdEmployees.Text.ToString());
-                da.Parameters.AddWithValue("@_IdSektori", cmbSektoriId.Text.ToString());
-                da.Parameters.AddWithValue("@_IdRoli", cmbRoliId.Text.ToString());
-                da.Parameters.AddWithValue("@_Emri", txtEmri.Text.ToString());
-                da.Parameters.AddWithValue("@_Mbiemri", txtMbiemri.Text.ToString());
-                da.Parameters.AddWithValue("@_DataLindjes", dtDiteLindja.Text.ToString());
-                da.Parameters.AddWithValue("@_Adresa", txtAdresa.Text.ToString());
-                da.Parameters.AddWithValue("@_NrTelefonit", txtNrTelefonit.Text.ToString());
-                da.Parameters.AddWithValue("@_Email", txtEmail.Text.ToString());
-                da.Parameters.AddWithValue("@_UserName", txtUserName.Text.ToString());
-                da.Parameters.AddWithValue("@_Password", txtPassword.Text.ToString());
+            //    SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+            //    x.Open();
+            //    string query = "spShtoPuntorin";
+            //    SqlCommand da = new SqlCommand(query, x);
+            //    da.CommandType = CommandType.StoredProcedure;
+            //    da.Parameters.AddWithValue("@_IdPuntori", txtIdEmployees.Text.ToString());
+            //    da.Parameters.AddWithValue("@_IdSektori", cmbSektoriId.Text.ToString());
+            //    da.Parameters.AddWithValue("@_IdRoli", cmbRoliId.Text.ToString());
+            //    da.Parameters.AddWithValue("@_Emri", txtEmri.Text.ToString());
+            //    da.Parameters.AddWithValue("@_Mbiemri", txtMbiemri.Text.ToString());
+            //    da.Parameters.AddWithValue("@_DataLindjes", dtDiteLindja.ToString());
+            //    da.Parameters.AddWithValue("@_Adresa", txtAdresa.Text.ToString());
+            //    da.Parameters.AddWithValue("@_NrTelefonit", txtNrTelefonit.Text.ToString());
+            //    da.Parameters.AddWithValue("@_Email", txtEmail.Text.ToString());
+            //    da.Parameters.AddWithValue("@_UserName", txtUserName.Text.ToString());
+            //    da.Parameters.AddWithValue("@_Password", txtPassword.Text.ToString());
 
 
-                int o = da.ExecuteNonQuery();
-                MessageBox.Show(" Te dhenat u insertuan", o.ToString());
-                x.Close();
+            //    int o = da.ExecuteNonQuery();
+            //    MessageBox.Show(" Te dhenat u insertuan", o.ToString());
+            //    x.Close();
 
-            }
-            catch (Exception)
-            {
+            //}
+            //catch (Exception)
+            //{
 
-                MessageBox.Show("Inserto Te Dhenat Braqul");
-            }
+            //    MessageBox.Show("Inserto Te Dhenat Braqul");
+            //}
         }
     }
 }

@@ -52,7 +52,6 @@
             this.txtIdEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtIdEmployees.Location = new System.Drawing.Point(15, 200);
             this.txtIdEmployees.Name = "txtIdEmployees";
-            this.txtIdEmployees.ReadOnly = true;
             this.txtIdEmployees.Size = new System.Drawing.Size(182, 32);
             this.txtIdEmployees.TabIndex = 0;
             this.txtIdEmployees.Text = "Employees Id";
@@ -65,7 +64,6 @@
             this.txtEmri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmri.Location = new System.Drawing.Point(15, 250);
             this.txtEmri.Name = "txtEmri";
-            this.txtEmri.ReadOnly = true;
             this.txtEmri.Size = new System.Drawing.Size(182, 32);
             this.txtEmri.TabIndex = 1;
             this.txtEmri.Text = "Name";
@@ -78,7 +76,6 @@
             this.txtMbiemri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtMbiemri.Location = new System.Drawing.Point(15, 298);
             this.txtMbiemri.Name = "txtMbiemri";
-            this.txtMbiemri.ReadOnly = true;
             this.txtMbiemri.Size = new System.Drawing.Size(182, 32);
             this.txtMbiemri.TabIndex = 2;
             this.txtMbiemri.Text = "Surname";
@@ -91,7 +88,6 @@
             this.txtNrTelefonit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNrTelefonit.Location = new System.Drawing.Point(15, 350);
             this.txtNrTelefonit.Name = "txtNrTelefonit";
-            this.txtNrTelefonit.ReadOnly = true;
             this.txtNrTelefonit.Size = new System.Drawing.Size(182, 32);
             this.txtNrTelefonit.TabIndex = 6;
             this.txtNrTelefonit.Text = "Phone Number";
@@ -104,7 +100,6 @@
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmail.Location = new System.Drawing.Point(15, 397);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(182, 32);
             this.txtEmail.TabIndex = 3;
             this.txtEmail.Text = "Email";
@@ -117,7 +112,6 @@
             this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtUserName.Location = new System.Drawing.Point(15, 449);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.ReadOnly = true;
             this.txtUserName.Size = new System.Drawing.Size(182, 32);
             this.txtUserName.TabIndex = 8;
             this.txtUserName.Text = "User Name";
@@ -130,7 +124,6 @@
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPassword.Location = new System.Drawing.Point(15, 496);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.ReadOnly = true;
             this.txtPassword.Size = new System.Drawing.Size(182, 32);
             this.txtPassword.TabIndex = 9;
             this.txtPassword.Text = "Password";
@@ -203,7 +196,6 @@
             this.txtAdresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtAdresa.Location = new System.Drawing.Point(250, 200);
             this.txtAdresa.Name = "txtAdresa";
-            this.txtAdresa.ReadOnly = true;
             this.txtAdresa.Size = new System.Drawing.Size(182, 32);
             this.txtAdresa.TabIndex = 3;
             this.txtAdresa.Text = "Address";

@@ -58,6 +58,12 @@
     <Compile Include="Forma\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Control\UC_UpdateCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_UpdateCustomers.Designer.cs">
+      <DependentUpon>UC_UpdateCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UC_UpdateItems.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forma\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_UpdateCustomers.resx">
+      <DependentUpon>UC_UpdateCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_UpdateItems.resx">
       <DependentUpon>UC_UpdateItems.cs</DependentUpon>
