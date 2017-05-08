@@ -70,12 +70,16 @@ namespace SistemiShitjesPOS.UI
                 FormBorderStyle = FormBorderStyle.Sizable;
                 WindowState = FormWindowState.Normal;
                 TopMost = false;
+
+                
             }
             if (e.KeyCode == Keys.F)
             {
                 FormBorderStyle = FormBorderStyle.None;
                 WindowState = FormWindowState.Maximized;
                 TopMost = true;
+
+                
             }
         }
 
@@ -158,6 +162,37 @@ namespace SistemiShitjesPOS.UI
             UC_Suppilers suppliers = new UC_Suppilers();
             panel1.Controls.Clear();
             panel1.Controls.Add(suppliers);
+
+
+            btnSuppliers.BackColor = Color.FromArgb(35, 53, 69);
+            btnDashboards.BackColor = Color.FromArgb(47, 64, 80);
+            btnEmployees.BackColor = Color.FromArgb(47, 64, 80);
+            btnItems.BackColor = Color.FromArgb(47, 64, 80);
+            btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
+            btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
+            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnReports.BackColor = Color.FromArgb(47, 64, 80);
+            btnSales.BackColor = Color.FromArgb(47, 64, 80);
+            btnCustomers.BackColor = Color.FromArgb(47, 64, 80);
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            UC_Raports raportsUC = new UC_Raports();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(raportsUC);
+
+
+            btnReports.BackColor = Color.FromArgb(35, 53, 69);
+            btnDashboards.BackColor = Color.FromArgb(47, 64, 80);
+            btnEmployees.BackColor = Color.FromArgb(47, 64, 80);
+            btnItems.BackColor = Color.FromArgb(47, 64, 80);
+            btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
+            btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
+            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnSuppliers.BackColor = Color.FromArgb(47, 64, 80);
+            btnSales.BackColor = Color.FromArgb(47, 64, 80);
+            btnCustomers.BackColor = Color.FromArgb(47, 64, 80);
         }
     }
 }
