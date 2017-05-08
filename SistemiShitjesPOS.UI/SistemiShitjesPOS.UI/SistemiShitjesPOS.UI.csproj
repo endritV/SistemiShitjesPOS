@@ -46,56 +46,110 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DashBoard.cs">
+    <Compile Include="Forma\DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DashBoard.Designer.cs">
+    <Compile Include="Forma\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Forma\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Forma\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_NewSuppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_NewSuppliers.Designer.cs">
+      <DependentUpon>UC_NewSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Suppilers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Suppilers.Designer.cs">
+      <DependentUpon>UC_Suppilers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_NewCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_NewCustomers.Designer.cs">
+      <DependentUpon>UC_NewCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Customers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Customers.Designer.cs">
+      <DependentUpon>UC_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_NewEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_NewEmployees.Designer.cs">
+      <DependentUpon>UC_NewEmployees.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UC_Dashboards.cs">
+    <Compile Include="User Control\UC_Dashboards.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Dashboards.Designer.cs">
+    <Compile Include="User Control\UC_Dashboards.Designer.cs">
       <DependentUpon>UC_Dashboards.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Items.cs">
+    <Compile Include="User Control\UC_Employees.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Items.Designer.cs">
+    <Compile Include="User Control\UC_Employees.Designer.cs">
+      <DependentUpon>UC_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Items.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Items.Designer.cs">
       <DependentUpon>UC_Items.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_NewItems.cs">
+    <Compile Include="User Control\UC_NewItems.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_NewItems.Designer.cs">
+    <Compile Include="User Control\UC_NewItems.Designer.cs">
       <DependentUpon>UC_NewItems.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DashBoard.resx">
+    <EmbeddedResource Include="Forma\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Forma\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_NewSuppliers.resx">
+      <DependentUpon>UC_NewSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Suppilers.resx">
+      <DependentUpon>UC_Suppilers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Customers.resx">
+      <DependentUpon>UC_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_NewCustomers.resx">
+      <DependentUpon>UC_NewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_NewEmployees.resx">
+      <DependentUpon>UC_NewEmployees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Dashboards.resx">
+    <EmbeddedResource Include="User Control\UC_Dashboards.resx">
       <DependentUpon>UC_Dashboards.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Items.resx">
+    <EmbeddedResource Include="User Control\UC_Employees.resx">
+      <DependentUpon>UC_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Items.resx">
       <DependentUpon>UC_Items.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_NewItems.resx">
+    <EmbeddedResource Include="User Control\UC_NewItems.resx">
       <DependentUpon>UC_NewItems.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -182,6 +236,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\cover1.jpg" />
+    <None Include="Resources\namnl.gif" />
     <None Include="Resources\font-awesome_4-7-0_search_50_0_dfe6ec_none.png" />
     <None Include="Resources\ionicons_2-0-1_android-settings_50_15_a7bccd_none.png" />
     <None Include="Resources\material-icons_3-0-1_fullscreen_50_15_1c2731_none.png" />

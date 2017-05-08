@@ -10,10 +10,7 @@ namespace SistemiShitjesPOS.EntityLayer
     public class Klienti
     {
         #region Bool
-
-
         public bool IsKlient { get; set; }
-
         #endregion
 
         #region Private
@@ -31,8 +28,6 @@ namespace SistemiShitjesPOS.EntityLayer
         #endregion
 
         #region NotValidate
-
-
         public string Web { get; set; }
         public string Email { get; set; }
         public int Pikat { get; set; }
