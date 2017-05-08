@@ -12,7 +12,7 @@ namespace SistemiShitjesPOS.DAL
     {
         public static string GetConnectionString()
         {
-           return ConfigurationManager.AppSettings["conStr1"].ToString();
+           return ConfigurationManager.AppSettings["conStr"].ToString();
         }
 
     }

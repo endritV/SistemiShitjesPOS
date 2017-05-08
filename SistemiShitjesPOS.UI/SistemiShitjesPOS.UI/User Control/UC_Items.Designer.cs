@@ -139,6 +139,9 @@
             // 
             // dgListOfItems
             // 
+            this.dgListOfItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgListOfItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgListOfItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgListOfItems.Cursor = System.Windows.Forms.Cursors.Default;
