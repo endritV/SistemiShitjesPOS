@@ -41,10 +41,10 @@
             this.txtNrBiznesit = new System.Windows.Forms.TextBox();
             this.txtWeb = new System.Windows.Forms.TextBox();
             this.picBoxEmployees = new System.Windows.Forms.PictureBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.rdbJoAktiv = new System.Windows.Forms.RadioButton();
             this.rdbAktiv = new System.Windows.Forms.RadioButton();
             this.txtpershkrimi = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxEmployees)).BeginInit();
             this.SuspendLayout();
             // 
@@ -200,16 +200,6 @@
             this.picBoxEmployees.TabIndex = 21;
             this.picBoxEmployees.TabStop = false;
             // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(274, 485);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(182, 42);
-            this.btnSave.TabIndex = 22;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // rdbJoAktiv
             // 
             this.rdbJoAktiv.AutoSize = true;
@@ -259,6 +249,16 @@
             this.txtpershkrimi.TabIndex = 19;
             this.txtpershkrimi.Text = "Pershkrimi";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(274, 485);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(182, 42);
+            this.btnSave.TabIndex = 22;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // UC_NewSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,9 +305,9 @@
         private System.Windows.Forms.TextBox txtAdresa;
         private System.Windows.Forms.TextBox txtNrBiznesit;
         private System.Windows.Forms.TextBox txtWeb;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.RadioButton rdbJoAktiv;
         private System.Windows.Forms.RadioButton rdbAktiv;
         private System.Windows.Forms.TextBox txtpershkrimi;
+        private System.Windows.Forms.Button btnSave;
     }
 }
