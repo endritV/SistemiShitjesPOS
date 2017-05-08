@@ -10,6 +10,10 @@ namespace SistemiShitjesPOS.EntityLayer
     public class Klienti
     {
         #region Constructor
+        public Klienti()
+        {
+
+        }
         public Klienti(bool isKlient,string idKlienti,string emri,string emriPronarit,string mbiemriPronarit,string numriFix,string adresa,string nrTelefonit,string nrBiznesit,string web,string email)
         {
             IsKlient = isKlient;

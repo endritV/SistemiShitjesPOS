@@ -14,25 +14,29 @@ namespace SistemiShitjesPOS.DataAccessLayer
     {
         static readonly string cs = DataBaseCon.GetConnectionString();
 
-        //public static List<Klienti> GetKlietnById(int klinetId)
-        //{
-        //    List<Klienti> list = new List<Klienti>();
-        //    using (SqlConnection conn = new SqlConnection())
-        //    {
-        //        conn.Open();
-        //        SqlCommand cmd = new SqlCommand("", conn);
-        //        cmd.Parameters.AddWithValue("@_IdKlienti", klinetId);
-        //        cmd.CommandType = CommandType.StoredProcedure;
+        public static List<Klienti> GetKlietnById(string klinetId)
+        {
+            List<Klienti> list = new List<Klienti>();
+            using (SqlConnection conn = new SqlConnection())
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("", conn);
+                cmd.Parameters.AddWithValue("@_IdKlienti", klinetId);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-        //        using(IDataReader reader = cmd.ExecuteReader())
-        //        {
-        //            Klienti klienti = new Klienti();
-        //            klienti.IdKlienti = klinetId;
-                    
+                using(IDataReader reader = cmd.ExecuteReader())
+                {
+                    Klienti kl = new Klienti();
+                    kl.IdKlienti = klinetId;
+                    kl.Emri = reader["@_Emri"].ToString();
 
-        //        }
-        //    }
-        //}
+                    list.Add(kl);
+
+                }
+            }
+            return list;
+        }
+        
     }
 }      
 
