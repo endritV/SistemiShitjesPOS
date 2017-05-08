@@ -54,6 +54,7 @@
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnBackToUC_Items
             // 
@@ -126,6 +127,7 @@
             // 
             // txtPershkrimi
             // 
+            this.txtPershkrimi.AcceptsTab = true;
             this.txtPershkrimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtPershkrimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPershkrimi.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -198,12 +200,12 @@
         #endregion
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnBackToUC_Items;
-        private System.Windows.Forms.RadioButton rdbJoAktiv;
-        private System.Windows.Forms.RadioButton rdbAktiv;
-        private System.Windows.Forms.ComboBox cmbCategory;
-        private System.Windows.Forms.TextBox txtPershkrimi;
-        private System.Windows.Forms.TextBox txtBarkodi;
-        private System.Windows.Forms.TextBox txtEmri;
-        private System.Windows.Forms.TextBox txtIdItems;
+        public System.Windows.Forms.RadioButton rdbJoAktiv;
+        public System.Windows.Forms.RadioButton rdbAktiv;
+        public System.Windows.Forms.ComboBox cmbCategory;
+        public System.Windows.Forms.TextBox txtPershkrimi;
+        public System.Windows.Forms.TextBox txtBarkodi;
+        public System.Windows.Forms.TextBox txtEmri;
+        public System.Windows.Forms.TextBox txtIdItems;
     }
 }
