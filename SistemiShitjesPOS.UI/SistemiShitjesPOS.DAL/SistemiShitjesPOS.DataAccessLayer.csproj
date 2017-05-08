@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dalKlienti.cs" />
     <Compile Include="DataBaseCon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
