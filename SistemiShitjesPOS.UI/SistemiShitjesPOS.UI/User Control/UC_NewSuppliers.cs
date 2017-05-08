@@ -29,7 +29,7 @@ namespace SistemiShitjesPOS.UI
                 string query = "spShtoFurnizuesin";
                 SqlCommand da = new SqlCommand(query, x);
                 da.CommandType = CommandType.StoredProcedure;
-                da.Parameters.AddWithValue("@_IdKlienti", txtEmri.Text.ToString());
+                da.Parameters.AddWithValue("@_IdKlienti", txtIdSuppliers.Text.ToString());
                 da.Parameters.AddWithValue("@_Emri", txtEmri.Text.ToString());
                 da.Parameters.AddWithValue("@_EmriPronarit", txtEmriFurnitorit.Text.ToString());
                 da.Parameters.AddWithValue("@_MbiemriPronarit", txtMbiemri.Text.ToString());
