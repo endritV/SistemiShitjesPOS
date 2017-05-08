@@ -38,7 +38,7 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSearchItems_Click(object sender, EventArgs e)
         {
-            ArtikulliUI.GetItems(1);
+           
 
             //try
             //{

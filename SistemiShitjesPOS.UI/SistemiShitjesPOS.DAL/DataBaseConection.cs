@@ -11,6 +11,10 @@ namespace SistemiShitjesPOS.DataAccessLayer
 {
     public static class DataBaseConection
     {
-        public static readonly string Connection = ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
+        public static string GetConnection()
+        {
+            return ConfigurationManager.AppSettings["conStr1"].ToString();
+
+        }
     }
 }
