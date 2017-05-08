@@ -89,15 +89,16 @@ namespace SistemiShitjesPOS.UI
             string dataValue = dgListOfItems.Rows[e.RowIndex].Cells[1].Value.ToString();
             UC_UpdateItems u = new UC_UpdateItems();
 
+
             panNew.Controls.Clear();
             panNew.Controls.Add(u);
             try
             {
                 if (e.RowIndex >= 0)
                 {
-                    
+
                     DataGridViewRow row = this.dgListOfItems.Rows[e.RowIndex];
-                    
+
                     u.txtIdItems.Text = row.Cells[0].Value.ToString();
                     u.txtEmri.Text = row.Cells[1].Value.ToString();
                     u.txtBarkodi.Text = row.Cells[2].Value.ToString();

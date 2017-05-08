@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtIdCustomers = new System.Windows.Forms.TextBox();
+            this.txtIdEmployees = new System.Windows.Forms.TextBox();
             this.txtEmri = new System.Windows.Forms.TextBox();
             this.txtMbiemri = new System.Windows.Forms.TextBox();
             this.txtNrTelefonit = new System.Windows.Forms.TextBox();
@@ -39,21 +39,23 @@
             this.cmbSektoriId = new System.Windows.Forms.ComboBox();
             this.cmbRoliId = new System.Windows.Forms.ComboBox();
             this.picBoxEmployees = new System.Windows.Forms.PictureBox();
+            this.btnSubmitEmployees = new System.Windows.Forms.Button();
+            this.txtAdresa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxEmployees)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtIdCustomers
+            // txtIdEmployees
             // 
-            this.txtIdCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.txtIdCustomers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIdCustomers.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdCustomers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtIdCustomers.Location = new System.Drawing.Point(15, 200);
-            this.txtIdCustomers.Name = "txtIdCustomers";
-            this.txtIdCustomers.ReadOnly = true;
-            this.txtIdCustomers.Size = new System.Drawing.Size(182, 32);
-            this.txtIdCustomers.TabIndex = 0;
-            this.txtIdCustomers.Text = "Customers Id";
+            this.txtIdEmployees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.txtIdEmployees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdEmployees.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtIdEmployees.Location = new System.Drawing.Point(15, 200);
+            this.txtIdEmployees.Name = "txtIdEmployees";
+            this.txtIdEmployees.ReadOnly = true;
+            this.txtIdEmployees.Size = new System.Drawing.Size(182, 32);
+            this.txtIdEmployees.TabIndex = 0;
+            this.txtIdEmployees.Text = "Employees Id";
             // 
             // txtEmri
             // 
@@ -100,7 +102,7 @@
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEmail.Location = new System.Drawing.Point(15, 399);
+            this.txtEmail.Location = new System.Drawing.Point(15, 397);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(182, 32);
@@ -175,22 +177,55 @@
             this.picBoxEmployees.TabIndex = 10;
             this.picBoxEmployees.TabStop = false;
             // 
+            // btnSubmitEmployees
+            // 
+            this.btnSubmitEmployees.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmitEmployees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
+            this.btnSubmitEmployees.FlatAppearance.BorderSize = 0;
+            this.btnSubmitEmployees.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnSubmitEmployees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnSubmitEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmitEmployees.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmitEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSubmitEmployees.Location = new System.Drawing.Point(579, 510);
+            this.btnSubmitEmployees.Name = "btnSubmitEmployees";
+            this.btnSubmitEmployees.Size = new System.Drawing.Size(98, 30);
+            this.btnSubmitEmployees.TabIndex = 11;
+            this.btnSubmitEmployees.Text = "Submit";
+            this.btnSubmitEmployees.UseVisualStyleBackColor = false;
+            this.btnSubmitEmployees.Click += new System.EventHandler(this.btnSubmitEmployees_Click);
+            // 
+            // txtAdresa
+            // 
+            this.txtAdresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.txtAdresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAdresa.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtAdresa.Location = new System.Drawing.Point(250, 200);
+            this.txtAdresa.Name = "txtAdresa";
+            this.txtAdresa.ReadOnly = true;
+            this.txtAdresa.Size = new System.Drawing.Size(182, 32);
+            this.txtAdresa.TabIndex = 3;
+            this.txtAdresa.Text = "Address";
+            // 
             // UC_NewEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
+            this.Controls.Add(this.btnSubmitEmployees);
             this.Controls.Add(this.picBoxEmployees);
             this.Controls.Add(this.cmbRoliId);
             this.Controls.Add(this.cmbSektoriId);
             this.Controls.Add(this.dtDiteLindja);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.txtAdresa);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNrTelefonit);
             this.Controls.Add(this.txtMbiemri);
             this.Controls.Add(this.txtEmri);
-            this.Controls.Add(this.txtIdCustomers);
+            this.Controls.Add(this.txtIdEmployees);
             this.Name = "UC_NewEmployees";
             this.Size = new System.Drawing.Size(754, 567);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxEmployees)).EndInit();
@@ -201,7 +236,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtIdCustomers;
+        private System.Windows.Forms.TextBox txtIdEmployees;
         private System.Windows.Forms.TextBox txtEmri;
         private System.Windows.Forms.TextBox txtMbiemri;
         private System.Windows.Forms.TextBox txtNrTelefonit;
@@ -212,5 +247,7 @@
         private System.Windows.Forms.ComboBox cmbSektoriId;
         private System.Windows.Forms.ComboBox cmbRoliId;
         private System.Windows.Forms.PictureBox picBoxEmployees;
+        private System.Windows.Forms.Button btnSubmitEmployees;
+        private System.Windows.Forms.TextBox txtAdresa;
     }
 }
