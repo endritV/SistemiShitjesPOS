@@ -80,9 +80,15 @@ namespace SistemiShitjesPOS.UI
 
         private void dgListOfItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+          
+
+        }
+
+        private void dgListOfItems_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
             string dataValue = dgListOfItems.Rows[e.RowIndex].Cells[1].Value.ToString();
             UC_UpdateItems u = new UC_UpdateItems();
-            
+
             panNew.Controls.Clear();
             panNew.Controls.Add(u);
             try
@@ -108,7 +114,6 @@ namespace SistemiShitjesPOS.UI
                 MessageBox.Show("Selekto nje rresht");
             }
 
-          
 
         }
     }

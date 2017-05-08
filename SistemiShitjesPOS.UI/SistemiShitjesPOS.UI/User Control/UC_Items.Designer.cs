@@ -139,6 +139,9 @@
             // 
             // dgListOfItems
             // 
+            this.dgListOfItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgListOfItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgListOfItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgListOfItems.Cursor = System.Windows.Forms.Cursors.Default;
@@ -147,7 +150,7 @@
             this.dgListOfItems.Size = new System.Drawing.Size(718, 440);
             this.dgListOfItems.TabIndex = 1;
             this.dgListOfItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellContentClick);
-            this.dgListOfItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellContentClick);
+            this.dgListOfItems.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellContentDoubleClick);
             // 
             // label1
             // 
