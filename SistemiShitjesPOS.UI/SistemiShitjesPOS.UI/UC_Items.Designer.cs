@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panSearchItems = new System.Windows.Forms.Panel();
+            this.btnViewAll = new System.Windows.Forms.Button();
             this.btnNewItems = new System.Windows.Forms.Button();
             this.btnSearchItems = new System.Windows.Forms.Button();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
@@ -37,7 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblListOfItems = new System.Windows.Forms.Label();
             this.panNew = new System.Windows.Forms.Panel();
-            this.btnViewAll = new System.Windows.Forms.Button();
             this.panSearchItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panNew.SuspendLayout();
@@ -57,6 +57,23 @@
             this.panSearchItems.Name = "panSearchItems";
             this.panSearchItems.Size = new System.Drawing.Size(757, 75);
             this.panSearchItems.TabIndex = 0;
+            // 
+            // btnViewAll
+            // 
+            this.btnViewAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
+            this.btnViewAll.FlatAppearance.BorderSize = 0;
+            this.btnViewAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnViewAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewAll.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnViewAll.Location = new System.Drawing.Point(525, 28);
+            this.btnViewAll.Name = "btnViewAll";
+            this.btnViewAll.Size = new System.Drawing.Size(98, 30);
+            this.btnViewAll.TabIndex = 4;
+            this.btnViewAll.Text = "View All";
+            this.btnViewAll.UseVisualStyleBackColor = false;
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
             // btnNewItems
             // 
@@ -118,6 +135,7 @@
             this.txtSearchItems.TabIndex = 1;
             this.txtSearchItems.Text = "Search Items";
             this.txtSearchItems.TextChanged += new System.EventHandler(this.txtSearchItems_TextChanged);
+            this.txtSearchItems.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtSearchItems_MouseDown);
             // 
             // dataGridView1
             // 
@@ -168,23 +186,6 @@
             this.panNew.Name = "panNew";
             this.panNew.Size = new System.Drawing.Size(754, 541);
             this.panNew.TabIndex = 3;
-            // 
-            // btnViewAll
-            // 
-            this.btnViewAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
-            this.btnViewAll.FlatAppearance.BorderSize = 0;
-            this.btnViewAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnViewAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewAll.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnViewAll.Location = new System.Drawing.Point(525, 28);
-            this.btnViewAll.Name = "btnViewAll";
-            this.btnViewAll.Size = new System.Drawing.Size(98, 30);
-            this.btnViewAll.TabIndex = 4;
-            this.btnViewAll.Text = "View All";
-            this.btnViewAll.UseVisualStyleBackColor = false;
-            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
             // UC_Items
             // 

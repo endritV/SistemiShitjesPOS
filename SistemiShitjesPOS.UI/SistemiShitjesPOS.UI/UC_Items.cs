@@ -43,18 +43,23 @@ namespace SistemiShitjesPOS.UI
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             x.Close();
-        }
+        }   
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
             SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
             x.Open();
-            SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithaArtikujt", x);
+            SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithaArtikujtv2", x);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             x.Close();
 
+        }
+
+        private void txtSearchItems_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtSearchItems.Clear();
         }
     }
 }
