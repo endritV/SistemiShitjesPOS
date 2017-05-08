@@ -120,7 +120,7 @@
             this.btnSearchSuppliers.TabIndex = 3;
             this.btnSearchSuppliers.Text = "Search";
             this.btnSearchSuppliers.UseVisualStyleBackColor = false;
-            this.btnSearchSuppliers.Click += new System.EventHandler(this.btnSearchSuppliers_Click);
+            //this.btnSearchSuppliers.Click += new System.EventHandler(this.btnSearchSuppliers_Click);
             // 
             // txtSearchSuppliers
             // 

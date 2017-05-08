@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemiShitjesPOS.EntityLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -37,22 +38,24 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSearchItems_Click(object sender, EventArgs e)
         {
-            try
-            {
-                SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-                x.Open();
-                SqlDataAdapter da = new SqlDataAdapter("spKerkoArtikullin " + txtSearchItems.Text.ToString(), x);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dgListOfItems.DataSource = dt;
-                x.Close();
+           
 
-            }
-            catch (Exception)
-            {
+            //try
+            //{
+            //    SqlConnection x = new SqlConnection(DataBaseCon.Connection);
+            //    x.Open();
+            //    SqlDataAdapter da = new SqlDataAdapter("spKerkoArtikullin " + txtSearchItems.Text.ToString(), x);
+            //    DataTable dt = new DataTable();
+            //    da.Fill(dt);
+            //    dgListOfItems.DataSource = dt;
+            //    x.Close();
 
-                MessageBox.Show("Shkruaj Barkodin");
-            }
+            //}
+            //catch (Exception)
+            //{
+
+            //    MessageBox.Show("Shkruaj Barkodin");
+            //}
          
         }   
 
@@ -60,13 +63,14 @@ namespace SistemiShitjesPOS.UI
         {
 
 
-            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            x.Open();
-            SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithaArtikujtv2", x);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgListOfItems.DataSource = dt;
-            x.Close();
+            //SqlConnection x = new SqlConnection(DataBaseCon.Connection);
+            //x.Open();
+            //SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithaArtikujtv2", x);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            //dgListOfItems.DataSource = dt;
+            //x.Close();
+
 
 
 

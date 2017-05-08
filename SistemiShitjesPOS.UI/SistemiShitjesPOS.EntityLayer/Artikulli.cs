@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace SistemiShitjesPOS.EntityLayer
 {
     public class Artikulli
     {
         private int _idArtukulli;
         private string _emriArtikullit;
-        private string _barkodi;
+        private int _barkodi;
         private string _njesia;
         private string _pershkrimi;
         public bool IsAktiv { get; set; }
@@ -43,15 +44,12 @@ namespace SistemiShitjesPOS.EntityLayer
         }
 
 
-        public string Barkodi
+        public int Barkodi
         {
             get { return _barkodi; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                {
-                    throw new Exception("Barkodi eshte i zbrazet");
-                }
+               
                 _barkodi = value;
             }
         }
