@@ -47,7 +47,6 @@
             this.txtIdItems.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtIdItems.Location = new System.Drawing.Point(32, 90);
             this.txtIdItems.Name = "txtIdItems";
-            this.txtIdItems.ReadOnly = true;
             this.txtIdItems.Size = new System.Drawing.Size(182, 32);
             this.txtIdItems.TabIndex = 2;
             this.txtIdItems.Text = "Product ID";

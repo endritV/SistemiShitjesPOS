@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace SistemiShitjesPOS.EntityLayer
 {
-    class Artikulli
+    public class Artikulli
     {
         private int _idArtukulli;
         private string _emriArtikullit;

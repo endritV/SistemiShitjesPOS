@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemiShitjesPOS.EntityLayer
 {
-    class FaturaDetajet
+    public class FaturaDetajet
     {
         private int _idFatura;
         private int _idArtikulli;
