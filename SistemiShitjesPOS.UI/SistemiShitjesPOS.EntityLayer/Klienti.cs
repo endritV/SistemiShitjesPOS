@@ -155,9 +155,9 @@ namespace SistemiShitjesPOS.EntityLayer
             get { return _idKlienti; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("Id Klineti eshte i zbrazet! Shkruani nje Id.");
-                else
+                //if (String.IsNullOrEmpty(value))
+                //    throw new Exception("Id Klineti eshte i zbrazet! Shkruani nje Id.");
+                
                     _idKlienti = value;
             }
         }

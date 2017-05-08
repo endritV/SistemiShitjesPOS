@@ -1,4 +1,6 @@
-﻿using SistemiShitjesPOS.UI;
+﻿using SistemiShitjesPOS.BusinessLayer;
+using SistemiShitjesPOS.EntityLayer;
+using SistemiShitjesPOS.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,10 +18,12 @@ namespace SistemiShitjesPOS.UI
 {
     public partial class UC_Customers : UserControl
     {
+        
         public UC_Customers()
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            
         }
 
         private void btnNewCustomers_Click(object sender, EventArgs e)
@@ -31,6 +35,8 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
+
+            dgListOfCustomers.DataSource = dalKlineti.GetALL();
             //SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
             //x.Open();
             //SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithKlientet", x);
@@ -42,6 +48,9 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSearchCustomers_Click(object sender, EventArgs e)
         {
+            
+            
+
             //SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
             //x.Open();
             //SqlDataAdapter da = new SqlDataAdapter("spKerkoKlientin " + txtSearchCustomers.Text.ToString(), x);
