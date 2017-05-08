@@ -117,5 +117,15 @@ namespace SistemiShitjesPOS.UI
 
 
         }
+
+        private void dgListOfItems_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panSearchItems_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -57,6 +57,7 @@
             this.panSearchItems.Name = "panSearchItems";
             this.panSearchItems.Size = new System.Drawing.Size(757, 75);
             this.panSearchItems.TabIndex = 0;
+            this.panSearchItems.Paint += new System.Windows.Forms.PaintEventHandler(this.panSearchItems_Paint);
             // 
             // btnViewAll
             // 
@@ -150,6 +151,7 @@
             this.dgListOfItems.Size = new System.Drawing.Size(718, 440);
             this.dgListOfItems.TabIndex = 1;
             this.dgListOfItems.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellContentClick);
+            this.dgListOfItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellContentClick_1);
             this.dgListOfItems.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellContentDoubleClick);
             // 
             // label1

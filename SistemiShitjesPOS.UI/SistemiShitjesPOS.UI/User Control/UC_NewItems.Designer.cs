@@ -193,6 +193,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Name = "UC_NewItems";
             this.Size = new System.Drawing.Size(754, 567);
+            this.Load += new System.EventHandler(this.UC_NewItems_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

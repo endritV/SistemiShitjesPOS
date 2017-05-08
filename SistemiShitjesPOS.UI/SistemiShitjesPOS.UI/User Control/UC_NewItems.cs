@@ -62,5 +62,10 @@ namespace SistemiShitjesPOS.UI
 
 
         }
+
+        private void UC_NewItems_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

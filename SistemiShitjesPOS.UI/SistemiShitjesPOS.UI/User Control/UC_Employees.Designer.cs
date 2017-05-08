@@ -168,6 +168,7 @@
             this.dgEmployees.Name = "dgEmployees";
             this.dgEmployees.Size = new System.Drawing.Size(718, 436);
             this.dgEmployees.TabIndex = 5;
+            this.dgEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgEmployees_CellContentClick);
             // 
             // UC_Employees
             // 
