@@ -37,31 +37,53 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSearchItems_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+                x.Open();
+                SqlDataAdapter da = new SqlDataAdapter("spKerkoArtikullin " + txtSearchItems.Text.ToString(), x);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgListOfItems.DataSource = dt;
+                x.Close();
 
-            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            x.Open();
-            SqlDataAdapter da = new SqlDataAdapter("spKerkoArtikullin " + txtSearchItems.Text.ToString(),x);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgListOfItems.DataSource = dt;
-            x.Close();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Shkruaj Barkodin");
+            }
+         
         }   
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            x.Open();
-            SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithaArtikujtv2", x);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgListOfItems.DataSource = dt;
-            x.Close();
+           
+           
+                SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+                x.Open();
+                SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithaArtikujtv2", x);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgListOfItems.DataSource = dt;
+                x.Close();
+            
+        
+         
 
         }
 
         private void txtSearchItems_MouseDown(object sender, MouseEventArgs e)
         {
             txtSearchItems.Clear();
+        }
+
+        private void dgListOfItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string dataValue = dgListOfItems.Rows[e.RowIndex].Cells[1].Value.ToString();
+            
+            //panNew.Controls.Clear();
+            //panNew.Controls.Add(n);
         }
     }
 }

@@ -146,6 +146,7 @@
             this.dgListOfItems.Name = "dgListOfItems";
             this.dgListOfItems.Size = new System.Drawing.Size(718, 440);
             this.dgListOfItems.TabIndex = 1;
+            this.dgListOfItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellContentClick);
             // 
             // label1
             // 

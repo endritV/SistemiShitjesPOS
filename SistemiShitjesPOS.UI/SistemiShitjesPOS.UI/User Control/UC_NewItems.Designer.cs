@@ -33,9 +33,11 @@
             this.txtBarkodi = new System.Windows.Forms.TextBox();
             this.txtPershkrimi = new System.Windows.Forms.TextBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbAktiv = new System.Windows.Forms.RadioButton();
+            this.rdbJoAktiv = new System.Windows.Forms.RadioButton();
             this.btnBackToUC_Items = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtIdItems
@@ -101,41 +103,41 @@
             this.cmbCategory.TabIndex = 3;
             this.cmbCategory.Text = "Unity";
             // 
-            // radioButton1
+            // rdbAktiv
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.radioButton1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
-            this.radioButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
-            this.radioButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.radioButton1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.radioButton1.Location = new System.Drawing.Point(32, 396);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(56, 24);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Aktiv";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.rdbAktiv.AutoSize = true;
+            this.rdbAktiv.BackColor = System.Drawing.Color.Transparent;
+            this.rdbAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.rdbAktiv.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
+            this.rdbAktiv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
+            this.rdbAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.rdbAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rdbAktiv.Location = new System.Drawing.Point(32, 396);
+            this.rdbAktiv.Name = "rdbAktiv";
+            this.rdbAktiv.Size = new System.Drawing.Size(56, 24);
+            this.rdbAktiv.TabIndex = 4;
+            this.rdbAktiv.TabStop = true;
+            this.rdbAktiv.Text = "Aktiv";
+            this.rdbAktiv.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // rdbJoAktiv
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.radioButton2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
-            this.radioButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
-            this.radioButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
-            this.radioButton2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.radioButton2.Location = new System.Drawing.Point(129, 396);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 24);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Jo Aktiv";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.rdbJoAktiv.AutoSize = true;
+            this.rdbJoAktiv.BackColor = System.Drawing.Color.Transparent;
+            this.rdbJoAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.rdbJoAktiv.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange;
+            this.rdbJoAktiv.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange;
+            this.rdbJoAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
+            this.rdbJoAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbJoAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rdbJoAktiv.Location = new System.Drawing.Point(129, 396);
+            this.rdbJoAktiv.Name = "rdbJoAktiv";
+            this.rdbJoAktiv.Size = new System.Drawing.Size(75, 24);
+            this.rdbJoAktiv.TabIndex = 4;
+            this.rdbJoAktiv.TabStop = true;
+            this.rdbJoAktiv.Text = "Jo Aktiv";
+            this.rdbJoAktiv.UseVisualStyleBackColor = false;
             // 
             // btnBackToUC_Items
             // 
@@ -146,7 +148,7 @@
             this.btnBackToUC_Items.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBackToUC_Items.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackToUC_Items.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnBackToUC_Items.Location = new System.Drawing.Point(647, 482);
+            this.btnBackToUC_Items.Location = new System.Drawing.Point(620, 483);
             this.btnBackToUC_Items.Name = "btnBackToUC_Items";
             this.btnBackToUC_Items.Size = new System.Drawing.Size(98, 30);
             this.btnBackToUC_Items.TabIndex = 5;
@@ -154,14 +156,43 @@
             this.btnBackToUC_Items.UseVisualStyleBackColor = false;
             this.btnBackToUC_Items.Click += new System.EventHandler(this.btnBackToUC_Items_Click);
             // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSubmit.Location = new System.Drawing.Point(440, 483);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(98, 30);
+            this.btnSubmit.TabIndex = 6;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(307, 418);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
+            // 
             // UC_NewItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnBackToUC_Items);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rdbJoAktiv);
+            this.Controls.Add(this.rdbAktiv);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.txtPershkrimi);
             this.Controls.Add(this.txtBarkodi);
@@ -182,8 +213,10 @@
         private System.Windows.Forms.TextBox txtBarkodi;
         private System.Windows.Forms.TextBox txtPershkrimi;
         private System.Windows.Forms.ComboBox cmbCategory;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rdbAktiv;
+        private System.Windows.Forms.RadioButton rdbJoAktiv;
         private System.Windows.Forms.Button btnBackToUC_Items;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label label1;
     }
 }

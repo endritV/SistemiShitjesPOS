@@ -33,8 +33,8 @@ namespace SistemiShitjesPOS.UI
             string query = "spLoginKredenciale";
             SqlCommand da = new SqlCommand(query, x);
             da.CommandType = CommandType.StoredProcedure;
-            da.Parameters.Add("@_Username", txbUsername.Text.ToString());
-            da.Parameters.Add("@_Passwordi", txbPassword.Text.ToString());
+            da.Parameters.AddWithValue("@_Username", txbUsername.Text.ToString());
+            da.Parameters.AddWithValue("@_Passwordi", txbPassword.Text.ToString());
             x.Open();
             SqlDataAdapter adapt = new SqlDataAdapter(da);
             DataSet ds = new DataSet();
