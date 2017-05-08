@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="dalKlineti.cs" />
     <Compile Include="DataBaseConection.cs" />
+    <Compile Include="dalArtikulli.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
