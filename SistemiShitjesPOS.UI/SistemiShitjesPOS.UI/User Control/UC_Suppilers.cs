@@ -44,19 +44,19 @@ namespace SistemiShitjesPOS.UI
             {
                 SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
                 x.Open();
-                SqlDataAdapter da = new SqlDataAdapter("spKerkoArtikullin " + txtSearchSuppliers.Text.ToString(), x);
+                SqlDataAdapter da = new SqlDataAdapter("spKerkoFurnizuesin " + txtSearchSuppliers.Text.ToString(), x);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dgListOfSuppliers.DataSource = dt;
                 x.Close();
 
-            }
+        }
             catch (Exception)
             {
 
                 MessageBox.Show("Shkruaj Id-n e Klientit");
             }
-        }
+}
 
         private void dgListOfSuppliers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
