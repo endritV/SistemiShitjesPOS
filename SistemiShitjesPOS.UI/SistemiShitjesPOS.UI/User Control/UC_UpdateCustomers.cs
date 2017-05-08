@@ -6,7 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
-using SistemiShitjesPOS.DAL;
+using SistemiShitjesPOS.DataAccessLayer;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 

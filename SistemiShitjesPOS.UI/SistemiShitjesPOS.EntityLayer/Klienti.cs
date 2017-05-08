@@ -20,7 +20,7 @@ namespace SistemiShitjesPOS.EntityLayer
             NumriFix = numriFix;
             Adresa = adresa;
             NrTelefonit = nrTelefonit;
-            NrBiznesiit = nrBiznesit;
+            NrBiznesit = nrBiznesit;
             Web = web;
             Email = email;
            
@@ -65,7 +65,7 @@ namespace SistemiShitjesPOS.EntityLayer
         #region Properties
 
 
-        public string NrBiznesiit
+        public string NrBiznesit
         {
             get { return _nrBiznesit; }
             set
