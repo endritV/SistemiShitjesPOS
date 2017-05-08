@@ -31,24 +31,24 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            x.Open();
-            SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithKlientet", x);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgListOfCustomers.DataSource = dt;
-            x.Close();
+            //SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+            //x.Open();
+            //SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithKlientet", x);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            //dgListOfCustomers.DataSource = dt;
+            //x.Close();
         }
 
         private void btnSearchCustomers_Click(object sender, EventArgs e)
         {
-            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            x.Open();
-            SqlDataAdapter da = new SqlDataAdapter("spKerkoKlientin " + txtSearchCustomers.Text.ToString(), x);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgListOfCustomers.DataSource = dt;
-            x.Close();
+            //SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+            //x.Open();
+            //SqlDataAdapter da = new SqlDataAdapter("spKerkoKlientin " + txtSearchCustomers.Text.ToString(), x);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            //dgListOfCustomers.DataSource = dt;
+            //x.Close();
 
         }
 

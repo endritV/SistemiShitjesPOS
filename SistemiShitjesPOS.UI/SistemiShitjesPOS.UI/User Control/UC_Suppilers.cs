@@ -28,34 +28,34 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            x.Open();
-            SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjitheFurnizuesit", x);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgListOfSuppliers.DataSource = dt;
-            x.Close();
+        //    SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+        //    x.Open();
+        //    SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjitheFurnizuesit", x);
+        //    DataTable dt = new DataTable();
+        //    da.Fill(dt);
+        //    dgListOfSuppliers.DataSource = dt;
+        //    x.Close();
 
-        }
+        //}
 
-        private void btnSearchSuppliers_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-                x.Open();
-                SqlDataAdapter da = new SqlDataAdapter("spKerkoFurnizuesin " + txtSearchSuppliers.Text.ToString(), x);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dgListOfSuppliers.DataSource = dt;
-                x.Close();
+        //private void btnSearchSuppliers_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        SqlConnection x = new SqlConnection(DataBaseCon.Connection);
+        //        x.Open();
+        //        SqlDataAdapter da = new SqlDataAdapter("spKerkoFurnizuesin " + txtSearchSuppliers.Text.ToString(), x);
+        //        DataTable dt = new DataTable();
+        //        da.Fill(dt);
+        //        dgListOfSuppliers.DataSource = dt;
+        //        x.Close();
 
-        }
-            catch (Exception)
-            {
+        //}
+        //    catch (Exception)
+        //    {
 
-                MessageBox.Show("Shkruaj Id-n e Klientit");
-            }
+        //        MessageBox.Show("Shkruaj Id-n e Klientit");
+        //    }
 }
 
         private void dgListOfSuppliers_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -10,7 +10,15 @@ namespace SistemiShitjesPOS.DAL
 {
     public static class DataBaseCon
     {
-        public static readonly string Connection = ConfigurationManager.ConnectionStrings["conStr"].ConnectionString;
+        public static readonly string Connection = ConfigurationManager.ConnectionStrings["conStr1"].ConnectionString;
+        public static string GetConString()
+        {
+
+            return ConfigurationManager.ConnectionStrings["conStr1"].ConnectionString;
+
+        }   
 
     }
+
+    
 }

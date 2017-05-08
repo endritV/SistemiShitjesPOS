@@ -30,13 +30,13 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-            SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            x.Open();
-            SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithePuntoret", x);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgEmployees.DataSource = dt;
-            x.Close();
+            //SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+            //x.Open();
+            //SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithePuntoret", x);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            //dgEmployees.DataSource = dt;
+            //x.Close();
 
         }
 
@@ -47,22 +47,22 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSearchEmployees_Click(object sender, EventArgs e)
         {
-            try
-            {
-                SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-                x.Open();
-                SqlDataAdapter da = new SqlDataAdapter("spKerkoPuntorin " + txtSearchEmployees.Text.ToString(), x);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dgEmployees.DataSource = dt;
-                x.Close();
+            //try
+            //{
+            //    SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
+            //    x.Open();
+            //    SqlDataAdapter da = new SqlDataAdapter("spKerkoPuntorin " + txtSearchEmployees.Text.ToString(), x);
+            //    DataTable dt = new DataTable();
+            //    da.Fill(dt);
+            //    dgEmployees.DataSource = dt;
+            //    x.Close();
 
-            }
-            catch (Exception)
-            {
+            //}
+            //catch (Exception)
+            //{
 
-                MessageBox.Show("Shkruani info rreth puntorit");
-            }
+            //    MessageBox.Show("Shkruani info rreth puntorit");
+            //}
         }
 
         private void dgEmployees_CellContentClick(object sender, DataGridViewCellEventArgs e)

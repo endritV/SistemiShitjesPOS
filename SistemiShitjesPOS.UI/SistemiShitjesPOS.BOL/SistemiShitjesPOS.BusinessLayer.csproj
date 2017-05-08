@@ -40,14 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ArtikulliBOL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SistemiShitjesPOS.DAL\SistemiShitjesPOS.DataAccessLayer.csproj">
       <Project>{fd26586b-d7a7-4000-8db4-5925057e671e}</Project>
       <Name>SistemiShitjesPOS.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemiShitjesPOS.EntityLayer\SistemiShitjesPOS.EntityLayer.csproj">
+      <Project>{c9b2e1a4-4422-496e-8211-0daef5662b5d}</Project>
+      <Name>SistemiShitjesPOS.EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
