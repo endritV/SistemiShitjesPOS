@@ -32,7 +32,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                     klienti.IsKlient = bool.Parse(reader["IsKlient"].ToString());
                     klienti.NrTelefonit = reader["Phone Number"].ToString();
                     klienti.Pikat = Int32.Parse( reader["Pikat"].ToString());
-
+                    list.Add(klienti);
                 }
             }
             return list;
