@@ -85,6 +85,7 @@
             this.btnViewAll.TabIndex = 4;
             this.btnViewAll.Text = "View All";
             this.btnViewAll.UseVisualStyleBackColor = false;
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
             // btnNewCustomers
             // 
@@ -119,6 +120,7 @@
             this.btnSearchCustomers.TabIndex = 3;
             this.btnSearchCustomers.Text = "Search";
             this.btnSearchCustomers.UseVisualStyleBackColor = false;
+            this.btnSearchCustomers.Click += new System.EventHandler(this.btnSearchCustomers_Click);
             // 
             // txtSearchCustomers
             // 
@@ -155,6 +157,7 @@
             this.dgListOfCustomers.Name = "dgListOfCustomers";
             this.dgListOfCustomers.Size = new System.Drawing.Size(718, 436);
             this.dgListOfCustomers.TabIndex = 1;
+            this.dgListOfCustomers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfCustomers_CellContentClick);
             // 
             // label1
             // 
