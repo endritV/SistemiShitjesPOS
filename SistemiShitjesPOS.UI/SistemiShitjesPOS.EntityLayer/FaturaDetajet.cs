@@ -12,6 +12,7 @@ namespace SistemiShitjesPOS.EntityLayer
         private int _idArtikulli;
         private int _sasia;
         private int _cmimi;
+        //sadsad
 
         public int Cmimi
         {
