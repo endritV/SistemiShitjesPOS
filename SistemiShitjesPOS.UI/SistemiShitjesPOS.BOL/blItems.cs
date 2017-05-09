@@ -15,5 +15,24 @@ namespace SistemiShitjesPOS.BusinessLayer
         {
             return dalItems.GetAll();
         }
+
+        public static void InsertNewItems(Artikulli artikulli)
+        {
+            //if (IsValid(artikulli))
+                dalItems.Insert(artikulli);
+           
+        }
+        public static List<Artikulli> SearchById(int artikulli)
+        {
+
+            return dalItems.GetItemsByID(artikulli);
+
+        }
+        //public static bool IsValid(Artikulli artikulli)
+        //{
+        //    if (artikulli.EmriArtikullit != "" && artikulli.Barkodi > 0 && artikulli.Pershkrimi != "" && artikulli.Njesia != "Unity" && artikulli.IsAktiv != false)
+        //        return true;
+        //    return false;
+        //}
     }
 }

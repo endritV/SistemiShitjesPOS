@@ -22,6 +22,16 @@ namespace SistemiShitjesPOS.EntityLayer
         private string _userName;
         private string _password;
         private int _idRoli;
+
+        private string _adresa;
+
+        public string Adresa
+        {
+            get { return _adresa; }
+            set { _adresa = value; }
+        }
+
+
         #endregion
 
         #region Properties
