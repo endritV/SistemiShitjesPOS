@@ -34,14 +34,6 @@ namespace SistemiShitjesPOS.UI
         private void btnViewAll_Click(object sender, EventArgs e)
         {
             dgListOfCustomers.DataSource = dalKlineti.GetAll();
-          
-            //SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            //x.Open();
-            //SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithKlientet", x);
-            //DataTable dt = new DataTable();
-            //da.Fill(dt);
-            //dgListOfCustomers.DataSource = dt;
-            //x.Close();
         }
 
         protected void btnSearchCustomers_Click(object sender, EventArgs e)

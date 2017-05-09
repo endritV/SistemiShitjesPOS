@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using SistemiShitjesPOS.DataAccessLayer;
+using SistemiShitjesPOS.BusinessLayer;
 
 
 namespace SistemiShitjesPOS.UI
@@ -61,20 +62,7 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-
-
-            //SqlConnection x = new SqlConnection(DataBaseCon.Connection);
-            //x.Open();
-            //SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjithaArtikujtv2", x);
-            //DataTable dt = new DataTable();
-            //da.Fill(dt);
-            //dgListOfItems.DataSource = dt;
-            //x.Close();
-
-
-
-
-
+            dgListOfItems.DataSource = blItems.GetAll();
         }
 
         private void txtSearchItems_MouseDown(object sender, MouseEventArgs e)
