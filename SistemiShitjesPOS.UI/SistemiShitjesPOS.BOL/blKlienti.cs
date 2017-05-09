@@ -17,7 +17,6 @@ namespace SistemiShitjesPOS.BusinessLayer
         {
             if (IsValid(klienti))
                 dalKlineti.Insert(klienti);
-
         }
 
         private static bool IsValid(Klienti klienti)

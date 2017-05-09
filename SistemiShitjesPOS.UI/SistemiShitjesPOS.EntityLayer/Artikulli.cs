@@ -8,6 +8,22 @@ namespace SistemiShitjesPOS.EntityLayer
 {
     public class Artikulli
     {
+        #region Constructor
+        public Artikulli()
+        {
+
+        }
+        public Artikulli(string emriArtikullit,int barkodi,string pershkrimi,string njesia)
+        {
+            
+            EmriArtikullit = emriArtikullit;
+            Barkodi = barkodi;
+            Pershkrimi = pershkrimi;
+            Njesia = njesia;
+        }
+
+        #endregion
+
         private int _idArtukulli;
         private string _emriArtikullit;
         private int _barkodi;

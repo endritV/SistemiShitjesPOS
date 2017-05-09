@@ -45,14 +45,45 @@ namespace SistemiShitjesPOS.DataAccessLayer
                     while (reader.Read())
                     {
                         var artikulli = new Artikulli();
- 
+
                         artikulli.Pershkrimi = reader["Pershkrimi"].ToString();
                         artikulli.IsAktiv = bool.Parse(reader["IsAktive"].ToString());
                         artikulli.IdArtikulli = int.Parse(reader["IdArtikulli"].ToString());
                         artikulli.EmriArtikullit = reader["EmriArtikullit"].ToString();
                         artikulli.Barkodi = int.Parse(reader["Barkodi"].ToString());
+                        artikulli.Njesia = reader["Njesia"].ToString();
 
 
+
+                        list.Add(artikulli);
+                    }
+
+                }
+            }
+            return list;
+        }
+
+        public static List<Artikulli> GetItemsByID(int id)
+        {
+            var list = new List<Artikulli>();
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("spKerkoArtikullin", conn);
+                cmd.Parameters.AddWithValue("@_Barkodi", id);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                using (IDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var artikulli = new Artikulli();
+                        artikulli.IdArtikulli = id;
+                        artikulli.EmriArtikullit = reader["EmriArtikullit"].ToString();
+                        artikulli.Barkodi = int.Parse(reader["Barkodi"].ToString());
+                        artikulli.Njesia = reader["Njesia"].ToString();
+                        artikulli.Pershkrimi = reader["Pershkrimi"].ToString();
+                        artikulli.IsAktiv = bool.Parse(reader["IsAktive"].ToString());
 
                         list.Add(artikulli);
                     }

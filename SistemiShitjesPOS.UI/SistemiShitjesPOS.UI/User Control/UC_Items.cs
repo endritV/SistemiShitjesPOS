@@ -39,25 +39,8 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSearchItems_Click(object sender, EventArgs e)
         {
-           
+            dgListOfItems.DataSource = blItems.SearchById(int.Parse(txtSearchItems.Text));
 
-            //try
-            //{
-            //    SqlConnection x = new SqlConnection(DataBaseCon.Connection);
-            //    x.Open();
-            //    SqlDataAdapter da = new SqlDataAdapter("spKerkoArtikullin " + txtSearchItems.Text.ToString(), x);
-            //    DataTable dt = new DataTable();
-            //    da.Fill(dt);
-            //    dgListOfItems.DataSource = dt;
-            //    x.Close();
-
-            //}
-            //catch (Exception)
-            //{
-
-            //    MessageBox.Show("Shkruaj Barkodin");
-            //}
-         
         }   
 
         private void btnViewAll_Click(object sender, EventArgs e)
