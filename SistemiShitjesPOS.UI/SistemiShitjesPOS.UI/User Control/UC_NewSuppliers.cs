@@ -19,6 +19,9 @@ namespace SistemiShitjesPOS.UI
         public UC_NewSuppliers()
         {
             InitializeComponent();
+            
+
+            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -68,6 +71,71 @@ namespace SistemiShitjesPOS.UI
         private void UC_NewSuppliers_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtIdSuppliers_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtIdSuppliers.Clear();
+        }
+
+        private void txtEmri_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtEmri.Clear();
+        }
+
+        private void txtEmriFurnitorit_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtEmriFurnitorit.Clear();
+        }
+
+        private void txtMbiemri_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtMbiemri.Clear();
+        }
+
+        private void txtNrTelefonit_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtNrTelefonit.Clear();
+        }
+
+        private void txtNrFix_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtNrFix.Clear();
+        }
+
+        private void txtEmail_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtEmail.Clear();
+        }
+
+        private void txtNrBiznesit_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtNrBiznesit.Clear();
+        }
+
+        private void txtUserName_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtUserName.Clear();
+        }
+
+        private void txtPassword_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPassword.Clear();
+        }
+
+        private void txtAdresa_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtAdresa.Clear();
+        }
+
+        private void txtWeb_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtWeb.Clear();
+        }
+
+        private void txtpershkrimi_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtpershkrimi.Clear();
         }
     }
 }

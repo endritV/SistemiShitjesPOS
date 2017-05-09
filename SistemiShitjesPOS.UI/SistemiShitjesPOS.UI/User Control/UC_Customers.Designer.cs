@@ -133,6 +133,7 @@
             this.txtSearchCustomers.Size = new System.Drawing.Size(237, 32);
             this.txtSearchCustomers.TabIndex = 1;
             this.txtSearchCustomers.Text = "Search Customers";
+            this.txtSearchCustomers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtSearchCustomers_MouseDown);
             // 
             // lblListOfCustomers
             // 

@@ -26,7 +26,25 @@ namespace SistemiShitjesPOS.UI
             blKlienti.InsertNewClietn(new Klienti(txtIdKlient.Text,txtEmri.Text,txtAdresa.Text,txtNrTelefonit.Text,rdbKlient.Checked));
 
         }
-          
 
+        private void txtIdKlient_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtIdKlient.Clear();
+        }
+
+        private void txtEmri_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtEmri.Clear();
+        }
+
+        private void txtAdresa_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtAdresa.Clear();
+        }
+
+        private void txtNrTelefonit_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtNrTelefonit.Clear();
+        }
     }
 }

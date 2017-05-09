@@ -50,6 +50,7 @@
             this.txtIdItems.Size = new System.Drawing.Size(182, 32);
             this.txtIdItems.TabIndex = 2;
             this.txtIdItems.Text = "Product ID";
+            this.txtIdItems.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtIdItems_MouseDown);
             // 
             // txtEmri
             // 
@@ -74,6 +75,7 @@
             this.txtBarkodi.Size = new System.Drawing.Size(182, 32);
             this.txtBarkodi.TabIndex = 2;
             this.txtBarkodi.Text = "Barcodes";
+            this.txtBarkodi.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtBarkodi_MouseDown);
             // 
             // txtPershkrimi
             // 
@@ -87,6 +89,8 @@
             this.txtPershkrimi.Size = new System.Drawing.Size(400, 248);
             this.txtPershkrimi.TabIndex = 2;
             this.txtPershkrimi.Text = "Info";
+            this.txtPershkrimi.TextChanged += new System.EventHandler(this.txtPershkrimi_TextChanged);
+            this.txtPershkrimi.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtPershkrimi_MouseDown);
             // 
             // rdbAktiv
             // 

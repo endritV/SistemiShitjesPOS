@@ -22,6 +22,7 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            dgListOfCustomers.DataSource = dalKlineti.GetAll();
         }
 
         private void btnNewCustomers_Click(object sender, EventArgs e)
@@ -33,7 +34,7 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-            dgListOfCustomers.DataSource = dalKlineti.GetAll();
+            
         }
 
         protected void btnSearchCustomers_Click(object sender, EventArgs e)
@@ -74,6 +75,11 @@ namespace SistemiShitjesPOS.UI
 
                 
             //}
+        }
+
+        private void txtSearchCustomers_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtSearchCustomers.Clear();
         }
     }
 }

@@ -69,5 +69,10 @@ namespace SistemiShitjesPOS.UI
         {
 
         }
+
+        private void txtSearchEmployees_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtSearchEmployees.Clear();
+        }
     }
 }

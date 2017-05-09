@@ -133,6 +133,7 @@
             this.txtSearchSuppliers.Size = new System.Drawing.Size(237, 32);
             this.txtSearchSuppliers.TabIndex = 1;
             this.txtSearchSuppliers.Text = "Search Suppliers";
+            this.txtSearchSuppliers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtSearchSuppliers_MouseDown);
             // 
             // lblListOfSuppliers
             // 

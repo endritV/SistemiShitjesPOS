@@ -28,6 +28,14 @@ namespace SistemiShitjesPOS.BusinessLayer
             return dalItems.GetItemsByID(artikulli);
 
         }
+
+        public static List<Artikulli> UpdateItem(Artikulli artikulli)
+        {
+
+            return dalItems.UpdateItem(artikulli);
+        }
+
+
         //public static bool IsValid(Artikulli artikulli)
         //{
         //    if (artikulli.EmriArtikullit != "" && artikulli.Barkodi > 0 && artikulli.Pershkrimi != "" && artikulli.Njesia != "Unity" && artikulli.IsAktiv != false)

@@ -21,8 +21,9 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-            
-            
+            dgListOfItems.DataSource = blItems.GetAll();
+
+
         }
 
         private void btnNewItems_Click(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-            dgListOfItems.DataSource = blItems.GetAll();
+            
         }
 
         private void txtSearchItems_MouseDown(object sender, MouseEventArgs e)

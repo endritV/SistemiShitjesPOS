@@ -101,6 +101,7 @@
             this.txtNrTel.Size = new System.Drawing.Size(182, 32);
             this.txtNrTel.TabIndex = 29;
             this.txtNrTel.Text = "Phone Number";
+            this.txtNrTel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtNrTel_MouseDown);
             // 
             // txtEmri
             // 
@@ -113,6 +114,7 @@
             this.txtEmri.Size = new System.Drawing.Size(182, 32);
             this.txtEmri.TabIndex = 28;
             this.txtEmri.Text = "Name";
+            this.txtEmri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtEmri_MouseDown);
             // 
             // txtAdresa
             // 
@@ -125,6 +127,7 @@
             this.txtAdresa.Size = new System.Drawing.Size(182, 32);
             this.txtAdresa.TabIndex = 26;
             this.txtAdresa.Text = "Address";
+            this.txtAdresa.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtAdresa_MouseDown);
             // 
             // txtIdEmployee
             // 
@@ -137,6 +140,7 @@
             this.txtIdEmployee.Size = new System.Drawing.Size(182, 32);
             this.txtIdEmployee.TabIndex = 27;
             this.txtIdEmployee.Text = "Employees Id";
+            this.txtIdEmployee.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtIdEmployee_MouseDown);
             // 
             // UC_UpdateCustomers
             // 

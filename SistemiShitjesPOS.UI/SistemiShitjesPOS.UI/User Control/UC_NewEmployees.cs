@@ -53,5 +53,45 @@ namespace SistemiShitjesPOS.UI
             //    MessageBox.Show("Inserto Te Dhenat Braqul");
             //}
         }
+
+        private void txtIdEmployees_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtIdEmployees.Clear();
+        }
+
+        private void txtEmri_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtEmri.Clear();
+        }
+
+        private void txtMbiemri_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtMbiemri.Clear(); 
+        }
+
+        private void txtNrTelefonit_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtNrTelefonit.Clear();
+        }
+
+        private void txtEmail_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtEmail.Clear();
+        }
+
+        private void txtUserName_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtUserName.Clear();
+        }
+
+        private void txtPassword_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPassword.Clear();
+        }
+
+        private void txtAdresa_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtAdresa.Clear();
+        }
     }
 }

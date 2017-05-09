@@ -21,6 +21,14 @@ namespace SistemiShitjesPOS.EntityLayer
             Pershkrimi = pershkrimi;
             Njesia = njesia;
         }
+        public Artikulli(int artikulli,string emriArtikullit, int barkodi, string pershkrimi, string njesia)
+        {
+            this.IdArtikulli = artikulli;
+            EmriArtikullit = emriArtikullit;
+            Barkodi = barkodi;
+            Pershkrimi = pershkrimi;
+            Njesia = njesia;
+        }
 
         #endregion
 

@@ -113,6 +113,7 @@
             this.txtPassword.Size = new System.Drawing.Size(182, 32);
             this.txtPassword.TabIndex = 37;
             this.txtPassword.Text = "Password";
+            this.txtPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtPassword_MouseDown);
             // 
             // txtpershkrimi
             // 
@@ -126,6 +127,7 @@
             this.txtpershkrimi.Size = new System.Drawing.Size(192, 242);
             this.txtpershkrimi.TabIndex = 35;
             this.txtpershkrimi.Text = "Pershkrimi";
+            this.txtpershkrimi.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtpershkrimi_MouseDown);
             // 
             // txtUserName
             // 
@@ -138,6 +140,7 @@
             this.txtUserName.Size = new System.Drawing.Size(182, 32);
             this.txtUserName.TabIndex = 36;
             this.txtUserName.Text = "User Name";
+            this.txtUserName.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtUserName_MouseDown);
             // 
             // txtWeb
             // 
@@ -150,6 +153,7 @@
             this.txtWeb.Size = new System.Drawing.Size(182, 32);
             this.txtWeb.TabIndex = 31;
             this.txtWeb.Text = "Web";
+            this.txtWeb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtWeb_MouseDown);
             // 
             // txtAdresa
             // 
@@ -162,6 +166,7 @@
             this.txtAdresa.Size = new System.Drawing.Size(182, 32);
             this.txtAdresa.TabIndex = 32;
             this.txtAdresa.Text = "Address";
+            this.txtAdresa.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtAdresa_MouseDown);
             // 
             // txtEmail
             // 
@@ -174,6 +179,8 @@
             this.txtEmail.Size = new System.Drawing.Size(182, 32);
             this.txtEmail.TabIndex = 30;
             this.txtEmail.Text = "Email";
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
+            this.txtEmail.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtEmail_MouseDown);
             // 
             // txtNrFix
             // 
@@ -186,6 +193,7 @@
             this.txtNrFix.Size = new System.Drawing.Size(182, 32);
             this.txtNrFix.TabIndex = 33;
             this.txtNrFix.Text = "Fix Number";
+            this.txtNrFix.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtNrFix_MouseDown);
             // 
             // txtNrTelefonit
             // 
@@ -198,6 +206,7 @@
             this.txtNrTelefonit.Size = new System.Drawing.Size(182, 32);
             this.txtNrTelefonit.TabIndex = 34;
             this.txtNrTelefonit.Text = "Phone Number";
+            this.txtNrTelefonit.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtNrTelefonit_MouseDown);
             // 
             // txtMbiemri
             // 
@@ -210,6 +219,7 @@
             this.txtMbiemri.Size = new System.Drawing.Size(182, 32);
             this.txtMbiemri.TabIndex = 29;
             this.txtMbiemri.Text = "Surname";
+            this.txtMbiemri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtMbiemri_MouseDown);
             // 
             // txtEmriFurnitorit
             // 
@@ -222,6 +232,7 @@
             this.txtEmriFurnitorit.Size = new System.Drawing.Size(182, 32);
             this.txtEmriFurnitorit.TabIndex = 28;
             this.txtEmriFurnitorit.Text = "Name";
+            this.txtEmriFurnitorit.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtEmriFurnitorit_MouseDown);
             // 
             // txtEmri
             // 
@@ -234,6 +245,7 @@
             this.txtEmri.Size = new System.Drawing.Size(182, 32);
             this.txtEmri.TabIndex = 27;
             this.txtEmri.Text = "Name Suppliers";
+            this.txtEmri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtEmri_MouseDown);
             // 
             // txtNrBiznesit
             // 
@@ -246,6 +258,7 @@
             this.txtNrBiznesit.Size = new System.Drawing.Size(182, 32);
             this.txtNrBiznesit.TabIndex = 26;
             this.txtNrBiznesit.Text = "Bussines Id";
+            this.txtNrBiznesit.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtNrBiznesit_MouseDown);
             // 
             // txtIdSuppliers
             // 
@@ -258,6 +271,7 @@
             this.txtIdSuppliers.Size = new System.Drawing.Size(182, 32);
             this.txtIdSuppliers.TabIndex = 25;
             this.txtIdSuppliers.Text = "Suppliers Id";
+            this.txtIdSuppliers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtIdSuppliers_MouseDown);
             // 
             // UC_UpdateSuppliers
             // 

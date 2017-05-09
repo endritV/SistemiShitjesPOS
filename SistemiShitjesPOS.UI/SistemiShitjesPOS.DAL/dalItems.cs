@@ -94,5 +94,25 @@ namespace SistemiShitjesPOS.DataAccessLayer
             }
             return list;
         }
+        public static List<Artikulli> UpdateItem(Artikulli a)
+        {
+            var list = new List<Artikulli>();
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("spNdryshoAritkullin", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@_IdArtikulli", a.IdArtikulli);
+                cmd.Parameters.AddWithValue("@_EmriArtikullit", a.EmriArtikullit);
+                cmd.Parameters.AddWithValue("@_Barkodi", a.Barkodi);
+                cmd.Parameters.AddWithValue("@_Njesia", a.Njesia);
+                cmd.Parameters.AddWithValue("@_Pershkrimi", a.Pershkrimi);
+                cmd.Parameters.AddWithValue("@_IsAktvi", a.IsAktiv);
+                int o = cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+            }
+            return list;
+
+        }
     }
 }

@@ -37,5 +37,25 @@ namespace SistemiShitjesPOS.UI
         {
 
         }
+
+        private void txtPershkrimi_TextChanged(object sender, EventArgs e)
+        {
+            txtPershkrimi.Clear();
+        }
+
+        private void txtIdItems_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtIdItems.Clear();
+        }
+
+        private void txtBarkodi_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtBarkodi.Clear();
+        }
+
+        private void txtPershkrimi_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPershkrimi.Clear();
+        }
     }
 }

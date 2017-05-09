@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SistemiShitjesPOS.BusinessLayer;
+using SistemiShitjesPOS.EntityLayer;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using SistemiShitjesPOS.DataAccessLayer;
@@ -58,6 +60,7 @@ namespace SistemiShitjesPOS.UI
             this.cmbCategory.Size = new System.Drawing.Size(182, 31);
             this.cmbCategory.TabIndex = 22;
             this.cmbCategory.Text = "Unity";
+            this.cmbCategory.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cmbCategory_MouseDown);
             // 
             // btnSubmit
             // 
@@ -140,6 +143,7 @@ namespace SistemiShitjesPOS.UI
             this.txtPershkrimi.Size = new System.Drawing.Size(400, 248);
             this.txtPershkrimi.TabIndex = 14;
             this.txtPershkrimi.Text = "Info";
+            this.txtPershkrimi.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtPershkrimi_MouseDown);
             // 
             // txtBarkodi
             // 
@@ -152,6 +156,7 @@ namespace SistemiShitjesPOS.UI
             this.txtBarkodi.Size = new System.Drawing.Size(182, 32);
             this.txtBarkodi.TabIndex = 15;
             this.txtBarkodi.Text = "Barcodes";
+            this.txtBarkodi.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtBarkodi_MouseDown);
             // 
             // txtEmri
             // 
@@ -164,6 +169,7 @@ namespace SistemiShitjesPOS.UI
             this.txtEmri.Size = new System.Drawing.Size(182, 32);
             this.txtEmri.TabIndex = 16;
             this.txtEmri.Text = "Name";
+            this.txtEmri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtEmri_MouseDown);
             // 
             // txtIdItems
             // 
@@ -173,10 +179,10 @@ namespace SistemiShitjesPOS.UI
             this.txtIdItems.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtIdItems.Location = new System.Drawing.Point(26, 88);
             this.txtIdItems.Name = "txtIdItems";
-            this.txtIdItems.ReadOnly = true;
             this.txtIdItems.Size = new System.Drawing.Size(182, 32);
             this.txtIdItems.TabIndex = 17;
             this.txtIdItems.Text = "Product ID";
+            this.txtIdItems.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtIdItems_MouseDown);
             // 
             // UC_UpdateItems
             // 
@@ -199,6 +205,9 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            blItems.UpdateItem(new Artikulli(int.Parse(txtIdItems.Text),txtEmri.Text, int.Parse(txtBarkodi.Text), txtPershkrimi.Text, cmbCategory.Text));
+
+
             //try
             //{
 
@@ -230,6 +239,31 @@ namespace SistemiShitjesPOS.UI
 
             //    MessageBox.Show("Inserto Te Dhenat Braqul");
             //}
+        }
+
+        private void txtIdItems_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtIdItems.Clear();
+        }
+
+        private void txtEmri_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtEmri.Clear();
+        }
+
+        private void txtBarkodi_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtBarkodi.Clear();
+        }
+
+        private void txtPershkrimi_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPershkrimi.Clear();
+        }
+
+        private void cmbCategory_MouseDown(object sender, MouseEventArgs e)
+        {
+            
         }
     }
 }

@@ -47,5 +47,25 @@ namespace SistemiShitjesPOS.UI
         //    MessageBox.Show(" Te dhenat u Ndryshuan", o.ToString());
         //    x.Close();
         }
+
+        private void txtIdEmployee_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtIdEmployee.Clear();
+        }
+
+        private void txtEmri_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtEmri.Clear();
+        }
+
+        private void txtAdresa_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtAdresa.Clear();
+        }
+
+        private void txtNrTel_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtNrTel.Clear();
+        }
     }
 }

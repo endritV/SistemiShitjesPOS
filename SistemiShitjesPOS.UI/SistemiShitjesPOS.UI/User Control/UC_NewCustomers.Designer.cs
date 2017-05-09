@@ -48,6 +48,7 @@
             this.txtNrTelefonit.Size = new System.Drawing.Size(182, 32);
             this.txtNrTelefonit.TabIndex = 21;
             this.txtNrTelefonit.Text = "Phone Number";
+            this.txtNrTelefonit.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtNrTelefonit_MouseDown);
             // 
             // txtEmri
             // 
@@ -60,6 +61,7 @@
             this.txtEmri.Size = new System.Drawing.Size(182, 32);
             this.txtEmri.TabIndex = 19;
             this.txtEmri.Text = "Name";
+            this.txtEmri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtEmri_MouseDown);
             // 
             // txtIdKlient
             // 
@@ -72,6 +74,7 @@
             this.txtIdKlient.Size = new System.Drawing.Size(182, 32);
             this.txtIdKlient.TabIndex = 18;
             this.txtIdKlient.Text = "Klient Id";
+            this.txtIdKlient.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtIdKlient_MouseDown);
             // 
             // txtAdresa
             // 
@@ -84,6 +87,7 @@
             this.txtAdresa.Size = new System.Drawing.Size(182, 32);
             this.txtAdresa.TabIndex = 18;
             this.txtAdresa.Text = "Address";
+            this.txtAdresa.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtAdresa_MouseDown);
             // 
             // btnSubmit
             // 

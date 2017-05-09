@@ -120,6 +120,7 @@
             this.txtSearchEmployees.TabIndex = 1;
             this.txtSearchEmployees.Text = "Search Employees";
             this.txtSearchEmployees.TextChanged += new System.EventHandler(this.txtSearchEmployees_TextChanged);
+            this.txtSearchEmployees.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtSearchEmployees_MouseDown);
             // 
             // lblListOfEmployees
             // 
