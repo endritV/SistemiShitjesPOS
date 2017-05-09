@@ -9,6 +9,28 @@ namespace SistemiShitjesPOS.EntityLayer
 {
     public class Puntori
     {
+
+        public Puntori()
+        {
+                
+        }
+
+        public Puntori(string idPuntori,int idSektori,string emri,string mbiemri,DateTime dataLindjes,string nrTelefonit,string email,string userName,string password,int idRoli,string adresa)
+        {
+            IdPuntori = idPuntori;
+            IdRoli = idRoli;
+            IdSektori = idSektori;
+            Emri = emri;
+            Mbiemri = mbiemri;
+            DataLindjes = dataLindjes;
+            NrTelefonit = nrTelefonit;
+            Email = email;
+            UserName = userName;
+            Passwordi = password;
+            Adresa = adresa;
+        }
+
+
         #region Private
 
 
@@ -55,9 +77,7 @@ namespace SistemiShitjesPOS.EntityLayer
             get { return _password; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("User Name or Password is Incorrect!");
-                else _password = value;
+                _password = value;
             }
         }
 
@@ -67,9 +87,7 @@ namespace SistemiShitjesPOS.EntityLayer
             get { return _userName; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("User Name or Password is Incorrect!");
-                else _userName = value;
+                 _userName = value;
             }
         }
 

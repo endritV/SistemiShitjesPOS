@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using SistemiShitjesPOS.DataAccessLayer;
+using SistemiShitjesPOS.BusinessLayer;
+using SistemiShitjesPOS.EntityLayer;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace SistemiShitjesPOS.UI
 {
@@ -21,9 +24,12 @@ namespace SistemiShitjesPOS.UI
 
         private void txbPassword_TextChanged(object sender, EventArgs e)
         {
-        
-
+            
+            
+            
         }
+
+        
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
@@ -53,12 +59,10 @@ namespace SistemiShitjesPOS.UI
                 MessageBox.Show("Login Failed!!");
             }
 
-
-
-
-
-
-
+            if (blLogin.AdminVerification(txbUsername.Text,txbPassword.Text) == "1")
+            {
+                
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

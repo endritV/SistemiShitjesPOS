@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using SistemiShitjesPOS.BusinessLayer;
+using SistemiShitjesPOS.EntityLayer;
 
 namespace SistemiShitjesPOS.UI
 {
@@ -21,6 +23,10 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSubmitEmployees_Click(object sender, EventArgs e)
         {
+
+            blEmployees.InsertNewEmployees(new Puntori(txtIdEmployees.Text, int.Parse(cmbSektoriId.Text), txtEmri.Text, txtMbiemri.Text, DateTime.Parse(dtDiteLindja.Text), txtNrTelefonit.Text, txtEmail.Text, txtUserName.Text, txtPassword.GetHashCode().ToString(),int.Parse(cmbRoliId.Text),txtAdresa.Text));
+
+
             //try
             //{
 
@@ -52,6 +58,11 @@ namespace SistemiShitjesPOS.UI
 
             //    MessageBox.Show("Inserto Te Dhenat Braqul");
             //}
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
