@@ -33,5 +33,16 @@ namespace SistemiShitjesPOS.BusinessLayer
         {
             return dalKlineti.GetAll();
         }
+        public static List<Klienti>SearchById(string klienti)
+        {
+
+            return dalKlineti.GetKlientById(klienti);
+
+        }
+        public static List<Klienti>UpdateKlient(Klienti klienti)
+        {
+
+            return dalKlineti.UpdateClient(klienti);
+        }
     }
 }
