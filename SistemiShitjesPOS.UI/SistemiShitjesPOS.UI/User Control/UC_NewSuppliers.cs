@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SistemiShitjesPOS.EntityLayer;
+using SistemiShitjesPOS.BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -21,6 +23,7 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            blSupplier.InsertNewSupplier(new Klienti(rdbAktiv.Checked, txtIdSuppliers.Text, txtEmri.Text, txtEmriFurnitorit.Text, txtMbiemri.Text, txtNrFix.Text, txtAdresa.Text, txtNrTelefonit.Text, txtNrBiznesit.Text, txtWeb.Text, txtEmail.Text, txtpershkrimi.Text));
             //try
             //{
 
