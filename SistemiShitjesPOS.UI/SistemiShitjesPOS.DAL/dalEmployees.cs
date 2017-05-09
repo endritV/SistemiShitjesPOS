@@ -28,6 +28,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 cmd.Parameters.AddWithValue("@_Mbiemri", p.Mbiemri);
                 cmd.Parameters.AddWithValue("@_DataLindjes", p.DataLindjes);
                 cmd.Parameters.AddWithValue("@_Email", p.Email);
+                cmd.Parameters.AddWithValue("@_Adresa", p.Adresa);
                 cmd.Parameters.AddWithValue("@_NrTelefonit", p.NrTelefonit);
                 cmd.Parameters.AddWithValue("@_UserName", p.UserName);
                 cmd.Parameters.AddWithValue("@_Password", p.Passwordi);
