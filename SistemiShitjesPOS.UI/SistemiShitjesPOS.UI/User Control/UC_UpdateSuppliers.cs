@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using SistemiShitjesPOS.BusinessLayer;
+using SistemiShitjesPOS.EntityLayer;
 using SistemiShitjesPOS.DataAccessLayer;
 
 namespace SistemiShitjesPOS.UI
@@ -21,7 +23,7 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            blSupplier.UpdateSupplier(new Klienti(rdbAktiv.Checked, txtIdSuppliers.Text, txtEmri.Text, txtEmriFurnitorit.Text, txtMbiemri.Text, txtNrFix.Text, txtAdresa.Text, txtNrTelefonit.Text, txtNrBiznesit.Text, txtWeb.Text, txtEmail.Text, txtpershkrimi.Text));
             //try
             //{
 

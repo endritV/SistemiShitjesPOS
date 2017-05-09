@@ -68,36 +68,41 @@ namespace SistemiShitjesPOS.UI
             
             panSuppliers.Controls.Clear();
             panSuppliers.Controls.Add(u);
-            try
-            {
-                if (e.RowIndex >= 0)
-                {
+            //try
+            //{
+            //    if (e.RowIndex >= 0)
+            //    {
                     
 
-                    DataGridViewRow row = this.dgListOfSuppliers.Rows[e.RowIndex];
+            //        DataGridViewRow row = this.dgListOfSuppliers.Rows[e.RowIndex];
 
-                    u.txtIdSuppliers.Text = row.Cells[0].Value.ToString();
-                    u.txtEmri.Text = row.Cells[1].Value.ToString();
-                    u.txtEmriFurnitorit.Text = row.Cells[2].Value.ToString();
-                    u.txtMbiemri.SelectedText = row.Cells[3].Value.ToString();
-                    u.txtAdresa.Text = row.Cells[4].Value.ToString();
-                    u.txtNrFix.Text = row.Cells[5].Value.ToString();
-                    u.txtNrTelefonit.Text = row.Cells[6].Value.ToString();
-                    u.txtNrBiznesit.Text = row.Cells[7].Value.ToString();
-                    u.txtEmail.Text = row.Cells[8].Value.ToString();
-                    u.txtWeb.Text = row.Cells[9].Value.ToString();
-                    u.txtpershkrimi.Text = row.Cells[10].Value.ToString();
+            //        u.txtIdSuppliers.Text = row.Cells[0].Value.ToString();
+            //        u.txtEmri.Text = row.Cells[1].Value.ToString();
+            //        u.txtEmriFurnitorit.Text = row.Cells[2].Value.ToString();
+            //        u.txtMbiemri.SelectedText = row.Cells[3].Value.ToString();
+            //        u.txtAdresa.Text = row.Cells[4].Value.ToString();
+            //        u.txtNrFix.Text = row.Cells[5].Value.ToString();
+            //        u.txtNrTelefonit.Text = row.Cells[6].Value.ToString();
+            //        u.txtNrBiznesit.Text = row.Cells[7].Value.ToString();
+            //        u.txtEmail.Text = row.Cells[8].Value.ToString();
+            //        u.txtWeb.Text = row.Cells[9].Value.ToString();
+            //        u.txtpershkrimi.Text = row.Cells[10].Value.ToString();
 
 
 
-                }
+            //    }
 
-            }
-            catch (Exception)
-            {
+            //}
+            //catch (Exception)
+            //{
 
-                MessageBox.Show("Selekto nje rresht");
-            }
+            //    MessageBox.Show("Selekto nje rresht");
+            //}
+        }
+
+        private void btnSearchSuppliers_Click(object sender, EventArgs e)
+        {
+            dgListOfSuppliers.DataSource = blSupplier.GetSupplierByid(txtSearchSuppliers.Text);
         }
     }
 }

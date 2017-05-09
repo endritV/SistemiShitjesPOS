@@ -37,6 +37,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 conn.Close();
             }
         }
+
         public static List<Klienti> GetAll()
         {
             List<Klienti> list = new List<Klienti>();
@@ -71,6 +72,68 @@ namespace SistemiShitjesPOS.DataAccessLayer
             }
             return list;
         }
+        public static List<Klienti> GetSupplierById(string id)
+        {
+            var list = new List<Klienti>();
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("spKerkoFurnizuesin", conn);
+                cmd.Parameters.AddWithValue("@_IdKlienti", id);
+                cmd.CommandType = CommandType.StoredProcedure;
+                using (IDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var klienti = new Klienti();
+
+                        klienti.IdKlienti = id;
+                        klienti.IsKlient = bool.Parse(reader["IsKlinet"].ToString());
+                        klienti.EmriPronarit = reader["EmriPronarit"].ToString();
+                        klienti.MbiemriPronarit = reader["MbimeriPronarit"].ToString();
+                        klienti.NumriFix = reader["NrFix"].ToString();
+                        klienti.Adresani = reader["Adresa"].ToString();
+                        klienti.NrTelefonit = reader["NrTelefonit"].ToString();
+                        klienti.NrBiznesit = reader["NrBiznesit"].ToString();
+                        klienti.Email = reader["Email"].ToString();
+                        klienti.Web = reader["Web"].ToString();
+                        klienti.Pershkrimi = reader["Pershkrimi"].ToString();
+
+                        list.Add(klienti);
+                    }
+
+                }
+            }
+            return list;
+        }
+        public static List<Klienti> UpdateSupplier(Klienti k)
+        {
+            var list = new List<Klienti>();
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("spNdryshoFurnitorin", conn);
+                cmd.Parameters.AddWithValue("@_IdKlienti", k.IdKlienti);
+                cmd.Parameters.AddWithValue("@_Emri", k.Emri);
+                cmd.Parameters.AddWithValue("@_EmriPronarit", k.EmriPronarit);
+                cmd.Parameters.AddWithValue("@_MbiemriPronarit", k.MbiemriPronarit);
+                cmd.Parameters.AddWithValue("@_NrFix", k.NumriFix);
+                cmd.Parameters.AddWithValue("@_Nrtelefonit", k.NrTelefonit);
+                cmd.Parameters.AddWithValue("@_Adresa", k.Adresani);
+                cmd.Parameters.AddWithValue("@_NrBiznesit", k.NrBiznesit);
+                cmd.Parameters.AddWithValue("@_Email", k.Email);
+                cmd.Parameters.AddWithValue("@_Web", k.Web);
+                cmd.Parameters.AddWithValue("@_Pershkrimi", k.Pershkrimi);
+                cmd.Parameters.AddWithValue("@_IsKlient", k.IsKlient);
+                cmd.CommandType = CommandType.StoredProcedure;
+                int o = cmd.ExecuteNonQuery();
+                conn.Close();
+
+            }
+            return list;
+
+        }
+
 
     }
   

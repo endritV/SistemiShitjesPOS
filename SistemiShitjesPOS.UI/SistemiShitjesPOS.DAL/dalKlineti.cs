@@ -47,7 +47,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                         var klienti = new Klienti();
                         klienti.IdKlienti = reader["IdKlienti"].ToString();
                         klienti.Emri = reader["Emri"].ToString();
-                        //klienti.Adresani = reader["Adresa"].ToString();
+                        klienti.Adresani = reader["Adresa"].ToString();
                         klienti.NrTelefonit = reader["NrTelefonit"].ToString();
                         klienti.IsKlient = bool.Parse(reader["IsKlinet"].ToString());
 

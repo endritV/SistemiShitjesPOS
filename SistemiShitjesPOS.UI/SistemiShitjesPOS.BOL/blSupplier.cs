@@ -25,6 +25,18 @@ namespace SistemiShitjesPOS.BusinessLayer
             return dalSupplier.GetAll();
         }
 
+        public static List<Klienti> GetSupplierByid(string klienti)
+        {
+            return dalSupplier.GetSupplierById(klienti);
+        }
+
+        public static List<Klienti> UpdateSupplier(Klienti klienti)
+        {
+
+            return dalSupplier.UpdateSupplier(klienti);
+        }
+
+
 
     }
 }
