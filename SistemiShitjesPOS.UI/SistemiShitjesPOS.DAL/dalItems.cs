@@ -17,6 +17,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
 
         public static void Insert(Artikulli a)
         {
+
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 conn.Open();
@@ -29,6 +30,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 cmd.Parameters.AddWithValue("@_IsAktvi", a.IsAktiv);
                 cmd.ExecuteNonQuery();
             }
+           
         }
 
         public static List<Artikulli> GetAll()

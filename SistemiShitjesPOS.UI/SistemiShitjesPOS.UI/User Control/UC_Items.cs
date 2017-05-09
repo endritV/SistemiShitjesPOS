@@ -67,28 +67,28 @@ namespace SistemiShitjesPOS.UI
 
             panNew.Controls.Clear();
             panNew.Controls.Add(u);
-            try
-            {
-                if (e.RowIndex >= 0)
-                {
+            //try
+            //{
+            //    if (e.RowIndex >= 0)
+            //    {
 
-                    DataGridViewRow row = this.dgListOfItems.Rows[e.RowIndex];
+            //        DataGridViewRow row = this.dgListOfItems.Rows[e.RowIndex];
 
-                    u.txtIdItems.Text = row.Cells[0].Value.ToString();
-                    u.txtEmri.Text = row.Cells[1].Value.ToString();
-                    u.txtBarkodi.Text = row.Cells[2].Value.ToString();
-                    u.cmbCategory.SelectedText = row.Cells[3].Value.ToString();
-                    u.txtPershkrimi.Text = row.Cells[4].Value.ToString();
+            //        u.txtIdItems.Text = row.Cells[0].Value.ToString();
+            //        u.txtEmri.Text = row.Cells[1].Value.ToString();
+            //        u.txtBarkodi.Text = row.Cells[2].Value.ToString();
+            //        u.cmbCategory.SelectedText = row.Cells[3].Value.ToString();
+            //        u.txtPershkrimi.Text = row.Cells[4].Value.ToString();
 
 
-                }
+            //    }
 
-            }
-            catch (Exception)
-            {
+            //}
+            //catch (Exception)
+            //{
 
-                MessageBox.Show("Selekto nje rresht");
-            }
+            //    MessageBox.Show("Selekto nje rresht");
+            //}
 
 
         }
