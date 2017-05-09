@@ -22,12 +22,16 @@ namespace SistemiShitjesPOS.BusinessLayer
 
         private static bool IsValid(Klienti klienti)
         {
-            if (klienti.IdKlienti != "" && klienti.Adresa != "" & klienti.Emri != "" &  klienti.IsKlient == true 
+            if (klienti.IdKlienti != "" && klienti.Adresani != "" & klienti.Emri != "" &  klienti.IsKlient == true 
                 & klienti.NrTelefonit != "")
                 return true;
             return false;
 
 
+        }
+        public static List<Klienti> GETALL()
+        {
+            return dalKlineti.GetAll();
         }
     }
 }
