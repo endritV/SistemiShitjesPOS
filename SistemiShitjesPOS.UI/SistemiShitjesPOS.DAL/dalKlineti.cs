@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SistemiShitjesPOS.EntityLayer;
-using System.Data;
-    
+using System.Data;  
 using System.Data.SqlClient;
 
 namespace SistemiShitjesPOS.DataAccessLayer
@@ -33,7 +32,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
         }
         public static List<Klienti> GetAll()
         {
-            var list = new List<Klienti>();
+            List<Klienti> list = new List<Klienti>();
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 conn.Open();
@@ -44,16 +43,14 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 {
                     while (reader.Read()) 
                     {
-                        Klienti klienti = new Klienti();
+                        var klienti = new Klienti();
                         klienti.IdKlienti = reader["IdKlienti"].ToString();
                         klienti.Emri = reader["Emri"].ToString();
-                        //klienti.Adresani = reader["Adresa"].ToString();
+                        klienti.Adresani = reader["Adresa"].ToString();
                         klienti.NrTelefonit = reader["NrTelefonit"].ToString();
                         klienti.IsKlient = bool.Parse(reader["IsKlinet"].ToString());
                         
-                        list.Add(klienti);
-
-                        
+                        list.Add(klienti); 
                     }
 
                 }
