@@ -38,41 +38,42 @@ namespace SistemiShitjesPOS.UI
 
         protected void btnSearchCustomers_Click(object sender, EventArgs e)
         {
-            
+            dgListOfCustomers.DataSource = blKlienti.SearchById(txtSearchCustomers.Text);
 
         }
 
         private void dgListOfCustomers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string dataValue = dgListOfCustomers.Rows[e.RowIndex].Cells[5].Value.ToString();
+            string dataValue = dgListOfCustomers.Rows[e.RowIndex].Cells[0].Value.ToString();
 
             UC_UpdateCustomers u = new UC_UpdateCustomers();
 
             panCustomers.Controls.Clear();
             panCustomers.Controls.Add(u);
-            try
-            {
-                if (e.RowIndex >= 0)
-                {
 
-                    DataGridViewRow row = this.dgListOfCustomers.Rows[e.RowIndex];
+            //try
+            //{
+            //    if (e.RowIndex >= 0)
+            //    {
 
-                    u.txtIdEmployee.Text = row.Cells[0].Value.ToString();
-                    u.txtEmri.Text = row.Cells[1].Value.ToString();
-                    u.txtAdresa.Text = row.Cells[2].Value.ToString();
-                    u.txtNrTel.SelectedText = row.Cells[3].Value.ToString();
+            //        DataGridViewRow row = this.dgListOfCustomers.Rows[e.RowIndex];
+
+            //        u.txtIdEmployee.Text = row.Cells[0].Value.ToString();
+            //        u.txtEmri.Text = row.Cells[1].Value.ToString();
+            //        u.txtAdresa.Text = row.Cells[2].Value.ToString();
+            //        u.txtNrTel.Text = row.Cells[3].Value.ToString();
 
                     
 
 
-                }
+            //    }
 
-            }
-            catch (Exception)
-            {
+            //}
+            //catch (Exception)
+            //{
 
-                MessageBox.Show("Selekto nje rresht");
-            }
+                
+            //}
         }
     }
 }

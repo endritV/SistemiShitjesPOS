@@ -73,14 +73,14 @@ namespace SistemiShitjesPOS.UI
 
                 
             }
-            if (e.KeyCode == Keys.F)
-            {
-                FormBorderStyle = FormBorderStyle.None;
-                WindowState = FormWindowState.Maximized;
-                TopMost = true;
+            //if (e.KeyCode == Keys.F)
+            //{
+            //    FormBorderStyle = FormBorderStyle.None;
+            //    WindowState = FormWindowState.Maximized;
+            //    TopMost = true;
 
                 
-            }
+            //}
         }
 
         private void btnDashboards_Click(object sender, EventArgs e)

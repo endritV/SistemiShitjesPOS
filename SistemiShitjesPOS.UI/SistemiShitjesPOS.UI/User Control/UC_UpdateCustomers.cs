@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SistemiShitjesPOS.EntityLayer;
+using SistemiShitjesPOS.BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -21,6 +23,8 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            blKlienti.UpdateKlient(new Klienti(txtIdEmployee.Text.ToString(), txtEmri.Text.ToString(), txtAdresa.Text.ToString(), txtNrTel.Text.ToString(), rdbAktiv.Checked));
+
         //    SqlConnection x = new SqlConnection(DataBaseCon.Connection);
         //    x.Open();
         //    string query = "spNdryshoKlientin";
