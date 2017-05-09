@@ -25,7 +25,7 @@ namespace SistemiShitjesPOS.EntityLayer
             NrTelefonit = nrTellefonit;
             IsKlient = isKlient;
         }
-        public Klienti(bool isKlient, string idKlienti, string emri, string emriPronarit, string mbiemriPronarit, string numriFix, string adresa, string nrTelefonit, string nrBiznesit, string web, string email)
+        public Klienti(bool isKlient, string idKlienti, string emri, string emriPronarit, string mbiemriPronarit, string numriFix, string adresa, string nrTelefonit, string nrBiznesit, string web, string email,string pershkrimi)
         {
             IsKlient = isKlient;
             IdKlienti = idKlienti;
@@ -38,7 +38,7 @@ namespace SistemiShitjesPOS.EntityLayer
             NrBiznesit = nrBiznesit;
             Web = web;
             Email = email;
-
+            this.Pershkrimi = pershkrimi;
         }
         public Klienti(bool isKlient, string idKlienti, string emriPronarit, string mbiemriPronarit, string adresa, string nrTelefonit, int pikat)
         {
@@ -68,6 +68,7 @@ namespace SistemiShitjesPOS.EntityLayer
         private string _adresa;
         private string _nrTelefonit;
         private string _nrBiznesit;
+        private string _pershkrimi;
 
         #endregion
 
@@ -78,16 +79,14 @@ namespace SistemiShitjesPOS.EntityLayer
         #endregion
 
         #region Properties
-
+        public string Pershkrimi { get { return _pershkrimi; } set { _pershkrimi = value; } }
 
         public string NrBiznesit
         {
             get { return _nrBiznesit; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("Numri i Biznesit eshte i zbrazet! Shkruani nje Numri te Biznesit.");
-                else _nrBiznesit = value;
+                _nrBiznesit = value;
             }
         }
 
@@ -97,9 +96,7 @@ namespace SistemiShitjesPOS.EntityLayer
             get { return _nrTelefonit; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("Numri i Telefoni eshte i zbrazet! Shkruani nje Numer.");
-                else _nrTelefonit = value;
+               _nrTelefonit = value;
             }
         }
 
@@ -109,9 +106,7 @@ namespace SistemiShitjesPOS.EntityLayer
             get { return _adresa; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("Adresa eshte i zbrazet! Shkruani nje Adrese.");
-                else _adresa = value;
+              _adresa = value;
             }
         }
 
@@ -121,9 +116,7 @@ namespace SistemiShitjesPOS.EntityLayer
             get { return _numriFix; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("Numri Fix eshte i zbrazet! Shkruani nje Numer.");
-                else _numriFix = value;
+                _numriFix = value;
             }
         }
 
@@ -133,9 +126,7 @@ namespace SistemiShitjesPOS.EntityLayer
             get { return _mbiemriPronarit; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("Mbiemri i Pronarit eshte i zbrazet! Shkruani nje Mbiemr.");
-                else _mbiemriPronarit = value;
+               _mbiemriPronarit = value;
             }
         }
 
@@ -145,9 +136,8 @@ namespace SistemiShitjesPOS.EntityLayer
             get { return _emriPronarit; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("Emri Pronarit eshte i zbrazet! Shkruani nje Emer.");
-                else _emriPronarit = value;
+              
+                 _emriPronarit = value;
             }
         }
 
@@ -157,10 +147,7 @@ namespace SistemiShitjesPOS.EntityLayer
             get { return _emri; }
             set
             {
-                if (String.IsNullOrEmpty(value))
-                    throw new Exception("Emri eshte i zbrazet! Shkruani nje Emer.");
-                else
-                    _emri = value;
+              _emri = value;
             }
         }
 

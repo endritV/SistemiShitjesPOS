@@ -28,6 +28,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 cmd.Parameters.AddWithValue("@_NrTelefeoni", k.NrTelefonit);
                 cmd.Parameters.AddWithValue("@_IsKlient", k.IsKlient);
                 cmd.ExecuteNonQuery();
+                conn.Close();
             }
         }
         public static List<Klienti> GetAll()
@@ -52,6 +53,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
 
                         list.Add(klienti);
                     }
+                    conn.Close();
 
                 }
             }
@@ -102,6 +104,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 int o = cmd.ExecuteNonQuery();
+                conn.Close();
                 
             }
             return list;

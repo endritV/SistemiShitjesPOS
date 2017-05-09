@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemiShitjesPOS.BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -28,6 +29,7 @@ namespace SistemiShitjesPOS.UI
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
+             dgListOfSuppliers.DataSource = blSupplier.GETALL();
         //    SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
         //    x.Open();
         //    SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjitheFurnizuesit", x);
