@@ -36,7 +36,7 @@ namespace SistemiShitjesPOS.BusinessLayer
         public static List<Klienti>SearchById(string klienti)
         {
 
-            return dalKlineti.GetKlientById(klienti);
+            return dalKlineti.GetklientByID(klienti);
 
         }
         public static List<Klienti>UpdateKlient(Klienti klienti)
