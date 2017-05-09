@@ -59,7 +59,6 @@
     <Compile Include="Forma\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="uiKlienti.cs" />
     <Compile Include="User Control\UC_UpdateCustomers.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -9,12 +9,19 @@ namespace SistemiShitjesPOS.EntityLayer
 {
     public class Klienti
     {
+
+
         #region Constructor
+
+        public Klienti()
+        {
+            //deafult
+        }
         public Klienti(string klientiId,string name,string adresa, string nrTellefonit, bool isKlient )
         {
             IdKlienti = klientiId;
             Emri = name;
-            Adresa = adresa;
+            Adresani = adresa;
             NrTelefonit = nrTellefonit;
             IsKlient = isKlient;
         }
@@ -26,7 +33,7 @@ namespace SistemiShitjesPOS.EntityLayer
             EmriPronarit = emriPronarit;
             MbiemriPronarit = mbiemriPronarit;
             NumriFix = numriFix;
-            Adresa = adresa;
+            Adresani = adresa;
             NrTelefonit = nrTelefonit;
             NrBiznesit = nrBiznesit;
             Web = web;
@@ -39,7 +46,7 @@ namespace SistemiShitjesPOS.EntityLayer
             IdKlienti = idKlienti;
             EmriPronarit = emriPronarit;
             MbiemriPronarit = mbiemriPronarit;
-            Adresa = adresa;
+            Adresani = adresa;
             NrTelefonit = nrTelefonit;
             Pikat = pikat;
         }
@@ -97,7 +104,7 @@ namespace SistemiShitjesPOS.EntityLayer
         }
 
 
-        public string Adresa
+        public string Adresani
         {
             get { return _adresa; }
             set
