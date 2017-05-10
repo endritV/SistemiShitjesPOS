@@ -9,8 +9,18 @@ namespace SistemiShitjesPOS.EntityLayer
 {
     public class Sektori
     {
+        public Sektori()
+        {
+
+        }
+        public Sektori(int idSektroi,string emriSektorit)
+        {
+            IdSektori = idSektroi;
+            EmriSektorit = emriSektorit;
+        }
+
         private int _idSektori;
-        private int _idPuntori;
+        
         private string _emriSektorit;
 
         public string EmriSektorit 
@@ -27,16 +37,7 @@ namespace SistemiShitjesPOS.EntityLayer
         }
 
 
-        public int IdPuntori
-        {
-            get { return _idPuntori; }
-            set
-            {
-                if (value<= 0)
-                {
-                    throw new Exception("Id Puntori eshte i zbrazet");
-                } _idPuntori = value; }
-        }
+       
 
 
         public int IdSektori    
