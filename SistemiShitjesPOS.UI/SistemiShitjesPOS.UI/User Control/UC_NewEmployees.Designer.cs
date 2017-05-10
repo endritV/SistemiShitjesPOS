@@ -127,7 +127,7 @@
             this.txtPassword.Size = new System.Drawing.Size(182, 32);
             this.txtPassword.TabIndex = 9;
             this.txtPassword.Text = "Password";
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
+            //this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // dtDiteLindja
             // 
