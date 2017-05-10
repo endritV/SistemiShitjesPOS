@@ -17,5 +17,23 @@ namespace SistemiShitjesPOS.BusinessLayer
         {
             dalEmployees.Insert(puntori);
         }
+
+        public static List<Puntori> GetAll()
+        {
+            return dalEmployees.GetAll();
+        }
+
+        public static List<Puntori> GetEmplyoeeById(string id)
+        {
+
+            return dalEmployees.GetEmplyoeeByiD(id);
+        }
+
+        public static List<Puntori> UpdateEmplyoee(Puntori puntori)
+        {
+            return dalEmployees.UpdateEmployee(puntori);
+            
+
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemiShitjesPOS.BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -19,6 +20,8 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+
+            dgEmployees.DataSource = blEmployees.GetAll();
         }
 
         private void btnNewEmployees_Click(object sender, EventArgs e)
@@ -47,6 +50,8 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSearchEmployees_Click(object sender, EventArgs e)
         {
+            dgEmployees.DataSource = blEmployees.GetEmplyoeeById(txtSearchEmployees.Text);
+
             //try
             //{
             //    SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
