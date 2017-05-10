@@ -28,9 +28,6 @@ namespace SistemiShitjesPOS.UI
             
             
         }
-
-        
-
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             DashBoard dx = new DashBoard();
@@ -49,22 +46,14 @@ namespace SistemiShitjesPOS.UI
             int count = ds.Tables[0].Rows.Count;
             if (count == 1)
             {
-                MessageBox.Show("Login Successfull");
                 this.Visible = false;
                 dx.Show();
-
             }
             else
             {
                 MessageBox.Show("Login Failed!!");
-            }
-
-            if (blLogin.AdminVerification(txbUsername.Text,txbPassword.Text) == "1")
-            {
-                
-            }
+            } 
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
