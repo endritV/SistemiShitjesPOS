@@ -54,7 +54,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                         var klienti = new Klienti();
 
                         klienti.IdKlienti = reader["IdKlienti"].ToString();
-                        klienti.IsKlient =  bool.Parse(reader["IsKlinet"].ToString());
+                        klienti.IsKlient = bool.Parse(reader["IsKlinet"].ToString());
                         klienti.EmriPronarit = reader["EmriPronarit"].ToString();
                         klienti.MbiemriPronarit = reader["MbimeriPronarit"].ToString();
                         klienti.NumriFix = reader["NrFix"].ToString();
@@ -133,8 +133,27 @@ namespace SistemiShitjesPOS.DataAccessLayer
             return list;
 
         }
+        public static List<Klienti> DeleteSupplierById(string id)
+        {
+            var list = new List<Klienti>();
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("spFshijFurnitorin", conn);
+                cmd.Parameters.AddWithValue("@_IdKlienti", id);
+                cmd.CommandType = CommandType.StoredProcedure;
+                using (IDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var klienti = new Klienti();
 
-
+                        klienti.IdKlienti = id;
+                        list.Add(klienti);
+                    }
+                }
+                return list;
+            }
+        }
     }
-  
 }

@@ -114,5 +114,27 @@ namespace SistemiShitjesPOS.DataAccessLayer
             return list;
 
         }
+        public static List<Artikulli> DeleteItemByBarcod(int barkodi)
+        {
+            var list = new List<Artikulli>();
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("spFshijArtikullin", conn);
+                cmd.Parameters.AddWithValue("@_IdArtikulli", barkodi);
+                cmd.CommandType = CommandType.StoredProcedure;
+                using (IDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var artikulli = new Artikulli();
+
+                        artikulli.Barkodi = barkodi;
+                        list.Add(artikulli);
+                    }
+                }
+                return list;
+            }
+        }
     }
 }

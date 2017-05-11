@@ -40,7 +40,17 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSearchItems_Click(object sender, EventArgs e)
         {
-            dgListOfItems.DataSource = blItems.SearchById(int.Parse(txtSearchItems.Text));
+            
+            try
+            {
+                dgListOfItems.DataSource = blItems.SearchById(int.Parse(txtSearchItems.Text));
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Shkruaj Barkodin Perseri");
+            }
+            
 
         }   
 

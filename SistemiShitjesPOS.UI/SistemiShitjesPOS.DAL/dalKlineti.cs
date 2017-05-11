@@ -110,5 +110,27 @@ namespace SistemiShitjesPOS.DataAccessLayer
             return list;
 
         }
+        public static List<Klienti> DeleteKlientById(string id)
+        {
+            var list = new List<Klienti>();
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("spFshijFurnitorin", conn);
+                cmd.Parameters.AddWithValue("@_IdKlienti", id);
+                cmd.CommandType = CommandType.StoredProcedure;
+                using (IDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var klienti = new Klienti();
+
+                        klienti.IdKlienti = id;
+                        list.Add(klienti);
+                    }
+                }
+                return list;
+            }
+        }
     }
 }

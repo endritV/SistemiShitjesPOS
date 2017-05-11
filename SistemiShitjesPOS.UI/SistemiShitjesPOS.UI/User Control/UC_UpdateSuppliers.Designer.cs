@@ -45,6 +45,7 @@
             this.txtEmri = new System.Windows.Forms.TextBox();
             this.txtNrBiznesit = new System.Windows.Forms.TextBox();
             this.txtIdSuppliers = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxEmployees)).BeginInit();
             this.SuspendLayout();
             // 
@@ -273,11 +274,22 @@
             this.txtIdSuppliers.Text = "Suppliers Id";
             this.txtIdSuppliers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtIdSuppliers_MouseDown);
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(515, 479);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(182, 42);
+            this.btnDelete.TabIndex = 42;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // UC_UpdateSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.rdbJoAktiv);
             this.Controls.Add(this.rdbAktiv);
             this.Controls.Add(this.btnSave);
@@ -322,5 +334,6 @@
         public System.Windows.Forms.TextBox txtEmri;
         public System.Windows.Forms.TextBox txtNrBiznesit;
         public System.Windows.Forms.TextBox txtIdSuppliers;
+        public System.Windows.Forms.Button btnDelete;
     }
 }

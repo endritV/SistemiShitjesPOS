@@ -18,7 +18,7 @@ namespace SistemiShitjesPOS.UI
     {
         public ComboBox cmbCategory;
         public Button btnSubmit;
-        public Button btnBackToUC_Items;
+        public Button btnDelete;
         public RadioButton rdbJoAktiv;
         public RadioButton rdbAktiv;
         public TextBox txtPershkrimi;
@@ -35,7 +35,7 @@ namespace SistemiShitjesPOS.UI
         {
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.btnBackToUC_Items = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.rdbJoAktiv = new System.Windows.Forms.RadioButton();
             this.rdbAktiv = new System.Windows.Forms.RadioButton();
             this.txtPershkrimi = new System.Windows.Forms.TextBox();
@@ -79,21 +79,22 @@ namespace SistemiShitjesPOS.UI
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // btnBackToUC_Items
+            // btnDelete
             // 
-            this.btnBackToUC_Items.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnBackToUC_Items.FlatAppearance.BorderSize = 0;
-            this.btnBackToUC_Items.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnBackToUC_Items.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnBackToUC_Items.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackToUC_Items.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBackToUC_Items.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnBackToUC_Items.Location = new System.Drawing.Point(614, 481);
-            this.btnBackToUC_Items.Name = "btnBackToUC_Items";
-            this.btnBackToUC_Items.Size = new System.Drawing.Size(98, 30);
-            this.btnBackToUC_Items.TabIndex = 20;
-            this.btnBackToUC_Items.Text = "Back";
-            this.btnBackToUC_Items.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDelete.Location = new System.Drawing.Point(614, 481);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(98, 30);
+            this.btnDelete.TabIndex = 20;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // rdbJoAktiv
             // 
@@ -189,7 +190,7 @@ namespace SistemiShitjesPOS.UI
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.btnBackToUC_Items);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.rdbJoAktiv);
             this.Controls.Add(this.rdbAktiv);
             this.Controls.Add(this.txtPershkrimi);
@@ -264,6 +265,11 @@ namespace SistemiShitjesPOS.UI
         private void cmbCategory_MouseDown(object sender, MouseEventArgs e)
         {
             
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            blItems.DeleteArtikulli(Int32.Parse(txtBarkodi.Text));
         }
     }
 }

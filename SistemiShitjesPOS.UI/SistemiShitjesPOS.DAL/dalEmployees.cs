@@ -133,5 +133,27 @@ namespace SistemiShitjesPOS.DataAccessLayer
             return list;
 
         }
+        public static List<Puntori> DeleteEmplyoeeByID(string id)
+        {
+            var list = new List<Puntori>();
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("spFshijPuntorin", conn);
+                cmd.Parameters.AddWithValue("@_IdKlienti", id);
+                cmd.CommandType = CommandType.StoredProcedure;
+                using (IDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var puntori = new Puntori();
+
+                        puntori.IdPuntori = id;
+                        list.Add(puntori);
+                    }
+                }
+                return list;
+            }
+        }
     }
 }

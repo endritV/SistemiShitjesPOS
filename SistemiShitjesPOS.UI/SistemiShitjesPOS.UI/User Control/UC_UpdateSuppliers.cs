@@ -134,6 +134,11 @@ namespace SistemiShitjesPOS.UI
         {
             txtpershkrimi.Clear();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            dalSupplier.DeleteSupplierById(txtIdSuppliers.Text);
+        }
     }
 }
 
