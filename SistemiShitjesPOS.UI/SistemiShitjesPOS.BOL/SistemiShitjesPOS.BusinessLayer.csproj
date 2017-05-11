@@ -43,6 +43,7 @@
     <Compile Include="blEmployees.cs" />
     <Compile Include="blItems.cs" />
     <Compile Include="blKlienti.cs" />
+    <Compile Include="blRoli.cs" />
     <Compile Include="blSektori.cs" />
     <Compile Include="blSupplier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

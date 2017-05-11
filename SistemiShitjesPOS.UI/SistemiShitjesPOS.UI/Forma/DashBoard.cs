@@ -96,7 +96,7 @@ namespace SistemiShitjesPOS.UI
             btnEmployees.BackColor = Color.FromArgb(47, 64, 80);
             btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
             btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
-            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnSectorRole.BackColor = Color.FromArgb(47, 64, 80);
             btnReports.BackColor = Color.FromArgb(47, 64, 80);
             btnSales.BackColor = Color.FromArgb(47, 64, 80);
             btnSuppliers.BackColor = Color.FromArgb(47, 64, 80);
@@ -114,7 +114,7 @@ namespace SistemiShitjesPOS.UI
             btnEmployees.BackColor = Color.FromArgb(47, 64, 80);
             btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
             btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
-            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnSectorRole.BackColor = Color.FromArgb(47, 64, 80);
             btnReports.BackColor = Color.FromArgb(47, 64, 80);
             btnSales.BackColor = Color.FromArgb(47, 64, 80);
             btnSuppliers.BackColor = Color.FromArgb(47, 64, 80);
@@ -133,7 +133,7 @@ namespace SistemiShitjesPOS.UI
             btnItems.BackColor = Color.FromArgb(47, 64, 80);
             btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
             btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
-            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnSectorRole.BackColor = Color.FromArgb(47, 64, 80);
             btnReports.BackColor = Color.FromArgb(47, 64, 80);
             btnSales.BackColor = Color.FromArgb(47, 64, 80);
             btnSuppliers.BackColor = Color.FromArgb(47, 64, 80);
@@ -151,7 +151,7 @@ namespace SistemiShitjesPOS.UI
             btnItems.BackColor = Color.FromArgb(47, 64, 80);
             btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
             btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
-            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnSectorRole.BackColor = Color.FromArgb(47, 64, 80);
             btnReports.BackColor = Color.FromArgb(47, 64, 80);
             btnSales.BackColor = Color.FromArgb(47, 64, 80);
             btnSuppliers.BackColor = Color.FromArgb(47, 64, 80);
@@ -170,7 +170,7 @@ namespace SistemiShitjesPOS.UI
             btnItems.BackColor = Color.FromArgb(47, 64, 80);
             btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
             btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
-            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnSectorRole.BackColor = Color.FromArgb(47, 64, 80);
             btnReports.BackColor = Color.FromArgb(47, 64, 80);
             btnSales.BackColor = Color.FromArgb(47, 64, 80);
             btnCustomers.BackColor = Color.FromArgb(47, 64, 80);
@@ -189,10 +189,17 @@ namespace SistemiShitjesPOS.UI
             btnItems.BackColor = Color.FromArgb(47, 64, 80);
             btnExpenses.BackColor = Color.FromArgb(47, 64, 80);
             btnGiftCard.BackColor = Color.FromArgb(47, 64, 80);
-            btnPriceRules.BackColor = Color.FromArgb(47, 64, 80);
+            btnSectorRole.BackColor = Color.FromArgb(47, 64, 80);
             btnSuppliers.BackColor = Color.FromArgb(47, 64, 80);
             btnSales.BackColor = Color.FromArgb(47, 64, 80);
             btnCustomers.BackColor = Color.FromArgb(47, 64, 80);
+        }
+
+        private void btnSectoreRole_Click(object sender, EventArgs e)
+        {
+            UC_SektoriRoli sr = new UC_SektoriRoli();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(sr);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
     {
         public static string GetConnectionString()
         {
-            return ConfigurationManager.AppSettings["conStr1"].ToString();
+            return ConfigurationManager.AppSettings["conStr"].ToString();
         }
 
         public static string GetHash(string input)

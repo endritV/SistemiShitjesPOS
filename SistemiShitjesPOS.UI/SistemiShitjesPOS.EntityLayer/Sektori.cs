@@ -13,6 +13,12 @@ namespace SistemiShitjesPOS.EntityLayer
         {
 
         }
+
+        public override string ToString()
+        {
+            return EmriSektorit;
+        }
+
         public Sektori(int idSektroi,string emriSektorit)
         {
             IdSektori = idSektroi;

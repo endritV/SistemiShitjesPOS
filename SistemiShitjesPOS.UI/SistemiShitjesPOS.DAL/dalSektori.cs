@@ -21,7 +21,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("spShfaqSektoret", conn);
+                SqlCommand cmd = new SqlCommand("spShfaqSektorin", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 using (IDataReader reader = cmd.ExecuteReader())
@@ -30,8 +30,9 @@ namespace SistemiShitjesPOS.DataAccessLayer
                     {
                         var sektori = new Sektori();
 
-                        sektori.EmriSektorit = reader["EmriSektorit"].ToString();
+
                         sektori.IdSektori = int.Parse(reader["IdSektori"].ToString());
+                        sektori.EmriSektorit = reader["EmriSektorit"].ToString();
 
                         list.Add(sektori);
                     }
@@ -39,6 +40,23 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 }
             }
             return list;
+        }
+
+       
+        public static void Insert(Sektori s)
+        {
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("spShtoSektorin", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@_IdSektori", s.IdSektori);
+                cmd.Parameters.AddWithValue("@_EmriSektorit", s.EmriSektorit);
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
         }
     }
 }

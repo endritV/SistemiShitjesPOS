@@ -149,6 +149,7 @@
             this.cmbSektoriId.TabIndex = 4;
             this.cmbSektoriId.Text = "Sektori Id";
             this.cmbSektoriId.SelectedIndexChanged += new System.EventHandler(this.cmbSektoriId_SelectedIndexChanged);
+            this.cmbSektoriId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cmbSektoriId_MouseClick);
             // 
             // cmbRoliId
             // 

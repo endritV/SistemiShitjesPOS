@@ -9,6 +9,19 @@ namespace SistemiShitjesPOS.EntityLayer
 {
     public class Roli
     {
+        public Roli()
+        {
+
+        }
+
+        public Roli(string idRoli,string emri,bool isActive)
+        {
+            IdRoli = idRoli;
+            Emri = emri;
+            IsActive = isActive;
+        }
+
+
         public bool IsActive { get; set; }
 
         private string _idRoli;

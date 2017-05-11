@@ -17,10 +17,15 @@ namespace SistemiShitjesPOS.UI
 {
     public partial class UC_NewEmployees : UserControl
     {
+        static string cs = DataBaseCon.GetConnectionString();
         public UC_NewEmployees()
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            
+            cmbSektoriId.DataSource = blSektori.GetAllSektori();
+            
+
         }
         private void btnSubmitEmployees_Click(object sender, EventArgs e)
         {
@@ -72,7 +77,12 @@ namespace SistemiShitjesPOS.UI
         
         protected void cmbSektoriId_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-        }        
+           
+        }
+
+        private void cmbSektoriId_MouseClick(object sender, MouseEventArgs e)
+        {
+          
+        }
     }
 }

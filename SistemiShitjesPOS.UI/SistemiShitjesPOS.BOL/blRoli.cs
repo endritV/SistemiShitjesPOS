@@ -11,17 +11,12 @@ using SistemiShitjesPOS.EntityLayer;
 
 namespace SistemiShitjesPOS.BusinessLayer
 {
-    public  class blSektori
+    public class blRoli
     {
-
-        public static List<Sektori> GetAllSektori()
+        public static void InsertRoli(Roli roli)
         {
-            return dalSektori.GetAll();
+            dalRoli.Insert(roli);
         }
 
-        public static void InsertSector(Sektori sektori)
-        {
-            dalSektori.Insert(sektori);
-        }
     }
 }

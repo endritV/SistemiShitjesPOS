@@ -78,6 +78,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("spKerkoPuntorin", conn);
                 cmd.Parameters.AddWithValue("@_IdPuntori", id);
+                
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 using (IDataReader reader = cmd.ExecuteReader())
@@ -86,6 +87,9 @@ namespace SistemiShitjesPOS.DataAccessLayer
                     {
                         var puntori = new Puntori();
                         puntori.IdPuntori = id;
+                        puntori.IdSektori = int.Parse(reader["IdSektori"].ToString());
+                        puntori.Emri = reader["Emri"].ToString();
+                        puntori.Mbiemri = reader["Mbimeri"].ToString();
                         puntori.IdRoli = int.Parse(reader["IdRoli"].ToString());
                         puntori.UserName = reader["UserName"].ToString();
                         puntori.Passwordi = reader["Passwordi"].ToString();
@@ -93,9 +97,9 @@ namespace SistemiShitjesPOS.DataAccessLayer
                         puntori.NrTelefonit = reader["NrTelefonit"].ToString();
                         puntori.Adresa = reader["Adresa"].ToString();
                         puntori.DataLindjes = DateTime.Parse(reader["DataLindjes"].ToString());
-                        puntori.Mbiemri = reader["Mbimeri"].ToString();
-                        puntori.Emri = reader["Emri"].ToString();
-                        puntori.IdSektori = int.Parse(reader["IdSektori"].ToString());
+                        
+                       
+                       
                         
                         list.Add(puntori);
                     }
