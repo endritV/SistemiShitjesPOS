@@ -415,6 +415,7 @@
             this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DashBoard_KeyDown);
             this.panMenu2.ResumeLayout(false);
             this.tblPanMenu.ResumeLayout(false);

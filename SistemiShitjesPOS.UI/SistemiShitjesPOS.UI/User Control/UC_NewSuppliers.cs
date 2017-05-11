@@ -19,54 +19,14 @@ namespace SistemiShitjesPOS.UI
         public UC_NewSuppliers()
         {
             InitializeComponent();
-            
-
-            
+            this.Dock = DockStyle.Fill;    
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             blSupplier.InsertNewSupplier(new Klienti(rdbAktiv.Checked, txtIdSuppliers.Text, txtEmri.Text, txtEmriFurnitorit.Text, txtMbiemri.Text, txtNrFix.Text, txtAdresa.Text, txtNrTelefonit.Text, txtNrBiznesit.Text, txtWeb.Text, txtEmail.Text, txtpershkrimi.Text));
-            //try
-            //{
-
-            //    SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-            //    x.Open();
-            //    string query = "spShtoFurnizuesin";
-            //    SqlCommand da = new SqlCommand(query, x);
-            //    da.CommandType = CommandType.StoredProcedure;
-            //    da.Parameters.AddWithValue("@_IdKlienti", txtIdSuppliers.Text.ToString());
-            //    da.Parameters.AddWithValue("@_Emri", txtEmri.Text.ToString());
-            //    da.Parameters.AddWithValue("@_EmriPronarit", txtEmriFurnitorit.Text.ToString());
-            //    da.Parameters.AddWithValue("@_MbiemriPronarit", txtMbiemri.Text.ToString());
-            //    da.Parameters.AddWithValue("@_Adresa", txtAdresa.Text.ToString());
-            //    da.Parameters.AddWithValue("@_NrFix", txtNrFix.Text.ToString());
-            //    da.Parameters.AddWithValue("@_Nrtelefonit", txtNrTelefonit.Text.ToString());
-            //    da.Parameters.AddWithValue("@_NrBiznesit", txtNrBiznesit.Text.ToString());
-            //    da.Parameters.AddWithValue("@_Email", txtEmail.Text.ToString());
-            //    da.Parameters.AddWithValue("@_Web", txtWeb.Text.ToString());
-            //    da.Parameters.AddWithValue("@_Pershkrimi", txtpershkrimi.Text.ToString());
-
-            //    if (rdbAktiv.Checked)
-            //    {
-            //        da.Parameters.AddWithValue("@_IsKlient", "1");
-            //    }
-            //    if (rdbJoAktiv.Checked)
-            //    {
-            //        da.Parameters.AddWithValue("@_IsKlient", "0");
-            //    }
-            //    int o = da.ExecuteNonQuery();
-            //    MessageBox.Show(" Te dhenat u insertuan", o.ToString());
-            //    x.Close();
-
-
-            //}
-            //catch (Exception)
-            //{
-
-            //    MessageBox.Show("Inserto Te Dhenat Braqul");
-            //}
-}
+            
+        }
 
         private void UC_NewSuppliers_Load(object sender, EventArgs e)
         {
@@ -113,15 +73,9 @@ namespace SistemiShitjesPOS.UI
             txtNrBiznesit.Clear();
         }
 
-        private void txtUserName_MouseDown(object sender, MouseEventArgs e)
-        {
-            txtUserName.Clear();
-        }
+        
 
-        private void txtPassword_MouseDown(object sender, MouseEventArgs e)
-        {
-            txtPassword.Clear();
-        }
+       
 
         private void txtAdresa_MouseDown(object sender, MouseEventArgs e)
         {

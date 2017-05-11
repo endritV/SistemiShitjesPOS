@@ -24,8 +24,6 @@ namespace SistemiShitjesPOS.UI
             this.Dock = DockStyle.Fill;
             
             cmbSektoriId.DataSource = blSektori.GetAllSektori();
-            
-
         }
         private void btnSubmitEmployees_Click(object sender, EventArgs e)
         {

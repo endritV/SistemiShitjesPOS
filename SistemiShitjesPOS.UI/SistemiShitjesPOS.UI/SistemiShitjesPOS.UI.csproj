@@ -58,10 +58,22 @@
     <Compile Include="Forma\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_SektoriRoli.cs">
+    <Compile Include="Forma\OpenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma\OpenForm.Designer.cs">
+      <DependentUpon>OpenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_UpdateEmpoyees.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_SektoriRoli.Designer.cs">
+    <Compile Include="UC_UpdateEmpoyees.Designer.cs">
+      <DependentUpon>UC_UpdateEmpoyees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_SektoriRoli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_SektoriRoli.Designer.cs">
       <DependentUpon>UC_SektoriRoli.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UC_UpdateCustomers.cs">
@@ -147,7 +159,13 @@
     <EmbeddedResource Include="Forma\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_SektoriRoli.resx">
+    <EmbeddedResource Include="Forma\OpenForm.resx">
+      <DependentUpon>OpenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_UpdateEmpoyees.resx">
+      <DependentUpon>UC_UpdateEmpoyees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_SektoriRoli.resx">
       <DependentUpon>UC_SektoriRoli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_UpdateCustomers.resx">
