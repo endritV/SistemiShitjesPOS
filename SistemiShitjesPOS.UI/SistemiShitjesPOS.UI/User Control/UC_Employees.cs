@@ -20,8 +20,16 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            try
+            {
+                dgEmployees.DataSource = blEmployees.GetAll();
+            }
+            catch (Exception)
+            {
 
-            dgEmployees.DataSource = blEmployees.GetAll();
+                MessageBox.Show("Nuk Eshte Ne rregull");
+            }
+         
         }
 
         private void btnNewEmployees_Click(object sender, EventArgs e)
@@ -50,7 +58,16 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSearchEmployees_Click(object sender, EventArgs e)
         {
-            dgEmployees.DataSource = blEmployees.GetEmplyoeeById(txtSearchEmployees.Text);
+            try
+            {
+                dgEmployees.DataSource = blEmployees.GetEmplyoeeById(txtSearchEmployees.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Shendo Id-n e Puntorit");
+            }
+            
 
             //try
             //{

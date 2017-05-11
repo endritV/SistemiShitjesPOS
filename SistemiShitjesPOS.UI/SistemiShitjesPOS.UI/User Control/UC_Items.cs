@@ -21,7 +21,16 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-            dgListOfItems.DataSource = blItems.GetAll();
+            try
+            {
+                dgListOfItems.DataSource = blItems.GetAll();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Nuk eshte ne rregull");
+            }
+          
 
 
         }

@@ -30,7 +30,16 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            blItems.InsertNewItems(new Artikulli(txtEmri.Text, int.Parse(txtBarkodi.Text), txtPershkrimi.Text, cmbCategory.Text));
+            try
+            {
+                blItems.InsertNewItems(new Artikulli(txtEmri.Text, int.Parse(txtBarkodi.Text), txtPershkrimi.Text, cmbCategory.Text));
+            }
+            catch(Exception)
+            {
+
+                MessageBox.Show("Inserto te gjitha te dhenat");
+            }
+           
         }
 
         private void UC_NewItems_Load(object sender, EventArgs e)

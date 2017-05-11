@@ -22,12 +22,29 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            try
+            {
+                cmbSektoriId.DataSource = blSektori.GetAllSektori();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Nuk eshte ne rregull");
+            }
             
-            cmbSektoriId.DataSource = blSektori.GetAllSektori();
+            
         }
         private void btnSubmitEmployees_Click(object sender, EventArgs e)
         {
-            blEmployees.InsertNewEmployees(new Puntori(txtIdEmployees.Text, int.Parse(cmbSektoriId.Text), txtEmri.Text, txtMbiemri.Text, DateTime.Parse(dtDiteLindja.Text), txtNrTelefonit.Text, txtEmail.Text, txtUserName.Text, txtPassword.Text, int.Parse(cmbRoliId.Text), txtAdresa.Text));
+            try
+            {
+                blEmployees.InsertNewEmployees(new Puntori(txtIdEmployees.Text, int.Parse(cmbSektoriId.Text), txtEmri.Text, txtMbiemri.Text, DateTime.Parse(dtDiteLindja.Text), txtNrTelefonit.Text, txtEmail.Text, txtUserName.Text, txtPassword.Text, int.Parse(cmbRoliId.Text), txtAdresa.Text));
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Shkruaj te gjitha te dhenat");
+            }
+            
         }
         private void txtIdEmployees_MouseDown(object sender, MouseEventArgs e)
         {

@@ -24,7 +24,16 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            blSupplier.InsertNewSupplier(new Klienti(rdbAktiv.Checked, txtIdSuppliers.Text, txtEmri.Text, txtEmriFurnitorit.Text, txtMbiemri.Text, txtNrFix.Text, txtAdresa.Text, txtNrTelefonit.Text, txtNrBiznesit.Text, txtWeb.Text, txtEmail.Text, txtpershkrimi.Text));
+            try
+            {
+                blSupplier.InsertNewSupplier(new Klienti(rdbAktiv.Checked, txtIdSuppliers.Text, txtEmri.Text, txtEmriFurnitorit.Text, txtMbiemri.Text, txtNrFix.Text, txtAdresa.Text, txtNrTelefonit.Text, txtNrBiznesit.Text, txtWeb.Text, txtEmail.Text, txtpershkrimi.Text));
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Inserto te gjitha te dhenat");
+            }
+            
             
         }
 

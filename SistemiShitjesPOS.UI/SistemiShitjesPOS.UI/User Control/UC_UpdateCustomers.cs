@@ -24,7 +24,16 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            blKlienti.UpdateKlient(new Klienti(txtIdEmployee.Text.ToString(), txtEmri.Text.ToString(), txtAdresa.Text.ToString(), txtNrTel.Text.ToString(), rdbAktiv.Checked));
+            try
+            {
+                blKlienti.UpdateKlient(new Klienti(txtIdEmployee.Text.ToString(), txtEmri.Text.ToString(), txtAdresa.Text.ToString(), txtNrTel.Text.ToString(), rdbAktiv.Checked));
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Inserto te gjitha te dhenat");
+            }
+            
 
         //    SqlConnection x = new SqlConnection(DataBaseCon.Connection);
         //    x.Open();
@@ -71,7 +80,16 @@ namespace SistemiShitjesPOS.UI
 
         private void txtDelete_Click(object sender, EventArgs e)
         {
-            blKlienti.Delete(txtIdEmployee.Text);
+            try
+            {
+                blKlienti.Delete(txtIdEmployee.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Inserto Id-n e Klientit");
+            }
+            
         }
     }
 }
