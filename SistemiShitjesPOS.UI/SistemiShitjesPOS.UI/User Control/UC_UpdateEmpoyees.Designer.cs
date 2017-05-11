@@ -41,6 +41,7 @@
             this.txtMbiemri = new System.Windows.Forms.TextBox();
             this.txtEmri = new System.Windows.Forms.TextBox();
             this.txtIdEmployees = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxEmployees)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,12 +55,13 @@
             this.btnSubmitEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmitEmployees.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmitEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubmitEmployees.Location = new System.Drawing.Point(610, 503);
+            this.btnSubmitEmployees.Location = new System.Drawing.Point(485, 491);
             this.btnSubmitEmployees.Name = "btnSubmitEmployees";
             this.btnSubmitEmployees.Size = new System.Drawing.Size(98, 30);
             this.btnSubmitEmployees.TabIndex = 24;
             this.btnSubmitEmployees.Text = "Submit";
             this.btnSubmitEmployees.UseVisualStyleBackColor = false;
+            this.btnSubmitEmployees.Click += new System.EventHandler(this.btnSubmitEmployees_Click);
             // 
             // picBoxEmployees
             // 
@@ -199,11 +201,30 @@
             this.txtIdEmployees.TabIndex = 12;
             this.txtIdEmployees.Text = "Employees Id";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDelete.Location = new System.Drawing.Point(620, 491);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(98, 30);
+            this.btnDelete.TabIndex = 25;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // UC_UpdateEmpoyees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSubmitEmployees);
             this.Controls.Add(this.picBoxEmployees);
             this.Controls.Add(this.cmbRoliId);
@@ -240,5 +261,6 @@
         private System.Windows.Forms.TextBox txtMbiemri;
         private System.Windows.Forms.TextBox txtEmri;
         private System.Windows.Forms.TextBox txtIdEmployees;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

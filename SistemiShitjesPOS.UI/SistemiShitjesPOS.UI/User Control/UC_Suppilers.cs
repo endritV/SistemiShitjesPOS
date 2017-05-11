@@ -18,7 +18,16 @@ namespace SistemiShitjesPOS.UI
         public UC_Suppilers()
         {
             InitializeComponent();
-            dgListOfSuppliers.DataSource = blSupplier.GETALL();
+            try
+            {
+                dgListOfSuppliers.DataSource = blSupplier.GETALL();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Nuk eshte ne rregull");
+            }
+         
         }
 
         private void btnNewSuppliers_Click(object sender, EventArgs e)

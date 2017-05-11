@@ -206,7 +206,16 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            blItems.UpdateItem(new Artikulli(int.Parse(txtIdItems.Text),txtEmri.Text, int.Parse(txtBarkodi.Text), txtPershkrimi.Text, cmbCategory.Text));
+            try
+            {
+                blItems.UpdateItem(new Artikulli(int.Parse(txtIdItems.Text), txtEmri.Text, int.Parse(txtBarkodi.Text), txtPershkrimi.Text, cmbCategory.Text));
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Inserto te gjitha te dhenat");
+            }
+            
 
 
             //try
@@ -269,7 +278,16 @@ namespace SistemiShitjesPOS.UI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            blItems.DeleteArtikulli(Int32.Parse(txtBarkodi.Text));
+            try
+            {
+                blItems.DeleteArtikulli(Int32.Parse(txtBarkodi.Text));
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Inserto Barkodin e Artikullit");
+            }
+            
         }
     }
 }

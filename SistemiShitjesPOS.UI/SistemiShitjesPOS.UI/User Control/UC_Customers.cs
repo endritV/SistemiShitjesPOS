@@ -22,7 +22,16 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-            dgListOfCustomers.DataSource = dalKlineti.GetAll();
+            try
+            {
+                dgListOfCustomers.DataSource = dalKlineti.GetAll();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Nuk eshte ne rregull");
+            }
+            
         }
 
         private void btnNewCustomers_Click(object sender, EventArgs e)
@@ -39,7 +48,16 @@ namespace SistemiShitjesPOS.UI
 
         protected void btnSearchCustomers_Click(object sender, EventArgs e)
         {
-            dgListOfCustomers.DataSource = blKlienti.SearchById(txtSearchCustomers.Text);
+            try
+            {
+                dgListOfCustomers.DataSource = blKlienti.SearchById(txtSearchCustomers.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Inserto Id-n e klientit");
+            }
+            
 
         }
 

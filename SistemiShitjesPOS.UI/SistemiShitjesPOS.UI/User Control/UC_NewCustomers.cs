@@ -23,7 +23,16 @@ namespace SistemiShitjesPOS.UI
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            blKlienti.InsertNewClietn(new Klienti(txtIdKlient.Text,txtEmri.Text,txtAdresa.Text,txtNrTelefonit.Text,rdbKlient.Checked));
+            try
+            {
+                blKlienti.InsertNewClietn(new Klienti(txtIdKlient.Text, txtEmri.Text, txtAdresa.Text, txtNrTelefonit.Text, rdbKlient.Checked));
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Shkruaj te gjitha te dhenat");
+            }
+           
 
         }
 

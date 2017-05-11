@@ -64,10 +64,10 @@
     <Compile Include="Forma\OpenForm.Designer.cs">
       <DependentUpon>OpenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_UpdateEmpoyees.cs">
+    <Compile Include="User Control\UC_UpdateEmpoyees.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_UpdateEmpoyees.Designer.cs">
+    <Compile Include="User Control\UC_UpdateEmpoyees.Designer.cs">
       <DependentUpon>UC_UpdateEmpoyees.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UC_SektoriRoli.cs">
@@ -162,7 +162,7 @@
     <EmbeddedResource Include="Forma\OpenForm.resx">
       <DependentUpon>OpenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_UpdateEmpoyees.resx">
+    <EmbeddedResource Include="User Control\UC_UpdateEmpoyees.resx">
       <DependentUpon>UC_UpdateEmpoyees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_SektoriRoli.resx">
