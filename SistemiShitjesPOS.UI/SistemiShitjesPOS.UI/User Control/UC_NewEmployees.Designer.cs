@@ -182,7 +182,7 @@
             this.btnSubmitEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmitEmployees.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmitEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubmitEmployees.Location = new System.Drawing.Point(579, 510);
+            this.btnSubmitEmployees.Location = new System.Drawing.Point(334, 495);
             this.btnSubmitEmployees.Name = "btnSubmitEmployees";
             this.btnSubmitEmployees.Size = new System.Drawing.Size(98, 30);
             this.btnSubmitEmployees.TabIndex = 11;

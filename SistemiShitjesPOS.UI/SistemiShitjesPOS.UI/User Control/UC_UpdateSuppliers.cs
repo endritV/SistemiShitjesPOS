@@ -19,6 +19,7 @@ namespace SistemiShitjesPOS.UI
         public UC_UpdateSuppliers()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

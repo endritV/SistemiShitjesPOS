@@ -149,6 +149,9 @@
             // 
             // panEmployees
             // 
+            this.panEmployees.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panEmployees.Controls.Add(this.dgEmployees);
             this.panEmployees.Controls.Add(this.lblListOfEmployees);
             this.panEmployees.Controls.Add(this.panSearchItems);

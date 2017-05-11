@@ -91,6 +91,7 @@
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
@@ -98,7 +99,7 @@
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubmit.Location = new System.Drawing.Point(389, 367);
+            this.btnSubmit.Location = new System.Drawing.Point(627, 517);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(98, 30);
             this.btnSubmit.TabIndex = 22;
@@ -116,7 +117,7 @@
             this.rdbJoKlient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbJoKlient.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbJoKlient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbJoKlient.Location = new System.Drawing.Point(412, 306);
+            this.rdbJoKlient.Location = new System.Drawing.Point(165, 404);
             this.rdbJoKlient.Name = "rdbJoKlient";
             this.rdbJoKlient.Size = new System.Drawing.Size(79, 24);
             this.rdbJoKlient.TabIndex = 23;
@@ -134,7 +135,7 @@
             this.rdbKlient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbKlient.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbKlient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbKlient.Location = new System.Drawing.Point(315, 306);
+            this.rdbKlient.Location = new System.Drawing.Point(62, 404);
             this.rdbKlient.Name = "rdbKlient";
             this.rdbKlient.Size = new System.Drawing.Size(60, 24);
             this.rdbKlient.TabIndex = 24;

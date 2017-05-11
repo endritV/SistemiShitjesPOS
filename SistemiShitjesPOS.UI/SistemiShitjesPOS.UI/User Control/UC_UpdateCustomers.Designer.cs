@@ -48,7 +48,7 @@
             this.rdbJoAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbJoAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbJoAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbJoAktiv.Location = new System.Drawing.Point(428, 307);
+            this.rdbJoAktiv.Location = new System.Drawing.Point(174, 363);
             this.rdbJoAktiv.Name = "rdbJoAktiv";
             this.rdbJoAktiv.Size = new System.Drawing.Size(75, 24);
             this.rdbJoAktiv.TabIndex = 31;
@@ -66,7 +66,7 @@
             this.rdbAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbAktiv.Location = new System.Drawing.Point(331, 307);
+            this.rdbAktiv.Location = new System.Drawing.Point(77, 363);
             this.rdbAktiv.Name = "rdbAktiv";
             this.rdbAktiv.Size = new System.Drawing.Size(56, 24);
             this.rdbAktiv.TabIndex = 32;
@@ -83,7 +83,7 @@
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubmit.Location = new System.Drawing.Point(405, 368);
+            this.btnSubmit.Location = new System.Drawing.Point(456, 513);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(98, 30);
             this.btnSubmit.TabIndex = 30;
@@ -152,7 +152,7 @@
             this.txtDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtDelete.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtDelete.Location = new System.Drawing.Point(589, 368);
+            this.txtDelete.Location = new System.Drawing.Point(640, 513);
             this.txtDelete.Name = "txtDelete";
             this.txtDelete.Size = new System.Drawing.Size(98, 30);
             this.txtDelete.TabIndex = 33;

@@ -16,5 +16,22 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
         }
+        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+        private void OpenForm_Load(object sender, EventArgs e)
+        {
+            timer.Interval = 10000;
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Start();
+            
+        }
+        void timer_Tick(object sender, EventArgs e)
+        {
+            timer.Stop();
+            LoginForm login = new LoginForm();
+            this.Visible = false;
+            login.ShowDialog();
+            
+        }
+
     }
 }

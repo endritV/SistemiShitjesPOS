@@ -18,6 +18,7 @@ namespace SistemiShitjesPOS.UI
         public UC_Suppilers()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
             dgListOfSuppliers.DataSource = blSupplier.GETALL();
         }
 

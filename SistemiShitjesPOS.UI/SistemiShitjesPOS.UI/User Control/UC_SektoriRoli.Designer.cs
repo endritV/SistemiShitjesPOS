@@ -33,17 +33,18 @@
             this.txtEmriSektorit = new System.Windows.Forms.TextBox();
             this.txtSektoriId = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.btnSubmitSektori = new System.Windows.Forms.Button();
             this.rdbJoAktiv = new System.Windows.Forms.RadioButton();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.rdbAktiv = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSubmitSektori = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtIdRoli
             // 
+            this.txtIdRoli.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtIdRoli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtIdRoli.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdRoli.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -56,6 +57,7 @@
             // 
             // txtEmriRolit
             // 
+            this.txtEmriRolit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmriRolit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtEmriRolit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmriRolit.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -68,6 +70,7 @@
             // 
             // txtEmriSektorit
             // 
+            this.txtEmriSektorit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.txtEmriSektorit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtEmriSektorit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmriSektorit.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,6 +83,7 @@
             // 
             // txtSektoriId
             // 
+            this.txtSektoriId.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.txtSektoriId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtSektoriId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSektoriId.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -92,6 +96,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(104)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.rdbJoAktiv);
             this.panel1.Controls.Add(this.btnSubmit);
@@ -103,53 +108,9 @@
             this.panel1.Size = new System.Drawing.Size(342, 211);
             this.panel1.TabIndex = 7;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(104)))), ((int)(((byte)(128)))));
-            this.panel2.Controls.Add(this.btnSubmitSektori);
-            this.panel2.Controls.Add(this.txtSektoriId);
-            this.panel2.Controls.Add(this.txtEmriSektorit);
-            this.panel2.Location = new System.Drawing.Point(169, 319);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(342, 187);
-            this.panel2.TabIndex = 8;
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnSubmit.FlatAppearance.BorderSize = 0;
-            this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubmit.Location = new System.Drawing.Point(110, 166);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(98, 30);
-            this.btnSubmit.TabIndex = 9;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = false;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
-            // btnSubmitSektori
-            // 
-            this.btnSubmitSektori.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnSubmitSektori.FlatAppearance.BorderSize = 0;
-            this.btnSubmitSektori.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnSubmitSektori.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnSubmitSektori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmitSektori.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmitSektori.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubmitSektori.Location = new System.Drawing.Point(110, 143);
-            this.btnSubmitSektori.Name = "btnSubmitSektori";
-            this.btnSubmitSektori.Size = new System.Drawing.Size(98, 30);
-            this.btnSubmitSektori.TabIndex = 7;
-            this.btnSubmitSektori.Text = "Submit";
-            this.btnSubmitSektori.UseVisualStyleBackColor = false;
-            this.btnSubmitSektori.Click += new System.EventHandler(this.btnSubmitSektori_Click);
-            // 
             // rdbJoAktiv
             // 
+            this.rdbJoAktiv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdbJoAktiv.AutoSize = true;
             this.rdbJoAktiv.BackColor = System.Drawing.Color.Transparent;
             this.rdbJoAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
@@ -166,8 +127,27 @@
             this.rdbJoAktiv.Text = "Jo Aktiv";
             this.rdbJoAktiv.UseVisualStyleBackColor = false;
             // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSubmit.Location = new System.Drawing.Point(110, 166);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(98, 30);
+            this.btnSubmit.TabIndex = 9;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
             // rdbAktiv
             // 
+            this.rdbAktiv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdbAktiv.AutoSize = true;
             this.rdbAktiv.BackColor = System.Drawing.Color.Transparent;
             this.rdbAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
@@ -183,6 +163,36 @@
             this.rdbAktiv.TabStop = true;
             this.rdbAktiv.Text = "Aktiv";
             this.rdbAktiv.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(104)))), ((int)(((byte)(128)))));
+            this.panel2.Controls.Add(this.btnSubmitSektori);
+            this.panel2.Controls.Add(this.txtSektoriId);
+            this.panel2.Controls.Add(this.txtEmriSektorit);
+            this.panel2.Location = new System.Drawing.Point(169, 319);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(342, 187);
+            this.panel2.TabIndex = 8;
+            // 
+            // btnSubmitSektori
+            // 
+            this.btnSubmitSektori.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnSubmitSektori.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.btnSubmitSektori.FlatAppearance.BorderSize = 0;
+            this.btnSubmitSektori.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnSubmitSektori.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.btnSubmitSektori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmitSektori.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmitSektori.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSubmitSektori.Location = new System.Drawing.Point(110, 143);
+            this.btnSubmitSektori.Name = "btnSubmitSektori";
+            this.btnSubmitSektori.Size = new System.Drawing.Size(98, 30);
+            this.btnSubmitSektori.TabIndex = 7;
+            this.btnSubmitSektori.Text = "Submit";
+            this.btnSubmitSektori.UseVisualStyleBackColor = false;
+            this.btnSubmitSektori.Click += new System.EventHandler(this.btnSubmitSektori_Click);
             // 
             // UC_SektoriRoli
             // 

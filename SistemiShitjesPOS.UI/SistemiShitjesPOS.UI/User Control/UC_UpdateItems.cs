@@ -29,6 +29,7 @@ namespace SistemiShitjesPOS.UI
         public UC_UpdateItems()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
         }
 
         private void InitializeComponent()
