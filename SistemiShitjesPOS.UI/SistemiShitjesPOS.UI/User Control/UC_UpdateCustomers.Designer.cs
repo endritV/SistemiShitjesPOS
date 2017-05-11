@@ -35,6 +35,7 @@
             this.txtEmri = new System.Windows.Forms.TextBox();
             this.txtAdresa = new System.Windows.Forms.TextBox();
             this.txtIdEmployee = new System.Windows.Forms.TextBox();
+            this.txtDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rdbJoAktiv
@@ -142,11 +143,29 @@
             this.txtIdEmployee.Text = "Employees Id";
             this.txtIdEmployee.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtIdEmployee_MouseDown);
             // 
+            // txtDelete
+            // 
+            this.txtDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.txtDelete.FlatAppearance.BorderSize = 0;
+            this.txtDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.txtDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
+            this.txtDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtDelete.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtDelete.Location = new System.Drawing.Point(589, 368);
+            this.txtDelete.Name = "txtDelete";
+            this.txtDelete.Size = new System.Drawing.Size(98, 30);
+            this.txtDelete.TabIndex = 33;
+            this.txtDelete.Text = "Delete";
+            this.txtDelete.UseVisualStyleBackColor = false;
+            this.txtDelete.Click += new System.EventHandler(this.txtDelete_Click);
+            // 
             // UC_UpdateCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
+            this.Controls.Add(this.txtDelete);
             this.Controls.Add(this.rdbJoAktiv);
             this.Controls.Add(this.rdbAktiv);
             this.Controls.Add(this.btnSubmit);
@@ -169,5 +188,6 @@
         public System.Windows.Forms.TextBox txtEmri;
         public System.Windows.Forms.TextBox txtAdresa;
         public System.Windows.Forms.TextBox txtIdEmployee;
+        private System.Windows.Forms.Button txtDelete;
     }
 }

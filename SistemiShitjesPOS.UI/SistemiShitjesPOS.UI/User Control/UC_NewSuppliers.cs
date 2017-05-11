@@ -91,5 +91,10 @@ namespace SistemiShitjesPOS.UI
         {
             txtpershkrimi.Clear();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            blSupplier.DeleteSupplier(txtIdSuppliers.Text);
+        }
     }
 }

@@ -35,6 +35,12 @@ namespace SistemiShitjesPOS.BusinessLayer
             return dalItems.UpdateItem(artikulli);
         }
 
+        public static List<Artikulli>DeleteArtikulli(int barkodi)
+        {
+
+            return dalItems.DeleteItemByBarcod(barkodi);
+        }
+
 
         //public static bool IsValid(Artikulli artikulli)
         //{

@@ -35,5 +35,10 @@ namespace SistemiShitjesPOS.BusinessLayer
             
 
         }
+        public static List<Puntori>DeleteEmployee(string id)
+        {
+
+            return dalEmployees.DeleteEmplyoeeByID(id);
+        }
     }
 }

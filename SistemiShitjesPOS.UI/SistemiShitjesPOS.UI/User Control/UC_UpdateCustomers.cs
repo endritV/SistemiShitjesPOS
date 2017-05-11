@@ -67,5 +67,10 @@ namespace SistemiShitjesPOS.UI
         {
             txtNrTel.Clear();
         }
+
+        private void txtDelete_Click(object sender, EventArgs e)
+        {
+            blKlienti.Delete(txtIdEmployee.Text);
+        }
     }
 }

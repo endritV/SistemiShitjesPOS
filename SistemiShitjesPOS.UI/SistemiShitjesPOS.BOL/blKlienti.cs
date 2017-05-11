@@ -43,5 +43,12 @@ namespace SistemiShitjesPOS.BusinessLayer
 
             return dalKlineti.UpdateClient(klienti);
         }
+        public static List<Klienti> Delete(string klienti)
+        {
+
+            return dalKlineti.DeleteKlientById(klienti);
+        }
+
+
     }
 }

@@ -36,6 +36,11 @@ namespace SistemiShitjesPOS.BusinessLayer
             return dalSupplier.UpdateSupplier(klienti);
         }
 
+        public static List<Klienti> DeleteSupplier(string furnitori)
+        {
+            return dalSupplier.DeleteSupplierById(furnitori);
+
+        }
 
 
     }
