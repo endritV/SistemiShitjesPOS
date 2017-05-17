@@ -45,12 +45,12 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxEmployees)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmail.Location = new System.Drawing.Point(3, 261);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(218, 32);
+            this.txtEmail.Size = new System.Drawing.Size(294, 32);
             this.txtEmail.TabIndex = 14;
             this.txtEmail.Text = "Email";
             this.txtEmail.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtEmail_MouseDown);
@@ -81,7 +81,7 @@
             this.txtNrTelefonit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNrTelefonit.Location = new System.Drawing.Point(3, 175);
             this.txtNrTelefonit.Name = "txtNrTelefonit";
-            this.txtNrTelefonit.Size = new System.Drawing.Size(218, 32);
+            this.txtNrTelefonit.Size = new System.Drawing.Size(294, 32);
             this.txtNrTelefonit.TabIndex = 17;
             this.txtNrTelefonit.Text = "Phone Number";
             this.txtNrTelefonit.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtNrTelefonit_MouseDown);
@@ -97,7 +97,7 @@
             this.txtMbiemri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtMbiemri.Location = new System.Drawing.Point(3, 132);
             this.txtMbiemri.Name = "txtMbiemri";
-            this.txtMbiemri.Size = new System.Drawing.Size(218, 32);
+            this.txtMbiemri.Size = new System.Drawing.Size(294, 32);
             this.txtMbiemri.TabIndex = 13;
             this.txtMbiemri.Text = "Surname";
             this.txtMbiemri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtMbiemri_MouseDown);
@@ -113,23 +113,22 @@
             this.txtEmri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmri.Location = new System.Drawing.Point(3, 46);
             this.txtEmri.Name = "txtEmri";
-            this.txtEmri.Size = new System.Drawing.Size(218, 32);
+            this.txtEmri.Size = new System.Drawing.Size(294, 32);
             this.txtEmri.TabIndex = 12;
             this.txtEmri.Text = "Name Suppliers";
             this.txtEmri.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtEmri_MouseDown);
             // 
             // txtIdSuppliers
             // 
-            this.txtIdSuppliers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIdSuppliers.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtIdSuppliers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtIdSuppliers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdSuppliers.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdSuppliers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtIdSuppliers.Location = new System.Drawing.Point(3, 3);
+            this.txtIdSuppliers.Location = new System.Drawing.Point(3, 5);
             this.txtIdSuppliers.Name = "txtIdSuppliers";
-            this.txtIdSuppliers.Size = new System.Drawing.Size(218, 32);
+            this.txtIdSuppliers.ReadOnly = true;
+            this.txtIdSuppliers.Size = new System.Drawing.Size(127, 32);
             this.txtIdSuppliers.TabIndex = 11;
             this.txtIdSuppliers.Text = "Suppliers Id";
             this.txtIdSuppliers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtIdSuppliers_MouseDown);
@@ -145,7 +144,7 @@
             this.txtEmriFurnitorit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmriFurnitorit.Location = new System.Drawing.Point(3, 89);
             this.txtEmriFurnitorit.Name = "txtEmriFurnitorit";
-            this.txtEmriFurnitorit.Size = new System.Drawing.Size(218, 32);
+            this.txtEmriFurnitorit.Size = new System.Drawing.Size(294, 32);
             this.txtEmriFurnitorit.TabIndex = 12;
             this.txtEmriFurnitorit.Text = "Name";
             this.txtEmriFurnitorit.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtEmriFurnitorit_MouseDown);
@@ -161,52 +160,61 @@
             this.txtNrFix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNrFix.Location = new System.Drawing.Point(3, 218);
             this.txtNrFix.Name = "txtNrFix";
-            this.txtNrFix.Size = new System.Drawing.Size(218, 32);
+            this.txtNrFix.Size = new System.Drawing.Size(294, 32);
             this.txtNrFix.TabIndex = 17;
             this.txtNrFix.Text = "Fix Number";
             this.txtNrFix.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtNrFix_MouseDown);
             // 
             // txtAdresa
             // 
-            this.txtAdresa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtAdresa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAdresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtAdresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAdresa.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtAdresa.Location = new System.Drawing.Point(3, 52);
+            this.txtAdresa.Location = new System.Drawing.Point(3, 44);
+            this.txtAdresa.MaximumSize = new System.Drawing.Size(294, 32);
+            this.txtAdresa.MinimumSize = new System.Drawing.Size(294, 32);
             this.txtAdresa.Name = "txtAdresa";
-            this.txtAdresa.Size = new System.Drawing.Size(194, 32);
+            this.txtAdresa.Size = new System.Drawing.Size(294, 32);
             this.txtAdresa.TabIndex = 14;
             this.txtAdresa.Text = "Address";
             this.txtAdresa.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtAdresa_MouseDown);
             // 
             // txtNrBiznesit
             // 
-            this.txtNrBiznesit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNrBiznesit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNrBiznesit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtNrBiznesit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNrBiznesit.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNrBiznesit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNrBiznesit.Location = new System.Drawing.Point(3, 3);
+            this.txtNrBiznesit.MaximumSize = new System.Drawing.Size(294, 32);
+            this.txtNrBiznesit.MinimumSize = new System.Drawing.Size(294, 32);
             this.txtNrBiznesit.Name = "txtNrBiznesit";
-            this.txtNrBiznesit.Size = new System.Drawing.Size(194, 32);
+            this.txtNrBiznesit.Size = new System.Drawing.Size(294, 32);
             this.txtNrBiznesit.TabIndex = 11;
             this.txtNrBiznesit.Text = "Bussines Id";
             this.txtNrBiznesit.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtNrBiznesit_MouseDown);
             // 
             // txtWeb
             // 
-            this.txtWeb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtWeb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWeb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtWeb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtWeb.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWeb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtWeb.Location = new System.Drawing.Point(3, 101);
+            this.txtWeb.Location = new System.Drawing.Point(3, 85);
+            this.txtWeb.MaximumSize = new System.Drawing.Size(294, 32);
+            this.txtWeb.MinimumSize = new System.Drawing.Size(294, 32);
             this.txtWeb.Name = "txtWeb";
-            this.txtWeb.Size = new System.Drawing.Size(194, 32);
+            this.txtWeb.Size = new System.Drawing.Size(294, 32);
             this.txtWeb.TabIndex = 14;
             this.txtWeb.Text = "Web";
             this.txtWeb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtWeb_MouseDown);
@@ -232,7 +240,7 @@
             this.rdbJoAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbJoAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbJoAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbJoAktiv.Location = new System.Drawing.Point(116, 10);
+            this.rdbJoAktiv.Location = new System.Drawing.Point(184, 6);
             this.rdbJoAktiv.Name = "rdbJoAktiv";
             this.rdbJoAktiv.Size = new System.Drawing.Size(75, 24);
             this.rdbJoAktiv.TabIndex = 23;
@@ -253,7 +261,7 @@
             this.rdbAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbAktiv.Location = new System.Drawing.Point(16, 6);
+            this.rdbAktiv.Location = new System.Drawing.Point(50, 8);
             this.rdbAktiv.Name = "rdbAktiv";
             this.rdbAktiv.Size = new System.Drawing.Size(56, 24);
             this.rdbAktiv.TabIndex = 24;
@@ -263,11 +271,14 @@
             // 
             // txtpershkrimi
             // 
+            this.txtpershkrimi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtpershkrimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtpershkrimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpershkrimi.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpershkrimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtpershkrimi.Location = new System.Drawing.Point(534, 214);
+            this.txtpershkrimi.Location = new System.Drawing.Point(381, 260);
+            this.txtpershkrimi.MaximumSize = new System.Drawing.Size(400, 247);
+            this.txtpershkrimi.MinimumSize = new System.Drawing.Size(200, 247);
             this.txtpershkrimi.Multiline = true;
             this.txtpershkrimi.Name = "txtpershkrimi";
             this.txtpershkrimi.Size = new System.Drawing.Size(200, 247);
@@ -277,6 +288,7 @@
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
@@ -284,7 +296,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSave.Location = new System.Drawing.Point(534, 475);
+            this.btnSave.Location = new System.Drawing.Point(381, 513);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(200, 42);
             this.btnSave.TabIndex = 22;
@@ -294,6 +306,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.txtIdSuppliers, 0, 0);
@@ -313,7 +326,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(224, 307);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(300, 307);
             this.tableLayoutPanel1.TabIndex = 25;
             // 
             // panel1
@@ -322,24 +335,14 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.Controls.Add(this.rdbAktiv);
             this.panel1.Controls.Add(this.rdbJoAktiv);
-            this.panel1.Location = new System.Drawing.Point(3, 150);
+            this.panel1.Location = new System.Drawing.Point(3, 126);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(194, 43);
+            this.panel1.Size = new System.Drawing.Size(294, 35);
             this.panel1.TabIndex = 27;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.tableLayoutPanel2);
-            this.panel2.Location = new System.Drawing.Point(281, 214);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(223, 210);
-            this.panel2.TabIndex = 28;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -347,22 +350,48 @@
             this.tableLayoutPanel2.Controls.Add(this.txtNrBiznesit, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtWeb, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.txtAdresa, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 7);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(32, 518);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 196);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(300, 164);
             this.tableLayoutPanel2.TabIndex = 29;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label2.Location = new System.Drawing.Point(261, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(388, 24);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Plot the data for add a new Suppliers";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(374, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 39);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Suppliers";
             // 
             // UC_NewSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.picBoxEmployees);
@@ -375,7 +404,6 @@
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -402,7 +430,8 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

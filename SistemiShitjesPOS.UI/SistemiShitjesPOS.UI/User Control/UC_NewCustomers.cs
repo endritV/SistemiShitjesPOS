@@ -56,5 +56,40 @@ namespace SistemiShitjesPOS.UI
         {
             txtNrTelefonit.Clear();
         }
+
+        private void txtIdKlient_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void rdbKlient_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNrTelefonit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmri_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAdresa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdbJoKlient_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UC_NewCustomers_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

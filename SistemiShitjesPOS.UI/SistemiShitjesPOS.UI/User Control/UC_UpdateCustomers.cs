@@ -26,7 +26,7 @@ namespace SistemiShitjesPOS.UI
         {
             try
             {
-                blKlienti.UpdateKlient(new Klienti(txtIdEmployee.Text.ToString(), txtEmri.Text.ToString(), txtAdresa.Text.ToString(), txtNrTel.Text.ToString(), rdbAktiv.Checked));
+                blKlienti.UpdateKlient(new Klienti(txtCustomersId.Text.ToString(), txtEmri.Text.ToString(), txtAdresa.Text.ToString(), txtNrTel.Text.ToString(), rdbKlient.Checked));
             }
             catch (Exception)
             {
@@ -35,32 +35,12 @@ namespace SistemiShitjesPOS.UI
             }
             
 
-        //    SqlConnection x = new SqlConnection(DataBaseCon.Connection);
-        //    x.Open();
-        //    string query = "spNdryshoKlientin";
-        //    SqlCommand da = new SqlCommand(query, x);
-        //    da.CommandType = CommandType.StoredProcedure;
-        //    da.Parameters.AddWithValue("@_IdKlienti", txtIdEmployee.Text.ToString());
-        //    da.Parameters.AddWithValue("@_Emri", txtEmri.Text.ToString());
-        //    da.Parameters.AddWithValue("@_Adresa", txtAdresa.Text.ToString());
-        //    da.Parameters.AddWithValue("@_NrTelefeoni", txtNrTel.Text.ToString());
-
-        //    if (rdbAktiv.Checked)
-        //    {
-        //        da.Parameters.AddWithValue("@_IsKlient", "1");
-        //    }
-        //    else if (rdbJoAktiv.Checked)
-        //    {
-        //        da.Parameters.AddWithValue("@_IsKlient", "0");
-        //    }
-        //    int o = da.ExecuteNonQuery();
-        //    MessageBox.Show(" Te dhenat u Ndryshuan", o.ToString());
-        //    x.Close();
+      
         }
 
         private void txtIdEmployee_MouseDown(object sender, MouseEventArgs e)
         {
-            txtIdEmployee.Clear();
+            txtCustomersId.Clear();
         }
 
         private void txtEmri_MouseDown(object sender, MouseEventArgs e)
@@ -82,7 +62,7 @@ namespace SistemiShitjesPOS.UI
         {
             try
             {
-                blKlienti.Delete(txtIdEmployee.Text);
+                blKlienti.Delete(txtCustomersId.Text);
             }
             catch (Exception)
             {
@@ -90,6 +70,11 @@ namespace SistemiShitjesPOS.UI
                 MessageBox.Show("Inserto Id-n e Klientit");
             }
             
+        }
+
+        private void txtEmri_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

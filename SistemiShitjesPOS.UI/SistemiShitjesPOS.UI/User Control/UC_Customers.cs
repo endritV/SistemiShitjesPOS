@@ -63,12 +63,22 @@ namespace SistemiShitjesPOS.UI
 
         private void dgListOfCustomers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string dataValue = dgListOfCustomers.Rows[e.RowIndex].Cells[0].Value.ToString();
+            try
+            {
+                string dataValue = dgListOfCustomers.Rows[e.RowIndex].Cells[0].Value.ToString();
+                UC_UpdateCustomers u = new UC_UpdateCustomers();
 
-            UC_UpdateCustomers u = new UC_UpdateCustomers();
+                panCustomers.Controls.Clear();
+                panCustomers.Controls.Add(u);
+            }
+            catch (Exception)
+            {
 
-            panCustomers.Controls.Clear();
-            panCustomers.Controls.Add(u);
+                MessageBox.Show("Kliko Mbi shkronje");
+            }
+            
+
+           
 
             //try
             //{

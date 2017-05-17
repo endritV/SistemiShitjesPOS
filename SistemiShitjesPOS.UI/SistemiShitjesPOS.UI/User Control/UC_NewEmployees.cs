@@ -46,41 +46,38 @@ namespace SistemiShitjesPOS.UI
             }
             
         }
-        private void txtIdEmployees_MouseDown(object sender, MouseEventArgs e)
+        private void txtIdEmployees_TextChanged(object sender, MouseEventArgs e)
         {
             txtIdEmployees.Clear();
         }
-        private void txtEmri_MouseDown(object sender, MouseEventArgs e)
-        {
-            txtEmri.Clear();
-        }
 
-        private void txtMbiemri_MouseDown(object sender, MouseEventArgs e)
+
+        private void txtMbiemri_TextChanged(object sender, MouseEventArgs e)
         {
             txtMbiemri.Clear(); 
         }
 
-        private void txtNrTelefonit_MouseDown(object sender, MouseEventArgs e)
+        private void txtNrTelefonit_TextChanged(object sender, MouseEventArgs e)
         {
             txtNrTelefonit.Clear();
         }
 
-        private void txtEmail_MouseDown(object sender, MouseEventArgs e)
+        private void txtEmail_TextChanged(object sender, MouseEventArgs e)
         {
             txtEmail.Clear();
         }
 
-        private void txtUserName_MouseDown(object sender, MouseEventArgs e)
+        private void txtUserName_TextChanged(object sender, MouseEventArgs e)
         {
             txtUserName.Clear();
         }
 
-        private void txtPassword_MouseDown(object sender, MouseEventArgs e)
+        private void txtPassword_TextChanged(object sender, MouseEventArgs e)
         {
             txtPassword.Clear();
         }
 
-        private void txtAdresa_MouseDown(object sender, MouseEventArgs e)
+        private void txtAdresa_TextChanged(object sender, MouseEventArgs e)
         {
             txtAdresa.Clear();
         }
@@ -98,6 +95,11 @@ namespace SistemiShitjesPOS.UI
         private void cmbSektoriId_MouseClick(object sender, MouseEventArgs e)
         {
           
+        }
+
+        private void txtEmri_TextChanged(object sender, EventArgs e)
+        {
+            txtEmri.Clear();
         }
     }
 }

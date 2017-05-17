@@ -72,6 +72,7 @@
             // 
             // btnViewAll
             // 
+            this.btnViewAll.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnViewAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnViewAll.FlatAppearance.BorderSize = 0;
             this.btnViewAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
@@ -80,6 +81,7 @@
             this.btnViewAll.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnViewAll.Location = new System.Drawing.Point(411, 26);
+            this.btnViewAll.MaximumSize = new System.Drawing.Size(150, 30);
             this.btnViewAll.Name = "btnViewAll";
             this.btnViewAll.Size = new System.Drawing.Size(98, 30);
             this.btnViewAll.TabIndex = 4;
@@ -107,6 +109,7 @@
             // 
             // btnSearchCustomers
             // 
+            this.btnSearchCustomers.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSearchCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnSearchCustomers.FlatAppearance.BorderSize = 0;
             this.btnSearchCustomers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
@@ -115,8 +118,9 @@
             this.btnSearchCustomers.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchCustomers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnSearchCustomers.Location = new System.Drawing.Point(292, 26);
+            this.btnSearchCustomers.MaximumSize = new System.Drawing.Size(150, 30);
             this.btnSearchCustomers.Name = "btnSearchCustomers";
-            this.btnSearchCustomers.Size = new System.Drawing.Size(98, 30);
+            this.btnSearchCustomers.Size = new System.Drawing.Size(100, 30);
             this.btnSearchCustomers.TabIndex = 3;
             this.btnSearchCustomers.Text = "Search";
             this.btnSearchCustomers.UseVisualStyleBackColor = false;
@@ -124,11 +128,14 @@
             // 
             // txtSearchCustomers
             // 
+            this.txtSearchCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.txtSearchCustomers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearchCustomers.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchCustomers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtSearchCustomers.Location = new System.Drawing.Point(23, 24);
+            this.txtSearchCustomers.MaximumSize = new System.Drawing.Size(400, 32);
             this.txtSearchCustomers.Name = "txtSearchCustomers";
             this.txtSearchCustomers.Size = new System.Drawing.Size(237, 32);
             this.txtSearchCustomers.TabIndex = 1;
