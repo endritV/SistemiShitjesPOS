@@ -77,34 +77,7 @@ namespace SistemiShitjesPOS.UI
                 MessageBox.Show("Kliko Mbi shkronje");
             }
             
-
-           
-
-            //try
-            //{
-            //    if (e.RowIndex >= 0)
-            //    {
-
-            //        DataGridViewRow row = this.dgListOfCustomers.Rows[e.RowIndex];
-
-            //        u.txtIdEmployee.Text = row.Cells[0].Value.ToString();
-            //        u.txtEmri.Text = row.Cells[1].Value.ToString();
-            //        u.txtAdresa.Text = row.Cells[2].Value.ToString();
-            //        u.txtNrTel.Text = row.Cells[3].Value.ToString();
-
-                    
-
-
-            //    }
-
-            //}
-            //catch (Exception)
-            //{
-
-                
-            //}
         }
-
         private void txtSearchCustomers_MouseDown(object sender, MouseEventArgs e)
         {
             txtSearchCustomers.Clear();
