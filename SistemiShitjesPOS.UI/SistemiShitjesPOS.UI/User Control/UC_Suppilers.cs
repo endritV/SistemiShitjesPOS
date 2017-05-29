@@ -117,7 +117,16 @@ namespace SistemiShitjesPOS.UI
         }
         private void btnSearchSuppliers_Click(object sender, EventArgs e)
         {
-            dgListOfSuppliers.DataSource = blSupplier.GetSupplierByid(txtSearchSuppliers.Text);
+            try
+            {
+                dgListOfSuppliers.DataSource = blSupplier.GetSupplierByid(txtSearchSuppliers.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Diqka nuk eshte ne rregull");
+            }
+            
         }
 
         private void txtSearchSuppliers_MouseDown(object sender, MouseEventArgs e)
