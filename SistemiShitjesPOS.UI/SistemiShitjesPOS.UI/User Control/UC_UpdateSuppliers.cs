@@ -120,15 +120,7 @@ namespace SistemiShitjesPOS.UI
             txtNrBiznesit.Clear();
         }
 
-        private void txtUserName_MouseDown(object sender, MouseEventArgs e)
-        {
-            txtUserName.Clear();
-        }
-
-        private void txtPassword_MouseDown(object sender, MouseEventArgs e)
-        {
-            txtPassword.Clear();
-        }
+      
 
         private void txtAdresa_MouseDown(object sender, MouseEventArgs e)
         {

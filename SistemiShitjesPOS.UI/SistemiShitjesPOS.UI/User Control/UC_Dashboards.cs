@@ -17,5 +17,10 @@ namespace SistemiShitjesPOS.UI
             InitializeComponent();
             this.Dock = DockStyle.Fill;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -63,38 +63,21 @@ namespace SistemiShitjesPOS.UI
 
         private void dgListOfCustomers_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string dataValue = dgListOfCustomers.Rows[e.RowIndex].Cells[0].Value.ToString();
+            try
+            {
+                string dataValue = dgListOfCustomers.Rows[e.RowIndex].Cells[0].Value.ToString();
+                UC_UpdateCustomers u = new UC_UpdateCustomers();
 
-            UC_UpdateCustomers u = new UC_UpdateCustomers();
+                panCustomers.Controls.Clear();
+                panCustomers.Controls.Add(u);
+            }
+            catch (Exception)
+            {
 
-            panCustomers.Controls.Clear();
-            panCustomers.Controls.Add(u);
-
-            //try
-            //{
-            //    if (e.RowIndex >= 0)
-            //    {
-
-            //        DataGridViewRow row = this.dgListOfCustomers.Rows[e.RowIndex];
-
-            //        u.txtIdEmployee.Text = row.Cells[0].Value.ToString();
-            //        u.txtEmri.Text = row.Cells[1].Value.ToString();
-            //        u.txtAdresa.Text = row.Cells[2].Value.ToString();
-            //        u.txtNrTel.Text = row.Cells[3].Value.ToString();
-
-                    
-
-
-            //    }
-
-            //}
-            //catch (Exception)
-            //{
-
-                
-            //}
+                MessageBox.Show("Kliko Mbi shkronje");
+            }
+            
         }
-
         private void txtSearchCustomers_MouseDown(object sender, MouseEventArgs e)
         {
             txtSearchCustomers.Clear();

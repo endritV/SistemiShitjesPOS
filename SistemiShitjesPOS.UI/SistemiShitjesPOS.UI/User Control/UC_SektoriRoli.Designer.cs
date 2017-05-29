@@ -49,9 +49,10 @@
             this.txtIdRoli.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdRoli.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdRoli.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtIdRoli.Location = new System.Drawing.Point(76, 33);
+            this.txtIdRoli.Location = new System.Drawing.Point(93, 31);
             this.txtIdRoli.Name = "txtIdRoli";
-            this.txtIdRoli.Size = new System.Drawing.Size(182, 32);
+            this.txtIdRoli.ReadOnly = true;
+            this.txtIdRoli.Size = new System.Drawing.Size(147, 32);
             this.txtIdRoli.TabIndex = 3;
             this.txtIdRoli.Text = "Roli ID";
             // 
@@ -62,35 +63,40 @@
             this.txtEmriRolit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmriRolit.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmriRolit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEmriRolit.Location = new System.Drawing.Point(76, 88);
+            this.txtEmriRolit.Location = new System.Drawing.Point(93, 98);
+            this.txtEmriRolit.MaximumSize = new System.Drawing.Size(294, 32);
+            this.txtEmriRolit.MinimumSize = new System.Drawing.Size(294, 32);
             this.txtEmriRolit.Name = "txtEmriRolit";
-            this.txtEmriRolit.Size = new System.Drawing.Size(182, 32);
+            this.txtEmriRolit.Size = new System.Drawing.Size(294, 32);
             this.txtEmriRolit.TabIndex = 4;
             this.txtEmriRolit.Text = "Role name";
             // 
             // txtEmriSektorit
             // 
-            this.txtEmriSektorit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtEmriSektorit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmriSektorit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtEmriSektorit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmriSektorit.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmriSektorit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEmriSektorit.Location = new System.Drawing.Point(76, 85);
+            this.txtEmriSektorit.Location = new System.Drawing.Point(93, 105);
+            this.txtEmriSektorit.MaximumSize = new System.Drawing.Size(294, 32);
+            this.txtEmriSektorit.MinimumSize = new System.Drawing.Size(294, 32);
             this.txtEmriSektorit.Name = "txtEmriSektorit";
-            this.txtEmriSektorit.Size = new System.Drawing.Size(182, 32);
+            this.txtEmriSektorit.Size = new System.Drawing.Size(294, 32);
             this.txtEmriSektorit.TabIndex = 6;
             this.txtEmriSektorit.Text = "Sektori name";
             // 
             // txtSektoriId
             // 
-            this.txtSektoriId.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtSektoriId.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSektoriId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtSektoriId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSektoriId.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSektoriId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtSektoriId.Location = new System.Drawing.Point(76, 30);
+            this.txtSektoriId.Location = new System.Drawing.Point(93, 43);
             this.txtSektoriId.Name = "txtSektoriId";
-            this.txtSektoriId.Size = new System.Drawing.Size(182, 32);
+            this.txtSektoriId.ReadOnly = true;
+            this.txtSektoriId.Size = new System.Drawing.Size(158, 32);
             this.txtSektoriId.TabIndex = 5;
             this.txtSektoriId.Text = "Sektori ID";
             // 
@@ -104,8 +110,10 @@
             this.panel1.Controls.Add(this.txtEmriRolit);
             this.panel1.Controls.Add(this.txtIdRoli);
             this.panel1.Location = new System.Drawing.Point(169, 54);
+            this.panel1.MaximumSize = new System.Drawing.Size(500, 300);
+            this.panel1.MinimumSize = new System.Drawing.Size(500, 300);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(342, 211);
+            this.panel1.Size = new System.Drawing.Size(500, 300);
             this.panel1.TabIndex = 7;
             // 
             // rdbJoAktiv
@@ -119,7 +127,7 @@
             this.rdbJoAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbJoAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbJoAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbJoAktiv.Location = new System.Drawing.Point(183, 136);
+            this.rdbJoAktiv.Location = new System.Drawing.Point(252, 151);
             this.rdbJoAktiv.Name = "rdbJoAktiv";
             this.rdbJoAktiv.Size = new System.Drawing.Size(75, 24);
             this.rdbJoAktiv.TabIndex = 9;
@@ -137,7 +145,7 @@
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubmit.Location = new System.Drawing.Point(110, 166);
+            this.btnSubmit.Location = new System.Drawing.Point(189, 221);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(98, 30);
             this.btnSubmit.TabIndex = 9;
@@ -156,7 +164,7 @@
             this.rdbAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbAktiv.Location = new System.Drawing.Point(86, 136);
+            this.rdbAktiv.Location = new System.Drawing.Point(155, 151);
             this.rdbAktiv.Name = "rdbAktiv";
             this.rdbAktiv.Size = new System.Drawing.Size(56, 24);
             this.rdbAktiv.TabIndex = 10;
@@ -171,14 +179,16 @@
             this.panel2.Controls.Add(this.btnSubmitSektori);
             this.panel2.Controls.Add(this.txtSektoriId);
             this.panel2.Controls.Add(this.txtEmriSektorit);
-            this.panel2.Location = new System.Drawing.Point(169, 319);
+            this.panel2.Location = new System.Drawing.Point(169, 192);
+            this.panel2.MaximumSize = new System.Drawing.Size(500, 300);
+            this.panel2.MinimumSize = new System.Drawing.Size(500, 300);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(342, 187);
+            this.panel2.Size = new System.Drawing.Size(500, 300);
             this.panel2.TabIndex = 8;
             // 
             // btnSubmitSektori
             // 
-            this.btnSubmitSektori.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnSubmitSektori.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSubmitSektori.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.btnSubmitSektori.FlatAppearance.BorderSize = 0;
             this.btnSubmitSektori.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
@@ -186,7 +196,7 @@
             this.btnSubmitSektori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmitSektori.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmitSektori.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubmitSektori.Location = new System.Drawing.Point(110, 143);
+            this.btnSubmitSektori.Location = new System.Drawing.Point(189, 203);
             this.btnSubmitSektori.Name = "btnSubmitSektori";
             this.btnSubmitSektori.Size = new System.Drawing.Size(98, 30);
             this.btnSubmitSektori.TabIndex = 7;

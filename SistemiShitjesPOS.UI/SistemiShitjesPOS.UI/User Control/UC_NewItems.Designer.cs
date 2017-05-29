@@ -34,59 +34,71 @@
             this.txtPershkrimi = new System.Windows.Forms.TextBox();
             this.rdbAktiv = new System.Windows.Forms.RadioButton();
             this.rdbJoAktiv = new System.Windows.Forms.RadioButton();
-            this.btnBackToUC_Items = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtIdItems
             // 
+            this.txtIdItems.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtIdItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtIdItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdItems.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdItems.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtIdItems.Location = new System.Drawing.Point(32, 90);
+            this.txtIdItems.Location = new System.Drawing.Point(171, 118);
             this.txtIdItems.Name = "txtIdItems";
-            this.txtIdItems.Size = new System.Drawing.Size(182, 32);
+            this.txtIdItems.ReadOnly = true;
+            this.txtIdItems.Size = new System.Drawing.Size(128, 32);
             this.txtIdItems.TabIndex = 2;
             this.txtIdItems.Text = "Product ID";
             this.txtIdItems.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtIdItems_MouseDown);
             // 
             // txtEmri
             // 
+            this.txtEmri.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtEmri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmri.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEmri.Location = new System.Drawing.Point(32, 158);
+            this.txtEmri.Location = new System.Drawing.Point(171, 166);
+            this.txtEmri.MaximumSize = new System.Drawing.Size(445, 32);
+            this.txtEmri.MinimumSize = new System.Drawing.Size(445, 32);
             this.txtEmri.Name = "txtEmri";
-            this.txtEmri.Size = new System.Drawing.Size(182, 32);
+            this.txtEmri.Size = new System.Drawing.Size(445, 32);
             this.txtEmri.TabIndex = 2;
             this.txtEmri.Text = "Name";
             // 
             // txtBarkodi
             // 
+            this.txtBarkodi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtBarkodi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtBarkodi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBarkodi.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarkodi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtBarkodi.Location = new System.Drawing.Point(32, 232);
+            this.txtBarkodi.Location = new System.Drawing.Point(171, 218);
+            this.txtBarkodi.MaximumSize = new System.Drawing.Size(445, 32);
+            this.txtBarkodi.MinimumSize = new System.Drawing.Size(445, 32);
             this.txtBarkodi.Name = "txtBarkodi";
-            this.txtBarkodi.Size = new System.Drawing.Size(182, 32);
+            this.txtBarkodi.Size = new System.Drawing.Size(445, 32);
             this.txtBarkodi.TabIndex = 2;
             this.txtBarkodi.Text = "Barcodes";
             this.txtBarkodi.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtBarkodi_MouseDown);
             // 
             // txtPershkrimi
             // 
+            this.txtPershkrimi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPershkrimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.txtPershkrimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPershkrimi.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPershkrimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtPershkrimi.Location = new System.Drawing.Point(318, 90);
+            this.txtPershkrimi.Location = new System.Drawing.Point(171, 321);
+            this.txtPershkrimi.MaximumSize = new System.Drawing.Size(445, 248);
+            this.txtPershkrimi.MinimumSize = new System.Drawing.Size(445, 248);
             this.txtPershkrimi.Multiline = true;
             this.txtPershkrimi.Name = "txtPershkrimi";
-            this.txtPershkrimi.Size = new System.Drawing.Size(400, 248);
+            this.txtPershkrimi.Size = new System.Drawing.Size(445, 248);
             this.txtPershkrimi.TabIndex = 2;
             this.txtPershkrimi.Text = "Info";
             this.txtPershkrimi.TextChanged += new System.EventHandler(this.txtPershkrimi_TextChanged);
@@ -94,6 +106,7 @@
             // 
             // rdbAktiv
             // 
+            this.rdbAktiv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdbAktiv.AutoSize = true;
             this.rdbAktiv.BackColor = System.Drawing.Color.Transparent;
             this.rdbAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
@@ -102,7 +115,7 @@
             this.rdbAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbAktiv.Location = new System.Drawing.Point(32, 396);
+            this.rdbAktiv.Location = new System.Drawing.Point(314, 574);
             this.rdbAktiv.Name = "rdbAktiv";
             this.rdbAktiv.Size = new System.Drawing.Size(56, 24);
             this.rdbAktiv.TabIndex = 4;
@@ -112,6 +125,7 @@
             // 
             // rdbJoAktiv
             // 
+            this.rdbJoAktiv.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdbJoAktiv.AutoSize = true;
             this.rdbJoAktiv.BackColor = System.Drawing.Color.Transparent;
             this.rdbJoAktiv.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
@@ -120,7 +134,7 @@
             this.rdbJoAktiv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange;
             this.rdbJoAktiv.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbJoAktiv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.rdbJoAktiv.Location = new System.Drawing.Point(129, 396);
+            this.rdbJoAktiv.Location = new System.Drawing.Point(411, 574);
             this.rdbJoAktiv.Name = "rdbJoAktiv";
             this.rdbJoAktiv.Size = new System.Drawing.Size(75, 24);
             this.rdbJoAktiv.TabIndex = 4;
@@ -128,25 +142,9 @@
             this.rdbJoAktiv.Text = "Jo Aktiv";
             this.rdbJoAktiv.UseVisualStyleBackColor = false;
             // 
-            // btnBackToUC_Items
-            // 
-            this.btnBackToUC_Items.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnBackToUC_Items.FlatAppearance.BorderSize = 0;
-            this.btnBackToUC_Items.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnBackToUC_Items.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
-            this.btnBackToUC_Items.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBackToUC_Items.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBackToUC_Items.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnBackToUC_Items.Location = new System.Drawing.Point(620, 483);
-            this.btnBackToUC_Items.Name = "btnBackToUC_Items";
-            this.btnBackToUC_Items.Size = new System.Drawing.Size(98, 30);
-            this.btnBackToUC_Items.TabIndex = 5;
-            this.btnBackToUC_Items.Text = "Back";
-            this.btnBackToUC_Items.UseVisualStyleBackColor = false;
-            this.btnBackToUC_Items.Click += new System.EventHandler(this.btnBackToUC_Items_Click);
-            // 
             // btnSubmit
             // 
+            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
@@ -154,9 +152,9 @@
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSubmit.Location = new System.Drawing.Point(440, 483);
+            this.btnSubmit.Location = new System.Drawing.Point(329, 621);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(98, 30);
+            this.btnSubmit.Size = new System.Drawing.Size(123, 30);
             this.btnSubmit.TabIndex = 6;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -164,6 +162,7 @@
             // 
             // cmbCategory
             // 
+            this.cmbCategory.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.cmbCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbCategory.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,20 +172,47 @@
             "Kg",
             "Li",
             "M"});
-            this.cmbCategory.Location = new System.Drawing.Point(32, 307);
+            this.cmbCategory.Location = new System.Drawing.Point(171, 272);
+            this.cmbCategory.MaximumSize = new System.Drawing.Size(445, 0);
+            this.cmbCategory.MinimumSize = new System.Drawing.Size(445, 0);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(182, 31);
+            this.cmbCategory.Size = new System.Drawing.Size(445, 31);
             this.cmbCategory.TabIndex = 13;
             this.cmbCategory.Text = "Unity";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label2.Location = new System.Drawing.Point(226, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(356, 24);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Plot the data for add a new Items";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(351, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 39);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Items";
             // 
             // UC_NewItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(96)))));
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.btnBackToUC_Items);
             this.Controls.Add(this.rdbJoAktiv);
             this.Controls.Add(this.rdbAktiv);
             this.Controls.Add(this.txtPershkrimi);
@@ -210,8 +236,9 @@
         private System.Windows.Forms.TextBox txtPershkrimi;
         private System.Windows.Forms.RadioButton rdbAktiv;
         private System.Windows.Forms.RadioButton rdbJoAktiv;
-        private System.Windows.Forms.Button btnBackToUC_Items;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.ComboBox cmbCategory;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

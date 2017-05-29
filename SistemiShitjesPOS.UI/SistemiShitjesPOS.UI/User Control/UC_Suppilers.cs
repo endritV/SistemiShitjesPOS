@@ -27,7 +27,10 @@ namespace SistemiShitjesPOS.UI
 
                 MessageBox.Show("Nuk eshte ne rregull");
             }
-         
+
+            this.Dock = DockStyle.Fill;
+           
+
         }
 
         private void btnNewSuppliers_Click(object sender, EventArgs e)

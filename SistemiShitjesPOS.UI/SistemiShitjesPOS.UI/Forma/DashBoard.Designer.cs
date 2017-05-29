@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panMenu2 = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
-            this.panUC = new System.Windows.Forms.Panel();
             this.btnMenu = new System.Windows.Forms.Button();
             this.tblPanMenu = new System.Windows.Forms.TableLayoutPanel();
             this.btnLogOut = new System.Windows.Forms.Button();
@@ -44,23 +42,11 @@
             this.btnReports = new System.Windows.Forms.Button();
             this.btnSectorRole = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
-            this.panMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panMenu2.SuspendLayout();
+            this.panMenu = new System.Windows.Forms.Panel();
             this.tblPanMenu.SuspendLayout();
             this.panMenu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panMenu2
-            // 
-            this.panMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.panMenu2.Controls.Add(this.btnSettings);
-            this.panMenu2.Controls.Add(this.panUC);
-            this.panMenu2.Controls.Add(this.btnMenu);
-            this.panMenu2.Location = new System.Drawing.Point(0, 0);
-            this.panMenu2.Name = "panMenu2";
-            this.panMenu2.Size = new System.Drawing.Size(200, 145);
-            this.panMenu2.TabIndex = 3;
             // 
             // btnSettings
             // 
@@ -68,18 +54,11 @@
             this.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Location = new System.Drawing.Point(159, 0);
+            this.btnSettings.Location = new System.Drawing.Point(161, 0);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(41, 38);
             this.btnSettings.TabIndex = 1;
             this.btnSettings.UseVisualStyleBackColor = true;
-            // 
-            // panUC
-            // 
-            this.panUC.Location = new System.Drawing.Point(200, 0);
-            this.panUC.Name = "panUC";
-            this.panUC.Size = new System.Drawing.Size(754, 525);
-            this.panUC.TabIndex = 0;
             // 
             // btnMenu
             // 
@@ -98,6 +77,7 @@
             this.tblPanMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.tblPanMenu.AutoScroll = true;
+            this.tblPanMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
             this.tblPanMenu.ColumnCount = 1;
             this.tblPanMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblPanMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -112,7 +92,7 @@
             this.tblPanMenu.Controls.Add(this.btnReports, 0, 5);
             this.tblPanMenu.Controls.Add(this.btnSectorRole, 0, 3);
             this.tblPanMenu.Controls.Add(this.btnSuppliers, 0, 4);
-            this.tblPanMenu.Location = new System.Drawing.Point(0, 0);
+            this.tblPanMenu.Location = new System.Drawing.Point(0, 144);
             this.tblPanMenu.Name = "tblPanMenu";
             this.tblPanMenu.RowCount = 11;
             this.tblPanMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
@@ -380,17 +360,6 @@
             this.btnSuppliers.UseVisualStyleBackColor = true;
             this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
             // 
-            // panMenu
-            // 
-            this.panMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            this.panMenu.Controls.Add(this.tblPanMenu);
-            this.panMenu.Location = new System.Drawing.Point(0, 144);
-            this.panMenu.Name = "panMenu";
-            this.panMenu.Size = new System.Drawing.Size(200, 423);
-            this.panMenu.TabIndex = 1;
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -401,23 +370,35 @@
             this.panel1.Size = new System.Drawing.Size(754, 567);
             this.panel1.TabIndex = 4;
             // 
+            // panMenu
+            // 
+            this.panMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.panMenu.Controls.Add(this.btnSettings);
+            this.panMenu.Controls.Add(this.tblPanMenu);
+            this.panMenu.Controls.Add(this.btnMenu);
+            this.panMenu.Location = new System.Drawing.Point(0, 0);
+            this.panMenu.Name = "panMenu";
+            this.panMenu.Size = new System.Drawing.Size(200, 567);
+            this.panMenu.TabIndex = 0;
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 567);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panMenu2);
             this.Controls.Add(this.panMenu);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.DashBoard_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DashBoard_KeyDown);
-            this.panMenu2.ResumeLayout(false);
             this.tblPanMenu.ResumeLayout(false);
             this.panMenu.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -437,11 +418,9 @@
         private System.Windows.Forms.Button btnSectorRole;
         private System.Windows.Forms.Button btnSuppliers;
         private System.Windows.Forms.Button btnGiftCard;
-        private System.Windows.Forms.Panel panMenu2;
         private System.Windows.Forms.TableLayoutPanel tblPanMenu;
-        private System.Windows.Forms.Panel panMenu;
-        private System.Windows.Forms.Panel panUC;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panMenu;
     }
 }

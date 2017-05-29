@@ -58,6 +58,7 @@
             // 
             // btnViewAll
             // 
+            this.btnViewAll.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnViewAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnViewAll.FlatAppearance.BorderSize = 0;
             this.btnViewAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
@@ -93,6 +94,7 @@
             // 
             // btnSearchEmployees
             // 
+            this.btnSearchEmployees.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSearchEmployees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.btnSearchEmployees.FlatAppearance.BorderSize = 0;
             this.btnSearchEmployees.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(56)))), ((int)(((byte)(69)))));
@@ -110,11 +112,14 @@
             // 
             // txtSearchEmployees
             // 
+            this.txtSearchEmployees.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchEmployees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
             this.txtSearchEmployees.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearchEmployees.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtSearchEmployees.Location = new System.Drawing.Point(17, 26);
+            this.txtSearchEmployees.MaximumSize = new System.Drawing.Size(400, 32);
             this.txtSearchEmployees.Name = "txtSearchEmployees";
             this.txtSearchEmployees.Size = new System.Drawing.Size(286, 32);
             this.txtSearchEmployees.TabIndex = 1;
