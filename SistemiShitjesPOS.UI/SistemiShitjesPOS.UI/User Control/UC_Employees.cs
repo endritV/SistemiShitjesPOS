@@ -89,6 +89,13 @@ namespace SistemiShitjesPOS.UI
 
         private void dgEmployees_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            string dataValue = dgEmployees.Rows[e.RowIndex].Cells[1].Value.ToString();
+            UC_UpdateSuppliers u = new UC_UpdateSuppliers();
+
+
+            panEmployees.Controls.Clear();
+            panEmployees.Controls.Add(u);
+            
 
         }
 
