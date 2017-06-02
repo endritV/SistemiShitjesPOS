@@ -76,11 +76,53 @@
     <Compile Include="Forma\OpenForm.Designer.cs">
       <DependentUpon>OpenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control\UC_UpdateEmpoyees.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Forma\New\NewCustomers.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User Control\UC_UpdateEmpoyees.Designer.cs">
-      <DependentUpon>UC_UpdateEmpoyees.cs</DependentUpon>
+    <Compile Include="Forma\New\NewCustomers.Designer.cs">
+      <DependentUpon>NewCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma\New\NewItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma\New\NewItems.Designer.cs">
+      <DependentUpon>NewItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma\New\NewSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma\New\NewSuppliers.Designer.cs">
+      <DependentUpon>NewSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma\New\NewEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma\New\NewEmployees.Designer.cs">
+      <DependentUpon>NewEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma\Update\UpdateCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma\Update\UpdateCustomers.Designer.cs">
+      <DependentUpon>UpdateCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma\Update\UpdateItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma\Update\UpdateItems.Designer.cs">
+      <DependentUpon>UpdateItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma\Update\UpdateEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma\Update\UpdateEmployees.Designer.cs">
+      <DependentUpon>UpdateEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma\Update\UpdateSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma\Update\UpdateSuppliers.Designer.cs">
+      <DependentUpon>UpdateSuppliers.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UC_SektoriRoli.cs">
       <SubType>UserControl</SubType>
@@ -88,32 +130,11 @@
     <Compile Include="User Control\UC_SektoriRoli.Designer.cs">
       <DependentUpon>UC_SektoriRoli.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control\UC_UpdateCustomers.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UC_UpdateCustomers.Designer.cs">
-      <DependentUpon>UC_UpdateCustomers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User Control\UC_UpdateItems.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UC_UpdateSuppliers.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UC_UpdateSuppliers.Designer.cs">
-      <DependentUpon>UC_UpdateSuppliers.cs</DependentUpon>
-    </Compile>
     <Compile Include="User Control\UC_Raports.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User Control\UC_Raports.Designer.cs">
       <DependentUpon>UC_Raports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User Control\UC_NewSuppliers.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UC_NewSuppliers.Designer.cs">
-      <DependentUpon>UC_NewSuppliers.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UC_Suppilers.cs">
       <SubType>UserControl</SubType>
@@ -121,23 +142,11 @@
     <Compile Include="User Control\UC_Suppilers.Designer.cs">
       <DependentUpon>UC_Suppilers.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control\UC_NewCustomers.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UC_NewCustomers.Designer.cs">
-      <DependentUpon>UC_NewCustomers.cs</DependentUpon>
-    </Compile>
     <Compile Include="User Control\UC_Customers.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User Control\UC_Customers.Designer.cs">
       <DependentUpon>UC_Customers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User Control\UC_NewEmployees.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UC_NewEmployees.Designer.cs">
-      <DependentUpon>UC_NewEmployees.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,53 +168,50 @@
     <Compile Include="User Control\UC_Items.Designer.cs">
       <DependentUpon>UC_Items.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control\UC_NewItems.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control\UC_NewItems.Designer.cs">
-      <DependentUpon>UC_NewItems.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Forma\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forma\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forma\New\NewCustomers.resx">
+      <DependentUpon>NewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma\New\NewEmployees.resx">
+      <DependentUpon>NewEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma\New\NewItems.resx">
+      <DependentUpon>NewItems.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forma\OpenForm.resx">
       <DependentUpon>OpenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_UpdateEmpoyees.resx">
-      <DependentUpon>UC_UpdateEmpoyees.cs</DependentUpon>
+    <EmbeddedResource Include="Forma\New\NewSuppliers.resx">
+      <DependentUpon>NewSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma\Update\UpdateCustomers.resx">
+      <DependentUpon>UpdateCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma\Update\UpdateItems.resx">
+      <DependentUpon>UpdateItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma\Update\UpdateEmployees.resx">
+      <DependentUpon>UpdateEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma\Update\UpdateSuppliers.resx">
+      <DependentUpon>UpdateSuppliers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_SektoriRoli.resx">
       <DependentUpon>UC_SektoriRoli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_UpdateCustomers.resx">
-      <DependentUpon>UC_UpdateCustomers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_UpdateItems.resx">
-      <DependentUpon>UC_UpdateItems.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_UpdateSuppliers.resx">
-      <DependentUpon>UC_UpdateSuppliers.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Raports.resx">
       <DependentUpon>UC_Raports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_NewSuppliers.resx">
-      <DependentUpon>UC_NewSuppliers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Suppilers.resx">
       <DependentUpon>UC_Suppilers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Customers.resx">
       <DependentUpon>UC_Customers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_NewCustomers.resx">
-      <DependentUpon>UC_NewCustomers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_NewEmployees.resx">
-      <DependentUpon>UC_NewEmployees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -220,9 +226,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Items.resx">
       <DependentUpon>UC_Items.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_NewItems.resx">
-      <DependentUpon>UC_NewItems.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

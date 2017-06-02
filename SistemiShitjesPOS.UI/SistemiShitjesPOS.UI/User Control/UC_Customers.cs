@@ -22,6 +22,7 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+           
             try
             {
                 dgListOfCustomers.DataSource = dalKlineti.GetAll();
@@ -29,16 +30,17 @@ namespace SistemiShitjesPOS.UI
             catch (Exception)
             {
 
-                MessageBox.Show("Nuk eshte ne rregull");
+                MetroFramework.MetroMessageBox.Show(this, "Data Base not conected", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
 
         private void btnNewCustomers_Click(object sender, EventArgs e)
         {
-            UC_NewCustomers newCustomers = new UC_NewCustomers();
-            panCustomers.Controls.Clear();
-            panCustomers.Controls.Add(newCustomers);
+            NewCustomers newCustomers = new NewCustomers();
+            newCustomers.ShowDialog();
+           
+            
         }
 
         private void btnViewAll_Click(object sender, EventArgs e)
@@ -55,32 +57,50 @@ namespace SistemiShitjesPOS.UI
             catch (Exception)
             {
 
-                MessageBox.Show("Inserto Id-n e klientit");
+                MetroFramework.MetroMessageBox.Show(this, "Insert Id Client", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
 
         }
 
-        private void dgListOfCustomers_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                string dataValue = dgListOfCustomers.Rows[e.RowIndex].Cells[0].Value.ToString();
-                UC_UpdateCustomers u = new UC_UpdateCustomers();
-
-                panCustomers.Controls.Clear();
-                panCustomers.Controls.Add(u);
-            }
-            catch (Exception)
-            {
-
-                MessageBox.Show("Kliko Mbi shkronje");
-            }
-            
-        }
+       
         private void txtSearchCustomers_MouseDown(object sender, MouseEventArgs e)
         {
             txtSearchCustomers.Clear();
         }
+
+       
+
+        private void dgListOfCustomers_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            try
+            {
+                string dataValue = dgListOfCustomers.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+                UpdateCustomers uc = new UpdateCustomers();
+
+                uc.txtCustomersId.Text = this.dgListOfCustomers.CurrentRow.Cells[2].Value.ToString();
+                uc.txtEmri.Text = this.dgListOfCustomers.CurrentRow.Cells[3].Value.ToString();
+                uc.txtNrTel.Text = this.dgListOfCustomers.CurrentRow.Cells[4].Value.ToString();
+                uc.txtAdresa.Text = this.dgListOfCustomers.CurrentRow.Cells[5].Value.ToString();
+                
+
+                uc.ShowDialog();
+            }
+            catch (Exception)
+            {
+
+                MetroFramework.MetroMessageBox.Show(this, "Click in Cell", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void panCustomers_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
+
+        
     }
 }

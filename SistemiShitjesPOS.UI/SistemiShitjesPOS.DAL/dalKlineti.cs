@@ -132,5 +132,6 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 return list;
             }
         }
+        
     }
 }

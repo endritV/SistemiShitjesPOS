@@ -152,6 +152,7 @@
             this.dgListOfSuppliers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgListOfSuppliers.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgListOfSuppliers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgListOfSuppliers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgListOfSuppliers.Cursor = System.Windows.Forms.Cursors.Default;
@@ -159,7 +160,7 @@
             this.dgListOfSuppliers.Name = "dgListOfSuppliers";
             this.dgListOfSuppliers.Size = new System.Drawing.Size(718, 436);
             this.dgListOfSuppliers.TabIndex = 1;
-            this.dgListOfSuppliers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfSuppliers_CellContentClick);
+            this.dgListOfSuppliers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfSuppliers_CellDoubleClick);
             // 
             // label1
             // 

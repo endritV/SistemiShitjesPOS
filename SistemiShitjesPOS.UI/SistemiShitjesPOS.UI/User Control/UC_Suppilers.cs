@@ -25,7 +25,7 @@ namespace SistemiShitjesPOS.UI
             catch (Exception)
             {
 
-                MessageBox.Show("Nuk eshte ne rregull");
+                MetroFramework.MetroMessageBox.Show(this, "Data Base is not Connected", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             this.Dock = DockStyle.Fill;
@@ -35,86 +35,16 @@ namespace SistemiShitjesPOS.UI
 
         private void btnNewSuppliers_Click(object sender, EventArgs e)
         {
-            UC_NewSuppliers newSuppliers = new UC_NewSuppliers();
-            panSuppliers.Controls.Clear();
-            panSuppliers.Controls.Add(newSuppliers);
+            NewSuppliers newSuppliers = new NewSuppliers();
+            newSuppliers.ShowDialog();
         }
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
             
-        //    SqlConnection x = new SqlConnection(DataBaseCon.GetConnectionString());
-        //    x.Open();
-        //    SqlDataAdapter da = new SqlDataAdapter("spShfaqTeGjitheFurnizuesit", x);
-        //    DataTable dt = new DataTable();
-        //    da.Fill(dt);
-        //    dgListOfSuppliers.DataSource = dt;
-        //    x.Close();
-
-        //}
-
-        //private void btnSearchSuppliers_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        SqlConnection x = new SqlConnection(DataBaseCon.Connection);
-        //        x.Open();
-        //        SqlDataAdapter da = new SqlDataAdapter("spKerkoFurnizuesin " + txtSearchSuppliers.Text.ToString(), x);
-        //        DataTable dt = new DataTable();
-        //        da.Fill(dt);
-        //        dgListOfSuppliers.DataSource = dt;
-        //        x.Close();
-
-        //}
-        //    catch (Exception)
-        //    {
-
-        //        MessageBox.Show("Shkruaj Id-n e Klientit");
-        //    }
-}
-
-        private void dgListOfSuppliers_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string dataValue = dgListOfSuppliers.Rows[e.RowIndex].Cells[1].Value.ToString();
-            UC_UpdateSuppliers u = new UC_UpdateSuppliers();
-
-
-            panSuppliers.Controls.Clear();
-            panSuppliers.Controls.Add(u);
-            //    try
-            //    {
-            //        if (e.RowIndex >= 0)
-            //        {
-
-
-            //            DataGridViewRow row = this.dgListOfSuppliers.Rows[e.RowIndex];
-
-
-
-            //            u.txtIdSuppliers.Text = row.Cells[0].Value.ToString();
-            //            u.txtEmri.Text = row.Cells[1].Value.ToString();
-            //            u.txtEmriFurnitorit.Text = row.Cells[2].Value.ToString();
-            //            u.txtMbiemri.SelectedText = row.Cells[3].Value.ToString();
-            //            u.txtAdresa.Text = row.Cells[4].Value.ToString();
-            //            u.txtNrFix.Text = row.Cells[5].Value.ToString();
-            //            u.txtNrTelefonit.Text = row.Cells[6].Value.ToString();
-            //            u.txtNrBiznesit.Text = row.Cells[7].Value.ToString();
-            //            u.txtEmail.Text = row.Cells[8].Value.ToString();
-            //            u.txtWeb.Text = row.Cells[9].Value.ToString();
-            //            u.txtpershkrimi.Text = row.Cells[10].Value.ToString();
-
-
-
-            //        }
-
-            //    }
-            //    catch (Exception)
-            //    {
-
-            //        MessageBox.Show("Selekto nje rresht");
-            //    }
-            //}
         }
+
+        
         private void btnSearchSuppliers_Click(object sender, EventArgs e)
         {
             try
@@ -124,7 +54,7 @@ namespace SistemiShitjesPOS.UI
             catch (Exception)
             {
 
-                MessageBox.Show("Diqka nuk eshte ne rregull");
+                MetroFramework.MetroMessageBox.Show(this, "Search by Id", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
         }
@@ -132,6 +62,28 @@ namespace SistemiShitjesPOS.UI
         private void txtSearchSuppliers_MouseDown(object sender, MouseEventArgs e)
         {
             txtSearchSuppliers.Clear();
+        }
+
+        private void dgListOfSuppliers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string dataValue = dgListOfSuppliers.Rows[e.RowIndex].Cells[1].Value.ToString();
+
+            UpdateSuppliers u = new UpdateSuppliers();
+
+            u.txtIdSuppliers.Text = this.dgListOfSuppliers.CurrentRow.Cells[11].Value.ToString();
+            
+            u.txtEmriFurnitorit.Text = this.dgListOfSuppliers.CurrentRow.Cells[9].Value.ToString();
+            u.txtMbiemri.SelectedText = this.dgListOfSuppliers.CurrentRow.Cells[8].Value.ToString();
+            u.txtAdresa.Text = this.dgListOfSuppliers.CurrentRow.Cells[6].Value.ToString();
+            u.txtNrFix.Text = this.dgListOfSuppliers.CurrentRow.Cells[7].Value.ToString();
+            u.txtNrTelefonit.Text = this.dgListOfSuppliers.CurrentRow.Cells[5].Value.ToString();
+            u.txtNrBiznesit.Text = this.dgListOfSuppliers.CurrentRow.Cells[4].Value.ToString();
+            u.txtEmail.Text = this.dgListOfSuppliers.CurrentRow.Cells[2].Value.ToString();
+            u.txtWeb.Text = this.dgListOfSuppliers.CurrentRow.Cells[1].Value.ToString();
+            u.txtpershkrimi.Text = this.dgListOfSuppliers.CurrentRow.Cells[3].Value.ToString();
+
+            u.ShowDialog();
+
         }
     }
 }
