@@ -13,7 +13,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
     public class dalSupplier
     {
         static string cs = DataBaseCon.GetConnectionString();
-        public static void Insert(Klienti k)
+        public static void Insert(Suppliers k)
         {
             using (SqlConnection conn = new SqlConnection(cs))
             {
@@ -38,9 +38,9 @@ namespace SistemiShitjesPOS.DataAccessLayer
             }
         }
 
-        public static List<Klienti> GetAll()
+        public static List<Suppliers> GetAll()
         {
-            List<Klienti> list = new List<Klienti>();
+            List<Suppliers> list = new List<Suppliers>();
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 conn.Open();
@@ -51,7 +51,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 {
                     while (reader.Read())
                     {
-                        var klienti = new Klienti();
+                        var klienti = new Suppliers();
 
                         klienti.IdKlienti = reader["IdKlienti"].ToString();
                         klienti.IsKlient = bool.Parse(reader["IsKlinet"].ToString());
@@ -72,9 +72,9 @@ namespace SistemiShitjesPOS.DataAccessLayer
             }
             return list;
         }
-        public static List<Klienti> GetSupplierById(string id)
+        public static List<Suppliers> GetSupplierById(string id)
         {
-            var list = new List<Klienti>();
+            var list = new List<Suppliers>();
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 conn.Open();
@@ -85,7 +85,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 {
                     while (reader.Read())
                     {
-                        var klienti = new Klienti();
+                        var klienti = new Suppliers();
 
                         klienti.IdKlienti = id;
                         klienti.IsKlient = bool.Parse(reader["IsKlinet"].ToString());
@@ -106,9 +106,9 @@ namespace SistemiShitjesPOS.DataAccessLayer
             }
             return list;
         }
-        public static List<Klienti> UpdateSupplier(Klienti k)
+        public static List<Suppliers> UpdateSupplier(Suppliers k)
         {
-            var list = new List<Klienti>();
+            var list = new List<Suppliers>();
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 conn.Open();
@@ -133,9 +133,9 @@ namespace SistemiShitjesPOS.DataAccessLayer
             return list;
 
         }
-        public static List<Klienti> DeleteSupplierById(string id)
+        public static List<Suppliers> DeleteSupplierById(string id)
         {
-            var list = new List<Klienti>();
+            var list = new List<Suppliers>();
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 conn.Open();
@@ -146,7 +146,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 {
                     while (reader.Read())
                     {
-                        var klienti = new Klienti();
+                        var klienti = new Suppliers();
 
                         klienti.IdKlienti = id;
                         list.Add(klienti);

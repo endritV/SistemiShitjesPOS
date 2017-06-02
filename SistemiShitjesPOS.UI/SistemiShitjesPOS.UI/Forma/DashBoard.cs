@@ -8,10 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
 
 namespace SistemiShitjesPOS.UI
 {
-    public partial class DashBoard : Form
+    public partial class DashBoard : MetroFramework.Forms.MetroForm
     {
         public DashBoard()
         {

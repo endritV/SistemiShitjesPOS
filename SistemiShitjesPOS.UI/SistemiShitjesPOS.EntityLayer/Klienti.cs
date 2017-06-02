@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace SistemiShitjesPOS.EntityLayer
 {
-    public class Klienti
+     public class Klienti
     {
+        
+
 
 
         #region Constructor
@@ -25,31 +27,7 @@ namespace SistemiShitjesPOS.EntityLayer
             NrTelefonit = nrTellefonit;
             IsKlient = isKlient;
         }
-        public Klienti(bool isKlient, string idKlienti, string emri, string emriPronarit, string mbiemriPronarit, string numriFix, string adresa, string nrTelefonit, string nrBiznesit, string web, string email,string pershkrimi)
-        {
-            IsKlient = isKlient;
-            IdKlienti = idKlienti;
-            Emri = emri;
-            EmriPronarit = emriPronarit;
-            MbiemriPronarit = mbiemriPronarit;
-            NumriFix = numriFix;
-            Adresani = adresa;
-            NrTelefonit = nrTelefonit;
-            NrBiznesit = nrBiznesit;
-            Web = web;
-            Email = email;
-            this.Pershkrimi = pershkrimi;
-        }
-        public Klienti(bool isKlient, string idKlienti, string emriPronarit, string mbiemriPronarit, string adresa, string nrTelefonit, int pikat)
-        {
-            IsKlient = isKlient;
-            IdKlienti = idKlienti;
-            EmriPronarit = emriPronarit;
-            MbiemriPronarit = mbiemriPronarit;
-            Adresani = adresa;
-            NrTelefonit = nrTelefonit;
-            Pikat = pikat;
-        }
+      
         #endregion
 
         #region Bool
@@ -62,34 +40,40 @@ namespace SistemiShitjesPOS.EntityLayer
 
         private string _idKlienti;
         private string _emri;
-        private string _emriPronarit;
-        private string _mbiemriPronarit;
-        private string _numriFix;
+       
         private string _adresa;
         private string _nrTelefonit;
-        private string _nrBiznesit;
-        private string _pershkrimi;
+        
 
         #endregion
 
         #region NotValidate
-        public string Web { get; set; }
-        public string Email { get; set; }
+        
         public int Pikat { get; set; }
         #endregion
 
         #region Properties
-        public string Pershkrimi { get { return _pershkrimi; } set { _pershkrimi = value; } }
 
-        public string NrBiznesit
+        public string IdKlienti
         {
-            get { return _nrBiznesit; }
+            get { return _idKlienti; }
             set
             {
-                _nrBiznesit = value;
+                //if (String.IsNullOrEmpty(value))
+                //    throw new Exception("Id Klineti eshte i zbrazet! Shkruani nje Id.");
+
+                _idKlienti = value;
             }
         }
 
+        public string Emri
+        {
+            get { return _emri; }
+            set
+            {
+                _emri = value;
+            }
+        }
 
         public string NrTelefonit
         {
@@ -109,63 +93,6 @@ namespace SistemiShitjesPOS.EntityLayer
               _adresa = value;
             }
         }
-
-
-        public string NumriFix
-        {
-            get { return _numriFix; }
-            set
-            {
-                _numriFix = value;
-            }
-        }
-
-
-        public string MbiemriPronarit
-        {
-            get { return _mbiemriPronarit; }
-            set
-            {
-               _mbiemriPronarit = value;
-            }
-        }
-
-
-        public string EmriPronarit
-        {
-            get { return _emriPronarit; }
-            set
-            {
-              
-                 _emriPronarit = value;
-            }
-        }
-
-
-        public string Emri
-        {
-            get { return _emri; }
-            set
-            {
-              _emri = value;
-            }
-        }
-
-
-        public string IdKlienti
-        {
-            get { return _idKlienti; }
-            set
-            {
-                //if (String.IsNullOrEmpty(value))
-                //    throw new Exception("Id Klineti eshte i zbrazet! Shkruani nje Id.");
-                
-                    _idKlienti = value;
-            }
-        }
-
     }
-    #endregion
-
-   
+    #endregion  
 }

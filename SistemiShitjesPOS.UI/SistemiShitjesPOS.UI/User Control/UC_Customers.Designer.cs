@@ -34,17 +34,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panCustomers = new System.Windows.Forms.Panel();
+            this.dgListOfCustomers = new System.Windows.Forms.DataGridView();
             this.panSearchItems = new System.Windows.Forms.Panel();
             this.btnViewAll = new System.Windows.Forms.Button();
             this.btnNewCustomers = new System.Windows.Forms.Button();
             this.btnSearchCustomers = new System.Windows.Forms.Button();
             this.txtSearchCustomers = new System.Windows.Forms.TextBox();
-            this.lblListOfCustomers = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgListOfCustomers = new System.Windows.Forms.DataGridView();
             this.panCustomers.SuspendLayout();
-            this.panSearchItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgListOfCustomers)).BeginInit();
+            this.panSearchItems.SuspendLayout();
             this.SuspendLayout();
             // 
             // panCustomers
@@ -54,12 +53,70 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panCustomers.Controls.Add(this.dgListOfCustomers);
             this.panCustomers.Controls.Add(this.panSearchItems);
-            this.panCustomers.Controls.Add(this.lblListOfCustomers);
             this.panCustomers.Controls.Add(this.label1);
             this.panCustomers.Location = new System.Drawing.Point(0, 0);
             this.panCustomers.Name = "panCustomers";
             this.panCustomers.Size = new System.Drawing.Size(754, 567);
             this.panCustomers.TabIndex = 4;
+            this.panCustomers.Paint += new System.Windows.Forms.PaintEventHandler(this.panCustomers_Paint);
+            // 
+            // dgListOfCustomers
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
+            this.dgListOfCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgListOfCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgListOfCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgListOfCustomers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.dgListOfCustomers.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgListOfCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgListOfCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgListOfCustomers.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+            this.dgListOfCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(90)))), ((int)(((byte)(112)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(154)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgListOfCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgListOfCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(116)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgListOfCustomers.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgListOfCustomers.GridColor = System.Drawing.Color.Maroon;
+            this.dgListOfCustomers.Location = new System.Drawing.Point(20, 114);
+            this.dgListOfCustomers.Margin = new System.Windows.Forms.Padding(5);
+            this.dgListOfCustomers.Name = "dgListOfCustomers";
+            this.dgListOfCustomers.ReadOnly = true;
+            this.dgListOfCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgListOfCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgListOfCustomers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
+            this.dgListOfCustomers.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgListOfCustomers.Size = new System.Drawing.Size(719, 440);
+            this.dgListOfCustomers.TabIndex = 4;
+            this.dgListOfCustomers.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgListOfCustomers_CellMouseDoubleClick);
             // 
             // panSearchItems
             // 
@@ -147,18 +204,6 @@
             this.txtSearchCustomers.Text = "Search Customers";
             this.txtSearchCustomers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtSearchCustomers_MouseDown);
             // 
-            // lblListOfCustomers
-            // 
-            this.lblListOfCustomers.AutoSize = true;
-            this.lblListOfCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            this.lblListOfCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblListOfCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListOfCustomers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblListOfCustomers.Location = new System.Drawing.Point(175, 85);
-            this.lblListOfCustomers.Name = "lblListOfCustomers";
-            this.lblListOfCustomers.Size = new System.Drawing.Size(0, 24);
-            this.lblListOfCustomers.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -172,63 +217,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "List of Customers";
             // 
-            // dgListOfCustomers
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            this.dgListOfCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgListOfCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgListOfCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgListOfCustomers.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
-            this.dgListOfCustomers.BackgroundColor = System.Drawing.Color.Gray;
-            this.dgListOfCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgListOfCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgListOfCustomers.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            this.dgListOfCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(90)))), ((int)(((byte)(112)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(154)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgListOfCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgListOfCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(116)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgListOfCustomers.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgListOfCustomers.GridColor = System.Drawing.Color.Maroon;
-            this.dgListOfCustomers.Location = new System.Drawing.Point(20, 114);
-            this.dgListOfCustomers.Margin = new System.Windows.Forms.Padding(5);
-            this.dgListOfCustomers.Name = "dgListOfCustomers";
-            this.dgListOfCustomers.ReadOnly = true;
-            this.dgListOfCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgListOfCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgListOfCustomers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            this.dgListOfCustomers.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgListOfCustomers.Size = new System.Drawing.Size(719, 440);
-            this.dgListOfCustomers.TabIndex = 4;
-            // 
             // UC_Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,9 +226,9 @@
             this.Size = new System.Drawing.Size(754, 567);
             this.panCustomers.ResumeLayout(false);
             this.panCustomers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgListOfCustomers)).EndInit();
             this.panSearchItems.ResumeLayout(false);
             this.panSearchItems.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgListOfCustomers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -253,7 +241,6 @@
         private System.Windows.Forms.Button btnNewCustomers;
         private System.Windows.Forms.Button btnSearchCustomers;
         private System.Windows.Forms.TextBox txtSearchCustomers;
-        private System.Windows.Forms.Label lblListOfCustomers;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgListOfCustomers;
     }

@@ -171,13 +171,14 @@
             this.dgEmployees.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgEmployees.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
             this.dgEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgEmployees.Location = new System.Drawing.Point(16, 119);
             this.dgEmployees.Name = "dgEmployees";
             this.dgEmployees.Size = new System.Drawing.Size(718, 436);
             this.dgEmployees.TabIndex = 5;
-            this.dgEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgEmployees_CellContentClick);
+            this.dgEmployees.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgEmployees_CellDoubleClick);
             // 
             // UC_Employees
             // 

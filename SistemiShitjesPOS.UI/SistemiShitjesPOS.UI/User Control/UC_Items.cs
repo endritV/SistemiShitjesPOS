@@ -28,7 +28,7 @@ namespace SistemiShitjesPOS.UI
             catch (Exception)
             {
 
-                MessageBox.Show("Nuk eshte ne rregull");
+                MetroFramework.MetroMessageBox.Show(this, "Data Base is not conected", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
           
 
@@ -37,9 +37,8 @@ namespace SistemiShitjesPOS.UI
 
         private void btnNewItems_Click(object sender, EventArgs e)
         {
-            UC_NewItems newItems = new UC_NewItems();
-            panNew.Controls.Clear();
-            panNew.Controls.Add(newItems);
+            NewItems newItems = new NewItems();
+            newItems.ShowDialog();
         }
 
         private void txtSearchItems_TextChanged(object sender, EventArgs e)
@@ -57,7 +56,7 @@ namespace SistemiShitjesPOS.UI
             catch (Exception)
             {
 
-                MessageBox.Show("Shkruaj Barkodin Perseri");
+                MetroFramework.MetroMessageBox.Show(this, "Search with Barcode", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
 
@@ -73,33 +72,26 @@ namespace SistemiShitjesPOS.UI
             txtSearchItems.Clear();
         }
 
-        private void dgListOfItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-          
-
-        }
-
-        private void dgListOfItems_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string dataValue = dgListOfItems.Rows[e.RowIndex].Cells[1].Value.ToString();
-            UC_UpdateItems u = new UC_UpdateItems();
-
-
-            panNew.Controls.Clear();
-            panNew.Controls.Add(u);
-           
-
-
-        }
-
-        private void dgListOfItems_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
 
         private void panSearchItems_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void dgListOfItems_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string dataValue = dgListOfItems.Rows[e.RowIndex].Cells[0].Value.ToString();
+
+            UpdateItems ui = new UpdateItems();
+
+            ui.txtIdItems.Text = this.dgListOfItems.CurrentRow.Cells[4].Value.ToString();
+            ui.txtEmri.Text = this.dgListOfItems.CurrentRow.Cells[5].Value.ToString();
+            ui.txtBarkodi.Text = this.dgListOfItems.CurrentRow.Cells[3].Value.ToString();
+            ui.txtPershkrimi.Text = this.dgListOfItems.CurrentRow.Cells[1].Value.ToString();
+            ui.cmbCategory.Text = this.dgListOfItems.CurrentRow.Cells[2].Value.ToString();
+
+            ui.ShowDialog();
         }
     }
 }

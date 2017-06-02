@@ -15,28 +15,28 @@ namespace SistemiShitjesPOS.BusinessLayer
     public class blSupplier
     {
 
-        public static void InsertNewSupplier(Klienti klienti)
+        public static void InsertNewSupplier(Suppliers klienti)
         {       
                dalSupplier.Insert(klienti);
         }
 
-        public static List<Klienti> GETALL()
+        public static List<Suppliers> GETALL()
         {
             return dalSupplier.GetAll();
         }
 
-        public static List<Klienti> GetSupplierByid(string klienti)
+        public static List<Suppliers> GetSupplierByid(string klienti)
         {
             return dalSupplier.GetSupplierById(klienti);
         }
 
-        public static List<Klienti> UpdateSupplier(Klienti klienti)
+        public static List<Suppliers> UpdateSupplier(Suppliers klienti)
         {
 
             return dalSupplier.UpdateSupplier(klienti);
         }
 
-        public static List<Klienti> DeleteSupplier(string furnitori)
+        public static List<Suppliers> DeleteSupplier(string furnitori)
         {
             return dalSupplier.DeleteSupplierById(furnitori);
 

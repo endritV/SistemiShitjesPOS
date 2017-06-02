@@ -195,7 +195,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgListOfItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgListOfItems.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
-            this.dgListOfItems.BackgroundColor = System.Drawing.Color.Gray;
+            this.dgListOfItems.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
             this.dgListOfItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgListOfItems.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgListOfItems.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
@@ -239,6 +239,7 @@
             this.dgListOfItems.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgListOfItems.Size = new System.Drawing.Size(719, 440);
             this.dgListOfItems.TabIndex = 3;
+            this.dgListOfItems.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellDoubleClick);
             // 
             // UC_Items
             // 

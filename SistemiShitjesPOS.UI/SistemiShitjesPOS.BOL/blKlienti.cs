@@ -48,7 +48,7 @@ namespace SistemiShitjesPOS.BusinessLayer
 
             return dalKlineti.DeleteKlientById(klienti);
         }
-
+       
 
     }
 }
