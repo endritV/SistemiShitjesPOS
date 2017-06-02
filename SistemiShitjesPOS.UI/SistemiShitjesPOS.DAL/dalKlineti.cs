@@ -60,7 +60,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
             return list;
 
         }
-        public static List<Klienti> GetklientByID(string id)
+        public static IEnumerable<Klienti> GetklientByID(string id)
         {
             var list = new List<Klienti>();
             using (SqlConnection conn = new SqlConnection(cs))

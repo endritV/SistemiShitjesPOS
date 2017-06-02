@@ -32,7 +32,7 @@ namespace SistemiShitjesPOS.BusinessLayer
         {
             return dalKlineti.GetAll();
         }
-        public static List<Klienti>SearchById(string klienti)
+        public static IEnumerable<Klienti>SearchById(string klienti)
         {
 
             return dalKlineti.GetklientByID(klienti);
