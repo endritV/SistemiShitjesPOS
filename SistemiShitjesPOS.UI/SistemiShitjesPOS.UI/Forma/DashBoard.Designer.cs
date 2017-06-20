@@ -366,6 +366,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.MinimumSize = new System.Drawing.Size(754, 567);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(754, 567);
             this.panel1.TabIndex = 4;

@@ -25,7 +25,7 @@ namespace SistemiShitjesPOS.UI
            
             try
             {
-                dgListOfCustomers.DataSource = dalKlineti.GetAll();
+                dgListOfCustomers.DataSource = blKlienti.GETALL();
             }
             catch (Exception)
             {

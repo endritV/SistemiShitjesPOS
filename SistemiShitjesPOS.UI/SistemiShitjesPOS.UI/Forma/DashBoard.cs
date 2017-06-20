@@ -32,15 +32,19 @@ namespace SistemiShitjesPOS.UI
                 panel1.Location = new Point(200, 0);
             }
 
-            if (panMenu.Width == 200 )
+            if (panMenu.Width == 200  )
             {
                 panMenu.Width = 40;
+                panel1.Width = 900;
                 
             }
             else
             {
-                panMenu.Width = 200;               
+                panMenu.Width = 200;
+                     
             }
+
+            
         }
         
         private void btnLogOut_Click(object sender, EventArgs e)
