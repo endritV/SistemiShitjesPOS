@@ -202,6 +202,7 @@
             this.txtSearchCustomers.Size = new System.Drawing.Size(237, 32);
             this.txtSearchCustomers.TabIndex = 1;
             this.txtSearchCustomers.Text = "Search Customers";
+            this.txtSearchCustomers.TextChanged += new System.EventHandler(this.txtSearchCustomers_TextChanged);
             this.txtSearchCustomers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtSearchCustomers_MouseDown);
             // 
             // label1
