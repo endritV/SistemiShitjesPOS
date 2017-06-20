@@ -1,17 +1,7 @@
-﻿using SistemiShitjesPOS.EntityLayer;
-using SistemiShitjesPOS.UI;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.SqlClient;
+﻿using SistemiShitjesPOS.BusinessLayer;
 using SistemiShitjesPOS.DataAccessLayer;
-using SistemiShitjesPOS.BusinessLayer;
+using System;
+using System.Windows.Forms;
 
 
 namespace SistemiShitjesPOS.UI
@@ -47,9 +37,10 @@ namespace SistemiShitjesPOS.UI
         {
             
         }
-
+      
         protected void btnSearchCustomers_Click(object sender, EventArgs e)
         {
+         
             try
             {
                 dgListOfCustomers.DataSource = blKlienti.SearchById(txtSearchCustomers.Text);
@@ -99,8 +90,29 @@ namespace SistemiShitjesPOS.UI
 
         }
 
-       
+        private void txtSearchCustomers_TextChanged(object sender, EventArgs e)
+        {
+            string searchValue = txtSearchCustomers.Text;
+            dgListOfCustomers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+           
+                bool valueResult = false;
+                foreach (DataGridViewRow row in dgListOfCustomers.Rows)
+                {
+                    for (int i = 0; i < row.Cells.Count; i++)
+                    {
+                        if (row.Cells[i].Value != null && row.Cells[i].Value.ToString().Equals(searchValue))
+                        {
+                            int rowIndex = row.Index;
+                            dgListOfCustomers.Rows[rowIndex].Selected = true;
+                            valueResult = true;
+                            break;
+                        }
+                    }
 
-        
+                }
+             
+            
+      
+        }
     }
 }

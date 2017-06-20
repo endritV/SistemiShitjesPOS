@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dalDashBoard.cs" />
     <Compile Include="dalEmployees.cs" />
     <Compile Include="dalItems.cs" />
     <Compile Include="dalKlineti.cs" />

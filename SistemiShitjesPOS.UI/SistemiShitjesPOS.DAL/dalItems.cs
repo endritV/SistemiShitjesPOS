@@ -39,7 +39,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
             using (SqlConnection conn = new SqlConnection(cs))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("spShfaqTeGjithaArtikujtv", conn);
+                SqlCommand cmd = new SqlCommand("spShfaqTeGjithaArtikujt", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 using (IDataReader reader = cmd.ExecuteReader())
