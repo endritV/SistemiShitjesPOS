@@ -15,7 +15,7 @@ using System.Security.Cryptography;
 
 namespace SistemiShitjesPOS.UI
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : MetroFramework.Forms.MetroForm
     {
         public LoginForm()
         {
@@ -57,6 +57,11 @@ namespace SistemiShitjesPOS.UI
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

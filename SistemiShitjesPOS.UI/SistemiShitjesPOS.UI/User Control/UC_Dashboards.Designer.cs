@@ -28,192 +28,496 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnNext = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Dashboards));
+            this.panCmimi = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblTax = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtBarkodi = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dgListOfInvoice = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Artikulli = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Barkodi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblTips = new System.Windows.Forms.Label();
+            this.lblDiscounts = new System.Windows.Forms.Label();
+            this.lblDiscountText = new System.Windows.Forms.Label();
+            this.lblSubtotalText = new System.Windows.Forms.Label();
+            this.lblTaxText = new System.Windows.Forms.Label();
+            this.lblTipsText = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panInfo = new System.Windows.Forms.Panel();
+            this.lblDateTime = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dgSearch = new System.Windows.Forms.DataGridView();
+            this.txtKerko = new System.Windows.Forms.TextBox();
+            this.dgItems = new System.Windows.Forms.DataGridView();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.panCmimi.SuspendLayout();
+            this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgListOfInvoice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgItems)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panCmimi
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panCmimi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            this.panel1.Controls.Add(this.btnNext);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtBarkodi);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(757, 108);
-            this.panel1.TabIndex = 0;
+            this.panCmimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.panCmimi.Controls.Add(this.label5);
+            this.panCmimi.Controls.Add(this.label4);
+            this.panCmimi.Controls.Add(this.label7);
+            this.panCmimi.Controls.Add(this.label6);
+            this.panCmimi.Controls.Add(this.label3);
+            this.panCmimi.Controls.Add(this.lblSubtotal);
+            this.panCmimi.Controls.Add(this.label2);
+            this.panCmimi.Controls.Add(this.lblTax);
+            this.panCmimi.Controls.Add(this.label1);
+            this.panCmimi.Controls.Add(this.lblTips);
+            this.panCmimi.Controls.Add(this.lblDiscounts);
+            this.panCmimi.Controls.Add(this.lblDiscountText);
+            this.panCmimi.Controls.Add(this.lblSubtotalText);
+            this.panCmimi.Controls.Add(this.lblTaxText);
+            this.panCmimi.Controls.Add(this.lblTipsText);
+            this.panCmimi.Controls.Add(this.button3);
+            this.panCmimi.Controls.Add(this.button2);
+            this.panCmimi.Controls.Add(this.button1);
+            this.panCmimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.panCmimi.Location = new System.Drawing.Point(465, 53);
+            this.panCmimi.Name = "panCmimi";
+            this.panCmimi.Size = new System.Drawing.Size(292, 290);
+            this.panCmimi.TabIndex = 0;
+            this.panCmimi.Paint += new System.Windows.Forms.PaintEventHandler(this.panCmimi_Paint);
             // 
-            // btnNext
+            // label5
             // 
-            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnNext.FlatAppearance.BorderSize = 0;
-            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.btnNext.Location = new System.Drawing.Point(333, 53);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(100, 33);
-            this.btnNext.TabIndex = 4;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+            this.label5.Location = new System.Drawing.Point(16, 169);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(273, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "______________________________________";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.label4.Location = new System.Drawing.Point(96, 248);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 42);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "00.0";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.label7.Location = new System.Drawing.Point(174, 247);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 42);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "$";
+            this.label7.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.label6.Location = new System.Drawing.Point(219, 140);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(24, 29);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "$";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.label3.Location = new System.Drawing.Point(219, 105);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(24, 29);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "$";
+            // 
+            // lblSubtotal
+            // 
+            this.lblSubtotal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSubtotal.AutoSize = true;
+            this.lblSubtotal.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.lblSubtotal.Location = new System.Drawing.Point(176, 140);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(51, 29);
+            this.lblSubtotal.TabIndex = 4;
+            this.lblSubtotal.Text = "00.0";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(201)))), ((int)(((byte)(79)))));
+            this.label2.Location = new System.Drawing.Point(219, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 29);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "$";
+            // 
+            // lblTax
+            // 
+            this.lblTax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTax.AutoSize = true;
+            this.lblTax.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.lblTax.Location = new System.Drawing.Point(176, 105);
+            this.lblTax.Name = "lblTax";
+            this.lblTax.Size = new System.Drawing.Size(51, 29);
+            this.lblTax.TabIndex = 4;
+            this.lblTax.Text = "00.0";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.label1.Location = new System.Drawing.Point(14, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Please write barcode items:";
-            // 
-            // txtBarkodi
-            // 
-            this.txtBarkodi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.txtBarkodi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBarkodi.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarkodi.Location = new System.Drawing.Point(19, 53);
-            this.txtBarkodi.Name = "txtBarkodi";
-            this.txtBarkodi.Size = new System.Drawing.Size(291, 31);
-            this.txtBarkodi.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
-            this.textBox1.Location = new System.Drawing.Point(467, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(290, 108);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // dgListOfInvoice
-            // 
-            this.dgListOfInvoice.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(130)))), ((int)(((byte)(149)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            this.dgListOfInvoice.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgListOfInvoice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgListOfInvoice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgListOfInvoice.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
-            this.dgListOfInvoice.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.dgListOfInvoice.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgListOfInvoice.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgListOfInvoice.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            this.dgListOfInvoice.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(154)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(90)))), ((int)(((byte)(112)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(154)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgListOfInvoice.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgListOfInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgListOfInvoice.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Artikulli,
-            this.Barkodi});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(116)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgListOfInvoice.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dgListOfInvoice.GridColor = System.Drawing.Color.White;
-            this.dgListOfInvoice.Location = new System.Drawing.Point(5, 116);
-            this.dgListOfInvoice.Margin = new System.Windows.Forms.Padding(5);
-            this.dgListOfInvoice.Name = "dgListOfInvoice";
-            this.dgListOfInvoice.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgListOfInvoice.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgListOfInvoice.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(188)))), ((int)(((byte)(205)))));
-            this.dgListOfInvoice.RowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dgListOfInvoice.Size = new System.Drawing.Size(747, 159);
-            this.dgListOfInvoice.TabIndex = 1;
-            this.dgListOfInvoice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.label1.Location = new System.Drawing.Point(219, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 29);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "$";
             // 
-            // ID
+            // lblTips
             // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
+            this.lblTips.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTips.AutoSize = true;
+            this.lblTips.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTips.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(201)))), ((int)(((byte)(79)))));
+            this.lblTips.Location = new System.Drawing.Point(176, 71);
+            this.lblTips.Name = "lblTips";
+            this.lblTips.Size = new System.Drawing.Size(51, 29);
+            this.lblTips.TabIndex = 4;
+            this.lblTips.Text = "00.0";
             // 
-            // Artikulli
+            // lblDiscounts
             // 
-            this.Artikulli.HeaderText = "Artikulli";
-            this.Artikulli.Name = "Artikulli";
+            this.lblDiscounts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDiscounts.AutoSize = true;
+            this.lblDiscounts.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiscounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.lblDiscounts.Location = new System.Drawing.Point(176, 38);
+            this.lblDiscounts.Name = "lblDiscounts";
+            this.lblDiscounts.Size = new System.Drawing.Size(51, 29);
+            this.lblDiscounts.TabIndex = 4;
+            this.lblDiscounts.Text = "00.0";
             // 
-            // Barkodi
+            // lblDiscountText
             // 
-            this.Barkodi.HeaderText = "Barkodi";
-            this.Barkodi.Name = "Barkodi";
+            this.lblDiscountText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDiscountText.AutoSize = true;
+            this.lblDiscountText.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiscountText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.lblDiscountText.Location = new System.Drawing.Point(45, 38);
+            this.lblDiscountText.Name = "lblDiscountText";
+            this.lblDiscountText.Size = new System.Drawing.Size(104, 29);
+            this.lblDiscountText.TabIndex = 4;
+            this.lblDiscountText.Text = "Discounts:";
+            // 
+            // lblSubtotalText
+            // 
+            this.lblSubtotalText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSubtotalText.AutoSize = true;
+            this.lblSubtotalText.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotalText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.lblSubtotalText.Location = new System.Drawing.Point(45, 140);
+            this.lblSubtotalText.Name = "lblSubtotalText";
+            this.lblSubtotalText.Size = new System.Drawing.Size(89, 29);
+            this.lblSubtotalText.TabIndex = 2;
+            this.lblSubtotalText.Text = "Subtotal:";
+            // 
+            // lblTaxText
+            // 
+            this.lblTaxText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTaxText.AutoSize = true;
+            this.lblTaxText.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaxText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.lblTaxText.Location = new System.Drawing.Point(45, 105);
+            this.lblTaxText.Name = "lblTaxText";
+            this.lblTaxText.Size = new System.Drawing.Size(51, 29);
+            this.lblTaxText.TabIndex = 2;
+            this.lblTaxText.Text = "Tax:";
+            // 
+            // lblTipsText
+            // 
+            this.lblTipsText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTipsText.AutoSize = true;
+            this.lblTipsText.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipsText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(201)))), ((int)(((byte)(79)))));
+            this.lblTipsText.Location = new System.Drawing.Point(45, 71);
+            this.lblTipsText.Name = "lblTipsText";
+            this.lblTipsText.Size = new System.Drawing.Size(55, 29);
+            this.lblTipsText.TabIndex = 2;
+            this.lblTipsText.Text = "Tips:";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(0)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::SistemiShitjesPOS.UI.Properties.Resources.font_awesome_4_7_0_credit_card_alt_25_0_ffffff_none;
+            this.button3.Location = new System.Drawing.Point(30, 183);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(153, 42);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Card";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(169)))), ((int)(((byte)(190)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(185, 183);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(90, 42);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Cancel";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(96)))), ((int)(((byte)(74)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::SistemiShitjesPOS.UI.Properties.Resources.stroke_7_1_2_0_cash_25_0_ffffff_none;
+            this.button1.Location = new System.Drawing.Point(30, 227);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(245, 48);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Cash";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // panInfo
+            // 
+            this.panInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(58)))), ((int)(((byte)(67)))));
+            this.panInfo.Controls.Add(this.lblDateTime);
+            this.panInfo.Location = new System.Drawing.Point(0, 0);
+            this.panInfo.Name = "panInfo";
+            this.panInfo.Size = new System.Drawing.Size(757, 53);
+            this.panInfo.TabIndex = 1;
+            // 
+            // lblDateTime
+            // 
+            this.lblDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDateTime.AutoSize = true;
+            this.lblDateTime.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateTime.ForeColor = System.Drawing.Color.White;
+            this.lblDateTime.Location = new System.Drawing.Point(642, 7);
+            this.lblDateTime.Name = "lblDateTime";
+            this.lblDateTime.Size = new System.Drawing.Size(13, 20);
+            this.lblDateTime.TabIndex = 4;
+            this.lblDateTime.Text = ".";
+            this.lblDateTime.Click += new System.EventHandler(this.lblDateTime_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(58)))), ((int)(((byte)(67)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.dgSearch);
+            this.panel1.Controls.Add(this.txtKerko);
+            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Location = new System.Drawing.Point(0, 343);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(757, 182);
+            this.panel1.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 31);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // dgSearch
+            // 
+            this.dgSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgSearch.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(58)))), ((int)(((byte)(67)))));
+            this.dgSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgSearch.Location = new System.Drawing.Point(13, 50);
+            this.dgSearch.Name = "dgSearch";
+            this.dgSearch.Size = new System.Drawing.Size(387, 121);
+            this.dgSearch.TabIndex = 4;
+            this.dgSearch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgSearch_CellContentClick);
+            // 
+            // txtKerko
+            // 
+            this.txtKerko.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKerko.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
+            this.txtKerko.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtKerko.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKerko.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
+            this.txtKerko.Location = new System.Drawing.Point(45, 13);
+            this.txtKerko.Name = "txtKerko";
+            this.txtKerko.Size = new System.Drawing.Size(355, 31);
+            this.txtKerko.TabIndex = 0;
+            this.txtKerko.Text = "Kërko...";
+            this.txtKerko.TextChanged += new System.EventHandler(this.txtKerko_TextChanged);
+            // 
+            // dgItems
+            // 
+            this.dgItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgItems.BackgroundColor = System.Drawing.Color.White;
+            this.dgItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgItems.Location = new System.Drawing.Point(3, 59);
+            this.dgItems.Name = "dgItems";
+            this.dgItems.Size = new System.Drawing.Size(456, 278);
+            this.dgItems.TabIndex = 3;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(169)))), ((int)(((byte)(190)))));
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(406, 13);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(90, 31);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // UC_Dashboards
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.Controls.Add(this.dgListOfInvoice);
+            this.Controls.Add(this.dgItems);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panInfo);
+            this.Controls.Add(this.panCmimi);
             this.Name = "UC_Dashboards";
             this.Size = new System.Drawing.Size(757, 525);
+            this.panCmimi.ResumeLayout(false);
+            this.panCmimi.PerformLayout();
+            this.panInfo.ResumeLayout(false);
+            this.panInfo.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgListOfInvoice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgItems)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Panel panCmimi;
+        private System.Windows.Forms.Panel panInfo;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dgListOfInvoice;
+        private System.Windows.Forms.DataGridView dgItems;
+        private System.Windows.Forms.TextBox txtKerko;
+        private System.Windows.Forms.DataGridView dgSearch;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblSubtotal;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTax;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBarkodi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Artikulli;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Barkodi;
-        public System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Label lblTips;
+        private System.Windows.Forms.Label lblDiscounts;
+        private System.Windows.Forms.Label lblDiscountText;
+        private System.Windows.Forms.Label lblSubtotalText;
+        private System.Windows.Forms.Label lblTaxText;
+        private System.Windows.Forms.Label lblTipsText;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblDateTime;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

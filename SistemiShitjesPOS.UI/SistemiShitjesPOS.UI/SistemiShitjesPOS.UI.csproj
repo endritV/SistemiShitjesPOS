@@ -124,6 +124,12 @@
     <Compile Include="Forma\Update\UpdateSuppliers.Designer.cs">
       <DependentUpon>UpdateSuppliers.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Control\UC_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Settings.Designer.cs">
+      <DependentUpon>UC_Settings.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UC_SektoriRoli.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Raports.resx">
       <DependentUpon>UC_Raports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Settings.resx">
+      <DependentUpon>UC_Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Suppilers.resx">
       <DependentUpon>UC_Suppilers.cs</DependentUpon>
@@ -316,6 +325,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\cover1.jpg" />
+    <None Include="Resources\stroke-7_1-2-0_cash_25_0_ffffff_none.png" />
+    <None Include="Resources\font-awesome_4-7-0_credit-card-alt_25_0_ffffff_none.png" />
+    <None Include="Resources\font-awesome_4-7-0_address-card_50_0_ffffff_none.png" />
     <None Include="Resources\namnl.gif" />
     <None Include="Resources\font-awesome_4-7-0_search_50_0_dfe6ec_none.png" />
     <None Include="Resources\ionicons_2-0-1_android-settings_50_15_a7bccd_none.png" />

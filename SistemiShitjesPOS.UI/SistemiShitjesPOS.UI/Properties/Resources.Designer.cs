@@ -93,9 +93,29 @@ namespace SistemiShitjesPOS.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap font_awesome_4_7_0_address_card_50_0_ffffff_none {
+            get {
+                object obj = ResourceManager.GetObject("font-awesome_4-7-0_address-card_50_0_ffffff_none", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap font_awesome_4_7_0_close_50_0_696969_none {
             get {
                 object obj = ResourceManager.GetObject("font-awesome_4-7-0_close_50_0_696969_none", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap font_awesome_4_7_0_credit_card_alt_25_0_ffffff_none {
+            get {
+                object obj = ResourceManager.GetObject("font-awesome_4-7-0_credit-card-alt_25_0_ffffff_none", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +296,16 @@ namespace SistemiShitjesPOS.UI.Properties {
         internal static System.Drawing.Bitmap namnl {
             get {
                 object obj = ResourceManager.GetObject("namnl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stroke_7_1_2_0_cash_25_0_ffffff_none {
+            get {
+                object obj = ResourceManager.GetObject("stroke-7_1-2-0_cash_25_0_ffffff_none", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
