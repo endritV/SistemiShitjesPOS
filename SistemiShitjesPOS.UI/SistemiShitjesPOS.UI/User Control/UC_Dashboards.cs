@@ -77,28 +77,35 @@ namespace SistemiShitjesPOS.UI
         }
         private void btnShto_Click(object sender, EventArgs e)
         {
-            //foreach (DataGridViewRow row in dgSearch.Rows)
-            //{
-            //    listBoxItems.Items.Add(row.Cells[4].Value.ToString() + "\t" + row.Cells[5].Value.ToString() + "\t" + row.Cells[3].Value.ToString() + "\t" + row.Cells[2].Value.ToString() + "\t" + row.Cells[1].Value.ToString());
-            //}
 
-            DataGridViewColumn newCol = null;
-            foreach (DataGridViewColumn col in dgSearch.Columns)
-            {
-                newCol = new DataGridViewColumn(col.CellTemplate);
-                newCol.HeaderText = col.HeaderText;
-                newCol.Name = col.Name;
-                dgListOfItems.Columns.Add(newCol);
-            }
 
-            dgListOfItems.RowCount = dgSearch.RowCount;
             foreach (DataGridViewRow row in dgSearch.Rows)
             {
-                foreach (DataGridViewColumn col in dgSearch.Columns)
-                {
-                    dgListOfItems.Rows[row.Index].Cells[col.Name].Value = row.Cells[col.Name].Value;
-                }
+                dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString(), row.Cells[0].Value.ToString());
+                
+
             }
+
+
+
+           
+            //DataGridViewColumn newCol = null;
+            //foreach (DataGridViewColumn col in dgSearch.Columns)
+            //{
+            //    newCol = new DataGridViewColumn(col.CellTemplate);
+            //    newCol.HeaderText = col.HeaderText;
+            //    newCol.Name = col.Name;
+            //    dgListOfItems.Columns.Add(newCol);
+            //}
+
+            //dgListOfItems.RowCount = dgSearch.RowCount;
+            //foreach (DataGridViewRow row in dgSearch.Rows)
+            //{
+            //    foreach (DataGridViewColumn col in dgSearch.Columns)
+            //    {
+            //        dgListOfItems.Rows[row.Index].Cells[col.Name].Value = row.Cells[col.Name].Value;
+            //    }
+            //}
 
         }
 

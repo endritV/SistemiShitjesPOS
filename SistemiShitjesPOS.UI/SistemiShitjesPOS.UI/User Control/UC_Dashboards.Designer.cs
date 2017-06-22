@@ -57,12 +57,16 @@
             this.txtKerko = new System.Windows.Forms.TextBox();
             this.btnShto = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.listBoxItems = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.IdItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Barcodi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Info = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -416,11 +420,21 @@
             // 
             // dgListOfItems
             // 
-            this.dgListOfItems.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgListOfItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgListOfItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgListOfItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgListOfItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgListOfItems.Location = new System.Drawing.Point(6, 85);
+            this.dgListOfItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdItems,
+            this.Items,
+            this.Barcodi,
+            this.Unity,
+            this.Info});
+            this.dgListOfItems.Location = new System.Drawing.Point(6, 91);
             this.dgListOfItems.Name = "dgListOfItems";
-            this.dgListOfItems.Size = new System.Drawing.Size(453, 251);
+            this.dgListOfItems.Size = new System.Drawing.Size(453, 246);
             this.dgListOfItems.TabIndex = 3;
             // 
             // dgSearch
@@ -488,17 +502,6 @@
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // listBoxItems
-            // 
-            this.listBoxItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listBoxItems.FormattingEnabled = true;
-            this.listBoxItems.Location = new System.Drawing.Point(6, 85);
-            this.listBoxItems.Name = "listBoxItems";
-            this.listBoxItems.Size = new System.Drawing.Size(453, 251);
-            this.listBoxItems.TabIndex = 3;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -544,6 +547,31 @@
             this.label12.TabIndex = 5;
             this.label12.Text = "Info";
             // 
+            // IdItems
+            // 
+            this.IdItems.HeaderText = "ID Items";
+            this.IdItems.Name = "IdItems";
+            // 
+            // Items
+            // 
+            this.Items.HeaderText = "Items";
+            this.Items.Name = "Items";
+            // 
+            // Barcodi
+            // 
+            this.Barcodi.HeaderText = "Barcodi";
+            this.Barcodi.Name = "Barcodi";
+            // 
+            // Unity
+            // 
+            this.Unity.HeaderText = "Unity";
+            this.Unity.Name = "Unity";
+            // 
+            // Info
+            // 
+            this.Info.HeaderText = "Info";
+            this.Info.Name = "Info";
+            // 
             // UC_Dashboards
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -554,7 +582,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.listBoxItems);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panInfo);
             this.Controls.Add(this.panCmimi);
@@ -602,7 +629,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblDateTime;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.ListBox listBoxItems;
         private System.Windows.Forms.Button btnShto;
         private System.Windows.Forms.DataGridView dgListOfItems;
         private System.Windows.Forms.Label label8;
@@ -610,5 +636,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdItems;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Items;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Barcodi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Unity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Info;
     }
 }
