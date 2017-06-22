@@ -94,9 +94,10 @@ namespace SistemiShitjesPOS.UI
 
                 
             }
-            label4.Text = sum.ToString();
-            label
 
+            lblNoTax.Text = sum.ToString();
+
+            lblTax.Text += 0.16 * sum;
 
 
 

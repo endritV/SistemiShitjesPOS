@@ -43,8 +43,8 @@
             this.btnSectorRole = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panMenu = new System.Windows.Forms.Panel();
             this.uC_Dashboards1 = new SistemiShitjesPOS.UI.UC_Dashboards();
+            this.panMenu = new System.Windows.Forms.Panel();
             this.tblPanMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panMenu.SuspendLayout();
@@ -374,6 +374,15 @@
             this.panel1.Size = new System.Drawing.Size(754, 567);
             this.panel1.TabIndex = 4;
             // 
+            // uC_Dashboards1
+            // 
+            this.uC_Dashboards1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
+            this.uC_Dashboards1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Dashboards1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Dashboards1.Name = "uC_Dashboards1";
+            this.uC_Dashboards1.Size = new System.Drawing.Size(754, 567);
+            this.uC_Dashboards1.TabIndex = 0;
+            // 
             // panMenu
             // 
             this.panMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -386,15 +395,6 @@
             this.panMenu.Name = "panMenu";
             this.panMenu.Size = new System.Drawing.Size(200, 567);
             this.panMenu.TabIndex = 0;
-            // 
-            // uC_Dashboards1
-            // 
-            this.uC_Dashboards1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.uC_Dashboards1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Dashboards1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Dashboards1.Name = "uC_Dashboards1";
-            this.uC_Dashboards1.Size = new System.Drawing.Size(754, 567);
-            this.uC_Dashboards1.TabIndex = 0;
             // 
             // DashBoard
             // 
@@ -412,7 +412,6 @@
             this.Text = "DashBoard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DashBoard_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DashBoard_KeyDown);
             this.tblPanMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panMenu.ResumeLayout(false);
