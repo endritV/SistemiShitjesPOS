@@ -95,6 +95,8 @@ namespace SistemiShitjesPOS.UI
                 
             }
             label4.Text = sum.ToString();
+            label
+
 
 
 
