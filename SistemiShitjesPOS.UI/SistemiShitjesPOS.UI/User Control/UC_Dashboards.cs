@@ -89,6 +89,10 @@ namespace SistemiShitjesPOS.UI
             for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
             {
                 sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[5].Value);
+                
+                
+
+                
             }
             label4.Text = sum.ToString();
 
@@ -115,5 +119,10 @@ namespace SistemiShitjesPOS.UI
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dgListOfItems.Rows.Clear();
+            label4.Text = "00.0";
+        }
     }
 }
