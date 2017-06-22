@@ -52,6 +52,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                         artikulli.IsAktiv = bool.Parse(reader["IsAktive"].ToString());
                         artikulli.IdArtikulli = int.Parse(reader["IdArtikulli"].ToString());
                         artikulli.EmriArtikullit = reader["EmriArtikullit"].ToString();
+                        artikulli.Cmimi = double.Parse(reader["Cmimi"].ToString());
                         artikulli.Barkodi = int.Parse(reader["Barkodi"].ToString());
                         artikulli.Njesia = reader["Njesia"].ToString();
 
@@ -84,6 +85,7 @@ namespace SistemiShitjesPOS.DataAccessLayer
                         artikulli.EmriArtikullit = reader["EmriArtikullit"].ToString();
                         artikulli.Barkodi = int.Parse(reader["Barkodi"].ToString());
                         artikulli.Njesia = reader["Njesia"].ToString();
+                        artikulli.Cmimi = double.Parse(reader["Cmimi"].ToString());
                         artikulli.Pershkrimi = reader["Pershkrimi"].ToString();
                         artikulli.IsAktiv = bool.Parse(reader["IsAktive"].ToString());
 

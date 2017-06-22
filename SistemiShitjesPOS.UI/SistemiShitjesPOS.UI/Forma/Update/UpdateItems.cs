@@ -23,7 +23,7 @@ namespace SistemiShitjesPOS.UI
         {
             try
             {
-                blItems.UpdateItem(new Artikulli(int.Parse(txtIdItems.Text), txtEmri.Text, int.Parse(txtBarkodi.Text), txtPershkrimi.Text, cmbCategory.Text));
+                blItems.UpdateItem(new Artikulli(int.Parse(txtIdItems.Text), txtEmri.Text, int.Parse(txtBarkodi.Text), txtPershkrimi.Text, cmbCategory.Text,1));
             }
             catch (Exception)
             {

@@ -81,14 +81,20 @@ namespace SistemiShitjesPOS.UI
 
             foreach (DataGridViewRow row in dgSearch.Rows)
             {
-                dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString(), row.Cells[0].Value.ToString());
+                dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
                 
 
             }
+            double sum = 0;
+            for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
+            {
+                sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[5].Value);
+            }
+            label4.Text = sum.ToString();
 
 
 
-           
+
             //DataGridViewColumn newCol = null;
             //foreach (DataGridViewColumn col in dgSearch.Columns)
             //{

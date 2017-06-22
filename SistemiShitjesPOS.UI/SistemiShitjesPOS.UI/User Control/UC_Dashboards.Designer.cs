@@ -52,27 +52,28 @@
             this.lblDateTime = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dgListOfItems = new System.Windows.Forms.DataGridView();
             this.dgSearch = new System.Windows.Forms.DataGridView();
             this.txtKerko = new System.Windows.Forms.TextBox();
             this.btnShto = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.dgListOfItems = new System.Windows.Forms.DataGridView();
             this.IdItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Barcodi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Unity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Info = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgListOfItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgListOfItems)).BeginInit();
             this.SuspendLayout();
             // 
             // panCmimi
@@ -418,25 +419,6 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // dgListOfItems
-            // 
-            this.dgListOfItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgListOfItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgListOfItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgListOfItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgListOfItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdItems,
-            this.Items,
-            this.Barcodi,
-            this.Unity,
-            this.Info});
-            this.dgListOfItems.Location = new System.Drawing.Point(6, 91);
-            this.dgListOfItems.Name = "dgListOfItems";
-            this.dgListOfItems.Size = new System.Drawing.Size(453, 246);
-            this.dgListOfItems.TabIndex = 3;
-            // 
             // dgSearch
             // 
             this.dgSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -502,6 +484,51 @@
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // dgListOfItems
+            // 
+            this.dgListOfItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgListOfItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgListOfItems.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgListOfItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgListOfItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdItems,
+            this.Items,
+            this.Barcodi,
+            this.Unity,
+            this.Info,
+            this.Price});
+            this.dgListOfItems.Location = new System.Drawing.Point(6, 91);
+            this.dgListOfItems.Name = "dgListOfItems";
+            this.dgListOfItems.Size = new System.Drawing.Size(453, 246);
+            this.dgListOfItems.TabIndex = 3;
+            // 
+            // IdItems
+            // 
+            this.IdItems.HeaderText = "ID Items";
+            this.IdItems.Name = "IdItems";
+            // 
+            // Items
+            // 
+            this.Items.HeaderText = "Items";
+            this.Items.Name = "Items";
+            // 
+            // Barcodi
+            // 
+            this.Barcodi.HeaderText = "Barcodi";
+            this.Barcodi.Name = "Barcodi";
+            // 
+            // Unity
+            // 
+            this.Unity.HeaderText = "Unity";
+            this.Unity.Name = "Unity";
+            // 
+            // Info
+            // 
+            this.Info.HeaderText = "Info";
+            this.Info.Name = "Info";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -547,30 +574,10 @@
             this.label12.TabIndex = 5;
             this.label12.Text = "Info";
             // 
-            // IdItems
+            // Price
             // 
-            this.IdItems.HeaderText = "ID Items";
-            this.IdItems.Name = "IdItems";
-            // 
-            // Items
-            // 
-            this.Items.HeaderText = "Items";
-            this.Items.Name = "Items";
-            // 
-            // Barcodi
-            // 
-            this.Barcodi.HeaderText = "Barcodi";
-            this.Barcodi.Name = "Barcodi";
-            // 
-            // Unity
-            // 
-            this.Unity.HeaderText = "Unity";
-            this.Unity.Name = "Unity";
-            // 
-            // Info
-            // 
-            this.Info.HeaderText = "Info";
-            this.Info.Name = "Info";
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
             // 
             // UC_Dashboards
             // 
@@ -594,8 +601,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgListOfItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgListOfItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -641,5 +648,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Barcodi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Unity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Info;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
     }
 }
