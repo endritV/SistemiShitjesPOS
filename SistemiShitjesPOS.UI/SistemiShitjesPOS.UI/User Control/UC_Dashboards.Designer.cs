@@ -62,12 +62,12 @@
             this.Barcodi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Unity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Info = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -349,6 +349,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -529,6 +530,11 @@
             this.Info.HeaderText = "Info";
             this.Info.Name = "Info";
             // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -573,11 +579,6 @@
             this.label12.Size = new System.Drawing.Size(25, 13);
             this.label12.TabIndex = 5;
             this.label12.Text = "Info";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
             // 
             // UC_Dashboards
             // 
