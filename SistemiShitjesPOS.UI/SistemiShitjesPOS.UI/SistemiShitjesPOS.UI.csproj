@@ -324,6 +324,7 @@
     <None Include="Resources\icomoon-free_2014-12-23_menu_25_25_a7bccd_none.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MetroFramework.txt" />
     <Content Include="Resources\cover1.jpg" />
     <None Include="Resources\stroke-7_1-2-0_cash_25_0_ffffff_none.png" />
     <None Include="Resources\font-awesome_4-7-0_credit-card-alt_25_0_ffffff_none.png" />

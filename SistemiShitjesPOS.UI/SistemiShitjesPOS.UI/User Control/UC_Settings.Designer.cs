@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "UC_Settings";
             this.Size = new System.Drawing.Size(757, 525);
+            this.Load += new System.EventHandler(this.UC_Settings_Load);
             this.ResumeLayout(false);
 
         }
