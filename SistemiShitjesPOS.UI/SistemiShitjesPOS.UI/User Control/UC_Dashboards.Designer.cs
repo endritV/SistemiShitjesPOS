@@ -40,8 +40,8 @@
             this.lblTax = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTips = new System.Windows.Forms.Label();
-            this.lblDiscounts = new System.Windows.Forms.Label();
-            this.lblDiscountText = new System.Windows.Forms.Label();
+            this.lblNoTax = new System.Windows.Forms.Label();
+            this.lblNoTaxInfo = new System.Windows.Forms.Label();
             this.lblSubtotalText = new System.Windows.Forms.Label();
             this.lblTaxText = new System.Windows.Forms.Label();
             this.lblTipsText = new System.Windows.Forms.Label();
@@ -91,8 +91,8 @@
             this.panCmimi.Controls.Add(this.lblTax);
             this.panCmimi.Controls.Add(this.label1);
             this.panCmimi.Controls.Add(this.lblTips);
-            this.panCmimi.Controls.Add(this.lblDiscounts);
-            this.panCmimi.Controls.Add(this.lblDiscountText);
+            this.panCmimi.Controls.Add(this.lblNoTax);
+            this.panCmimi.Controls.Add(this.lblNoTaxInfo);
             this.panCmimi.Controls.Add(this.lblSubtotalText);
             this.panCmimi.Controls.Add(this.lblTaxText);
             this.panCmimi.Controls.Add(this.lblTipsText);
@@ -127,11 +127,13 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.label4.Location = new System.Drawing.Point(60, 245);
+            this.label4.Location = new System.Drawing.Point(106, 214);
             this.label4.Name = "label4";
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(74, 42);
             this.label4.TabIndex = 5;
             this.label4.Text = "00.0";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label7
             // 
@@ -141,7 +143,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.label7.Location = new System.Drawing.Point(174, 247);
+            this.label7.Location = new System.Drawing.Point(241, 214);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 42);
             this.label7.TabIndex = 4;
@@ -246,33 +248,33 @@
             this.lblTips.TabIndex = 4;
             this.lblTips.Text = "00.0";
             // 
-            // lblDiscounts
+            // lblNoTax
             // 
-            this.lblDiscounts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblNoTax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDiscounts.AutoSize = true;
-            this.lblDiscounts.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiscounts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.lblDiscounts.Location = new System.Drawing.Point(176, 38);
-            this.lblDiscounts.Name = "lblDiscounts";
-            this.lblDiscounts.Size = new System.Drawing.Size(51, 29);
-            this.lblDiscounts.TabIndex = 4;
-            this.lblDiscounts.Text = "00.0";
+            this.lblNoTax.AutoSize = true;
+            this.lblNoTax.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoTax.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.lblNoTax.Location = new System.Drawing.Point(176, 38);
+            this.lblNoTax.Name = "lblNoTax";
+            this.lblNoTax.Size = new System.Drawing.Size(51, 29);
+            this.lblNoTax.TabIndex = 4;
+            this.lblNoTax.Text = "00.0";
             // 
-            // lblDiscountText
+            // lblNoTaxInfo
             // 
-            this.lblDiscountText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblNoTaxInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDiscountText.AutoSize = true;
-            this.lblDiscountText.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiscountText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.lblDiscountText.Location = new System.Drawing.Point(45, 38);
-            this.lblDiscountText.Name = "lblDiscountText";
-            this.lblDiscountText.Size = new System.Drawing.Size(104, 29);
-            this.lblDiscountText.TabIndex = 4;
-            this.lblDiscountText.Text = "Discounts:";
+            this.lblNoTaxInfo.AutoSize = true;
+            this.lblNoTaxInfo.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoTaxInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.lblNoTaxInfo.Location = new System.Drawing.Point(45, 38);
+            this.lblNoTaxInfo.Name = "lblNoTaxInfo";
+            this.lblNoTaxInfo.Size = new System.Drawing.Size(81, 29);
+            this.lblNoTaxInfo.TabIndex = 4;
+            this.lblNoTaxInfo.Text = "No Tax:";
             // 
             // lblSubtotalText
             // 
@@ -629,8 +631,8 @@
         private System.Windows.Forms.Label lblTax;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTips;
-        private System.Windows.Forms.Label lblDiscounts;
-        private System.Windows.Forms.Label lblDiscountText;
+        private System.Windows.Forms.Label lblNoTax;
+        private System.Windows.Forms.Label lblNoTaxInfo;
         private System.Windows.Forms.Label lblSubtotalText;
         private System.Windows.Forms.Label lblTaxText;
         private System.Windows.Forms.Label lblTipsText;
