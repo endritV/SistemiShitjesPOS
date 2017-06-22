@@ -64,18 +64,7 @@ namespace SistemiShitjesPOS.UI
         }
         private void DashBoard_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Escape)
-            {
-                FormBorderStyle = FormBorderStyle.Sizable;
-                WindowState = FormWindowState.Normal;
-                TopMost = false;               
-            }
-            if (e.KeyCode == Keys.F)
-            {
-                FormBorderStyle = FormBorderStyle.None;
-                WindowState = FormWindowState.Maximized;
-                TopMost = true;
-            }
+            
         }
         private void btnDashboards_Click(object sender, EventArgs e)
         {
