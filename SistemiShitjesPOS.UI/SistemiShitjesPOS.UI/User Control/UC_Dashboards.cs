@@ -82,43 +82,40 @@ namespace SistemiShitjesPOS.UI
             foreach (DataGridViewRow row in dgSearch.Rows)
             {
                 dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
-
-                row.Cells[1].Value = Convert.ToString(1 + Convert.ToInt32(row.Cells[1].Value));
+                
 
             }
             double sum = 0;
+            double a = 0.16;
             for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
             {
-                sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[5].Value);
-
-
-
-
+                sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[5].Value);               
             }
 
-            lblNoTax.Text = sum.ToString();
-
-            lblTax.Text += 0.16 * sum;
-
-
-            bool Found = false;
-            if (dgListOfItems.Rows.Count > 0)
-            {
-                foreach (DataGridViewRow row in dgListOfItems.Rows)
-                {
-                    if (Convert.ToString(row.Cells[0].Value) == dgSearch.ToString()  )
-                    {
-                        row.Cells[1].Value = Convert.ToString(1 + Convert.ToInt32(row.Cells[1].Value));
-                        Found = true;
-                    }
-                }
-                if (!Found)
-                {
-                    dgListOfItems.Rows.Add();
-                }
-            }
+            lblNoTax.Text = Convert.ToString(sum - (a * sum));
+            lblTax.Text = Convert.ToString(a * sum);
+            label4.Text = sum.ToString();
 
 
+
+
+            //DataGridViewColumn newCol = null;
+            //foreach (DataGridViewColumn col in dgSearch.Columns)
+            //{
+            //    newCol = new DataGridViewColumn(col.CellTemplate);
+            //    newCol.HeaderText = col.HeaderText;
+            //    newCol.Name = col.Name;
+            //    dgListOfItems.Columns.Add(newCol);
+            //}
+
+            //dgListOfItems.RowCount = dgSearch.RowCount;
+            //foreach (DataGridViewRow row in dgSearch.Rows)
+            //{
+            //    foreach (DataGridViewColumn col in dgSearch.Columns)
+            //    {
+            //        dgListOfItems.Rows[row.Index].Cells[col.Name].Value = row.Cells[col.Name].Value;
+            //    }
+            //}
 
         }
 
@@ -126,6 +123,8 @@ namespace SistemiShitjesPOS.UI
         {
             dgListOfItems.Rows.Clear();
             label4.Text = "00.0";
+            lblNoTax.Text = "00.0";
+            lblTax.Text = "00.0";
         }
     }
 }
