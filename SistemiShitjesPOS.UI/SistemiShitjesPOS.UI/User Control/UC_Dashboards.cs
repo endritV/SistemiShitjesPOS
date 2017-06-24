@@ -22,7 +22,7 @@ namespace SistemiShitjesPOS.UI
             this.Dock = DockStyle.Fill;
             this.lblDateTime.Text = DateTime.Now.ToString("dd-MM-yyyy \n     hh:mm");
             lblDateTime.Refresh();
-            
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -32,10 +32,10 @@ namespace SistemiShitjesPOS.UI
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-         
-                
-             
-            
+
+
+
+
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -50,17 +50,17 @@ namespace SistemiShitjesPOS.UI
 
         private void lblDateTime_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void dgSearch_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void txtKerko_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -77,23 +77,24 @@ namespace SistemiShitjesPOS.UI
         }
         private void btnShto_Click(object sender, EventArgs e)
         {
+
             
 
+            foreach (DataGridViewRow row in dgSearch.Rows)
+            {
 
-                foreach (DataGridViewRow row in dgSearch.Rows)
-                {
-
-                    dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
- 
-                }
+                dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
 
                 
+            }
+
             
+
             double sum = 0;
             double a = 0.16;
             for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
             {
-                sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[5].Value);               
+                sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[5].Value);
             }
 
             lblNoTax.Text = Convert.ToString(sum - (a * sum));
@@ -103,7 +104,7 @@ namespace SistemiShitjesPOS.UI
 
 
 
-            
+
 
         }
 
@@ -113,6 +114,20 @@ namespace SistemiShitjesPOS.UI
             label4.Text = "00.0";
             lblNoTax.Text = "00.0";
             lblTax.Text = "00.0";
+        }
+
+        private void txtQuantity_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHereQuantity_Click(object sender, EventArgs e)
+        {
+
+
+            txtQuantity.Text = dgListOfItems.CurrentRow.Cells[6].Value.ToString();
+            
+            
         }
     }
 }

@@ -61,7 +61,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.IdItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Barcodi = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +69,8 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnityPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.btnHereQuantity = new System.Windows.Forms.Button();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -405,7 +406,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(58)))), ((int)(((byte)(67)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.dgSearch);
+            this.panel1.Controls.Add(this.txtQuantity);
             this.panel1.Controls.Add(this.txtKerko);
+            this.panel1.Controls.Add(this.btnHereQuantity);
             this.panel1.Controls.Add(this.btnShto);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Location = new System.Drawing.Point(0, 343);
@@ -547,15 +550,6 @@
             this.label11.TabIndex = 5;
             this.label11.Text = "Unity";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(215, 69);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(25, 13);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Info";
-            // 
             // IdItems
             // 
             this.IdItems.HeaderText = "ID Items";
@@ -596,11 +590,42 @@
             this.UnityPrice.HeaderText = "Unity Price";
             this.UnityPrice.Name = "UnityPrice";
             // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
+            this.txtQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
+            this.txtQuantity.Location = new System.Drawing.Point(515, 13);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(123, 28);
+            this.txtQuantity.TabIndex = 0;
+            this.txtQuantity.Text = "Quantity:";
+            this.txtQuantity.TextChanged += new System.EventHandler(this.txtQuantity_TextChanged);
+            // 
+            // btnHereQuantity
+            // 
+            this.btnHereQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHereQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(169)))), ((int)(((byte)(190)))));
+            this.btnHereQuantity.FlatAppearance.BorderSize = 0;
+            this.btnHereQuantity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHereQuantity.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHereQuantity.ForeColor = System.Drawing.Color.White;
+            this.btnHereQuantity.Location = new System.Drawing.Point(650, 13);
+            this.btnHereQuantity.Name = "btnHereQuantity";
+            this.btnHereQuantity.Size = new System.Drawing.Size(90, 28);
+            this.btnHereQuantity.TabIndex = 1;
+            this.btnHereQuantity.Text = "Add";
+            this.btnHereQuantity.UseVisualStyleBackColor = false;
+            this.btnHereQuantity.Click += new System.EventHandler(this.btnHereQuantity_Click);
+            // 
             // UC_Dashboards
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.dgListOfItems);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -659,7 +684,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdItems;
         private System.Windows.Forms.DataGridViewTextBoxColumn Items;
         private System.Windows.Forms.DataGridViewTextBoxColumn Barcodi;
@@ -668,5 +692,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn UnityPrice;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.Button btnHereQuantity;
     }
 }
