@@ -29,6 +29,7 @@ namespace SistemiShitjesPOS.EntityLayer
             Pershkrimi = pershkrimi;
             Njesia = njesia;
             this.Cmimi = cmimi;
+            
         }
 
         #endregion
@@ -36,12 +37,18 @@ namespace SistemiShitjesPOS.EntityLayer
         private int _idArtukulli;
         private string _emriArtikullit;
         private int _barkodi;
+        
         private string _njesia;
         private double _cmimi;
+      
+
         private string _pershkrimi;
         public bool IsAktiv { get; set; }
 
         public double Cmimi { get { return _cmimi; } set { _cmimi = value; } }
+
+
+        
 
         public string Pershkrimi
         {

@@ -68,6 +68,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -501,7 +502,8 @@
             this.Barcodi,
             this.Unity,
             this.Info,
-            this.Price});
+            this.Price,
+            this.Quantity});
             this.dgListOfItems.Location = new System.Drawing.Point(6, 91);
             this.dgListOfItems.Name = "dgListOfItems";
             this.dgListOfItems.Size = new System.Drawing.Size(453, 246);
@@ -582,6 +584,11 @@
             this.label12.TabIndex = 5;
             this.label12.Text = "Info";
             // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            // 
             // UC_Dashboards
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -652,5 +659,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Unity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Info;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
     }
 }

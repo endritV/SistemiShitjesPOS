@@ -82,17 +82,18 @@ namespace SistemiShitjesPOS.UI
             foreach (DataGridViewRow row in dgSearch.Rows)
             {
                 dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
-                
+
+                row.Cells[1].Value = Convert.ToString(1 + Convert.ToInt32(row.Cells[1].Value));
 
             }
             double sum = 0;
             for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
             {
                 sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[5].Value);
-                
-                
 
-                
+
+
+
             }
 
             lblNoTax.Text = sum.ToString();
@@ -100,25 +101,24 @@ namespace SistemiShitjesPOS.UI
             lblTax.Text += 0.16 * sum;
 
 
+            bool Found = false;
+            if (dgListOfItems.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dgListOfItems.Rows)
+                {
+                    if (Convert.ToString(row.Cells[0].Value) == dgSearch.ToString()  )
+                    {
+                        row.Cells[1].Value = Convert.ToString(1 + Convert.ToInt32(row.Cells[1].Value));
+                        Found = true;
+                    }
+                }
+                if (!Found)
+                {
+                    dgListOfItems.Rows.Add();
+                }
+            }
 
 
-            //DataGridViewColumn newCol = null;
-            //foreach (DataGridViewColumn col in dgSearch.Columns)
-            //{
-            //    newCol = new DataGridViewColumn(col.CellTemplate);
-            //    newCol.HeaderText = col.HeaderText;
-            //    newCol.Name = col.Name;
-            //    dgListOfItems.Columns.Add(newCol);
-            //}
-
-            //dgListOfItems.RowCount = dgSearch.RowCount;
-            //foreach (DataGridViewRow row in dgSearch.Rows)
-            //{
-            //    foreach (DataGridViewColumn col in dgSearch.Columns)
-            //    {
-            //        dgListOfItems.Rows[row.Index].Cells[col.Name].Value = row.Cells[col.Name].Value;
-            //    }
-            //}
 
         }
 
