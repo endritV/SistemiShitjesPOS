@@ -57,18 +57,19 @@
             this.btnShto = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgListOfItems = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.IdItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Barcodi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Unity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Info = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UnityPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -503,41 +504,12 @@
             this.Unity,
             this.Info,
             this.Price,
-            this.Quantity});
+            this.Quantity,
+            this.UnityPrice});
             this.dgListOfItems.Location = new System.Drawing.Point(6, 91);
             this.dgListOfItems.Name = "dgListOfItems";
             this.dgListOfItems.Size = new System.Drawing.Size(453, 246);
             this.dgListOfItems.TabIndex = 3;
-            // 
-            // IdItems
-            // 
-            this.IdItems.HeaderText = "ID Items";
-            this.IdItems.Name = "IdItems";
-            // 
-            // Items
-            // 
-            this.Items.HeaderText = "Items";
-            this.Items.Name = "Items";
-            // 
-            // Barcodi
-            // 
-            this.Barcodi.HeaderText = "Barcodi";
-            this.Barcodi.Name = "Barcodi";
-            // 
-            // Unity
-            // 
-            this.Unity.HeaderText = "Unity";
-            this.Unity.Name = "Unity";
-            // 
-            // Info
-            // 
-            this.Info.HeaderText = "Info";
-            this.Info.Name = "Info";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
             // 
             // label8
             // 
@@ -584,10 +556,45 @@
             this.label12.TabIndex = 5;
             this.label12.Text = "Info";
             // 
+            // IdItems
+            // 
+            this.IdItems.HeaderText = "ID Items";
+            this.IdItems.Name = "IdItems";
+            // 
+            // Items
+            // 
+            this.Items.HeaderText = "Items";
+            this.Items.Name = "Items";
+            // 
+            // Barcodi
+            // 
+            this.Barcodi.HeaderText = "Barcodi";
+            this.Barcodi.Name = "Barcodi";
+            // 
+            // Unity
+            // 
+            this.Unity.HeaderText = "Unity";
+            this.Unity.Name = "Unity";
+            // 
+            // Info
+            // 
+            this.Info.HeaderText = "Info";
+            this.Info.Name = "Info";
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            // 
             // Quantity
             // 
             this.Quantity.HeaderText = "Quantity";
             this.Quantity.Name = "Quantity";
+            // 
+            // UnityPrice
+            // 
+            this.UnityPrice.HeaderText = "Unity Price";
+            this.UnityPrice.Name = "UnityPrice";
             // 
             // UC_Dashboards
             // 
@@ -660,5 +667,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Info;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UnityPrice;
     }
 }

@@ -77,14 +77,18 @@ namespace SistemiShitjesPOS.UI
         }
         private void btnShto_Click(object sender, EventArgs e)
         {
+            
 
 
-            foreach (DataGridViewRow row in dgSearch.Rows)
-            {
-                dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
+                foreach (DataGridViewRow row in dgSearch.Rows)
+                {
+
+                    dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
+ 
+                }
+
                 
-
-            }
+            
             double sum = 0;
             double a = 0.16;
             for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
@@ -99,23 +103,7 @@ namespace SistemiShitjesPOS.UI
 
 
 
-            //DataGridViewColumn newCol = null;
-            //foreach (DataGridViewColumn col in dgSearch.Columns)
-            //{
-            //    newCol = new DataGridViewColumn(col.CellTemplate);
-            //    newCol.HeaderText = col.HeaderText;
-            //    newCol.Name = col.Name;
-            //    dgListOfItems.Columns.Add(newCol);
-            //}
-
-            //dgListOfItems.RowCount = dgSearch.RowCount;
-            //foreach (DataGridViewRow row in dgSearch.Rows)
-            //{
-            //    foreach (DataGridViewColumn col in dgSearch.Columns)
-            //    {
-            //        dgListOfItems.Rows[row.Index].Cells[col.Name].Value = row.Cells[col.Name].Value;
-            //    }
-            //}
+            
 
         }
 

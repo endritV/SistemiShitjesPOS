@@ -20,7 +20,7 @@ namespace SistemiShitjesPOS.UI
             catch (Exception)
             {
 
-                MetroFramework.MetroMessageBox.Show(this, "Data Base not conected", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MetroFramework.MetroMessageBox.Show(this, "Data Base not conected", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
