@@ -86,18 +86,15 @@ namespace SistemiShitjesPOS.UI
 
             }
             double sum = 0;
+            double a = 0.16;
             for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
             {
-                sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[5].Value);
-                
-                
-
-                
+                sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[5].Value);               
             }
 
-            lblNoTax.Text = sum.ToString();
-
-            lblTax.Text += 0.16 * sum;
+            lblNoTax.Text = Convert.ToString(sum - (a * sum));
+            lblTax.Text = Convert.ToString(a * sum);
+            label4.Text = sum.ToString();
 
 
 
@@ -126,6 +123,8 @@ namespace SistemiShitjesPOS.UI
         {
             dgListOfItems.Rows.Clear();
             label4.Text = "00.0";
+            lblNoTax.Text = "00.0";
+            lblTax.Text = "00.0";
         }
     }
 }
