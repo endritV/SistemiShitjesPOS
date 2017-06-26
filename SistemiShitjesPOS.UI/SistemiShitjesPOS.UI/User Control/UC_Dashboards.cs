@@ -281,7 +281,7 @@ namespace SistemiShitjesPOS.UI
 
             int a;
             SqlConnection conn = new SqlConnection(DataBaseCon.GetConnectionString());
-            string query = "SELECT MAX (IdFatura) FROM Fatura_Detajet";
+            string query = "SELECT MAX (IdFatura) FROM FaturaDetajet";
             SqlCommand cmdd = new SqlCommand(query, conn);
 
             conn.Open();
