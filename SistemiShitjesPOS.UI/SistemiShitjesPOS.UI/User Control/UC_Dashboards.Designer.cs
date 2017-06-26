@@ -49,6 +49,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnCash = new System.Windows.Forms.Button();
             this.panInfo = new System.Windows.Forms.Panel();
+            this.txtDateTime = new System.Windows.Forms.TextBox();
+            this.txtInvNo = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgSearch = new System.Windows.Forms.DataGridView();
@@ -57,18 +61,14 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgListOfItems = new System.Windows.Forms.DataGridView();
             this.Barcodi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdArtikulli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Unity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Info = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cmimi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UnityPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.invNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtInvNo = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtDateTime = new System.Windows.Forms.TextBox();
+            this.IdFatura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -387,6 +387,63 @@
             this.panInfo.Size = new System.Drawing.Size(757, 53);
             this.panInfo.TabIndex = 1;
             // 
+            // txtDateTime
+            // 
+            this.txtDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
+            this.txtDateTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
+            this.txtDateTime.Location = new System.Drawing.Point(330, 6);
+            this.txtDateTime.MaximumSize = new System.Drawing.Size(250, 31);
+            this.txtDateTime.Name = "txtDateTime";
+            this.txtDateTime.ReadOnly = true;
+            this.txtDateTime.Size = new System.Drawing.Size(166, 31);
+            this.txtDateTime.TabIndex = 0;
+            this.txtDateTime.TextChanged += new System.EventHandler(this.txtInvNo_TextChanged);
+            // 
+            // txtInvNo
+            // 
+            this.txtInvNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtInvNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
+            this.txtInvNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInvNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInvNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
+            this.txtInvNo.Location = new System.Drawing.Point(133, 7);
+            this.txtInvNo.Name = "txtInvNo";
+            this.txtInvNo.Size = new System.Drawing.Size(116, 31);
+            this.txtInvNo.TabIndex = 0;
+            this.txtInvNo.TextChanged += new System.EventHandler(this.txtInvNo_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Silver;
+            this.label9.Location = new System.Drawing.Point(278, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 23);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Date:";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Silver;
+            this.label8.Location = new System.Drawing.Point(5, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(122, 23);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Invoice Number:";
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -489,14 +546,14 @@
             this.dgListOfItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgListOfItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Barcodi,
-            this.IdItems,
+            this.IdArtikulli,
             this.Items,
             this.Unity,
-            this.Info,
+            this.description,
+            this.Cmimi,
+            this.Sasia,
             this.Price,
-            this.Quantity,
-            this.UnityPrice,
-            this.invNo});
+            this.IdFatura});
             this.dgListOfItems.Location = new System.Drawing.Point(6, 59);
             this.dgListOfItems.Name = "dgListOfItems";
             this.dgListOfItems.Size = new System.Drawing.Size(453, 278);
@@ -511,10 +568,10 @@
             this.Barcodi.HeaderText = "Barcodi";
             this.Barcodi.Name = "Barcodi";
             // 
-            // IdItems
+            // IdArtikulli
             // 
-            this.IdItems.HeaderText = "ID Items";
-            this.IdItems.Name = "IdItems";
+            this.IdArtikulli.HeaderText = "IdArtikulli";
+            this.IdArtikulli.Name = "IdArtikulli";
             // 
             // Items
             // 
@@ -526,89 +583,30 @@
             this.Unity.HeaderText = "Unity";
             this.Unity.Name = "Unity";
             // 
-            // Info
+            // description
             // 
-            this.Info.HeaderText = "Info";
-            this.Info.Name = "Info";
+            this.description.HeaderText = "Description";
+            this.description.Name = "description";
+            // 
+            // Cmimi
+            // 
+            this.Cmimi.HeaderText = "Cmimi";
+            this.Cmimi.Name = "Cmimi";
+            // 
+            // Sasia
+            // 
+            this.Sasia.HeaderText = "Sasia";
+            this.Sasia.Name = "Sasia";
             // 
             // Price
             // 
-            this.Price.HeaderText = "Unit Price";
+            this.Price.HeaderText = "Price";
             this.Price.Name = "Price";
             // 
-            // Quantity
+            // IdFatura
             // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
-            this.Quantity.ToolTipText = "1";
-            // 
-            // UnityPrice
-            // 
-            this.UnityPrice.HeaderText = "Price";
-            this.UnityPrice.Name = "UnityPrice";
-            // 
-            // invNo
-            // 
-            this.invNo.HeaderText = "InvNo";
-            this.invNo.Name = "invNo";
-            // 
-            // txtInvNo
-            // 
-            this.txtInvNo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtInvNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
-            this.txtInvNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtInvNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInvNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.txtInvNo.Location = new System.Drawing.Point(133, 7);
-            this.txtInvNo.Name = "txtInvNo";
-            this.txtInvNo.Size = new System.Drawing.Size(116, 31);
-            this.txtInvNo.TabIndex = 0;
-            this.txtInvNo.TextChanged += new System.EventHandler(this.txtInvNo_TextChanged);
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(5, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 23);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Invoice Number:";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(278, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 23);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Date:";
-            // 
-            // txtDateTime
-            // 
-            this.txtDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
-            this.txtDateTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.txtDateTime.Location = new System.Drawing.Point(330, 6);
-            this.txtDateTime.Name = "txtDateTime";
-            this.txtDateTime.Size = new System.Drawing.Size(166, 31);
-            this.txtDateTime.TabIndex = 0;
-            this.txtDateTime.TextChanged += new System.EventHandler(this.txtInvNo_TextChanged);
+            this.IdFatura.HeaderText = "IdFatura";
+            this.IdFatura.Name = "IdFatura";
             // 
             // UC_Dashboards
             // 
@@ -620,6 +618,7 @@
             this.Controls.Add(this.panCmimi);
             this.Name = "UC_Dashboards";
             this.Size = new System.Drawing.Size(757, 525);
+            this.Load += new System.EventHandler(this.UC_Dashboards_Load);
             this.panCmimi.ResumeLayout(false);
             this.panCmimi.PerformLayout();
             this.panInfo.ResumeLayout(false);
@@ -662,18 +661,18 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnShto;
         private System.Windows.Forms.DataGridView dgListOfItems;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Barcodi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdItems;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Items;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Unity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Info;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UnityPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn invNo;
         private System.Windows.Forms.TextBox txtInvNo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtDateTime;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Barcodi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdArtikulli;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Items;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Unity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cmimi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sasia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdFatura;
     }
 }

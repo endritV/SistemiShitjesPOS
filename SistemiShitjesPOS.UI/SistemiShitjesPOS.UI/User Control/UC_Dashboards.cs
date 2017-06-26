@@ -247,7 +247,7 @@ namespace SistemiShitjesPOS.UI
                 {
 
 
-                    row.Cells[dgListOfItems.Columns["UnityPrice"].Index].Value = (Convert.ToDouble(row.Cells[dgListOfItems.Columns["Price"].Index].Value) * Convert.ToDouble(row.Cells[dgListOfItems.Columns["Quantity"].Index].Value));
+                    row.Cells[dgListOfItems.Columns[7].Index].Value = (Convert.ToDouble(row.Cells[dgListOfItems.Columns[5].Index].Value) * Convert.ToDouble(row.Cells[dgListOfItems.Columns[6].Index].Value));
                     dgListOfItems.Refresh();
 
                     double sum = 0;
@@ -269,21 +269,87 @@ namespace SistemiShitjesPOS.UI
 
         private void btnCash_Click(object sender, EventArgs e)
         {
-            
+            for (int i = 0; i < dgListOfItems.Rows.Count; i++)
+            {
+                SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
+                SqlCommand cmd = new SqlCommand(@"INSERT INTO Fatura_Detajet(IdFatura,IdArtikulli,Sasia,Cmimi) VALUES ('" + dgListOfItems.Rows[i].Cells[8].Value + "','" + dgListOfItems.Rows[i].Cells[1].Value + "','" + dgListOfItems.Rows[i].Cells[6].Value + "','" + dgListOfItems.Rows[i].Cells[5].Value + "')", con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Test");
+                con.Close();
+            }
+
+            int a;
+            SqlConnection conn = new SqlConnection(DataBaseCon.GetConnectionString());
+            string query = "SELECT MAX (IdFatura) FROM Fatura_Detajet";
+            SqlCommand cmdd = new SqlCommand(query, conn);
+
+            conn.Open();
+            SqlDataReader dr;
+            dr = cmdd.ExecuteReader();
+            if (dr.Read())
+            {
+                string val = dr[0].ToString();
+                if (val == "")
+                {
+                    txtInvNo.Text = "1";
+                }
+                else
+                {
+                    a = Convert.ToInt32(dr[0].ToString());
+                    a = a + 1;
+                    txtInvNo.Text = a.ToString();
+                }
+                conn.Close();
+            }
+            dgListOfItems.Rows.Clear();
+
         }
 
         private void dgListOfItems_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
-            //    int row = 0;
+            int row = 0;
 
-            //    row = dgListOfItems.Rows.Count - 1;
-            //    dgListOfItems["invNo",row].Value = 
-            //
+            row = dgListOfItems.Rows.Count - 1;
+            dgListOfItems["IdFatura", row].Value = txtInvNo.Text;
+            dgListOfItems.Refresh();
+
+
         }
 
         private void txtInvNo_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void UC_Dashboards_Load(object sender, EventArgs e)
+        {
+            int a;
+            SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
+            string query = "SELECT MAX (IdFatura) FROM Fatura_Detajet";
+            SqlCommand cmd = new SqlCommand(query,con);
+
+            con.Open();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                string val = dr[0].ToString();
+                if (val == "")
+                {
+                    txtInvNo.Text = "1";
+                }
+                else
+                {
+                    a = Convert.ToInt32(dr[0].ToString());
+                    a = a + 1;
+                    txtInvNo.Text = a.ToString();
+                }
+                con.Close();
+            }
+            dgListOfItems.Rows.Clear();
+
+
         }
     }
 
