@@ -16,6 +16,8 @@ namespace SistemiShitjesPOS.BusinessLayer
             return dalItems.GetAll();
         }
 
+       
+
         public static void InsertNewItems(Artikulli artikulli)
         {
             //if (IsValid(artikulli))

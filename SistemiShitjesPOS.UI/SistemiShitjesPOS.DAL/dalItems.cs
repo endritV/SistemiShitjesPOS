@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using SistemiShitjesPOS.EntityLayer;
+using System.Windows.Forms;
 
 namespace SistemiShitjesPOS.DataAccessLayer
 {
@@ -14,6 +15,8 @@ namespace SistemiShitjesPOS.DataAccessLayer
 
         static string cs = DataBaseCon.GetConnectionString();
 
+
+        
 
         public static void Insert(Artikulli a)
         {
@@ -140,5 +143,8 @@ namespace SistemiShitjesPOS.DataAccessLayer
                 return list;
             }
         }
+
+        
+       
     }
 }
