@@ -272,7 +272,7 @@ namespace SistemiShitjesPOS.UI
             for (int i = 0; i < dgListOfItems.Rows.Count; i++)
             {
                 SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
-                SqlCommand cmd = new SqlCommand(@"INSERT INTO Fatura_Detajet(IdFatura,IdArtikulli,Sasia,Cmimi) VALUES ('" + dgListOfItems.Rows[i].Cells[8].Value + "','" + dgListOfItems.Rows[i].Cells[1].Value + "','" + dgListOfItems.Rows[i].Cells[6].Value + "','" + dgListOfItems.Rows[i].Cells[5].Value + "')", con);
+                SqlCommand cmd = new SqlCommand(@"INSERT INTO FaturaDetajet(IdFatura,IdArtikulli,Sasia,Cmimi) VALUES ('" + dgListOfItems.Rows[i].Cells[8].Value + "','" + dgListOfItems.Rows[i].Cells[1].Value + "','" + dgListOfItems.Rows[i].Cells[6].Value + "','" + dgListOfItems.Rows[i].Cells[5].Value + "')", con);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Test");
@@ -326,7 +326,7 @@ namespace SistemiShitjesPOS.UI
         {
             int a;
             SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
-            string query = "SELECT MAX (IdFatura) FROM Fatura_Detajet";
+            string query = "SELECT MAX (IdFatura) FROM FaturaDetajet";
             SqlCommand cmd = new SqlCommand(query,con);
 
             con.Open();
