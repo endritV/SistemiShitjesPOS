@@ -47,9 +47,8 @@
             this.lblTipsText = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCash = new System.Windows.Forms.Button();
             this.panInfo = new System.Windows.Forms.Panel();
-            this.lblDateTime = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgSearch = new System.Windows.Forms.DataGridView();
@@ -65,6 +64,11 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnityPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.invNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtInvNo = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtDateTime = new System.Windows.Forms.TextBox();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -95,7 +99,7 @@
             this.panCmimi.Controls.Add(this.lblTipsText);
             this.panCmimi.Controls.Add(this.button3);
             this.panCmimi.Controls.Add(this.button2);
-            this.panCmimi.Controls.Add(this.button1);
+            this.panCmimi.Controls.Add(this.btnCash);
             this.panCmimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.panCmimi.Location = new System.Drawing.Point(465, 53);
             this.panCmimi.Name = "panCmimi";
@@ -350,48 +354,38 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnCash
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnCash.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(96)))), ((int)(((byte)(74)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::SistemiShitjesPOS.UI.Properties.Resources.stroke_7_1_2_0_cash_25_0_ffffff_none;
-            this.button1.Location = new System.Drawing.Point(30, 227);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Cash";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(96)))), ((int)(((byte)(74)))));
+            this.btnCash.FlatAppearance.BorderSize = 0;
+            this.btnCash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCash.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCash.ForeColor = System.Drawing.Color.White;
+            this.btnCash.Image = global::SistemiShitjesPOS.UI.Properties.Resources.stroke_7_1_2_0_cash_25_0_ffffff_none;
+            this.btnCash.Location = new System.Drawing.Point(30, 227);
+            this.btnCash.Name = "btnCash";
+            this.btnCash.Size = new System.Drawing.Size(245, 48);
+            this.btnCash.TabIndex = 0;
+            this.btnCash.Text = "Cash";
+            this.btnCash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCash.UseVisualStyleBackColor = false;
+            this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // panInfo
             // 
             this.panInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(58)))), ((int)(((byte)(67)))));
-            this.panInfo.Controls.Add(this.lblDateTime);
+            this.panInfo.Controls.Add(this.txtDateTime);
+            this.panInfo.Controls.Add(this.txtInvNo);
+            this.panInfo.Controls.Add(this.label9);
+            this.panInfo.Controls.Add(this.label8);
             this.panInfo.Location = new System.Drawing.Point(0, 0);
             this.panInfo.Name = "panInfo";
             this.panInfo.Size = new System.Drawing.Size(757, 53);
             this.panInfo.TabIndex = 1;
-            // 
-            // lblDateTime
-            // 
-            this.lblDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDateTime.AutoSize = true;
-            this.lblDateTime.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateTime.ForeColor = System.Drawing.Color.White;
-            this.lblDateTime.Location = new System.Drawing.Point(642, 7);
-            this.lblDateTime.Name = "lblDateTime";
-            this.lblDateTime.Size = new System.Drawing.Size(13, 20);
-            this.lblDateTime.TabIndex = 4;
-            this.lblDateTime.Text = ".";
-            this.lblDateTime.Click += new System.EventHandler(this.lblDateTime_Click);
             // 
             // panel1
             // 
@@ -501,13 +495,15 @@
             this.Info,
             this.Price,
             this.Quantity,
-            this.UnityPrice});
+            this.UnityPrice,
+            this.invNo});
             this.dgListOfItems.Location = new System.Drawing.Point(6, 59);
             this.dgListOfItems.Name = "dgListOfItems";
             this.dgListOfItems.Size = new System.Drawing.Size(453, 278);
             this.dgListOfItems.TabIndex = 3;
             this.dgListOfItems.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellEndEdit);
             this.dgListOfItems.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgListOfItems_EditingControlShowing);
+            this.dgListOfItems.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgListOfItems_RowsAdded);
             this.dgListOfItems.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dgListOfItems_KeyPress);
             // 
             // Barcodi
@@ -551,6 +547,69 @@
             this.UnityPrice.HeaderText = "Price";
             this.UnityPrice.Name = "UnityPrice";
             // 
+            // invNo
+            // 
+            this.invNo.HeaderText = "InvNo";
+            this.invNo.Name = "invNo";
+            // 
+            // txtInvNo
+            // 
+            this.txtInvNo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtInvNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
+            this.txtInvNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInvNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInvNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
+            this.txtInvNo.Location = new System.Drawing.Point(133, 7);
+            this.txtInvNo.Name = "txtInvNo";
+            this.txtInvNo.Size = new System.Drawing.Size(116, 31);
+            this.txtInvNo.TabIndex = 0;
+            this.txtInvNo.TextChanged += new System.EventHandler(this.txtInvNo_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Silver;
+            this.label8.Location = new System.Drawing.Point(5, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(122, 23);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Invoice Number:";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Silver;
+            this.label9.Location = new System.Drawing.Point(278, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 23);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Date:";
+            // 
+            // txtDateTime
+            // 
+            this.txtDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
+            this.txtDateTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
+            this.txtDateTime.Location = new System.Drawing.Point(330, 6);
+            this.txtDateTime.Name = "txtDateTime";
+            this.txtDateTime.Size = new System.Drawing.Size(166, 31);
+            this.txtDateTime.TabIndex = 0;
+            this.txtDateTime.TextChanged += new System.EventHandler(this.txtInvNo_TextChanged);
+            // 
             // UC_Dashboards
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -584,7 +643,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCash;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
@@ -600,7 +659,6 @@
         private System.Windows.Forms.Label lblTaxText;
         private System.Windows.Forms.Label lblTipsText;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lblDateTime;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnShto;
         private System.Windows.Forms.DataGridView dgListOfItems;
@@ -612,5 +670,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn UnityPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn invNo;
+        private System.Windows.Forms.TextBox txtInvNo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtDateTime;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -21,8 +21,8 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-            this.lblDateTime.Text = DateTime.Now.ToString("dd-MM-yyyy \n     hh:mm");
-            lblDateTime.Refresh();
+            this.txtDateTime.Text = DateTime.Now.ToString("dd-MM-yyyy \n     hh:mm");
+            
 
 
 
@@ -265,6 +265,25 @@ namespace SistemiShitjesPOS.UI
 
             }
 
+        }
+
+        private void btnCash_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dgListOfItems_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            //    int row = 0;
+
+            //    row = dgListOfItems.Rows.Count - 1;
+            //    dgListOfItems["invNo",row].Value = 
+            //
+        }
+
+        private void txtInvNo_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 

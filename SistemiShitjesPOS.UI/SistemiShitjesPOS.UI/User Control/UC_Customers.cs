@@ -95,7 +95,7 @@ namespace SistemiShitjesPOS.UI
             string searchValue = txtSearchCustomers.Text;
             dgListOfCustomers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
            
-                bool valueResult = false;
+                
                 foreach (DataGridViewRow row in dgListOfCustomers.Rows)
                 {
                     for (int i = 0; i < row.Cells.Count; i++)
@@ -104,7 +104,7 @@ namespace SistemiShitjesPOS.UI
                         {
                             int rowIndex = row.Index;
                             dgListOfCustomers.Rows[rowIndex].Selected = true;
-                            valueResult = true;
+                            
                             break;
                         }
                     }
