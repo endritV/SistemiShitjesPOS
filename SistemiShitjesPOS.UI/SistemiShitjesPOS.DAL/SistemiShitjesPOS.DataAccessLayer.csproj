@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dalDashBoard.cs" />
     <Compile Include="dalEmployees.cs" />
     <Compile Include="dalItems.cs" />
     <Compile Include="dalKlineti.cs" />
@@ -52,9 +51,7 @@
     <Compile Include="DataBaseCon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SistemiShitjesPOS.EntityLayer\SistemiShitjesPOS.EntityLayer.csproj">
       <Project>{c9b2e1a4-4422-496e-8211-0daef5662b5d}</Project>

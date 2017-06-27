@@ -275,7 +275,7 @@ namespace SistemiShitjesPOS.UI
                 SqlCommand cmd = new SqlCommand(@"INSERT INTO FaturaDetajet(IdFatura,IdArtikulli,Sasia,Cmimi) VALUES ('" + dgListOfItems.Rows[i].Cells[8].Value + "','" + dgListOfItems.Rows[i].Cells[1].Value + "','" + dgListOfItems.Rows[i].Cells[6].Value + "','" + dgListOfItems.Rows[i].Cells[5].Value + "')", con);
                 con.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Test");
+                
                 con.Close();
             }
 
@@ -303,6 +303,7 @@ namespace SistemiShitjesPOS.UI
                 conn.Close();
             }
             dgListOfItems.Rows.Clear();
+            txtDateTime.Refresh();
 
         }
 
@@ -324,30 +325,30 @@ namespace SistemiShitjesPOS.UI
 
         private void UC_Dashboards_Load(object sender, EventArgs e)
         {
-            int a;
-            SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
-            string query = "SELECT MAX (IdFatura) FROM FaturaDetajet";
-            SqlCommand cmd = new SqlCommand(query,con);
+            //int a;
+            //SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
+            //string query = "SELECT MAX (IdFatura) FROM FaturaDetajet";
+            //SqlCommand cmd = new SqlCommand(query,con);
 
-            con.Open();
-            SqlDataReader dr;
-            dr = cmd.ExecuteReader();
-            if (dr.Read())
-            {
-                string val = dr[0].ToString();
-                if (val == "")
-                {
-                    txtInvNo.Text = "1";
-                }
-                else
-                {
-                    a = Convert.ToInt32(dr[0].ToString());
-                    a = a + 1;
-                    txtInvNo.Text = a.ToString();
-                }
-                con.Close();
-            }
-            dgListOfItems.Rows.Clear();
+            //con.Open();
+            //SqlDataReader dr;
+            //dr = cmd.ExecuteReader();
+            //if (dr.Read())
+            //{
+            //    string val = dr[0].ToString();
+            //    if (val == "")
+            //    {
+            //        txtInvNo.Text = "1";
+            //    }
+            //    else
+            //    {
+            //        a = Convert.ToInt32(dr[0].ToString());
+            //        a = a + 1;
+            //        txtInvNo.Text = a.ToString();
+            //    }
+            //    con.Close();
+            //}
+            //dgListOfItems.Rows.Clear();
 
 
         }

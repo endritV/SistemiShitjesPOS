@@ -15,7 +15,7 @@ using System.Security.Cryptography;
 
 namespace SistemiShitjesPOS.UI
 {
-    public partial class LoginForm : MetroFramework.Forms.MetroForm
+    public partial class LoginForm : Form
     {
         public LoginForm()
         {
