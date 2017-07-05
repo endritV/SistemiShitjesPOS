@@ -120,6 +120,9 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtDateTime.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>250, 31</value>
@@ -177,8 +180,8 @@
   <data name="&gt;&gt;txtKerko.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="txtKerko.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 13</value>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
   </data>
   <data name="lblSubtotalText.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 29</value>
@@ -191,9 +194,6 @@
   </data>
   <data name="&gt;&gt;panCmimi.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="IdArtikulli.HeaderText" xml:space="preserve">
     <value>IdArtikulli</value>
@@ -219,11 +219,8 @@
   <data name="lblNoTax.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 18pt</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 31</value>
-  </data>
-  <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Sasia.HeaderText" xml:space="preserve">
     <value>Sasia</value>
@@ -234,11 +231,11 @@
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="&gt;&gt;lblNoTax.ZOrder" xml:space="preserve">
     <value>10</value>
-  </data>
-  <data name="lblSubtotalText.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -291,6 +288,9 @@
   <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 31</value>
   </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
   <data name="lblNoTaxInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 38</value>
   </data>
@@ -305,6 +305,9 @@
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 15</value>
+  </data>
+  <data name="txtKerko.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 13</value>
   </data>
   <data name="lblTips.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -347,6 +350,9 @@
   </data>
   <data name="lblNoTax.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="btnCash.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>panCmimi</value>
@@ -405,6 +411,9 @@
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
     <value>pictureBox1</value>
   </data>
+  <data name="Barcodi.HeaderText" xml:space="preserve">
+    <value>Barcodi</value>
+  </data>
   <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
@@ -438,11 +447,11 @@
   <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="dgSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 50</value>
-  </data>
   <data name="&gt;&gt;lblNoTax.Parent" xml:space="preserve">
     <value>panCmimi</value>
+  </data>
+  <data name="lblSubtotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
   </data>
   <data name="btnShto.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -450,8 +459,8 @@
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>panInfo</value>
+  <data name="&gt;&gt;lblTipsText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="panCmimi.Size" type="System.Drawing.Size, System.Drawing">
     <value>292, 290</value>
@@ -470,6 +479,9 @@
   </data>
   <data name="&gt;&gt;lblTaxText.Parent" xml:space="preserve">
     <value>panCmimi</value>
+  </data>
+  <data name="lblSubtotalText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 14.25pt</value>
@@ -516,9 +528,6 @@
   <data name="&gt;&gt;btnCash.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
   </data>
@@ -534,8 +543,8 @@
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Barcodi.HeaderText" xml:space="preserve">
-    <value>Barcodi</value>
+  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 15.75pt</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>278, 14</value>
@@ -576,14 +585,17 @@
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
+  <data name="btnCash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 48</value>
   </data>
   <data name="txtDateTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="lblSubtotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
+  <data name="lblTips.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 71</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblTax.Location" type="System.Drawing.Point, System.Drawing">
     <value>140, 105</value>
@@ -603,39 +615,8 @@
   <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>panCmimi</value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAYAAACPgGwlAAAABGdBTUEAALGPC/xhBQAABphJREFUeF7t
-        3X3oXmMcx/E9P7BHm2EeWh5npT1gLWzCbFn+nIfFlCwl5A9qLRpRoi2ilj/EH+QfpbSUSIu0aC2SpLQk
-        SZYkLWlJ8/7c1/euO+7ffa5z7qdzfn1e9f0D5zrn63v97vucc5/rus4UMzMzMzMzMzMzMzMzMzMzMzMz
-        MzMzMzMbrlOnTk0l5hILiKXEWcQi4jRiWmxmTRYdegPxEvENUeRn4k1iO3EOMTV2ZXVGR80j7iR+IPr1
-        J7GbODt2b3VCx+jr+hViWD4lLo/D2TjREXOIA+qVETlM+JM/LhT/VuKkemIMniSmRyo2bBR7JvGWKj9m
-        3xJLIi0bFoqsK/IfVfGa+IdYG+nZoFHc5cQfqnQNbY00bVAo6jJiXOfvXFsiXesXxdS992+tslajc+/D
-        xBXEGcQsYlqErg/mExcTO4gPiX6sjrStKoqojvm6Vc7y9hBLY1fZaKOfZe8gfifK+ptYFLuyKijg861S
-        lrOPmBO7qIx96A9On35drJXxJeHf8qugcKtbJcz3K3FRNB8Y9qnTi36RK+OxaG65KJo+ZT+1ypfnc2J2
-        NB849q0ndPt1oBJ8D18GBbs31S3LIWJGNB0qjrO3dcQ870czK0KxZhC5t2c6f46kw9s43outI+dZEc2s
-        Fwp1V6pXIf1hzI9mI8Mx9VWv00mOg9HMJkKRVNDce/KN0WzkOPbClEKWxdHMuqFAl6Y6FfogmowNOdyX
-        Uil0fzSxbijQC6lOhS6IJmNDDrr2+KuVTW/Ho4l1Q4E0RKnIx7H52JHLrpRSIX/Fd0NhlqT6FLoumowd
-        ueSe2zdHE+tEYTal+hSaFU1qgXx021hkf2xunSjMg6k+PR2NzWuDnHLyPhKbWycK80aqT0+7Y/PaIKc1
-        KbXeYnPrRF2OpvL0dEtsXhvkdGZKrdDMaGJtFCVn7FvtxqORk56/55gbTayNouT83r4yNq8NctLomxwL
-        oom1UZQTqTY9rYrNa4OcZqfUCs2LJtZGUb5LtelpfWxeG+R0ekqtUN+jeSYdipIzOuW22Lw2yOm8lFoh
-        z4j5L4qiKcVF9sXmtUFOG1NqPZ2Iza0Thbk71aen2j28IKdnU2o9eRRNNxQm60cOLIwmtUA+GpBZ5JHY
-        3DpRGC0NkmNnNBk7clmRUirkSRAToTjfpxr19AtRi6VByCN3brx/mJkIxXkg1ajQpmgyNuSQ+1j1UDSx
-        bihQ7jP148RYb4E4vhYlylG75wW1Q5FyHrzIE9Fk5Dj2upRCIU2J8oOWIhTpqla58qyLZiPDMTXNKWdY
-        l+yNZtYLhdIw6JyfZEWzRM+NpkPHsTTNWVOfc418XH5jUawrU82y6FO3PJoODcfQg5XcU4/siaaWi6K9
-        m2qXRZ/4NdF04Nj3YiL320e0TEqtxvI1AkXTLVHZueFaiGCgV/XsbwtRNo8N0dzKong3phqWojVeryX6
-        +gGH9hcSnxBlHYhdWFUUscws0U6a366VJLJHrLCtzttaRPgzooqvCK9C0S+KqKv5g6poH/Tp11ImWuH5
-        amIVsZJYS2wjdFrIGb9eRH9orxJbCZ/T+0EBpxNVP33joovLHfG/YFVQQHX8e6pmw7xNjHThhEmF4umr
-        PmeEzahoiFfOkzYti+aBkf2ggJuJsrdRg/YMoT/C61v/VEzr0p0f/wtWBQXUfXy/F3hV6GLtskhDeeSO
-        hm27JppaVRRxPXGsVc7h0gIEelXI/27J+Hdl3yqxK5paVRRRX7Pq/C9U0QHT7Z5u9SZ8RMp/06c998lb
-        28uEXw40CBRS73N5iOjn5T2abaO3N2ih4KyOYTvd+5f1EeH7+UGioJpcqAEPOwl9svQOFp0K1KmaO6fz
-        s74dXiM0z1w/31Ze0Je2+kYoS+MCvTxJk9GBT7e6shxdL1wSu7CmofN0ffGOerICvyGiqeg8LTdWdZ16
-        ryDdVHSeruirvChAtBSLn9Y1ER2XO6O1myOEJ0k0ER23odWF1Wg2z7LYlTUJHZe7jmw3ekTruXBNRMf1
-        +3Rwe+zKmoJO061cv68Auyl2Z01Bp2myRM7M3Inoq95r1zQNnab3xZZ9ONPpntiVNQkdpwc5VR2O3VjT
-        0Hk3pz4s7WTswpqIDnw09WMpx6K5NRWd+Hrqy2yPR1NrKjpRb5vMfeWX+M2OkwEdOYfImfd+ezSxyYAO
-        1T28RvB0o+He22JTm2zoXI3x0/vbnyOeInSVP7SXB5uZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmTXAlCn/
-        AhQ+2k9FZ9fIAAAAAElFTkSuQmCC
-</value>
+  <data name="lblTips.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 29</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -646,17 +627,11 @@
   <data name="&gt;&gt;lblTax.Parent" xml:space="preserve">
     <value>panCmimi</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lblSubtotal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>______________________________________</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 23</value>
   </data>
   <data name="&gt;&gt;txtInvNo.Name" xml:space="preserve">
     <value>txtInvNo</value>
@@ -681,9 +656,6 @@
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
-  </data>
-  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>16</value>
@@ -711,9 +683,6 @@
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblTipsText.Parent" xml:space="preserve">
-    <value>panCmimi</value>
   </data>
   <data name="&gt;&gt;lblTipsText.Name" xml:space="preserve">
     <value>lblTipsText</value>
@@ -772,6 +741,9 @@
   <data name="&gt;&gt;panCmimi.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="txtDateTime.Size" type="System.Drawing.Size, System.Drawing">
     <value>166, 31</value>
   </data>
@@ -798,9 +770,6 @@
   </data>
   <data name="lblSubtotal.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="btnCash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 48</value>
   </data>
   <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -835,20 +804,14 @@
   <data name="lblTaxText.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 105</value>
   </data>
-  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 15.75pt</value>
+  <data name="&gt;&gt;txtDateTime.Parent" xml:space="preserve">
+    <value>panInfo</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>243, 38</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;lblTipsText.Parent" xml:space="preserve">
+    <value>panCmimi</value>
   </data>
   <data name="&gt;&gt;lblNoTaxInfo.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -889,9 +852,6 @@
   <data name="lblTaxText.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 29</value>
   </data>
-  <data name="panInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>757, 53</value>
-  </data>
   <data name="panInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -910,8 +870,8 @@
   <data name="&gt;&gt;panInfo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
   </data>
   <data name="lblSubtotalText.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 140</value>
@@ -919,8 +879,8 @@
   <data name="&gt;&gt;dgSearch.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblSubtotalText.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;dgListOfItems.Parent" xml:space="preserve">
     <value>$this</value>
@@ -943,8 +903,8 @@
   <data name="&gt;&gt;txtDateTime.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblTipsText.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -982,9 +942,6 @@
   <data name="&gt;&gt;DateTime.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtDateTime.Parent" xml:space="preserve">
-    <value>panInfo</value>
-  </data>
   <data name="&gt;&gt;lblTax.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -999,6 +956,9 @@
   </data>
   <data name="&gt;&gt;lblTaxText.Name" xml:space="preserve">
     <value>lblTaxText</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
   </data>
   <data name="&gt;&gt;txtKerko.Name" xml:space="preserve">
     <value>txtKerko</value>
@@ -1024,9 +984,6 @@
   <data name="btnSearch.Text" xml:space="preserve">
     <value>Search</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1035,6 +992,9 @@
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>$</value>
+  </data>
+  <data name="lblTipsText.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="lblTips.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 18pt</value>
@@ -1052,7 +1012,10 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;add.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 214</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1060,8 +1023,8 @@
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblSubtotalText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 23</value>
   </data>
   <data name="&gt;&gt;lblTax.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -1071,6 +1034,9 @@
   </data>
   <data name="lblSubtotalText.Text" xml:space="preserve">
     <value>Subtotal:</value>
+  </data>
+  <data name="txtKerko.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="panInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1086,6 +1052,9 @@
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
+  </data>
+  <data name="btnAdd.HeaderText" xml:space="preserve">
+    <value>Add</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1108,14 +1077,14 @@
   <data name="label9.Text" xml:space="preserve">
     <value>Date:</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 31</value>
   </data>
   <data name="label9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1123,8 +1092,8 @@
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 13</value>
   </data>
-  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="panInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>757, 53</value>
   </data>
   <data name="txtDateTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20.25pt</value>
@@ -1153,17 +1122,17 @@
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
-  <data name="lblTips.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 71</value>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panInfo</value>
   </data>
-  <data name="txtKerko.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
   </data>
   <data name="&gt;&gt;lblNoTaxInfo.Name" xml:space="preserve">
     <value>lblNoTaxInfo</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 214</value>
+  <data name="dgSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 50</value>
   </data>
   <data name="lblTipsText.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 29</value>
@@ -1171,8 +1140,39 @@
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 343</value>
   </data>
-  <data name="btnCash.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAYAAACPgGwlAAAABGdBTUEAALGPC/xhBQAABphJREFUeF7t
+        3X3oXmMcx/E9P7BHm2EeWh5npT1gLWzCbFn+nIfFlCwl5A9qLRpRoi2ilj/EH+QfpbSUSIu0aC2SpLQk
+        SZYkLWlJ8/7c1/euO+7ffa5z7qdzfn1e9f0D5zrn63v97vucc5/rus4UMzMzMzMzMzMzMzMzMzMzMzMz
+        MzMzMzMbrlOnTk0l5hILiKXEWcQi4jRiWmxmTRYdegPxEvENUeRn4k1iO3EOMTV2ZXVGR80j7iR+IPr1
+        J7GbODt2b3VCx+jr+hViWD4lLo/D2TjREXOIA+qVETlM+JM/LhT/VuKkemIMniSmRyo2bBR7JvGWKj9m
+        3xJLIi0bFoqsK/IfVfGa+IdYG+nZoFHc5cQfqnQNbY00bVAo6jJiXOfvXFsiXesXxdS992+tslajc+/D
+        xBXEGcQsYlqErg/mExcTO4gPiX6sjrStKoqojvm6Vc7y9hBLY1fZaKOfZe8gfifK+ptYFLuyKijg861S
+        lrOPmBO7qIx96A9On35drJXxJeHf8qugcKtbJcz3K3FRNB8Y9qnTi36RK+OxaG65KJo+ZT+1ypfnc2J2
+        NB849q0ndPt1oBJ8D18GBbs31S3LIWJGNB0qjrO3dcQ870czK0KxZhC5t2c6f46kw9s43outI+dZEc2s
+        Fwp1V6pXIf1hzI9mI8Mx9VWv00mOg9HMJkKRVNDce/KN0WzkOPbClEKWxdHMuqFAl6Y6FfogmowNOdyX
+        Uil0fzSxbijQC6lOhS6IJmNDDrr2+KuVTW/Ho4l1Q4E0RKnIx7H52JHLrpRSIX/Fd0NhlqT6FLoumowd
+        ueSe2zdHE+tEYTal+hSaFU1qgXx021hkf2xunSjMg6k+PR2NzWuDnHLyPhKbWycK80aqT0+7Y/PaIKc1
+        KbXeYnPrRF2OpvL0dEtsXhvkdGZKrdDMaGJtFCVn7FvtxqORk56/55gbTayNouT83r4yNq8NctLomxwL
+        oom1UZQTqTY9rYrNa4OcZqfUCs2LJtZGUb5LtelpfWxeG+R0ekqtUN+jeSYdipIzOuW22Lw2yOm8lFoh
+        z4j5L4qiKcVF9sXmtUFOG1NqPZ2Iza0Thbk71aen2j28IKdnU2o9eRRNNxQm60cOLIwmtUA+GpBZ5JHY
+        3DpRGC0NkmNnNBk7clmRUirkSRAToTjfpxr19AtRi6VByCN3brx/mJkIxXkg1ajQpmgyNuSQ+1j1UDSx
+        bihQ7jP148RYb4E4vhYlylG75wW1Q5FyHrzIE9Fk5Dj2upRCIU2J8oOWIhTpqla58qyLZiPDMTXNKWdY
+        l+yNZtYLhdIw6JyfZEWzRM+NpkPHsTTNWVOfc418XH5jUawrU82y6FO3PJoODcfQg5XcU4/siaaWi6K9
+        m2qXRZ/4NdF04Nj3YiL320e0TEqtxvI1AkXTLVHZueFaiGCgV/XsbwtRNo8N0dzKong3phqWojVeryX6
+        +gGH9hcSnxBlHYhdWFUUscws0U6a366VJLJHrLCtzttaRPgzooqvCK9C0S+KqKv5g6poH/Tp11ImWuH5
+        amIVsZJYS2wjdFrIGb9eRH9orxJbCZ/T+0EBpxNVP33joovLHfG/YFVQQHX8e6pmw7xNjHThhEmF4umr
+        PmeEzahoiFfOkzYti+aBkf2ggJuJsrdRg/YMoT/C61v/VEzr0p0f/wtWBQXUfXy/F3hV6GLtskhDeeSO
+        hm27JppaVRRxPXGsVc7h0gIEelXI/27J+Hdl3yqxK5paVRRRX7Pq/C9U0QHT7Z5u9SZ8RMp/06c998lb
+        28uEXw40CBRS73N5iOjn5T2abaO3N2ih4KyOYTvd+5f1EeH7+UGioJpcqAEPOwl9svQOFp0K1KmaO6fz
+        s74dXiM0z1w/31Ze0Je2+kYoS+MCvTxJk9GBT7e6shxdL1wSu7CmofN0ffGOerICvyGiqeg8LTdWdZ16
+        ryDdVHSeruirvChAtBSLn9Y1ER2XO6O1myOEJ0k0ER23odWF1Wg2z7LYlTUJHZe7jmw3ekTruXBNRMf1
+        +3Rwe+zKmoJO061cv68Auyl2Z01Bp2myRM7M3Inoq95r1zQNnab3xZZ9ONPpntiVNQkdpwc5VR2O3VjT
+        0Hk3pz4s7WTswpqIDnw09WMpx6K5NRWd+Hrqy2yPR1NrKjpRb5vMfeWX+M2OkwEdOYfImfd+ezSxyYAO
+        1T28RvB0o+He22JTm2zoXI3x0/vbnyOeInSVP7SXB5uZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmTXAlCn/
+        AhQ+2k9FZ9fIAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="&gt;&gt;Items.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1186,14 +1186,14 @@
   <data name="btnCash.Text" xml:space="preserve">
     <value>Cash</value>
   </data>
-  <data name="btnAdd.HeaderText" xml:space="preserve">
-    <value>Add</value>
+  <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
   </data>
-  <data name="&gt;&gt;lblTipsText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="lblNoTaxInfo.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1234,8 +1234,8 @@
   <data name="lblTipsText.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 71</value>
   </data>
-  <data name="lblTips.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 29</value>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;dgListOfItems.Name" xml:space="preserve">
     <value>dgListOfItems</value>
