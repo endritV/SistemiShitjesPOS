@@ -124,11 +124,11 @@
     <Compile Include="Forma\Update\UpdateSuppliers.Designer.cs">
       <DependentUpon>UpdateSuppliers.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control\UC_Settings.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Forma\SettingForma.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User Control\UC_Settings.Designer.cs">
-      <DependentUpon>UC_Settings.cs</DependentUpon>
+    <Compile Include="Forma\SettingForma.Designer.cs">
+      <DependentUpon>SettingForma.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UC_SektoriRoli.cs">
       <SubType>UserControl</SubType>
@@ -177,6 +177,9 @@
     <EmbeddedResource Include="Forma\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forma\DashBoard.sq-AL.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forma\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,14 +210,26 @@
     <EmbeddedResource Include="Forma\Update\UpdateSuppliers.resx">
       <DependentUpon>UpdateSuppliers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forma\SettingForma.resx">
+      <DependentUpon>SettingForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Customers.sq-AL.resx">
+      <DependentUpon>UC_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Dashboards.sq-AL.resx">
+      <DependentUpon>UC_Dashboards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Employees.sq-AL.resx">
+      <DependentUpon>UC_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Items.sq-AL.resx">
+      <DependentUpon>UC_Items.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_SektoriRoli.resx">
       <DependentUpon>UC_SektoriRoli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Raports.resx">
       <DependentUpon>UC_Raports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control\UC_Settings.resx">
-      <DependentUpon>UC_Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Suppilers.resx">
       <DependentUpon>UC_Suppilers.cs</DependentUpon>

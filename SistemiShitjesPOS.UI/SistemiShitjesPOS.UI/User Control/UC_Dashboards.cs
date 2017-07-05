@@ -22,10 +22,10 @@ namespace SistemiShitjesPOS.UI
             InitializeComponent();
             this.Dock = DockStyle.Fill;
             this.txtDateTime.Text = DateTimeOffset.Now.ToString("MM - dd - yyyy");
-          
-       
+
+
         }
-       
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -149,6 +149,8 @@ namespace SistemiShitjesPOS.UI
 
         public AutoCompleteStringCollection ItemsListDropDown()
         {
+
+
             SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
             AutoCompleteStringCollection asc = new AutoCompleteStringCollection();
             try
@@ -180,6 +182,8 @@ namespace SistemiShitjesPOS.UI
                 MessageBox.Show(ex.Message);
             }
             return asc;
+
+
         }
 
         private void dgListOfItems_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
@@ -202,10 +206,12 @@ namespace SistemiShitjesPOS.UI
                     }
                 }
             }
+
         }
 
         private void dgListOfItems_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
+
             try
             {
                 SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
@@ -253,7 +259,7 @@ namespace SistemiShitjesPOS.UI
                     for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
                     {
                         sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[7].Value);
-                        }
+                    }
 
                     lblNoTax.Text = Convert.ToString(sum - (a * sum));
                     lblTax.Text = Convert.ToString(a * sum);
@@ -270,7 +276,7 @@ namespace SistemiShitjesPOS.UI
             for (int i = 0; i < dgListOfItems.Rows.Count; i++)
             {
                 SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
-                SqlCommand cmd = new SqlCommand(@"INSERT INTO FaturaDetajet(IdFatura,IdArtikulli,Sasia,Cmimi,Data) VALUES ('" + dgListOfItems.Rows[i].Cells[8].Value + "','" + dgListOfItems.Rows[i].Cells[1].Value + "','" + dgListOfItems.Rows[i].Cells[6].Value + "','" + dgListOfItems.Rows[i].Cells[5].Value + "','" + dgListOfItems.Rows[i].Cells[9].Value +"')", con);
+                SqlCommand cmd = new SqlCommand(@"INSERT INTO FaturaDetajet(IdFatura,IdArtikulli,Sasia,Cmimi,Data) VALUES ('" + dgListOfItems.Rows[i].Cells[8].Value + "','" + dgListOfItems.Rows[i].Cells[1].Value + "','" + dgListOfItems.Rows[i].Cells[6].Value + "','" + dgListOfItems.Rows[i].Cells[5].Value + "','" + dgListOfItems.Rows[i].Cells[9].Value + "')", con);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Test");
@@ -310,12 +316,12 @@ namespace SistemiShitjesPOS.UI
         private void dgListOfItems_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
             int row = 0;
-            
+
             row = dgListOfItems.Rows.Count - 1;
             dgListOfItems["IdFatura", row].Value = txtInvNo.Text;
             dgListOfItems["DateTime", row].Value = txtDateTime.Text;
             //dgListOfItems["DateTime", row].Value = txtDateTime.Text;
-           
+
 
             dgListOfItems.Refresh();
 
@@ -324,7 +330,7 @@ namespace SistemiShitjesPOS.UI
 
         private void txtInvNo_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void UC_Dashboards_Load(object sender, EventArgs e)
@@ -332,7 +338,7 @@ namespace SistemiShitjesPOS.UI
             int a;
             SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
             string query = "SELECT MAX (IdFatura) FROM FaturaDetajet";
-            SqlCommand cmd = new SqlCommand(query,con);
+            SqlCommand cmd = new SqlCommand(query, con);
 
             con.Open();
             SqlDataReader dr;
@@ -353,7 +359,13 @@ namespace SistemiShitjesPOS.UI
                 con.Close();
             }
             dgListOfItems.Rows.Clear();
+            
 
+        }
+
+        private void dgListOfItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
 
         }
     }

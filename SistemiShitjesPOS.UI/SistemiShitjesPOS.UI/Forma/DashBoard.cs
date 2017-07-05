@@ -6,6 +6,8 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Globalization;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework;
@@ -14,8 +16,14 @@ namespace SistemiShitjesPOS.UI
 {
     public partial class DashBoard : MetroFramework.Forms.MetroForm
     {
+
+        public static string Lang { get; set; } = "sq-AL";
+        public static CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+
         public DashBoard()
         {
+            
+            currentCulture = new CultureInfo("en");
             InitializeComponent();
             this.Dock = DockStyle.Fill;
         }
@@ -111,6 +119,10 @@ namespace SistemiShitjesPOS.UI
 
         }
 
-        
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            SettingForma sf = new SettingForma();
+            sf.ShowDialog();
+        }
     }
 }

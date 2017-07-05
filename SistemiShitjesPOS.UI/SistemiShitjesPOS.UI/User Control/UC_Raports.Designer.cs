@@ -49,7 +49,7 @@
             // 
             this.dtPickerFrom.Location = new System.Drawing.Point(161, 104);
             this.dtPickerFrom.Name = "dtPickerFrom";
-            this.dtPickerFrom.Size = new System.Drawing.Size(200, 20);
+            this.dtPickerFrom.Size = new System.Drawing.Size(202, 20);
             this.dtPickerFrom.TabIndex = 1;
             // 
             // dtPickerTo
