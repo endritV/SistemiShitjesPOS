@@ -405,6 +405,9 @@
   <data name="dgSearch.Size" type="System.Drawing.Size, System.Drawing">
     <value>387, 121</value>
   </data>
+  <data name="dgListOfItems.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
     <value>pictureBox1</value>
   </data>
@@ -464,9 +467,6 @@
   </data>
   <data name="lblTax.Text" xml:space="preserve">
     <value>00.0</value>
-  </data>
-  <data name="&gt;&gt;lblTaxText.Name" xml:space="preserve">
-    <value>lblTaxText</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>243, 140</value>
@@ -954,8 +954,8 @@
   <data name="&gt;&gt;Cmimi.Name" xml:space="preserve">
     <value>Cmimi</value>
   </data>
-  <data name="dgListOfItems.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;lblTaxText.Name" xml:space="preserve">
+    <value>lblTaxText</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>

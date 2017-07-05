@@ -83,10 +83,10 @@ namespace SistemiShitjesPOS.UI
 
             foreach (DataGridViewRow row in dgSearch.Rows)
             {
-
-                dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
-
-
+                
+               
+                    dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
+               
             }
 
 
@@ -120,31 +120,7 @@ namespace SistemiShitjesPOS.UI
 
         private void dgListOfItems_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (Char)Keys.Enter)
-            {
-
-                //foreach (DataGridViewRow row in dgListOfItems.Rows)
-                //{
-
-                //    row.Cells[dgListOfItems.Columns["UnityPrice"].Index].Value = (Convert.ToDouble(row.Cells[dgListOfItems.Columns["Price"].Index].Value) * Convert.ToDouble(row.Cells[dgListOfItems.Columns["Quantity"].Index].Value));
-                //    dgListOfItems.Refresh();
-
-                //    double sum = 0;
-                //    double a = 0.16;
-                //    for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
-                //    {
-                //        sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[7].Value);
-                //    }
-
-                //    lblNoTax.Text = Convert.ToString(sum - (a * sum));
-                //    lblTax.Text = Convert.ToString(a * sum);
-                //    label4.Text = sum.ToString();
-
-
-
-                //}
-
-            }
+           
         }
 
         public AutoCompleteStringCollection ItemsListDropDown()
@@ -221,17 +197,37 @@ namespace SistemiShitjesPOS.UI
 
                     newValue = (dgListOfItems[e.ColumnIndex, e.RowIndex].Value).ToString();
                     con.Open();
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT IdArtikulli,EmriArtikullit, Njesia, Pershkrimi, Cmimi FROM Artikulli where Barkodi = '" + newValue + "'", con);
+                    SqlDataAdapter da = new SqlDataAdapter("SELECT IdArtikulli,EmriArtikullit, Njesia, Pershkrimi, Cmimi FROM Artikulli where Barkodi = '" + newValue + "' ", con);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
-                    dgListOfItems.Rows[e.RowIndex].Cells[1].Value = dt.Rows[0][0].ToString();
-                    dgListOfItems.Rows[e.RowIndex].Cells[2].Value = dt.Rows[0][1].ToString();
-                    dgListOfItems.Rows[e.RowIndex].Cells[3].Value = dt.Rows[0][2].ToString();
-                    dgListOfItems.Rows[e.RowIndex].Cells[4].Value = dt.Rows[0][3].ToString();
-                    dgListOfItems.Rows[e.RowIndex].Cells[5].Value = dt.Rows[0][4].ToString();
+                    //bool duple = false;
+                    //for (int i = 0; i < dgListOfItems.Rows.Count; i++)
+                    //{
+                    //    if (newValue == dgListOfItems.Rows[i].Cells[0].Value.ToString())
+                    //    {
+                    //        duple = true;
+                    //        MessageBox.Show("duple");
+                    //        break;
+                    //    }
 
-                    con.Close();
+
+                    //}
+                    //if (!duple)
+                    //{
+                        dgListOfItems.Rows[e.RowIndex].Cells[1].Value = dt.Rows[0][0].ToString();
+                        dgListOfItems.Rows[e.RowIndex].Cells[2].Value = dt.Rows[0][1].ToString();
+                        dgListOfItems.Rows[e.RowIndex].Cells[3].Value = dt.Rows[0][2].ToString();
+                        dgListOfItems.Rows[e.RowIndex].Cells[4].Value = dt.Rows[0][3].ToString();
+                        dgListOfItems.Rows[e.RowIndex].Cells[5].Value = dt.Rows[0][4].ToString();
+
+                        con.Close();
+
+                    //}
+                       
+                    
+
+
                 }
             }
             catch (Exception)
@@ -245,7 +241,7 @@ namespace SistemiShitjesPOS.UI
 
             foreach (DataGridViewRow row in dgListOfItems.Rows)
             {
-                int qnt = Convert.ToInt32(row.Cells[6].Value = 1);
+                int qnt = Convert.ToInt32(row.Cells[6].Value);
 
                 if (Convert.ToString(row.Cells[6].Value) == qnt.ToString())
                 {
@@ -365,7 +361,37 @@ namespace SistemiShitjesPOS.UI
 
         private void dgListOfItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
+            for (int i = 0; i < dgListOfItems.SelectedCells.Count; i++)
+            {
+                dgListOfItems.Rows[i].Cells[6].Value = Convert.ToInt32(dgListOfItems.Rows[i].Cells[6].Value) + 1;
+            }
+
+        }
+
+      
+        private void dgListOfItems_SelectionChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void dgListOfItems_CellValidated(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0 && dgListOfItems.CurrentCell.Value != null)
+            {
+                foreach (DataGridViewRow row in this.dgListOfItems.Rows)
+                {
+                    if (row.Index == this.dgListOfItems.CurrentCell.RowIndex)
+                    { continue; }
+                    if (this.dgListOfItems.CurrentCell.Value == null)
+                    { continue; }
+                    if (row.Cells[0].Value != null && row.Cells[0].Value.ToString() == dgListOfItems.CurrentCell.Value.ToString())
+                    {
+                        MessageBox.Show("error");
+                        dgListOfItems.CurrentCell.Value = null;
+                    }
+                }
+            }
         }
     }
 

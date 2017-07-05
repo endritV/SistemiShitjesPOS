@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Dashboards));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panCmimi = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -347,8 +347,10 @@
             this.dgListOfItems.Name = "dgListOfItems";
             this.dgListOfItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellContentClick);
             this.dgListOfItems.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellEndEdit);
+            this.dgListOfItems.CellValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellValidated);
             this.dgListOfItems.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgListOfItems_EditingControlShowing);
             this.dgListOfItems.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgListOfItems_RowsAdded);
+            this.dgListOfItems.SelectionChanged += new System.EventHandler(this.dgListOfItems_SelectionChanged);
             this.dgListOfItems.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dgListOfItems_KeyPress);
             // 
             // Barcodi
@@ -403,11 +405,11 @@
             // 
             // btnAdd
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnAdd.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAdd.DefaultCellStyle = dataGridViewCellStyle2;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.btnAdd, "btnAdd");
             this.btnAdd.Name = "btnAdd";
