@@ -43,10 +43,8 @@
             this.btnSectorRole = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.uC_Dashboards1 = new SistemiShitjesPOS.UI.UC_Dashboards();
             this.panMenu = new System.Windows.Forms.Panel();
             this.tblPanMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -367,21 +365,11 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.uC_Dashboards1);
             this.panel1.Location = new System.Drawing.Point(200, 0);
             this.panel1.MinimumSize = new System.Drawing.Size(754, 567);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(754, 567);
             this.panel1.TabIndex = 4;
-            // 
-            // uC_Dashboards1
-            // 
-            this.uC_Dashboards1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(236)))));
-            this.uC_Dashboards1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Dashboards1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Dashboards1.Name = "uC_Dashboards1";
-            this.uC_Dashboards1.Size = new System.Drawing.Size(754, 567);
-            this.uC_Dashboards1.TabIndex = 0;
             // 
             // panMenu
             // 
@@ -413,7 +401,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DashBoard_Load);
             this.tblPanMenu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -436,6 +423,6 @@
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panMenu;
-        private UC_Dashboards uC_Dashboards1;
+        ////private UC_Dashboards uC_Dashboards1;
     }
 }
