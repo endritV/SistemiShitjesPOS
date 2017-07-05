@@ -366,7 +366,6 @@ namespace SistemiShitjesPOS.UI
         private void dgListOfItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            
-
         }
     }
 
