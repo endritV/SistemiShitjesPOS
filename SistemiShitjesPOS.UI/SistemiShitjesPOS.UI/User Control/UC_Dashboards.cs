@@ -242,7 +242,7 @@ namespace SistemiShitjesPOS.UI
             }
 
 
-
+            
             foreach (DataGridViewRow row in dgListOfItems.Rows)
             {
                 int qnt = Convert.ToInt32(row.Cells[6].Value = 1);
@@ -320,7 +320,7 @@ namespace SistemiShitjesPOS.UI
             row = dgListOfItems.Rows.Count - 1;
             dgListOfItems["IdFatura", row].Value = txtInvNo.Text;
             dgListOfItems["DateTime", row].Value = txtDateTime.Text;
-            //dgListOfItems["DateTime", row].Value = txtDateTime.Text;
+            
 
 
             dgListOfItems.Refresh();
@@ -365,6 +365,10 @@ namespace SistemiShitjesPOS.UI
 
         private void dgListOfItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+            
+
+
            
         }
     }

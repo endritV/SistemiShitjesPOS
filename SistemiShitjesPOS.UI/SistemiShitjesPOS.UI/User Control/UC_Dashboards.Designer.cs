@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Dashboards));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panCmimi = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdFatura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAdd = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.add = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -343,7 +343,7 @@
             this.Price,
             this.IdFatura,
             this.DateTime,
-            this.btnAdd});
+            this.add});
             this.dgListOfItems.Name = "dgListOfItems";
             this.dgListOfItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellContentClick);
             this.dgListOfItems.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListOfItems_CellEndEdit);
@@ -401,18 +401,16 @@
             resources.ApplyResources(this.DateTime, "DateTime");
             this.DateTime.Name = "DateTime";
             // 
-            // btnAdd
+            // add
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnAdd.DefaultCellStyle = dataGridViewCellStyle3;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.btnAdd, "btnAdd");
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Text = "+1";
-            this.btnAdd.UseColumnTextForButtonValue = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(88)))), ((int)(((byte)(102)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.add.DefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.add, "add");
+            this.add.Name = "add";
+            this.add.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.add.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // UC_Dashboards
             // 
@@ -481,6 +479,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdFatura;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateTime;
-        private System.Windows.Forms.DataGridViewButtonColumn btnAdd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn add;
     }
 }
