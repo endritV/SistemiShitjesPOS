@@ -234,7 +234,7 @@ namespace SistemiShitjesPOS.UI
             catch (Exception)
             {
 
-                MetroFramework.MetroMessageBox.Show(this, "This Barcode not Exist", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //MetroFramework.MetroMessageBox.Show(this, "This Barcode not Exist", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
 

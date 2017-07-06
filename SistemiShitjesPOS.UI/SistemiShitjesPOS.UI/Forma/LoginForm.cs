@@ -21,6 +21,7 @@ namespace SistemiShitjesPOS.UI
     {
         public LoginForm()
         {
+            
             InitializeComponent();
         }
 
@@ -56,6 +57,7 @@ namespace SistemiShitjesPOS.UI
                 MetroFramework.MetroMessageBox.Show(this, "Incorrect UserName or Password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -73,20 +75,20 @@ namespace SistemiShitjesPOS.UI
 
         private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             if (cmbLanguage.SelectedIndex == 0)
             {
-                DashBoard.Lang = "en";
-                Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
-
-
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            }
+            else if (cmbLanguage.SelectedIndex == 1)
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq-AL");
             }
             else
             {
-                DashBoard.Lang = "sq-AL";
-                Thread.CurrentThread.CurrentCulture = new CultureInfo("sq-AL");
-
-
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             }
+            
         }
     }
 }

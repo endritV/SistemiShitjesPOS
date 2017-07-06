@@ -17,16 +17,19 @@ namespace SistemiShitjesPOS.UI
     public partial class DashBoard : MetroFramework.Forms.MetroForm
     {
 
-        public static string Lang { get; set; } = "en";
-        private bool IsOnLoad = false;
-        public static CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+        //public static string Lang { get; set; } = "en";
+        //private bool IsOnLoad = false;
+        //public static CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
         
         public DashBoard()
         {
             
-            currentCulture = new CultureInfo("sq-AL");
+            //currentCulture = new CultureInfo("sq-AL");
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            UC_Dashboards da = new UC_Dashboards();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(da);
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -74,20 +77,10 @@ namespace SistemiShitjesPOS.UI
        
         private void btnDashboards_Click(object sender, EventArgs e)
         {
-            
-
-            if (IsOnLoad)
-            {
-                panel1.Controls.Clear();
-                panel1.Controls.Add(new UC_Dashboards());
-                IsOnLoad = false;
-            }
-            else
-            {
-                panel1.Controls.Clear();
-                panel1.Controls.Add(new UC_Dashboards());
-                IsOnLoad = true;
-            }
+            UC_Dashboards da = new UC_Dashboards();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(da);
+          
 
            
         }
