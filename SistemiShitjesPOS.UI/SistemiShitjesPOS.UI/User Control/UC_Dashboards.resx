@@ -117,1028 +117,788 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panCmimi.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtDateTime.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>250, 31</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="dgListOfItems.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 278</value>
-  </data>
-  <data name="Cmimi.HeaderText" xml:space="preserve">
-    <value>Cmimi</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>$</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblSubtotal.Parent" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
-  <data name="description.HeaderText" xml:space="preserve">
-    <value>Description</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>panCmimi</value>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblTips.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="lblTipsText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 169</value>
   </data>
-  <data name="panInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 13</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblSubtotalText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;lblTaxText.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>______________________________________</value>
   </data>
-  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
   </data>
-  <data name="&gt;&gt;IdFatura.Name" xml:space="preserve">
-    <value>IdFatura</value>
-  </data>
-  <data name="&gt;&gt;txtKerko.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="lblSubtotalText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 29</value>
-  </data>
-  <data name="lblTipsText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Unity.HeaderText" xml:space="preserve">
-    <value>Unity</value>
-  </data>
-  <data name="&gt;&gt;panCmimi.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="IdArtikulli.HeaderText" xml:space="preserve">
-    <value>IdArtikulli</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 183</value>
-  </data>
-  <data name="lblSubtotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 140</value>
-  </data>
-  <data name="&gt;&gt;btnCash.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblNoTaxInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 29</value>
-  </data>
-  <data name="dgSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="lblNoTax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Sasia.HeaderText" xml:space="preserve">
-    <value>Sasia</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 105</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;lblNoTax.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;txtKerko.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;add.Name" xml:space="preserve">
-    <value>add</value>
-  </data>
-  <data name="Price.HeaderText" xml:space="preserve">
-    <value>Price</value>
-  </data>
-  <data name="&gt;&gt;txtDateTime.Name" xml:space="preserve">
-    <value>txtDateTime</value>
-  </data>
-  <data name="&gt;&gt;lblSubtotal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>Card</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>panCmimi</value>
   </data>
-  <data name="txtKerko.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20.25pt</value>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="btnShto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 31</value>
-  </data>
-  <data name="&gt;&gt;lblTipsText.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;lblNoTax.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 31</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="lblNoTaxInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 38</value>
-  </data>
-  <data name="dgListOfItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;Unity.Name" xml:space="preserve">
-    <value>Unity</value>
-  </data>
-  <data name="txtKerko.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 31</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 15</value>
-  </data>
-  <data name="txtKerko.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 13</value>
-  </data>
-  <data name="lblTips.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblTips.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="txtInvNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="lblNoTax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 38</value>
-  </data>
-  <data name="DateTime.HeaderText" xml:space="preserve">
-    <value>DateTime</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 26.25pt</value>
   </data>
-  <data name="lblSubtotalText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 214</value>
   </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+  <data name="label4.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 42</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>00.0</value>
+  </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>panCmimi</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 23</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="btnSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="lblNoTax.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnCash.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>panCmimi</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 26.25pt</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 42</value>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 214</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 42</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>$</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 140</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 29</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>$</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 105</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 29</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>$</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblSubtotal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="lblSubtotal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSubtotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
+  </data>
+  <data name="lblSubtotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 140</value>
+  </data>
+  <data name="lblSubtotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 29</value>
+  </data>
+  <data name="lblSubtotal.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblSubtotal.Text" xml:space="preserve">
+    <value>00.0</value>
+  </data>
+  <data name="&gt;&gt;lblSubtotal.Name" xml:space="preserve">
+    <value>lblSubtotal</value>
+  </data>
+  <data name="&gt;&gt;lblSubtotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSubtotal.Parent" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;lblSubtotal.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 71</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 29</value>
   </data>
-  <data name="lblNoTax.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;lblSubtotalText.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>$</value>
   </data>
-  <data name="&gt;&gt;panInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panCmimi</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;panCmimi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblTax.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;lblNoTaxInfo.Parent" xml:space="preserve">
+  <data name="lblTax.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
+  </data>
+  <data name="lblTax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 105</value>
+  </data>
+  <data name="lblTax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 29</value>
+  </data>
+  <data name="lblTax.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblTax.Text" xml:space="preserve">
+    <value>00.0</value>
+  </data>
+  <data name="&gt;&gt;lblTax.Name" xml:space="preserve">
+    <value>lblTax</value>
+  </data>
+  <data name="&gt;&gt;lblTax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTax.Parent" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;lblTax.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 38</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 29</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>$</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>panCmimi</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;lblSubtotalText.Parent" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
-  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;lblTips.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="lblTips.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="dgSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>387, 121</value>
+  <data name="lblTips.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="dgListOfItems.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="Barcodi.HeaderText" xml:space="preserve">
-    <value>Barcodi</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 71</value>
-  </data>
-  <data name="btnCash.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblTips.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="panCmimi.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="lblTipsText.Text" xml:space="preserve">
-    <value>Tips:</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 42</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblSubtotal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtKerko.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblNoTax.Parent" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
-  <data name="lblSubtotal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="btnShto.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTipsText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panCmimi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>292, 290</value>
-  </data>
-  <data name="lblTax.Text" xml:space="preserve">
-    <value>00.0</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 140</value>
-  </data>
-  <data name="&gt;&gt;txtInvNo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="dgSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblTaxText.Parent" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
-  <data name="lblSubtotalText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 14.25pt</value>
-  </data>
-  <data name="&gt;&gt;Sasia.Name" xml:space="preserve">
-    <value>Sasia</value>
-  </data>
-  <data name="&gt;&gt;IdArtikulli.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>00.0</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTax.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="txtDateTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 6</value>
-  </data>
-  <data name="btnShto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 14.25pt</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
-  <data name="&gt;&gt;lblSubtotal.Name" xml:space="preserve">
-    <value>lblSubtotal</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>$</value>
-  </data>
-  <data name="btnCash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 227</value>
-  </data>
-  <data name="&gt;&gt;dgSearch.Name" xml:space="preserve">
-    <value>dgSearch</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="&gt;&gt;btnCash.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 29</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="add.HeaderText" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 15.75pt</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 14</value>
-  </data>
-  <data name="txtInvNo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 14.25pt</value>
-  </data>
-  <data name="&gt;&gt;IdArtikulli.Name" xml:space="preserve">
-    <value>IdArtikulli</value>
-  </data>
-  <data name="btnShto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;description.Name" xml:space="preserve">
-    <value>description</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;lblSubtotalText.Name" xml:space="preserve">
-    <value>lblSubtotalText</value>
-  </data>
-  <data name="panCmimi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>465, 53</value>
-  </data>
-  <data name="&gt;&gt;lblTips.Parent" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
-  <data name="btnSearch.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 14.25pt</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnCash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 48</value>
-  </data>
-  <data name="txtDateTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="lblTips.Location" type="System.Drawing.Point, System.Drawing">
     <value>140, 71</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 105</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>$</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 29</value>
-  </data>
-  <data name="IdFatura.HeaderText" xml:space="preserve">
-    <value>IdFatura</value>
-  </data>
-  <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
   <data name="lblTips.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 29</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblTips.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;dgListOfItems.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblTax.Parent" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
-  <data name="lblSubtotal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>______________________________________</value>
-  </data>
-  <data name="&gt;&gt;txtInvNo.Name" xml:space="preserve">
-    <value>txtInvNo</value>
-  </data>
-  <data name="lblTax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 29</value>
-  </data>
-  <data name="&gt;&gt;txtDateTime.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 29</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 169</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btnShto.Text" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;Items.Name" xml:space="preserve">
-    <value>Items</value>
-  </data>
-  <data name="&gt;&gt;Price.Name" xml:space="preserve">
-    <value>Price</value>
-  </data>
-  <data name="&gt;&gt;Unity.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Barcodi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="lblTaxText.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblTipsText.Name" xml:space="preserve">
-    <value>lblTipsText</value>
-  </data>
-  <data name="lblTaxText.Text" xml:space="preserve">
-    <value>Tax:</value>
-  </data>
-  <data name="btnCash.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>$</value>
-  </data>
-  <data name="&gt;&gt;Barcodi.Name" xml:space="preserve">
-    <value>Barcodi</value>
-  </data>
-  <data name="&gt;&gt;dgListOfItems.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panCmimi.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblNoTaxInfo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Cmimi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblSubtotal.Text" xml:space="preserve">
+  <data name="lblTips.Text" xml:space="preserve">
     <value>00.0</value>
   </data>
-  <data name="&gt;&gt;Price.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblTips.Name" xml:space="preserve">
+    <value>lblTips</value>
   </data>
-  <data name="&gt;&gt;panInfo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblTaxText.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblTips.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtKerko.Text" xml:space="preserve">
-    <value>Kërko...</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblTips.Parent" xml:space="preserve">
     <value>panCmimi</value>
   </data>
-  <data name="&gt;&gt;lblNoTax.Name" xml:space="preserve">
-    <value>lblNoTax</value>
+  <data name="&gt;&gt;lblTips.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Invoice Number:</value>
+  <data name="lblNoTax.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;panCmimi.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="lblNoTax.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblNoTax.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
   </data>
-  <data name="txtDateTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 31</value>
+  <data name="lblNoTax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 38</value>
   </data>
   <data name="lblNoTax.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 29</value>
   </data>
-  <data name="&gt;&gt;panCmimi.Name" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
-  <data name="&gt;&gt;btnAdd.Name" xml:space="preserve">
-    <value>btnAdd</value>
-  </data>
-  <data name="button3.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="lblTaxText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;dgSearch.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="lblSubtotal.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblNoTax.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="lblNoTax.Text" xml:space="preserve">
+    <value>00.0</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>273, 13</value>
+  <data name="&gt;&gt;lblNoTax.Name" xml:space="preserve">
+    <value>lblNoTax</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblNoTax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNoTax.Parent" xml:space="preserve">
     <value>panCmimi</value>
   </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  <data name="&gt;&gt;lblNoTax.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>757, 182</value>
+  <data name="lblNoTaxInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
-    <value>btnSearch</value>
+  <data name="lblNoTaxInfo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="txtDateTime.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="lblNoTaxInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
   </data>
-  <data name="txtInvNo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20.25pt</value>
+  <data name="lblNoTaxInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 38</value>
   </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 14.25pt</value>
+  <data name="lblNoTaxInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 29</value>
   </data>
-  <data name="&gt;&gt;btnCash.Name" xml:space="preserve">
-    <value>btnCash</value>
+  <data name="lblNoTaxInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="lblTaxText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 105</value>
+  <data name="lblNoTaxInfo.Text" xml:space="preserve">
+    <value>No Tax:</value>
   </data>
-  <data name="&gt;&gt;txtDateTime.Parent" xml:space="preserve">
-    <value>panInfo</value>
+  <data name="&gt;&gt;lblNoTaxInfo.Name" xml:space="preserve">
+    <value>lblNoTaxInfo</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 38</value>
+  <data name="&gt;&gt;lblNoTaxInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblTipsText.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblNoTaxInfo.Parent" xml:space="preserve">
     <value>panCmimi</value>
   </data>
   <data name="&gt;&gt;lblNoTaxInfo.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="lblNoTaxInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="lblSubtotalText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblTaxText.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblSubtotalText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;btnShto.Name" xml:space="preserve">
-    <value>btnShto</value>
-  </data>
-  <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 13</value>
-  </data>
-  <data name="lblTax.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtInvNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 31</value>
-  </data>
-  <data name="lblTax.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>panCmimi</value>
-  </data>
-  <data name="lblNoTax.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTaxText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 29</value>
-  </data>
-  <data name="panInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="btnCash.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>UC_Dashboards</value>
-  </data>
-  <data name="btnShto.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="lblTips.Text" xml:space="preserve">
-    <value>00.0</value>
-  </data>
-  <data name="&gt;&gt;panInfo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblSubtotalText.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 18pt</value>
   </data>
   <data name="lblSubtotalText.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 140</value>
   </data>
-  <data name="&gt;&gt;dgSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblSubtotalText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 29</value>
   </data>
   <data name="lblSubtotalText.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;dgListOfItems.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblSubtotalText.Text" xml:space="preserve">
+    <value>Subtotal:</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="&gt;&gt;lblSubtotalText.Name" xml:space="preserve">
+    <value>lblSubtotalText</value>
   </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;btnShto.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblNoTax.Text" xml:space="preserve">
-    <value>00.0</value>
-  </data>
-  <data name="&gt;&gt;txtDateTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblSubtotalText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 42</value>
+  <data name="&gt;&gt;lblSubtotalText.Parent" xml:space="preserve">
+    <value>panCmimi</value>
   </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;lblSubtotalText.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="Items.HeaderText" xml:space="preserve">
-    <value>Items</value>
+  <data name="lblTaxText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="lblTaxText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblTaxText.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 18pt</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblTaxText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 105</value>
   </data>
-  <data name="lblNoTaxInfo.Text" xml:space="preserve">
-    <value>No Tax:</value>
+  <data name="lblTaxText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 29</value>
   </data>
-  <data name="&gt;&gt;Sasia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblTaxText.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 183</value>
-  </data>
-  <data name="&gt;&gt;dgSearch.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblTipsText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;DateTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTax.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTax.Name" xml:space="preserve">
-    <value>lblTax</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;Cmimi.Name" xml:space="preserve">
-    <value>Cmimi</value>
+  <data name="lblTaxText.Text" xml:space="preserve">
+    <value>Tax:</value>
   </data>
   <data name="&gt;&gt;lblTaxText.Name" xml:space="preserve">
     <value>lblTaxText</value>
   </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;txtKerko.Name" xml:space="preserve">
-    <value>txtKerko</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panInfo.Name" xml:space="preserve">
-    <value>panInfo</value>
-  </data>
-  <data name="&gt;&gt;lblTips.Name" xml:space="preserve">
-    <value>lblTips</value>
-  </data>
-  <data name="&gt;&gt;txtInvNo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;btnShto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSearch.Text" xml:space="preserve">
-    <value>Search</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblTaxText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>$</value>
-  </data>
-  <data name="lblTipsText.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblTips.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnShto.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;txtKerko.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;add.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 214</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 23</value>
-  </data>
-  <data name="&gt;&gt;lblTax.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblSubtotalText.Text" xml:space="preserve">
-    <value>Subtotal:</value>
-  </data>
-  <data name="txtKerko.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="panInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btnShto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 50</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>757, 525</value>
-  </data>
-  <data name="lblSubtotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 29</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="btnAdd.HeaderText" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblNoTaxInfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
-  </data>
-  <data name="&gt;&gt;lblNoTaxInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnCash.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 15.75pt</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCash.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblTaxText.Parent" xml:space="preserve">
     <value>panCmimi</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Date:</value>
+  <data name="&gt;&gt;lblTaxText.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="lblTipsText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 31</value>
-  </data>
-  <data name="label9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
-  </data>
-  <data name="panInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>757, 53</value>
-  </data>
-  <data name="txtDateTime.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20.25pt</value>
-  </data>
-  <data name="lblTax.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblTipsText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;IdFatura.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblTipsText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 18pt</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;lblSubtotal.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="txtInvNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 7</value>
-  </data>
-  <data name="dgListOfItems.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 59</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>panInfo</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>panInfo</value>
-  </data>
-  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;lblNoTaxInfo.Name" xml:space="preserve">
-    <value>lblNoTaxInfo</value>
-  </data>
-  <data name="dgSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 50</value>
+  <data name="lblTipsText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 71</value>
   </data>
   <data name="lblTipsText.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 29</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 343</value>
+  <data name="lblTipsText.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblTipsText.Text" xml:space="preserve">
+    <value>Tips:</value>
+  </data>
+  <data name="&gt;&gt;lblTipsText.Name" xml:space="preserve">
+    <value>lblTipsText</value>
+  </data>
+  <data name="&gt;&gt;lblTipsText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTipsText.Parent" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;lblTipsText.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 15.75pt</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 183</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 42</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="button3.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 14.25pt</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 183</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 42</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btnCash.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="btnCash.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 15.75pt</value>
+  </data>
+  <data name="btnCash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 227</value>
+  </data>
+  <data name="btnCash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 48</value>
+  </data>
+  <data name="btnCash.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCash.Text" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="btnCash.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnCash.Name" xml:space="preserve">
+    <value>btnCash</value>
+  </data>
+  <data name="&gt;&gt;btnCash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCash.Parent" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;btnCash.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="panCmimi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 53</value>
+  </data>
+  <data name="panCmimi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 290</value>
+  </data>
+  <data name="panCmimi.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panCmimi.Name" xml:space="preserve">
+    <value>panCmimi</value>
+  </data>
+  <data name="&gt;&gt;panCmimi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panCmimi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panCmimi.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtDateTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="txtDateTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20.25pt</value>
+  </data>
+  <data name="txtDateTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 6</value>
+  </data>
+  <data name="txtDateTime.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>250, 31</value>
+  </data>
+  <data name="txtDateTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 31</value>
+  </data>
+  <data name="txtDateTime.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtDateTime.Name" xml:space="preserve">
+    <value>txtDateTime</value>
+  </data>
+  <data name="&gt;&gt;txtDateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDateTime.Parent" xml:space="preserve">
+    <value>panInfo</value>
+  </data>
+  <data name="&gt;&gt;txtDateTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtInvNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="txtInvNo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20.25pt</value>
+  </data>
+  <data name="txtInvNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 7</value>
+  </data>
+  <data name="txtInvNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 38</value>
+  </data>
+  <data name="txtInvNo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtInvNo.Name" xml:space="preserve">
+    <value>txtInvNo</value>
+  </data>
+  <data name="&gt;&gt;txtInvNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtInvNo.Parent" xml:space="preserve">
+    <value>panInfo</value>
+  </data>
+  <data name="&gt;&gt;txtInvNo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 14.25pt</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 14</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 23</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panInfo</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 14.25pt</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 15</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 23</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Invoice Number:</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panInfo</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>757, 53</value>
+  </data>
+  <data name="panInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panInfo.Name" xml:space="preserve">
+    <value>panInfo</value>
+  </data>
+  <data name="&gt;&gt;panInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panInfo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1174,112 +934,340 @@
         AhQ+2k9FZ9fIAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;Items.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
   </data>
-  <data name="&gt;&gt;lblSubtotalText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 31</value>
   </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Narrow, 18pt</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
-  <data name="btnCash.Text" xml:space="preserve">
-    <value>Cash</value>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
   </data>
-  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dgSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="dgSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 50</value>
+  </data>
+  <data name="dgSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 121</value>
+  </data>
+  <data name="dgSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dgSearch.Name" xml:space="preserve">
+    <value>dgSearch</value>
+  </data>
+  <data name="&gt;&gt;dgSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgSearch.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;dgSearch.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lblNoTaxInfo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="txtKerko.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>241, 214</value>
+  <data name="txtKerko.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
-  <data name="label4.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+  <data name="txtKerko.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 13</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="txtKerko.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 38</value>
+  </data>
+  <data name="txtKerko.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtKerko.Text" xml:space="preserve">
+    <value>Kërko...</value>
+  </data>
+  <data name="&gt;&gt;txtKerko.Name" xml:space="preserve">
+    <value>txtKerko</value>
+  </data>
+  <data name="&gt;&gt;txtKerko.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtKerko.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txtKerko.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnShto.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="btnShto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnShto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 14.25pt</value>
+  </data>
+  <data name="btnShto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 50</value>
+  </data>
+  <data name="btnShto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 31</value>
+  </data>
+  <data name="btnShto.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnShto.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;btnShto.Name" xml:space="preserve">
+    <value>btnShto</value>
+  </data>
+  <data name="&gt;&gt;btnShto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnShto.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnShto.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
   </data>
   <data name="btnSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="&gt;&gt;description.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 14.25pt</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 42</value>
+  <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 13</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 31</value>
   </data>
-  <data name="&gt;&gt;lblTips.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnSearch.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
+    <value>btnSearch</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;txtInvNo.Parent" xml:space="preserve">
-    <value>panInfo</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 343</value>
   </data>
-  <data name="&gt;&gt;DateTime.Name" xml:space="preserve">
-    <value>DateTime</value>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>757, 182</value>
   </data>
-  <data name="lblTipsText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 71</value>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;dgListOfItems.Name" xml:space="preserve">
-    <value>dgListOfItems</value>
+  <data name="dgListOfItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="Barcodi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Barcodi.HeaderText" xml:space="preserve">
+    <value>Barcodi</value>
+  </data>
+  <metadata name="IdArtikulli.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="IdArtikulli.HeaderText" xml:space="preserve">
+    <value>IdArtikulli</value>
+  </data>
+  <metadata name="Items.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Items.HeaderText" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <metadata name="Unity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Unity.HeaderText" xml:space="preserve">
+    <value>Unity</value>
+  </data>
+  <metadata name="description.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="description.HeaderText" xml:space="preserve">
+    <value>Description</value>
   </data>
   <metadata name="Cmimi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="description.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="Cmimi.HeaderText" xml:space="preserve">
+    <value>Cmimi</value>
+  </data>
+  <metadata name="Sasia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="Sasia.HeaderText" xml:space="preserve">
+    <value>Sasia</value>
+  </data>
   <metadata name="Price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="btnAdd.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Unity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="Price.HeaderText" xml:space="preserve">
+    <value>Price</value>
+  </data>
   <metadata name="IdFatura.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="IdArtikulli.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>sq-AL</value>
-  </metadata>
+  <data name="IdFatura.HeaderText" xml:space="preserve">
+    <value>IdFatura</value>
+  </data>
   <metadata name="DateTime.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <data name="DateTime.HeaderText" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <metadata name="btnAdd.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnAdd.HeaderText" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="dgListOfItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 59</value>
+  </data>
+  <data name="dgListOfItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 278</value>
+  </data>
+  <data name="dgListOfItems.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dgListOfItems.Name" xml:space="preserve">
+    <value>dgListOfItems</value>
+  </data>
+  <data name="&gt;&gt;dgListOfItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgListOfItems.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgListOfItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>sq-AL</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Sasia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Items.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Barcodi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="add.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>757, 525</value>
+  </data>
+  <data name="&gt;&gt;Barcodi.Name" xml:space="preserve">
+    <value>Barcodi</value>
+  </data>
+  <data name="&gt;&gt;Barcodi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IdArtikulli.Name" xml:space="preserve">
+    <value>IdArtikulli</value>
+  </data>
+  <data name="&gt;&gt;IdArtikulli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Items.Name" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="&gt;&gt;Items.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Unity.Name" xml:space="preserve">
+    <value>Unity</value>
+  </data>
+  <data name="&gt;&gt;Unity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;description.Name" xml:space="preserve">
+    <value>description</value>
+  </data>
+  <data name="&gt;&gt;description.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Cmimi.Name" xml:space="preserve">
+    <value>Cmimi</value>
+  </data>
+  <data name="&gt;&gt;Cmimi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Sasia.Name" xml:space="preserve">
+    <value>Sasia</value>
+  </data>
+  <data name="&gt;&gt;Sasia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Price.Name" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="&gt;&gt;Price.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IdFatura.Name" xml:space="preserve">
+    <value>IdFatura</value>
+  </data>
+  <data name="&gt;&gt;IdFatura.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DateTime.Name" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="&gt;&gt;DateTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Name" xml:space="preserve">
+    <value>btnAdd</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UC_Dashboards</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

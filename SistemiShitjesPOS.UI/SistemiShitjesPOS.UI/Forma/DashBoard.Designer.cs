@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.tblPanMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panMenu = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnDashboards = new System.Windows.Forms.Button();
             this.btnGiftCard = new System.Windows.Forms.Button();
@@ -44,6 +41,10 @@
             this.btnReports = new System.Windows.Forms.Button();
             this.btnSectorRole = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panMenu = new System.Windows.Forms.Panel();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.tblPanMenu.SuspendLayout();
             this.panMenu.SuspendLayout();
@@ -65,29 +66,6 @@
             this.tblPanMenu.Controls.Add(this.btnSectorRole, 0, 3);
             this.tblPanMenu.Controls.Add(this.btnSuppliers, 0, 4);
             this.tblPanMenu.Name = "tblPanMenu";
-            // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // panMenu
-            // 
-            resources.ApplyResources(this.panMenu, "panMenu");
-            this.panMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.panMenu.Controls.Add(this.btnSettings);
-            this.panMenu.Controls.Add(this.tblPanMenu);
-            this.panMenu.Controls.Add(this.btnMenu);
-            this.panMenu.Name = "panMenu";
-            // 
-            // btnSettings
-            // 
-            resources.ApplyResources(this.btnSettings, "btnSettings");
-            this.btnSettings.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.ionicons_2_0_1_android_settings_50_15_a7bccd_none;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnLogOut
             // 
@@ -230,10 +208,44 @@
             this.btnSuppliers.UseVisualStyleBackColor = true;
             this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
             // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // panMenu
+            // 
+            resources.ApplyResources(this.panMenu, "panMenu");
+            this.panMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.panMenu.Controls.Add(this.btnHelp);
+            this.panMenu.Controls.Add(this.btnSettings);
+            this.panMenu.Controls.Add(this.tblPanMenu);
+            this.panMenu.Controls.Add(this.btnMenu);
+            this.panMenu.Name = "panMenu";
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.BackColor = System.Drawing.Color.Transparent;
+            this.btnHelp.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.ionicons_2_0_1_help_50_25_a7bccd_none__1_;
+            resources.ApplyResources(this.btnHelp, "btnHelp");
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.BackgroundImage = global::SistemiShitjesPOS.UI.Properties.Resources.ionicons_2_0_1_android_settings_50_15_a7bccd_none;
+            resources.ApplyResources(this.btnSettings, "btnSettings");
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            // 
             // btnMenu
             // 
-            resources.ApplyResources(this.btnMenu, "btnMenu");
             this.btnMenu.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnMenu, "btnMenu");
             this.btnMenu.Image = global::SistemiShitjesPOS.UI.Properties.Resources.icomoon_free_2014_12_23_menu_25_25_a7bccd_none;
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.UseVisualStyleBackColor = true;
@@ -276,6 +288,7 @@
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panMenu;
+        private System.Windows.Forms.Button btnHelp;
         ////private UC_Dashboards uC_Dashboards1;
     }
 }

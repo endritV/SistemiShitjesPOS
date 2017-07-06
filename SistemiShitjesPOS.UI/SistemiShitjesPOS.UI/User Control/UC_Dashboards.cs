@@ -83,10 +83,10 @@ namespace SistemiShitjesPOS.UI
 
             foreach (DataGridViewRow row in dgSearch.Rows)
             {
-                
-               
-                    dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
-               
+
+
+                dgListOfItems.Rows.Add(row.Cells[4].Value.ToString(), row.Cells[6].Value.ToString(), row.Cells[5].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[1].Value.ToString());
+
             }
 
 
@@ -120,7 +120,7 @@ namespace SistemiShitjesPOS.UI
 
         private void dgListOfItems_KeyPress(object sender, KeyPressEventArgs e)
         {
-           
+
         }
 
         public AutoCompleteStringCollection ItemsListDropDown()
@@ -215,17 +215,18 @@ namespace SistemiShitjesPOS.UI
                     //}
                     //if (!duple)
                     //{
-                        dgListOfItems.Rows[e.RowIndex].Cells[1].Value = dt.Rows[0][0].ToString();
-                        dgListOfItems.Rows[e.RowIndex].Cells[2].Value = dt.Rows[0][1].ToString();
-                        dgListOfItems.Rows[e.RowIndex].Cells[3].Value = dt.Rows[0][2].ToString();
-                        dgListOfItems.Rows[e.RowIndex].Cells[4].Value = dt.Rows[0][3].ToString();
-                        dgListOfItems.Rows[e.RowIndex].Cells[5].Value = dt.Rows[0][4].ToString();
+                    dgListOfItems.Rows[e.RowIndex].Cells[1].Value = dt.Rows[0][0].ToString();
+                    dgListOfItems.Rows[e.RowIndex].Cells[2].Value = dt.Rows[0][1].ToString();
+                    dgListOfItems.Rows[e.RowIndex].Cells[3].Value = dt.Rows[0][2].ToString();
+                    dgListOfItems.Rows[e.RowIndex].Cells[4].Value = dt.Rows[0][3].ToString();
+                    dgListOfItems.Rows[e.RowIndex].Cells[5].Value = dt.Rows[0][4].ToString();
+                    dgListOfItems.Rows[e.RowIndex].Cells[6].Value = 1.ToString();
 
-                        con.Close();
+                    con.Close();
 
                     //}
-                       
-                    
+
+
 
 
                 }
@@ -241,7 +242,10 @@ namespace SistemiShitjesPOS.UI
 
             foreach (DataGridViewRow row in dgListOfItems.Rows)
             {
+
                 int qnt = Convert.ToInt32(row.Cells[6].Value);
+
+
 
                 if (Convert.ToString(row.Cells[6].Value) == qnt.ToString())
                 {
@@ -355,28 +359,44 @@ namespace SistemiShitjesPOS.UI
                 con.Close();
             }
             dgListOfItems.Rows.Clear();
-            
+
 
         }
 
         private void dgListOfItems_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+            int selectedVal = int.Parse(dgListOfItems.Rows[e.RowIndex].Cells[0].Value.ToString());
 
-            for (int i = 0; i < dgListOfItems.SelectedCells.Count; i++)
-            {
-                dgListOfItems.Rows[i].Cells[6].Value = Convert.ToInt32(dgListOfItems.Rows[i].Cells[6].Value) + 1;
-            }
+
+                foreach (DataGridViewRow row in dgListOfItems.Rows)
+                {
+                    if (row.Cells[0].Value == null || row.Cells[6].Value == null)
+                        break;
+
+                if (int.Parse(row.Cells[0].Value.ToString()) == selectedVal ) 
+                    {
+                    
+
+                        int temp = int.Parse(row.Cells[6].Value.ToString());
+                        temp++;
+                        row.Cells[6].Value = temp.ToString();
+                        dgListOfItems.CurrentCell.Value = null;
+                }
+                }
+
 
         }
 
-      
+
         private void dgListOfItems_SelectionChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void dgListOfItems_CellValidated(object sender, DataGridViewCellEventArgs e)
         {
+
             if (e.ColumnIndex == 0 && dgListOfItems.CurrentCell.Value != null)
             {
                 foreach (DataGridViewRow row in this.dgListOfItems.Rows)
@@ -387,12 +407,12 @@ namespace SistemiShitjesPOS.UI
                     { continue; }
                     if (row.Cells[0].Value != null && row.Cells[0].Value.ToString() == dgListOfItems.CurrentCell.Value.ToString())
                     {
-                        MessageBox.Show("error");
+
+                        dgListOfItems_CellContentClick(sender, e);
                         dgListOfItems.CurrentCell.Value = null;
                     }
                 }
             }
         }
     }
-
 }

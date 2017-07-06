@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Threading;
+using System.Globalization;
 using System.Windows.Forms;
+
+
 
 
 namespace SistemiShitjesPOS.UI
@@ -15,9 +19,18 @@ namespace SistemiShitjesPOS.UI
         [STAThread]
         static void Main()
         {
+            
+           
+
+           
+
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DashBoard());          
+            Application.Run(new LoginForm());        
+            
+              
         }
     }
 }

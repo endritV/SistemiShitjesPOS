@@ -253,6 +253,16 @@ namespace SistemiShitjesPOS.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ionicons_2_0_1_help_50_25_a7bccd_none__1_ {
+            get {
+                object obj = ResourceManager.GetObject("ionicons_2-0-1_help_50_25_a7bccd_none (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ionicons_2_0_1_ios_people_25_0_647d91_none {
             get {
                 object obj = ResourceManager.GetObject("ionicons_2-0-1_ios-people_25_0_647d91_none", resourceCulture);

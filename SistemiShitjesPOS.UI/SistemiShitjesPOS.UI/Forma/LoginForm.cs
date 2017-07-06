@@ -11,6 +11,8 @@ using SistemiShitjesPOS.DataAccessLayer;
 using SistemiShitjesPOS.BusinessLayer;
 using SistemiShitjesPOS.EntityLayer;
 using System.Windows.Forms;
+using System.Threading;
+using System.Globalization;
 using System.Security.Cryptography;
 
 namespace SistemiShitjesPOS.UI
@@ -51,8 +53,9 @@ namespace SistemiShitjesPOS.UI
             }
             else
             {
-                MessageBox.Show("Login Failed!!");
-            } 
+                MetroFramework.MetroMessageBox.Show(this, "Incorrect UserName or Password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -62,6 +65,28 @@ namespace SistemiShitjesPOS.UI
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        
+
+       
+
+        private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbLanguage.SelectedIndex == 0)
+            {
+                DashBoard.Lang = "en";
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
+
+
+            }
+            else
+            {
+                DashBoard.Lang = "sq-AL";
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("sq-AL");
+
+
+            }
         }
     }
 }

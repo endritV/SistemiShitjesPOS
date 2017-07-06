@@ -118,12 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="foundation-icon-fonts_2015-02-16_clipboard-notes_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\foundation-icon-fonts_2015-02-16_clipboard-notes_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="font-awesome_4-7-0_credit-card-alt_25_0_ffffff_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\font-awesome_4-7-0_credit-card-alt_25_0_ffffff_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icomoon-free_2014-12-23_price-tags_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icomoon-free_2014-12-23_price-tags_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,6 +126,9 @@
   </data>
   <data name="foundation-icon-fonts_2015-02-16_burst-sale_80_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\foundation-icon-fonts_2015-02-16_burst-sale_80_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stroke-7_1-2-0_cash_25_0_ffffff_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stroke-7_1-2-0_cash_25_0_ffffff_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ionicons_2-0-1_close_25_0_696969_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ionicons_2-0-1_close_25_0_696969_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +151,8 @@
   <data name="ligature-symbols_2-11-0_human_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ligature-symbols_2-11-0_human_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ligature-symbols_2-11-0_logout_30_0_ff0000_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ligature-symbols_2-11-0_logout_30_0_ff0000_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="font-awesome_4-7-0_credit-card-alt_25_0_ffffff_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\font-awesome_4-7-0_credit-card-alt_25_0_ffffff_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="font-awesome_4-7-0_close_50_0_696969_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\font-awesome_4-7-0_close_50_0_696969_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,11 +169,17 @@
   <data name="cover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cover1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ligature-symbols_2-11-0_logout_30_0_ff0000_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ligature-symbols_2-11-0_logout_30_0_ff0000_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ionicons_2-0-1_android-settings_50_15_a7bccd_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ionicons_2-0-1_android-settings_50_15_a7bccd_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="foundation-icon-fonts_2015-02-16_burst-sale_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\foundation-icon-fonts_2015-02-16_burst-sale_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="namnl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\namnl.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ionicons_2-0-1_ios-people_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ionicons_2-0-1_ios-people_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="font-awesome_4-7-0_search_50_0_dfe6ec_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\font-awesome_4-7-0_search_50_0_dfe6ec_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,13 +187,13 @@
   <data name="ionicons_2-0-1_close_25_25_696969_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ionicons_2-0-1_close_25_25_696969_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ionicons_2-0-1_ios-people_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ionicons_2-0-1_ios-people_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="foundation-icon-fonts_2015-02-16_clipboard-notes_25_0_647d91_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foundation-icon-fonts_2015-02-16_clipboard-notes_25_0_647d91_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ionicons_2-0-1_android-settings_50_15_a7bccd_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ionicons_2-0-1_android-settings_50_15_a7bccd_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="namnl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\namnl.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="stroke-7_1-2-0_cash_25_0_ffffff_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stroke-7_1-2-0_cash_25_0_ffffff_none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ionicons_2-0-1_help_50_25_a7bccd_none (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ionicons_2-0-1_help_50_25_a7bccd_none (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

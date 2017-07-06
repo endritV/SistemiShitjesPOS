@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace SistemiShitjesPOS.UI
@@ -21,18 +23,7 @@ namespace SistemiShitjesPOS.UI
         {
             
 
-            if (cmbLanguage.SelectedIndex == 0)
-            {
-                DashBoard.Lang = "en";
-                this.Close();
-                MessageBox.Show("english");
-            }
-            else 
-            {
-                DashBoard.Lang = "sq-AL";
-                this.Close();
-                MessageBox.Show("shqip");
-            }
+            
         }
 
         private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
@@ -40,5 +31,7 @@ namespace SistemiShitjesPOS.UI
             
 
         }
+
+    
     }
 }

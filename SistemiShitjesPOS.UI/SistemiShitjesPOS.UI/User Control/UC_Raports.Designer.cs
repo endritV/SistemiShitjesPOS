@@ -40,9 +40,9 @@
             // dgRaports
             // 
             this.dgRaports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgRaports.Location = new System.Drawing.Point(3, 162);
+            this.dgRaports.Location = new System.Drawing.Point(32, 162);
             this.dgRaports.Name = "dgRaports";
-            this.dgRaports.Size = new System.Drawing.Size(748, 348);
+            this.dgRaports.Size = new System.Drawing.Size(683, 348);
             this.dgRaports.TabIndex = 0;
             // 
             // dtPickerFrom
