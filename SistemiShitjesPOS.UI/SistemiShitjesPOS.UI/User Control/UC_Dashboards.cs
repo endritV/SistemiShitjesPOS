@@ -21,13 +21,11 @@ namespace SistemiShitjesPOS.UI
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-            this.txtDateTime.Text = DateTime.Now.ToString("dd-MM-yyyy \n     hh:mm");
-            
-
-
-
+            this.txtDateTime.Text = DateTimeOffset.Now.ToString("MM - dd - yyyy");
+          
+       
         }
-
+       
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -255,7 +253,7 @@ namespace SistemiShitjesPOS.UI
                     for (int i = 0; i < dgListOfItems.Rows.Count; ++i)
                     {
                         sum += Convert.ToDouble(dgListOfItems.Rows[i].Cells[7].Value);
-                    }
+                        }
 
                     lblNoTax.Text = Convert.ToString(sum - (a * sum));
                     lblTax.Text = Convert.ToString(a * sum);
@@ -272,7 +270,7 @@ namespace SistemiShitjesPOS.UI
             for (int i = 0; i < dgListOfItems.Rows.Count; i++)
             {
                 SqlConnection con = new SqlConnection(DataBaseCon.GetConnectionString());
-                SqlCommand cmd = new SqlCommand(@"INSERT INTO FaturaDetajet(IdFatura,IdArtikulli,Sasia,Cmimi) VALUES ('" + dgListOfItems.Rows[i].Cells[8].Value + "','" + dgListOfItems.Rows[i].Cells[1].Value + "','" + dgListOfItems.Rows[i].Cells[6].Value + "','" + dgListOfItems.Rows[i].Cells[5].Value + "')", con);
+                SqlCommand cmd = new SqlCommand(@"INSERT INTO FaturaDetajet(IdFatura,IdArtikulli,Sasia,Cmimi,Data) VALUES ('" + dgListOfItems.Rows[i].Cells[8].Value + "','" + dgListOfItems.Rows[i].Cells[1].Value + "','" + dgListOfItems.Rows[i].Cells[6].Value + "','" + dgListOfItems.Rows[i].Cells[5].Value + "','" + dgListOfItems.Rows[i].Cells[9].Value +"')", con);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Test");
@@ -303,15 +301,22 @@ namespace SistemiShitjesPOS.UI
                 conn.Close();
             }
             dgListOfItems.Rows.Clear();
+            label4.Text = "00.0";
+            lblNoTax.Text = "00.0";
+            lblTax.Text = "00.0";
 
         }
 
         private void dgListOfItems_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
             int row = 0;
-
+            
             row = dgListOfItems.Rows.Count - 1;
             dgListOfItems["IdFatura", row].Value = txtInvNo.Text;
+            dgListOfItems["DateTime", row].Value = txtDateTime.Text;
+            //dgListOfItems["DateTime", row].Value = txtDateTime.Text;
+           
+
             dgListOfItems.Refresh();
 
 

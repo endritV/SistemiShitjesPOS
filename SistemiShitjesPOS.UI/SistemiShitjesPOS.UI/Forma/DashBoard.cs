@@ -62,10 +62,7 @@ namespace SistemiShitjesPOS.UI
             WindowState = FormWindowState.Maximized;
             TopMost = true;
         }
-        private void DashBoard_KeyDown(object sender, KeyEventArgs e)
-        {
-            
-        }
+       
         private void btnDashboards_Click(object sender, EventArgs e)
         {
             UC_Dashboards dashboardUC = new UC_Dashboards();

@@ -69,6 +69,7 @@
             this.Sasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdFatura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panCmimi.SuspendLayout();
             this.panInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -553,7 +554,8 @@
             this.Cmimi,
             this.Sasia,
             this.Price,
-            this.IdFatura});
+            this.IdFatura,
+            this.DateTime});
             this.dgListOfItems.Location = new System.Drawing.Point(6, 59);
             this.dgListOfItems.Name = "dgListOfItems";
             this.dgListOfItems.Size = new System.Drawing.Size(453, 278);
@@ -607,6 +609,11 @@
             // 
             this.IdFatura.HeaderText = "IdFatura";
             this.IdFatura.Name = "IdFatura";
+            // 
+            // DateTime
+            // 
+            this.DateTime.HeaderText = "DateTime";
+            this.DateTime.Name = "DateTime";
             // 
             // UC_Dashboards
             // 
@@ -674,5 +681,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Sasia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdFatura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateTime;
     }
 }
